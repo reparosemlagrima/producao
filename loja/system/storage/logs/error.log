@@ -1,0 +1,97 @@
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-24 22:42:09 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+<<<<<<< HEAD
+2016-02-26 18:46:20 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:20 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:20 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:20 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:20 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:36 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:36 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:36 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:36 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:36 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:38 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:38 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:38 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:38 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:38 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:39 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:39 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:39 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:39 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 18:46:39 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 19:00:07 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 19:00:07 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 19:00:07 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 19:00:07 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 19:00:07 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 19:03:03 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 19:03:03 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 19:03:03 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 19:03:03 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 19:03:03 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 19:05:06 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 19:05:06 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 19:05:06 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 19:05:06 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 19:05:06 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:56:16 - PHP Warning:  DB\MySQLi::__destruct(): Couldn't fetch mysqli in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 59
+2016-02-26 20:59:34 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 20:59:34 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 20:59:34 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 20:59:34 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 20:59:34 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:07:57 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:07:57 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:07:57 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:07:57 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:07:57 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:15:51 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:15:51 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:15:51 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:15:51 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:15:51 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:29:03 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:29:03 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:29:03 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:29:03 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:29:03 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:58:34 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:58:34 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:58:34 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:58:34 - PHP Warning:  DB\MySQLi::query(): Couldn't fetch mysqli_result in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+2016-02-26 21:58:34 - PHP Warning:  DB\MySQLi::query(): Property access is not allowed yet in C:\xampp\htdocs\reparosemlagrima\loja\system\library\db\mysqli.php on line 36
+=======
+2016-02-27 18:19:49 - PHP Notice:  Undefined index: route in C:\xampp\htdocs\reparosemlagrima\loja\index.php on line 152
+2016-02-27 18:20:20 - PHP Notice:  Undefined index: route in Unknown on line 0
+>>>>>>> d1e0554ce5cbb4c057e9a90b6edf428733811219
