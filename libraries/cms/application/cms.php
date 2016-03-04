@@ -868,9 +868,9 @@ class JApplicationCms extends JApplicationWeb
 			$results = $this->triggerEvent('onUserLogin', array((array) $response, $options));
 
 			//Opencart
-			require_once JPATH_BASE . '/loja/system/library/db.php';
-			require_once JPATH_BASE . '/loja/system/library/db/mysqli.php';
-			require_once JPATH_BASE . '/loja/system/helper/general.php';
+			require_once JPATH_REG . '/loja/system/library/db.php';
+			require_once JPATH_REG . '/loja/system/library/db/mysqli.php';
+			require_once JPATH_REG . '/loja/system/helper/general.php';
 			$db = new DB('mysqli', 'localhost', 'root', '', 'bd_loja_rslagrimas', 3306);
 			$user_id = $_SESSION['__default']['user']->id;
 			$query = $db->query("SELECT customer_id FROM `" . 'oc_' . "customer` WHERE user_id = " . $user_id);

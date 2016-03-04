@@ -29,6 +29,8 @@ if (file_exists(__DIR__ . '/defines.php'))
 
 if (!defined('_JDEFINES'))
 {
+	//Opencart
+	define('JPATH_REG', $_SERVER['DOCUMENT_ROOT'].'/reparosemlagrima');
 	define('JPATH_BASE', __DIR__);
 	require_once JPATH_BASE . '/includes/defines.php';
 }
