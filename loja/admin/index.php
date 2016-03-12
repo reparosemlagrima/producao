@@ -3,10 +3,15 @@
 define('VERSION', '2.1.0.1');
 
 // Configuration
-if (is_file('config.php')) {
-	require_once('config.php');
+if ($_SERVER['HTTP_HOST'] == 'localhost'){
+	if (is_file('config_local.php')) {
+		require_once('config_local.php');
+	}}
+else {
+	if (is_file('config.php')) {
+		require_once('config.php');
+	}
 }
-
 // Install
 if (!defined('DIR_APPLICATION')) {
 	header('Location: ../install/index.php');

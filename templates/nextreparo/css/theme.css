@@ -2485,12 +2485,13 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 /* Items
  ========================================================================== */
 .uk-subnav > * > * {
-  display: inline-block;
+  /*display: inline-block;*/
+  display: block;
   color: #565758;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 13px;
-  line-height: 24px;
-  text-transform: uppercase;
+  line-height: 14px;
+  text-transform: none;
   letter-spacing: 1px;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
@@ -11526,7 +11527,7 @@ body {
   z-index: 2;
   background-color: #ffffff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  border-bottom: solid 5px #0072CB;
+  border-bottom: solid 58px #0072CB;
 }
 .tm-navbar .tm-navbar-container {
   display: -ms-flexbox;
@@ -12023,3 +12024,57 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/*  Footer  opencart    */
+
+.container {
+  width:1050px;
+/*  margin-right:auto;
+  margin-left:auto;
+  padding-right:auto;
+  padding-left:auto;
+  border-radius:6px*/
+}
+
+.row {
+/*  display:inline;*/
+  width:1250px;
+  margin-right:-15px;
+  margin-left:-15px
+}
+
+.col-sm-3 {
+  float:left;
+  display:inline;
+  width:20%;
+ /* position:relative;*/
+  min-height:1px;
+  padding-right:15px;
+  padding-left:15px
+}
+
+/*.list-unstyled {
+  color: rgb(0, 0, 0);
+  padding-left:0;
+  list-style:none;
+  display: block;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 14px;
+  text-transform: none;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+} */
+
+.list-unstyled {
+  padding-left:0;
+  list-style:none;
+  display: block;
+  font-size: 13px;
+  line-height: 14px;
+  text-transform: none;
+  letter-spacing: 1px;
+
+}
+
