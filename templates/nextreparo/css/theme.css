@@ -11527,7 +11527,7 @@ body {
   z-index: 2;
   background-color: #ffffff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  border-bottom: solid 58px #0072CB;
+  /* border-bottom: solid 58px #0072CB; */
 }
 .tm-navbar .tm-navbar-container {
   display: -ms-flexbox;

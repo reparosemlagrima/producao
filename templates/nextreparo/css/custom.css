@@ -72,6 +72,19 @@ margin-left: 20px;
 }
 .newlogo-top-a{ position: relative; margin: 0 auto}
 
+.top-menu{  background-color: rgba(0, 175, 243, 0.72);   margin-top:0px;  padding: 25px 0;  }
+
+.top-menu a{ color: #fff; font-size: 14px; font-weight: 500; text-transform: uppercase;}
+.top-menu a i{ margin-right: 5px; font-size: 18px}
+.top-menu a:hover{ text-decoration: none;}
+.top-menu-center ul{ list-style: none;  margin: 0 auto; text-align: center; padding: 0}
+.top-menu-center ul li{ display: inline-block;}
+.top-menu-center .uk-subnav-line > *:nth-child(n+2)::before{ margin: 0 35px}
+.top-menu-center .uk-subnav-line{
+    position: relative;
+    right: 1%
+}
+
 .new-status{ background-color: rgba(51, 51, 51, 0.72); padding: 25px 0; position: relative; bottom: 0}
 
 
