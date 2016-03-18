@@ -28,6 +28,8 @@ $itemid = intval($params->get('set_itemid', 0));
   .uk-box-search-top{
 	  /* margin: auto; */
 	  position: relative;
+
+	  /* aa  */
   }
  
 }
