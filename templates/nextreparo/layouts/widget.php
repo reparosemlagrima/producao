@@ -13,7 +13,7 @@ foreach (array('suffix', 'panel', 'title_size', 'center', 'class', 'badge', 'ico
     $$var = isset($params[$var]) ? $params[$var] : null;
 }
 // Set default panel
-if ($panel == '' && in_array($widget->position, array('top-a', 'new-top-a','new-menu','new-status','search-home','top-b', 'top-c', 'top-d', 'bottom-a', 'bottom-b', 'bottom-c', 'bottom-d', 'bottom-e', 'main-top', 'main-bottom', 'sidebar-a', 'sidebar-b'))) {
+if ($panel == '' && in_array($widget->position, array('top-a', 'new-top-a','new-menu','new-status','search-top','search-home','top-b', 'top-c', 'top-d', 'bottom-a', 'bottom-b', 'bottom-c', 'bottom-d', 'bottom-e', 'main-top', 'main-bottom', 'sidebar-a', 'sidebar-b'))) {
     $panel = $this['config']->get("panel_default.{$widget->position}.panel", '');
 }
 // Set panel for specific positions

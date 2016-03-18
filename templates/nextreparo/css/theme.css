@@ -11626,13 +11626,16 @@ body {
   -webkit-justify-content: center;
   justify-content: center;
 }
+.tm-nav-logo {
+  width: 300px;
+}
 .tm-navbar-center .tm-nav {
   margin-top: 25px;
 }
 @media (min-width: 768px) {
   .tm-navbar-container {
     box-sizing: border-box;
-    height: 100px;
+    height: 80px;
   }
   .tm-navbar-center .tm-navbar-container {
     height: 180px;

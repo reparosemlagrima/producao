@@ -520,8 +520,7 @@
 			},
 			"assignment": {
 				"0": "256",
-				"1": "257",
-				"2": "211"
+				"1": "211"
 			}
 		},
 		"blog": {
@@ -677,8 +676,7 @@
 				}
 			},
 			"assignment": {
-				"0": "214",
-				"1": "300"
+				"0": "214"
 			}
 		},
 		"tutoriais": {
@@ -835,9 +833,7 @@
 				}
 			},
 			"assignment": {
-				"0": "258",
-				"1": "312",
-				"2": "315"
+				"0": "312"
 			}
 		},
 		"dinamicomarcas": {
@@ -1315,29 +1311,42 @@
 				"medium": "1",
 				"small": "1"
 			}
+		},
+		"253": {
+			"class": "",
+			"panel": "uk-panel uk-panel-header",
+			"center": "1",
+			"title_size": "uk-panel-title",
+			"icon": "",
+			"badge": {
+				"type": "uk-panel-badge uk-badge",
+				"text": ""
+			},
+			"display": {
+				"large": "1",
+				"medium": "1",
+				"small": "1"
+			}
+		},
+		"254": {
+			"class": "",
+			"panel": "",
+			"title_size": "uk-panel-title",
+			"icon": "",
+			"badge": {
+				"type": "uk-panel-badge uk-badge",
+				"text": ""
+			},
+			"display": {
+				"large": "1",
+				"medium": "1",
+				"small": "1"
+			}
 		}
 	},
 	"menus": {
 		"189": {
 			"columns": "2",
-			"columnwidth": "",
-			"icon": "",
-			"subtitle": ""
-		},
-		"211": {
-			"columns": "1",
-			"columnwidth": "",
-			"icon": "",
-			"subtitle": ""
-		},
-		"214": {
-			"columns": "1",
-			"columnwidth": "",
-			"icon": "",
-			"subtitle": ""
-		},
-		"256": {
-			"columns": "1",
 			"columnwidth": "",
 			"icon": "",
 			"subtitle": ""
@@ -1421,6 +1430,42 @@
 			"subtitle": ""
 		},
 		"316": {
+			"columns": "1",
+			"columnwidth": "",
+			"icon": "",
+			"subtitle": ""
+		},
+		"317": {
+			"columns": "1",
+			"columnwidth": "",
+			"icon": "",
+			"subtitle": ""
+		},
+		"318": {
+			"columns": "1",
+			"columnwidth": "",
+			"icon": "",
+			"subtitle": ""
+		},
+		"319": {
+			"columns": "1",
+			"columnwidth": "",
+			"icon": "",
+			"subtitle": ""
+		},
+		"321": {
+			"columns": "1",
+			"columnwidth": "",
+			"icon": "",
+			"subtitle": ""
+		},
+		"322": {
+			"columns": "1",
+			"columnwidth": "",
+			"icon": "",
+			"subtitle": ""
+		},
+		"323": {
 			"columns": "1",
 			"columnwidth": "",
 			"icon": "",

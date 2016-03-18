@@ -46,6 +46,12 @@ include($this['path']->path('layouts:theme.config.php'));
                     </div>
                     <?php endif; ?>
 
+                    <?php if ($this['widgets']->count('search-top')) : ?>
+                        <div class="uk-container uk-container-center">
+                            <?php echo $this['widgets']->render('search-top'); ?>
+                        </div>
+                    <?php endif; ?>
+
                     <?php if ($this['widgets']->count('menu')) : ?>
                     <div class="tm-nav uk-hidden-small">
                         <?php echo $this['widgets']->render('menu'); ?>
