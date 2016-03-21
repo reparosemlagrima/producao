@@ -72,7 +72,7 @@ margin-left: 20px;
 }
 .newlogo-top-a{ position: relative; margin: 0 auto}
 
-.top-menu{  background-color: rgba(0, 175, 243, 0.72);   margin-top:0px;  padding: 25px 0;  }
+.top-menu{  background-color: rgb(0, 175, 243);   margin-top:0px;  padding: 15px 0;  }
 
 .top-menu a{ color: #fff; font-size: 14px; font-weight: 500; text-transform: uppercase;}
 .top-menu a i{ margin-right: 5px; font-size: 18px}
@@ -99,6 +99,27 @@ margin-left: 20px;
 .new-menu-center .uk-subnav-line{
     position: relative;
     right: 1%
+}
+
+.uk-search-top .uk-button-top{
+    text-shadow: 0px 1px 0px #FFF;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: none;
+    position: absolute;
+    padding: 10px 35px;
+    line-height: 18px;
+    outline: 0px none;
+    border: 0px none;
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 0.7;
+    height: 15px;
+    width: 15px;
+    right: 0px;
+    top: 1px;
+    color: #0172CB;
+
 }
 
 

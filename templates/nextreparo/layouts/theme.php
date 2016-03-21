@@ -71,18 +71,18 @@ include($this['path']->path('layouts:theme.config.php'));
                 </nav>
 
             </div>
+             <?php if ($this['widgets']->count('top-menu')) : ?>
+                 <div class="top-menu" id="top-menu">
+                     <div class="tm-toolbar uk-clearfix uk-hidden-small uk-hidden-medium">
+                         <div class="uk-container uk-container-center">
+                             <?php echo $this['widgets']->render('top-menu'); ?>
+                         </div>
+                     </div>
+                 </div>
+             <?php endif; ?>
         </div>
         <?php endif; ?>
 
-        <?php if ($this['widgets']->count('top-menu')) : ?>
-            <div class="top-menu" id="top-menu">
-                <div class="tm-toolbar uk-clearfix uk-hidden-small uk-hidden-medium">
-                    <div class="uk-container uk-container-center">
-                        <?php echo $this['widgets']->render('top-menu'); ?>
-                    </div>
-                </div>
-            </div>
-        <?php endif; ?>
             
             <?php if ($this['widgets']->count('new-top-a')) : ?>
             <div class="new-top-a" id="new-top-a">

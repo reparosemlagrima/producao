@@ -15,12 +15,12 @@ $itemid = intval($params->get('set_itemid', 0));
 ?>
 <style type="text/css">
 	.uk-box-search-top{
-		width:450px;
+		width:400px;
 		float: left;
-		top: 30px;
+		top: 18px;
 	}
-	.uk-field-search-top{ width: 300px; font-size: 12px !important; text-align: left; padding: 10px !important; line-height: 15px !important; height: 15px !important}
-	.uk-button-top{ position: relative;right:5px; bottom: 6px}
+	.uk-field-search-top{ width: 90%; font-size: 12px !important; text-align: left; padding: 10px !important; line-height: 15px !important; height: 15px !important}
+	.uk-button-top{ bottom: 6px}
 	/* .uk-button-top{ position: relative; left:175px; bottom : 23px} */
 
 /* Tablet and bigger */

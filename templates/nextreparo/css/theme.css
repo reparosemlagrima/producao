@@ -11539,6 +11539,7 @@ body {
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  height: 70px;
 }
 @media (max-width: 767px) {
   .tm-navbar {
@@ -11627,7 +11628,7 @@ body {
   justify-content: center;
 }
 .tm-nav-logo {
-  width: 300px;
+  width: 30%;
 }
 .tm-navbar-center .tm-nav {
   margin-top: 25px;
