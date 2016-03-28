@@ -72,7 +72,7 @@ margin-left: 20px;
 }
 .newlogo-top-a{ position: relative; margin: 0 auto}
 
-.top-menu{  background-color: rgb(0, 175, 243);   margin-top:0px;  padding: 15px 0;  }
+.top-menu{  background-color: rgb(0, 175, 243);   margin-top:0px;  height: 60px;  }
 
 .top-menu a{ color: #fff; font-size: 14px; font-weight: 500; text-transform: uppercase;}
 .top-menu a i{ margin-right: 5px; font-size: 18px}
