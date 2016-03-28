@@ -95,3 +95,4 @@
 2016-02-27 18:19:49 - PHP Notice:  Undefined index: route in C:\xampp\htdocs\reparosemlagrima\loja\index.php on line 152
 2016-02-27 18:20:20 - PHP Notice:  Undefined index: route in Unknown on line 0
 >>>>>>> d1e0554ce5cbb4c057e9a90b6edf428733811219
+2016-03-22 20:25:13 - PHP Notice:  Undefined variable: entry_export in C:\xampp\htdocs\reparosemlagrima\loja\admin\view\template\tool\backup.tpl on line 43

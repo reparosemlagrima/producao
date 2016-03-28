@@ -2234,7 +2234,8 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   padding: 0 10px;
   line-height: 40px;
   /* 2 */
-  color: #565758;
+  color: rgb(0, 175, 243);
+  /* color: #565758; */
   font-size: 14px;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -11522,6 +11523,10 @@ body {
 .tm-navbar-transparent .tm-logo img:not(.tm-logo-sticky) {
   display: none;
 }
+.tm-logo{
+  margin-top: 25px;
+}
+
 .tm-navbar {
   position: relative;
   z-index: 2;

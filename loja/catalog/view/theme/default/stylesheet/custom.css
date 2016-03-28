@@ -28,7 +28,9 @@
 
 /* navbar - icones - cart - */
 #search {
-	min-width: 80%; 
+	min-width: 80%;
+	top: 15px;
+	height: 10px;
 	
 }
 #search .btn-lg{
@@ -178,8 +180,11 @@ div.container.shadow {
 	min-height: 900px !important;
 }
 #logo{ margin: 0 !important}
-#logo img{ margin: 5px auto 5px 0; width: 110px;}
-.position-carrinho .pull-right{ position: relative; top: 25px}
+.col-sm-3{ height: 70px}
+#logo img{ margin: 20px auto 5px 0; width: 180px;}
+.position-carrinho .pull-right{ position: relative; top: 15px}
+
+
 
 /* Slide show home*/
 

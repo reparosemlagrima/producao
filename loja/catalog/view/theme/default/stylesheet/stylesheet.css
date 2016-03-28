@@ -193,11 +193,12 @@ div.required .control-label:before {
 }
 /* menu */
 #menu {
-	background-color: #0072CB;
+	background-color: rgb(0, 175, 243);/* #0072CB; */
 	/*background-image: linear-gradient(to bottom, rgba(131, 131, 131, 0.86), rgb(0, 0, 0));*/
 	background-repeat: repeat-x;
 	border-color: #1f90bb #1f90bb #145e7a;
-	min-height: 60px;
+	min-height: 55px;
+	height: 55px;
 }
 #menu .nav > li > a {
 	color: #fff;

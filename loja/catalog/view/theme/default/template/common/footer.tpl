@@ -41,7 +41,8 @@
        </div>
      </div>
      <hr>
-
+      <hr>
+      <hr>
    </div>
  </footer>
  <div class="container">
