@@ -14,4 +14,4 @@ $_['text_account']      = 'Minha conta';
 $_['text_order']        = 'Histórico de pedidos';
 $_['text_wishlist']     = 'Lista de desejos';
 $_['text_newsletter']   = 'Informativo';
-$_['text_powered']      = ' %s &copy; %s <span class="text-power-by">Desenvolvido por <a href="http://www.next4.com.br" target="_blank">Agência Next4</a></span>';
+$_['text_powered']      = '%s &copy; %s';
