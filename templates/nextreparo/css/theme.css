@@ -11544,7 +11544,7 @@ body {
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  height: 70px;
+  height: 101px;
 }
 @media (max-width: 767px) {
   .tm-navbar {
