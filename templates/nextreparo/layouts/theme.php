@@ -296,7 +296,7 @@ include($this['path']->path('layouts:theme.config.php'));
         <?php endif; ?>
 
         <?php if ($this['widgets']->count('bottom-e')) : ?>
-        <div id="tm-bottom-e" class="   uk-block <?php echo $classes['block.bottom-e']; ?>" <?php echo $styles['block.bottom-e']; ?>>
+        <div id="tm-bottom-e" class="rodape_mapasite uk-block <?php echo $classes['block.bottom-e']; ?>" <?php echo $styles['block.bottom-e']; ?>>
 
             <div class="uk-container uk-container-center">
 
