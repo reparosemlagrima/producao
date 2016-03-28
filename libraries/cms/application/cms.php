@@ -166,7 +166,7 @@ class JApplicationCms extends JApplicationWeb
 		//require_once(DIR_SYSTEM . 'startup.php');
 		require_once($_SERVER['DOCUMENT_ROOT'].'/reparosemlagrima/loja/system/startup.php');
 		$session_loja = new Session();
-	    */
+		*/
 	}
 
 	/**
