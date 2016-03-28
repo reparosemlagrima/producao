@@ -11656,7 +11656,7 @@ body {
   }
 }
 .tm-block-footer {
-  padding: 20px 0;
+  height: 39px;
   background-color: #fff;
 }
 .tm-block-footer .tm-footer {
