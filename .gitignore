@@ -1,2 +1,4 @@
 .idea/*
 .idea*
+loja/system/storage/cache/**/*
+media/widgetkit/**/*
