@@ -305,7 +305,7 @@ include($this['path']->path('layouts:theme.config.php'));
                 </section>
 
             </div>
-
+            <span class="line_bottom"></span>
         </div>
         <?php endif; ?>
 
