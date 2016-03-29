@@ -93,6 +93,7 @@ margin-left: 20px;
 	font-size: 14px !important;
 	border-color: #CCCCCC;
 	color: #9A98A3;
+	padding: 9px !important;
 }
 
 #search_topo .uk-box-search-top form .uk-field-search-top::-webkit-input-placeholder {
