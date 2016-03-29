@@ -99,6 +99,9 @@ margin-left: 20px;
 	font-weight: 300;
 	font-size: 14px !important;
 	color: #9A98A3;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
 }
 
 #search_topo .uk-box-search-top form .uk-field-search-top:-moz-placeholder {
