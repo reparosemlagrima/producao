@@ -130,7 +130,7 @@ margin-left: 20px;
 
 .rodape_mapasite{
   background-color: #00AEF3;
-  border-top: 4px solid #1C99DC;
+  border-top: 3px solid #1C99DC;
   padding-bottom: 20px;
 }
 
@@ -152,6 +152,14 @@ margin-left: 20px;
   display: block;
 }
 
+.rodape_mapasite > div{
+  padding-top: 40px;
+  padding-bottom: 12px;
+}
+
+.rodape_mapasite .uk-block-menu1, .rodape_mapasite .uk-block-menu2{
+  padding: 0;
+}
 
 /*
  * Circle Chart
