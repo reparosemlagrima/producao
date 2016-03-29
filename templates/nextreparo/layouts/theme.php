@@ -55,7 +55,7 @@ include($this['path']->path('layouts:theme.config.php'));
 					<?php endif; ?>
 
 					<?php if ($this['widgets']->count('menu')) : ?>
-					<div class="tm-nav uk-hidden-small">
+					<div class="tm-nav uk-hidden-small" id="menu_topo">
 						<?php echo $this['widgets']->render('menu'); ?>
 					</div>
 					<?php endif; ?>
