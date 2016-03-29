@@ -160,6 +160,34 @@ margin-left: 20px;
 	left: -33px;
 }
 
+.menu_principal div{
+	height: 100%;
+}
+
+.menu_principal .uk-subnav-line .icon_menu{
+	height: 22px;
+	width: 28px;
+	position: absolute;
+	top: 118px;
+	left: 223px;
+	background-color: red;
+	background-repeat: no-repeat;
+}
+
+.menu_principal .uk-subnav-line{
+	height: 60px;
+}
+
+.menu_principal .uk-subnav-line li{
+	height: 60px;
+	line-height: 60px;
+}
+
+.menu_principal .uk-subnav-line a{
+	font-weight: 400;
+	font-size: 18px;
+}
+
 .uk-block-bg-menu_black{ background-color: #000; color: #fff;}
 .uk-block-bg-menu_black .rky-social-icon-footer{ text-align: center;}
 .uk-block-bg-menu_black .uk-subnav{ display: inline-block;}
