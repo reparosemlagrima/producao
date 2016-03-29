@@ -49,7 +49,7 @@ include($this['path']->path('layouts:theme.config.php'));
 					<?php endif; ?>
 
 					<?php if ($this['widgets']->count('search-top')) : ?>
-						<div class="uk-container uk-container-center">
+						<div class="uk-container uk-container-center" id="search_topo">
 							<?php echo $this['widgets']->render('search-top'); ?>
 						</div>
 					<?php endif; ?>

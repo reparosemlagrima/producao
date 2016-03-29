@@ -45,12 +45,13 @@ margin-left: 20px;
 #logo_site{
 	height: 66px;
 	width: 342px;
-	position: absolute;
-	top: 15px;
-	left: 11px;
-	background-image: url('/reparosemlagrima/images/logo/logo_interno.png');
+	float: left;
+	position: relative;
+	top: 6px;
+	left: 35px;
+	background-image: url('http://localhost/reparosemlagrima/images/logo/logo_interno2.png');
 	background-position: -7px -1px;
-	background-size: 362px;
+	background-size: 330px;
 	background-repeat: no-repeat;
 }
 
@@ -58,6 +59,69 @@ margin-left: 20px;
 	margin: 0;
 	width: 100%;
 	height: 100%;
+}
+
+#search_topo{
+	float: left;
+	max-width: 440px;
+	width: 100%;
+	height: 40px;
+	margin: -8px 0 0 -136px;
+	padding: 0;
+	position: relative;
+}
+
+#search_topo .uk-box-search-top{
+	top: 0;
+	width: 100%;
+	height: 100%;
+	float: none;
+}
+
+#search_topo .uk-box-search-top form{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#search_topo .uk-box-search-top form .uk-field-search-top{
+	width: 100%;
+	height: 40px !important;
+	margin: 0;
+	box-sizing: border-box;
+	font-weight: 300;
+	font-size: 14px !important;
+	border-color: #CCCCCC;
+	color: #9A98A3;
+}
+
+#search_topo .uk-box-search-top form .uk-field-search-top::-webkit-input-placeholder {
+	font-weight: 300;
+	font-size: 14px !important;
+	color: #9A98A3;
+}
+
+#search_topo .uk-box-search-top form .uk-field-search-top:-moz-placeholder {
+	font-weight: 300;
+	font-size: 14px !important;
+	color: #9A98A3;
+}
+
+#search_topo .uk-box-search-top form .uk-field-search-top::-moz-placeholder {
+	font-weight: 300;
+	font-size: 14px !important;
+	color: #9A98A3;
+}
+
+#search_topo .uk-box-search-top form .uk-field-search-top:-ms-input-placeholder {  
+	font-weight: 300;
+	font-size: 14px !important;
+	color: #9A98A3;
+}
+
+#search_topo .uk-box-search-top form .uk-icon-search{
+	font-size: 14px;
+	margin-left: 3px;
 }
 
 .uk-block-bg-menu_black{ background-color: #000; color: #fff;}
