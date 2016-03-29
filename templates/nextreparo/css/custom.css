@@ -128,8 +128,16 @@ margin-left: 20px;
 	margin-left: 3px;
 }
 
-#menu_topo{
-	color: #2773CB;
+#menu_topo .uk-navbar-nav li:first-of-type{
+	border-right: 1px solid #CCCCCC;	
+}
+
+#menu_topo .uk-navbar-nav > li > a{
+	color: #1960B3;
+	height: 13px;
+	line-height: 13px;
+	letter-spacing: 0;
+	text-transform: none;
 }
 
 .uk-block-bg-menu_black{ background-color: #000; color: #fff;}
