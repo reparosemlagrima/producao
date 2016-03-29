@@ -151,6 +151,15 @@ margin-left: 20px;
 	padding: 0 5px 0 4px;
 }
 
+#loja_menu_topo{
+	position: absolute;
+	height: 14px;
+	width: 14px;
+	background-color: rebeccapurple;
+	top: -1px;
+	left: -33px;
+}
+
 .uk-block-bg-menu_black{ background-color: #000; color: #fff;}
 .uk-block-bg-menu_black .rky-social-icon-footer{ text-align: center;}
 .uk-block-bg-menu_black .uk-subnav{ display: inline-block;}
