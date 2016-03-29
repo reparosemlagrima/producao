@@ -65,8 +65,10 @@ include($this['path']->path('layouts:theme.config.php'));
 					<?php endif; ?>
 
 					<?php if ($this['widgets']->count('logo-small')) : ?>
-					<div class="uk-navbar-content uk-navbar-center uk-visible-small">
-						<a class="uk-responsive-width uk-responsive-height" href="<?php echo $this['config']->get('site_url'); ?>"><?php echo $this['widgets']->render('logo-small'); ?></a>
+					<div class="uk-navbar-content uk-navbar-center uk-visible-small" id="logo_responsivo">
+						<a class="uk-responsive-width uk-responsive-height" href="<?php echo $this['config']->get('site_url'); ?>">
+							<!-- <?php //echo $this['widgets']->render('logo-small'); ?> -->
+						</a>
 					</div>
 					<?php endif; ?>
 
