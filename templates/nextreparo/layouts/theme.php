@@ -36,13 +36,15 @@ include($this['path']->path('layouts:theme.config.php'));
 
 		<?php if ($this['widgets']->count('logo + menu')) : ?>
 		 <div class="tm-navbar <?php echo $navbar; ?>" <?php echo $sticky; ?>>
-			<div class="uk-container uk-container-center">
+			<div class="uk-container uk-container-center" id="topo_site">
 
 				<nav class="tm-navbar-container">
 
 					<?php if ($this['widgets']->count('logo')) : ?>
-					<div class="tm-nav-logo uk-hidden-small">
-						<a class="tm-logo uk-navbar-brand uk-responsive-width uk-responsive-height" href="<?php echo $this['config']->get('site_url'); ?>"><?php echo $this['widgets']->render('logo'); ?></a>
+					<div class="tm-nav-logo uk-hidden-small" id="logo_site">
+						<a class="tm-logo uk-navbar-brand uk-responsive-width uk-responsive-height" href="<?php echo $this['config']->get('site_url'); ?>">
+							<!--<?php //echo $this['widgets']->render('logo'); ?>-->
+						</a>
 					</div>
 					<?php endif; ?>
 

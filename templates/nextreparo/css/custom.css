@@ -35,6 +35,31 @@ margin-left: 20px;
 
 .tm-navbar-center [class*='tm-logo'] { transform: scale(1.2); }
 
+#topo_site{
+	padding: 0;
+	position: relative;
+	height: 101px;
+	max-width: 1350px;
+}
+
+#logo_site{
+	height: 66px;
+	width: 342px;
+	position: absolute;
+	top: 15px;
+	left: 11px;
+	background-image: url('/reparosemlagrima/images/logo/logo_interno.png');
+	background-position: -7px -1px;
+	background-size: 362px;
+	background-repeat: no-repeat;
+}
+
+#logo_site .tm-logo{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
 .uk-block-bg-menu_black{ background-color: #000; color: #fff;}
 .uk-block-bg-menu_black .rky-social-icon-footer{ text-align: center;}
 .uk-block-bg-menu_black .uk-subnav{ display: inline-block;}
