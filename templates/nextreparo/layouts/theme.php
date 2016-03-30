@@ -42,7 +42,7 @@ include($this['path']->path('layouts:theme.config.php'));
 
 					<?php if ($this['widgets']->count('logo')) : ?>
 					<div class="tm-nav-logo uk-hidden-small" id="logo_site">
-						<a class="tm-logo uk-navbar-brand uk-responsive-width uk-responsive-height" href="<?php echo $this['config']->get('site_url'); ?>">
+						<a class="tm-logo uk-navbar-brand uk-responsive-width uk-responsive-height" href="<?php echo $this['config']->get('site_url'); ?>" title="Reparo Sem Lagrima">
 							<!--<?php //echo $this['widgets']->render('logo'); ?>-->
 						</a>
 					</div>
@@ -79,34 +79,7 @@ include($this['path']->path('layouts:theme.config.php'));
 				 <div class="top-menu menu_principal" id="top-menu">
 					 <div class="tm-toolbar uk-clearfix uk-hidden-small uk-hidden-medium">
 						 <div class="uk-container uk-container-center">
-							<!-- <?php //echo $this['widgets']->render('top-menu'); ?> -->
-							<!-- MENU NÃO ENCONTRADO -->
-							<nav class="">
-								<div class="new-menu-center uk-panel">
-									<ul class="uk-subnav-line">
-										<li>
-											<a href="/reparosemlagrima" title="Home">
-												<em class="icon_menu icon_menuhome"></em> Home
-											</a>
-										</li>
-										<li>
-											<a href="/reparosemlagrima/tutorial-interno" title="Tutorial">
-												<em class="icon_menu icon_menututorial"></em> Tutorial
-											</a>
-										</li>
-										<li>
-											<a href="/reparosemlagrima/forum-reparo" title="Forum">
-												<em class="icon_menu icon_menuforum"></em> Forum
-											</a>
-										</li>
-										<li>
-											<a href="/reparosemlagrima/loja" title="Loja">
-												<em class="icon_menu icon_menuloja"></em>Loja
-											</a>
-										</li>
-									</ul>
-								</div>
-							</nav>
+							<?php echo $this['widgets']->render('top-menu'); ?>
 						 </div>
 					 </div>
 				 </div>
