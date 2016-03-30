@@ -40,93 +40,117 @@
 </head>
 <body class="<?php echo $class; ?>">
 <!--nav id="top">
-  <div class="container">
-    <?php echo $currency; ?>
-    <?php echo $language; ?>
-    <div id="top-links" class="nav pull-right">
-      <ul class="list-inline">
-        <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
-        <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <?php if ($logged) { ?>
-            <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
-            <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-            <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
-            <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
-            <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
-            <?php } else { ?>
-            <li><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
-            <li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a></li>
-            <?php } ?>
-          </ul>
-        </li>
-        <li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
-        <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
-        <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
-      </ul>
-    </div>
-  </div>
+	<div class="container">
+		<?php echo $currency; ?>
+		<?php echo $language; ?>
+		<div id="top-links" class="nav pull-right">
+			<ul class="list-inline">
+				<li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+				<li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
+					<ul class="dropdown-menu dropdown-menu-right">
+						<?php if ($logged) { ?>
+						<li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
+						<li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
+						<li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
+						<li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
+						<li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
+						<?php } else { ?>
+						<li><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
+						<li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a></li>
+						<?php } ?>
+					</ul>
+				</li>
+				<li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
+				<li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
+				<li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+			</ul>
+		</div>
+	</div>
 </nav -->
 <header>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-3">
-        <div id="logo">
-          <?php if ($logo) { ?>
-          <a href="/reparosemlagrima<?php // echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
-          <?php } else { ?>
-          <h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
-          <?php } ?>
-        </div>
-      </div>
-      <div class="col-sm-6"><?php echo $search; ?>
-      </div>
-      <div class="col-sm-3 position-carrinho"><?php // echo $cart; ?>
-        <div class="pull-right">
-            <div id="cart">
-                <a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i></a>
-            </div>
-            <div style="height: 100%; line-height: 3; display: inline-block;">
-              <a href="<?php echo $register; ?>"><?php echo $text_register; ?></a> | <a href="<?php echo $login; ?>"><?php echo $text_login; ?></a>
-            </div>
-        </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<div id="logo">
+					<?php if ($logo) { ?>
+					<a href="/reparosemlagrima<?php // echo $home; ?>" title="Reparo Sem Lagrima">
+						<!--<img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" />-->
+					</a>
+					<?php } else { ?>
+					<h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
+					<?php } ?>
+				</div>
+			</div>
+			<div class="col-sm-6"><?php echo $search; ?>
+			</div>
+			<div class="col-sm-3 position-carrinho">
+				<?php // echo $cart; ?>
+				<div class="pull-left">
+						<div id="cart">
+							<a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>">
+								<!--<i class="fa fa-shopping-cart"></i>-->
+							</a>
+						</div>
+						<div style="height: 100%; line-height: 3; display: inline-block;">
+							<a href="<?php echo $register; ?>"><?php echo $text_register; ?></a> | <a href="<?php echo $login; ?>"><?php echo $text_login; ?></a>
+						</div>
+				</div>
 
-      </div>
-    </div>
-  </div>
+			</div>
+		</div>
+	</div>
 </header>
 <?php if ($categories) { ?>
 <div class="" style="width: 100%;">
-  <nav id="menu" class="navbar">
-    <div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_category; ?></span>
-      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
-    </div>
-    <div class="container navbar-ex1-collapse">
-      <ul class="nav navbar-nav">
-        <!--
-        <?php foreach ($categories as $category) { ?>
-        <?php if ($category['children']) { ?>
-        <li class="dropdown"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?></a>
-          <div class="dropdown-menu">
-            <div class="dropdown-inner">
-              <?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
-              <ul class="list-unstyled">
-                <?php foreach ($children as $child) { ?>
-                <li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a></li>
-                <?php } ?>
-              </ul>
-              <?php } ?>
-            </div>
-            <a href="<?php echo $category['href']; ?>" class="see-all"><?php echo $text_all; ?> <?php echo $category['name']; ?></a> </div>
-        </li>
-        <?php } else { ?>
-        <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-        <?php } ?>
-        <?php } ?>
-        -->
-        <li><a href="<?php echo 'http://localhost/reparosemlagrima/tutorial-interno'; ?>"><?php echo 'Tutorial'; ?></a></li>
-      </ul>
-    </div>
-  </nav>
+	<nav id="menu" class="navbar">
+		<div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_category; ?></span>
+			<button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+		</div>
+		<div class="container navbar-ex1-collapse menu_principal">
+			<ul>
+				<!--
+				<?php foreach ($categories as $category) { ?>
+				<?php if ($category['children']) { ?>
+				<li class="dropdown"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?></a>
+					<div class="dropdown-menu">
+						<div class="dropdown-inner">
+							<?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
+							<ul class="list-unstyled">
+								<?php foreach ($children as $child) { ?>
+								<li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a></li>
+								<?php } ?>
+							</ul>
+							<?php } ?>
+						</div>
+						<a href="<?php echo $category['href']; ?>" class="see-all"><?php echo $text_all; ?> <?php echo $category['name']; ?></a> </div>
+				</li>
+				<?php } else { ?>
+				<li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+				<?php } ?>
+				<?php } ?>
+				-->
+				<li>
+					<a href="/reparosemlagrima" title="Home">
+						<em class="icon_menu icon_menuhome"></em> Home
+					</a>
+				</li>
+				<li>
+					<a href="/reparosemlagrima/tutorial-interno" title="Tutorial">
+						<em class="icon_menu icon_menututorial"></em> Tutorial
+					</a>
+				</li>
+				<li>
+					<a href="/reparosemlagrima/forum-reparo" title="Forum">
+						<em class="icon_menu icon_menuforum"></em> Forum
+					</a>
+				</li>
+				<li>
+					<a href="/reparosemlagrima/loja" title="Loja">
+						<em class="icon_menu icon_menuloja"></em>Loja
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 </div>
 <?php } ?>
