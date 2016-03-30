@@ -761,3 +761,131 @@ h2.price {
 .box-pwby{ margin-top: 5px}
 .text-power-by{ float: right; color: rgba(51, 51, 51, 0.34); font-size: 12px}
 .text-power-by a{ color:rgba(0, 112, 203, 0.53) }
+
+/*
+ * 
+ * ITENS NOVOS CRIADOS - MANUTENÇÃO MARIANA LINO
+ *
+ */
+
+ header{
+	position: relative;
+	height: 99px;
+	max-width: 1350px;
+	margin: 0 auto;
+ }
+ 
+ header div.container, header div.row{
+ 	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+ }
+
+ #logo{
+	height: 48px;
+    width: 318px;
+	float: left;
+	position: relative;
+	top: 22px;
+	left: 20px;
+	background-image: url('http://localhost/reparosemlagrima/images/logo/logo_interno.png');
+	background-position: -7px -1px;
+	background-size: 330px;
+	background-repeat: no-repeat;
+}
+
+#logo a{
+	display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#search .input-group-btn i{
+	margin-left: 4px;
+}
+
+.position-carrinho .pull-left{
+	margin-top: 15px;
+	margin-left: 25px;
+}
+
+.position-carrinho .pull-left > div{
+	margin: 10px 0 0 57px;
+}
+
+.position-carrinho .pull-left a{
+	color: #00AFF3;
+}
+
+.position-carrinho .pull-left a:hover{
+	color: #0074C7;
+}
+
+#menu{
+	width: 100%;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+}
+
+#menu .menu_principal{
+	list-style: none;
+	padding: 0 !important;
+	margin: 0 auto;
+	height: 60px;
+	max-width: 1100px;
+	width: 100%;
+}
+
+.menu_principal li, .menu_principal li a, .menu_principal li a em{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.menu_principal li{
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	width: 25%;
+	text-align: center;
+	position: relative;
+}
+
+.menu_principal li a{
+	font-weight: 300;
+	font-size: 17px;
+	position: relative;
+	padding-left: 10px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.menu_principal .icon_menu{
+	height: 24px;
+	width: 29px;
+	position: absolute;
+	top: -3px;
+	left: -25px;
+	background-repeat: no-repeat;
+	background-image: url("/reparosemlagrima/images/icons/icons_menu2.png");
+}
+
+.menu_principal .icon_menuhome{
+	background-position: 0 0;
+}
+
+.menu_principal .icon_menututorial{
+	background-position: -29px 0px;
+}
+
+.menu_principal .icon_menuforum{
+	background-position: -58px 0px;
+}
+
+.menu_principal .icon_menuloja{
+	background-position: -87px 0px;
+}
