@@ -81,7 +81,7 @@ include($this['path']->path('layouts:theme.config.php'));
 						 <div class="uk-container uk-container-center">
 							<!-- <?php //echo $this['widgets']->render('top-menu'); ?> -->
 							<!-- MENU NÃO ENCONTRADO -->
-							<div class="">
+							<nav class="">
 								<div class="new-menu-center uk-panel">
 									<ul class="uk-subnav-line">
 										<li>
@@ -106,7 +106,7 @@ include($this['path']->path('layouts:theme.config.php'));
 										</li>
 									</ul>
 								</div>
-							</div>
+							</nav>
 						 </div>
 					 </div>
 				 </div>
