@@ -153,25 +153,16 @@ margin-left: 20px;
 
 #loja_menu_topo{
 	position: absolute;
-	height: 14px;
-	width: 14px;
-	background-color: rebeccapurple;
-	top: -1px;
-	left: -33px;
+	height: 18px;
+	width: 17px;
+	top: -2px;
+	left: -34px;
+	background-image: url("/reparosemlagrima/images/icons/icons_menu2.png");
+	background-position: -116px 0;
 }
 
 .menu_principal div{
 	height: 100%;
-}
-
-.menu_principal .uk-subnav-line .icon_menu{
-	height: 22px;
-	width: 28px;
-	position: absolute;
-	top: 118px;
-	left: 223px;
-	background-color: red;
-	background-repeat: no-repeat;
 }
 
 .menu_principal .uk-subnav-line{
@@ -181,11 +172,40 @@ margin-left: 20px;
 .menu_principal .uk-subnav-line li{
 	height: 60px;
 	line-height: 60px;
+	width: 22%;
 }
 
 .menu_principal .uk-subnav-line a{
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 18px;
+	position: relative;
+	padding-left: 10px;
+}
+
+.menu_principal .uk-subnav-line .icon_menu{
+	height: 24px;
+	width: 29px;
+	position: absolute;
+	top: -3px;
+	left: -25px;
+	background-repeat: no-repeat;
+	background-image: url("/reparosemlagrima/images/icons/icons_menu2.png");
+}
+
+.menu_principal .uk-subnav-line .icon_menuhome{
+	background-position: 0 0;
+}
+
+.menu_principal .uk-subnav-line .icon_menututorial{
+	background-position: -29px 0px;
+}
+
+.menu_principal .uk-subnav-line .icon_menuforum{
+	background-position: -58px 0px;
+}
+
+.menu_principal .uk-subnav-line .icon_menuloja{
+	background-position: -87px 0px;
 }
 
 .uk-block-bg-menu_black{ background-color: #000; color: #fff;}
