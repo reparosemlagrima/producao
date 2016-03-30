@@ -814,11 +814,11 @@ h2.price {
 	margin: 10px 0 0 57px;
 }
 
-.position-carrinho .pull-left a{
+.position-carrinho .pull-left div:not(#cart) a{
 	color: #00AFF3;
 }
 
-.position-carrinho .pull-left a:hover{
+.position-carrinho .pull-left div:not(#cart) a:hover{
 	color: #0074C7;
 }
 
