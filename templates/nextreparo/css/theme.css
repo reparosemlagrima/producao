@@ -2235,7 +2235,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 	padding: 0 10px;
 	line-height: 40px;
 	/* 2 */
-	color: rgb(0, 175, 243);
+	color: #00AFF3;
 	/* color: #565758; */
 	font-size: 14px;
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
@@ -2243,12 +2243,15 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 	position: relative;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	-webkit-transition: all 0.15s ease-in-out;
+	/*-webkit-transition: all 0.15s ease-in-out;
 	transition: all 0.15s ease-in-out;
-	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);*/
+}
+.uk-navbar-nav > li > a:hover{
+	text-decoration: none !important;
 }
 .uk-navbar-nav > li > a::after {
-	content: '';
+	/*content: '';
 	position: absolute;
 	bottom: 2px;
 	right: 10px;
@@ -2259,7 +2262,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
 	transition: height 0.3s, opacity 0.3s, transform 0.3s;
 	-webkit-transform: translateY(-10px);
-	transform: translateY(-10px);
+	transform: translateY(-10px);*/
 }
 .uk-navbar-nav > li > a:hover::after {
 	height: 2px;

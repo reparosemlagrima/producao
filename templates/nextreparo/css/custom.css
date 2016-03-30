@@ -322,11 +322,11 @@ small.similar-smallinfo .countnum{
 }
 
 #logo_site{
-	height: 66px;
-	width: 342px;
+	height: 48px;
+    width: 318px;
 	float: left;
 	position: relative;
-	top: 4px;
+	top: -5px;
 	left: 35px;
 	background-image: url('http://localhost/reparosemlagrima/images/logo/logo_interno.png');
 	background-position: -7px -1px;
@@ -349,7 +349,7 @@ small.similar-smallinfo .countnum{
 	max-width: 440px;
 	width: 100%;
 	height: 40px;
-	margin: -12px auto 0 111px;
+	margin: -12px auto 0 135px;
 	padding: 0;
 	position: relative;
 }
@@ -424,7 +424,7 @@ small.similar-smallinfo .countnum{
 }
 
 #menu_topo .uk-navbar-nav > li > a{
-	color: #1960B3;
+	color: #00AFF3;
 	height: 13px;
 	line-height: 13px;
 	letter-spacing: 0;
@@ -432,12 +432,35 @@ small.similar-smallinfo .countnum{
 	padding: 0 5px 0 4px;
 }
 
+#menu_topo .uk-navbar-nav > li > a:hover{
+	color: #0074C7;
+}
+
 #loja_menu_topo{
 	position: absolute;
+	height: 33px;
+	width: 33px;
+	top: -13px;
+	left: -43px;
+	transition: border-color 0.2s ease 0s;
+	border: 1px solid transparent;
+	display: inline-block;
+	border-radius: 22px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#loja_menu_topo:hover {
+	border: 1px solid #00AFF3;
+}
+
+
+#loja_menu_topo a{
+	display: block;
+	margin-top: 10px;
+	margin-left: 8px;
 	height: 18px;
 	width: 17px;
-	top: -2px;
-	left: -34px;
 	background-image: url("/reparosemlagrima/images/icons/icons_menu2.png");
 	background-position: -116px 0;
 }
