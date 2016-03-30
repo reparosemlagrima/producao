@@ -80,11 +80,11 @@ include($this['path']->path('layouts:theme.config.php'));
 			</div>
 			 <?php if ($this['widgets']->count('top-menu')) : ?>
 				 <div class="top-menu menu_principal" id="top-menu">
-					 <div class="tm-toolbar uk-clearfix uk-hidden-small uk-hidden-medium">
-						 <div class="uk-container uk-container-center">
+					<!--<div class="tm-toolbar uk-clearfix uk-hidden-small uk-hidden-medium">
+						 <div class="uk-container uk-container-center">-->
 							<?php echo $this['widgets']->render('top-menu'); ?>
-						 </div>
-					 </div>
+					<!--	</div>
+					 </div>-->
 				 </div>
 			 <?php endif; ?>
 		</div>
