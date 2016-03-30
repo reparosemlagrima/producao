@@ -938,3 +938,45 @@ h2.price {
 .menu_principal .icon_menuloja{
 	background-position: -87px 0px;
 }
+
+footer{
+	background-color: #00AEF3;
+    border-top: 3px solid #1C99DC;
+    padding: 0 0 20px 0;
+    margin: 0;
+}
+
+footer .container{
+	padding-top: 40px;
+    padding-bottom: 12px;
+}
+
+footer .col-sm-3{
+	float: left;
+	display: inline;
+	width: 22.5%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	height: auto;
+}
+
+footer .line_bottom {
+	margin: 0 auto;
+	width: 1140px;
+	height: 2px;
+	background: #64C5F2;
+	display: block;
+}
+
+footer + div{
+	height: 39px;
+}
+
+footer + div p{
+	font-weight: 300;
+	line-height: 33px;
+	font-size: 13px;
+	letter-spacing: 0.4px;
+	margin: 0;
+}
