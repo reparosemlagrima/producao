@@ -1067,7 +1067,10 @@
             <div class="tab-pane" id="tab-image">
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-logo"><?php echo $entry_logo; ?></label>
-                <div class="col-sm-10"><a href="" id="thumb-logo" data-toggle="image" class="img-thumbnail"><img src="<?php echo $logo; ?>" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" /></a>
+                <div class="col-sm-10">
+                <!--<a href="" id="thumb-logo" data-toggle="image" class="img-thumbnail">
+                <img src="<?php echo $logo; ?>" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" /></a>-->
+                <p><strong>(Para alterar essa imagem é necessário mexer no código fonte.)</strong></p>
                   <input type="hidden" name="config_logo" value="<?php echo $config_logo; ?>" id="input-logo" />
                 </div>
               </div>
