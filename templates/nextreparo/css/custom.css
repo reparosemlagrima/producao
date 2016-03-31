@@ -650,6 +650,10 @@ small.similar-smallinfo .countnum{
 	letter-spacing: -0.2px;
 }
 
+.rodape_mapasite .uk-subnav > * > a:hover{
+	color: #DBF7FF;
+}
+
 .rodape_mapasite > .line_bottom{
 	margin: 0 auto;
 	width: 1140px;

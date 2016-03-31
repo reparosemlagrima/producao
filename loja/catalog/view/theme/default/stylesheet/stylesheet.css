@@ -997,6 +997,10 @@ footer .container .col-sm-3 a{
 	letter-spacing: -0.2px;
 }
 
+footer .container .col-sm-3 a:hover{
+	color: #DBF7FF;
+}
+
 footer .line_bottom {
 	margin: 0 auto;
 	width: 1140px;
