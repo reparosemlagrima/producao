@@ -3,16 +3,14 @@
 	<?php $width = count($category_images); ?>
 	<div class="boss-category-image" id="categorias_loja">
 		<?php if(!empty($heading_title)){ ?>
-		<div class="category-image-title"><h3><?php echo $heading_title ?></h3></div>
+			<div class="category-image-title"><h3><?php echo $heading_title ?></h3></div>
 		<?php } ?>
 		<div class="main-category">
-			<a href="http://localhost/reparosemlagrima/loja/ferramentas"></a>
-
-			<a href="http://localhost/reparosemlagrima/loja/pecas"></a>
-
+			<a href="http://localhost/reparosemlagrima/loja/ferramentas" title="Ferramentas"></a>
+			<a href="http://localhost/reparosemlagrima/loja/pecas" title="Peças"></a>
 			<br/>
-
-			
+			<a href="#" title="Desperdício Zero - Reciclar" id="banner_recicla"></a>
+			<br/>
 
 			<!--<?php $i = 1; ?>
 			<?php foreach ($category_images as $category_image) { ?>
@@ -55,46 +53,40 @@
 			<?php } ?>-->
 		</div>
 		<?php 
-		
-		$items = ceil(count($category_images) / 2);
-		if ($items > 1) : 
+			$items = ceil(count($category_images) / 2);
+			if ($items > 1) : 
 		?>
-		<div class="navBulletsWrapper">
-			<?php for ($i=1; $i <= $items; $i++) { ?>
-			<div class="" rel="<?php echo $i; ?>"><?php echo $i; ?></div>
-			<?php } ?>
-		</div>
+			<div class="navBulletsWrapper">
+				<?php for ($i=1; $i <= $items; $i++) { ?>
+					<div class="" rel="<?php echo $i; ?>"><?php echo $i; ?></div>
+				<?php } ?>
+			</div>
 		<?php endif; ?>
-		</div>
+	</div>
 
+	<script type="text/javascript"><!--
+	$(function() {
+		$('.isotope').isotope({
+			layoutMode: 'packery',
+			itemSelector: '.item'
+		});
 
+		var items = $('.store').length;
+		var width = ($('.store').width()+50) * items;
 
-
-
-<script type="text/javascript"><!--
-$(function() {
-  $('.isotope').isotope({
-    layoutMode: 'packery',
-    itemSelector: '.item'
-  });
-
-  var items = $('.store').length;
-  var width = ($('.store').width()+50) * items;
-
- $('.main-category').width(width);
- $('.navBulletsWrapper').find('div').first().addClass('active');
- $('.navBulletsWrapper').find('div').each(function(){
- 	$(this).bind('click', function(ev) {
- 		if (!$(this).hasClass('active')){
- 			ev.preventDefault();
- 			console.log($(this).index() * ($('.store').width()+50) );
- 			$('.main-category').css("transform","translateX("+$(this).index() * -($('.store').width()+50)+"px)");
- 			$('.navBulletsWrapper').find('.active').removeClass('active');
- 			$(this).addClass('active');
- 		}
- 	});
- });
-  
-});
+		$('.main-category').width(width);
+		$('.navBulletsWrapper').find('div').first().addClass('active');
+		$('.navBulletsWrapper').find('div').each(function(){
+			$(this).bind('click', function(ev) {
+				if (!$(this).hasClass('active')){
+					ev.preventDefault();
+					console.log($(this).index() * ($('.store').width()+50) );
+					$('.main-category').css("transform","translateX("+$(this).index() * -($('.store').width()+50)+"px)");
+					$('.navBulletsWrapper').find('.active').removeClass('active');
+					$(this).addClass('active');
+				}
+			});
+		});
+	});
 --></script>
 <?php } ?>
