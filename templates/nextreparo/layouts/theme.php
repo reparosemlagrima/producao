@@ -57,7 +57,7 @@ include($this['path']->path('layouts:theme.config.php'));
 					<?php if ($this['widgets']->count('menu')) : ?>
 					<div class="tm-nav uk-hidden-small" id="menu_topo">
 						<div id="loja_menu_topo">
-							<a href="/reparosemlagrima/loja" title="Loja"></a>
+							<a href="/reparosemlagrima/loja/index.php?route=checkout/cart" title="Loja"></a>
 						</div>
 						<?php echo $this['widgets']->render('menu'); ?>
 					</div>
