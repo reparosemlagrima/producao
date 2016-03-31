@@ -1,12 +1,20 @@
 <?php if(!empty($category_images)){ ?>
 
 	<?php $width = count($category_images); ?>
-	<div class="boss-category-image">
+	<div class="boss-category-image" id="categorias_loja">
 		<?php if(!empty($heading_title)){ ?>
 		<div class="category-image-title"><h3><?php echo $heading_title ?></h3></div>
 		<?php } ?>
-		<div class="main-category"  >
-			<?php $i = 1; ?>
+		<div class="main-category">
+			<a href="http://localhost/reparosemlagrima/loja/ferramentas"></a>
+
+			<a href="http://localhost/reparosemlagrima/loja/pecas"></a>
+
+			<br/>
+
+			
+
+			<!--<?php $i = 1; ?>
 			<?php foreach ($category_images as $category_image) { ?>
 			<?php 
 				if (!empty($category_image['image'])){
@@ -27,7 +35,7 @@
 					</h3>
 					<p><?php echo strip_tags($category_image['description']); ?></p>
 				-->
-			</div>
+			<!--</div>
 			</a>
 			<?php }else {?>
 			<a  href="<?php echo $category_image['href']; ?>">
@@ -40,11 +48,11 @@
 					</h3>
 					<p><?php echo strip_tags($category_image['description']); ?></p>
 				-->
-			</div>
+			<!--</div>
 			</a>
 
 			<?php } $i++; ?>
-			<?php } ?>
+			<?php } ?>-->
 		</div>
 		<?php 
 		

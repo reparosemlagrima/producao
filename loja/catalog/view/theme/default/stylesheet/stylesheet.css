@@ -794,6 +794,10 @@ header div.row{
 	padding: 0;
 }
 
+header + div{
+	margin: 20px 0 30px;
+}
+
 #logo{
 	height: 48px;
 	width: 318px;
@@ -1033,4 +1037,71 @@ footer + div p{
 	font-size: 13px;
 	letter-spacing: 0.4px;
 	margin: 0;
+}
+
+#categorias_loja{
+	max-width: 925px;
+	height: 350px;
+	position: relative;
+	left: 3px;
+	padding: 0;
+	margin: 0;
+}
+
+#categorias_loja > div{
+	width: 100% !important;
+	max-width: 100%;
+	height: 100%;
+}
+
+#categorias_loja > div > a{
+	display: block;
+	width: 100%;
+	max-width: 435px;
+	height: 100%;
+	position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all .2s;
+}
+
+#categorias_loja > div > a:first-of-type{
+	float: left;
+	background-image: url('/reparosemlagrima/loja/image/catalog/ferramentas-1.jpg');
+}
+
+#categorias_loja > div > a:last-of-type{
+	float: right;
+	background-image: url('/reparosemlagrima/loja/image/catalog/pecas-1.jpg');
+}
+
+#categorias_loja > div > a:hover:first-of-type{
+	float: left;
+	background-image: url('/reparosemlagrima/loja/image/catalog/ferramentas-2.jpg');
+}
+
+#categorias_loja > div > a:hover:last-of-type{
+	float: right;
+	background-image: url('/reparosemlagrima/loja/image/catalog/pecas-2.jpg');
+}
+
+.product-thumb a{
+	color: #00AEF3;
+}
+
+.product-thumb a:hover{
+	color: #1C99DC;
+}
+
+.product-thumb .button-group button{
+	background-color: #00AEF3;
+}
+
+.product-thumb .button-group button + button{
+	border-left: 1px solid #1C99DC;
+}
+
+.product-thumb .button-group button:hover{
+	color: #00AEF3;
 }
