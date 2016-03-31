@@ -307,9 +307,9 @@ include($this['path']->path('layouts:theme.config.php'));
 
 			<div class="uk-container uk-container-center">
 
-				<section class="<?php echo $classes['grid.bottom-e']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+				<!--<section class="<?php echo $classes['grid.bottom-e']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>-->
 					<?php echo $this['widgets']->render('bottom-e', array('layout'=>$this['config']->get('grid.bottom-e.layout'))); ?>
-				</section>
+				<!--</section>-->
 
 			</div>
 			<span class="line_bottom"></span>

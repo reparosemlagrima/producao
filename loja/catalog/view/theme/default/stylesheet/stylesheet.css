@@ -3,8 +3,8 @@ body {
 	color: #666;
 	font-size: 14px;
 	width: 100%;
-    line-height: 24px;
-    font-weight: 100;
+	line-height: 24px;
+	font-weight: 100;
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #444;
@@ -115,7 +115,7 @@ div.required .control-label:before {
 }
 #top .btn-link strong {
 	font-size: 14px;
-        line-height: 14px;
+		line-height: 14px;
 }
 #top-links {
 	padding-top: 6px;
@@ -726,21 +726,21 @@ h2.price {
 
 /* fixed colum left + content + right*/
 @media (min-width: 768px) {
-    #column-left  .product-layout .col-md-3 {
-       width: 100%;
-    }
+	#column-left  .product-layout .col-md-3 {
+	   width: 100%;
+	}
 
 	#column-left + #content .product-layout .col-md-3 {
-       width: 50%;
-    }
+	   width: 50%;
+	}
 
 	#column-left + #content + #column-right .product-layout .col-md-3 {
-       width: 100%;
-    }
+	   width: 100%;
+	}
 
-    #content + #column-right .product-layout .col-md-3 {
-       width: 100%;
-    }
+	#content + #column-right .product-layout .col-md-3 {
+	   width: 100%;
+	}
 }
 
 /* fixed product layouts used in left and right columns */
@@ -755,8 +755,8 @@ h2.price {
 
 /* Missing focus and border color to overwrite bootstrap */
 .btn-info:hover, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
-    background-image: none;
-    background-color: #df5c39;
+	background-image: none;
+	background-color: #df5c39;
 }
 .box-pwby{ margin-top: 5px}
 .text-power-by{ float: right; color: rgba(51, 51, 51, 0.34); font-size: 12px}
@@ -776,7 +776,7 @@ h2.price {
  }
  
  header div.container, header div.row{
- 	width: 100%;
+	width: 100%;
 	height: 100%;
 	padding: 0;
 	margin: 0;
@@ -784,7 +784,7 @@ h2.price {
 
  #logo{
 	height: 48px;
-    width: 318px;
+	width: 318px;
 	float: left;
 	position: relative;
 	top: 22px;
@@ -797,8 +797,8 @@ h2.price {
 
 #logo a{
 	display: block;
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 #search .input-group-btn i{
@@ -941,24 +941,60 @@ h2.price {
 
 footer{
 	background-color: #00AEF3;
-    border-top: 3px solid #1C99DC;
-    padding: 0 0 20px 0;
-    margin: 0;
+	border-top: 3px solid #1C99DC;
+	padding: 0 0 20px 0;
+	margin: 0;
 }
 
 footer .container{
-	padding-top: 40px;
-    padding-bottom: 12px;
+	padding-top: 35px;
+	padding-bottom: 16px;
+	max-width: 1200px;
+	width: 100%;
 }
 
-footer .col-sm-3{
+footer .container > div{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+footer .container .col-sm-3{
 	float: left;
-	display: inline;
-	width: 22.5%;
-	min-height: 1px;
+	width: 25%;
 	padding-right: 15px;
 	padding-left: 15px;
-	height: auto;
+	height: 100%;
+	max-width: 292px;
+}
+
+footer .container .col-sm-3:last-of-type{
+	padding-right: 0;
+}
+
+footer .container .col-sm-3 h5{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	letter-spacing: -0.4px;
+	line-height: 17px;
+	margin: 10px 0;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+footer .container .col-sm-3 li{
+	float: none;
+	width: 100%;
+	position: relative;
+}
+
+footer .container .col-sm-3 a{
+	color: #ADE9F9;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: -0.2px;
 }
 
 footer .line_bottom {
@@ -970,7 +1006,7 @@ footer .line_bottom {
 }
 
 footer + div{
-	height: 39px;
+	height: 40px;
 }
 
 footer + div p{
