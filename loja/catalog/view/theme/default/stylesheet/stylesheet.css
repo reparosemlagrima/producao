@@ -1100,8 +1100,7 @@ footer + div p{
 	background-image: url('/reparosemlagrima/loja/image/catalog/banner_reciclar.jpg');
 }
 
-body.common-home > div.container > div.row > div.content > h3{
-	color: red;
+h3#titulo_catalogo{
 	margin-top: 12px;
 }
 
