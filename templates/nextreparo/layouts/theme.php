@@ -260,6 +260,7 @@ include($this['path']->path('layouts:theme.config.php'));
 		</div>
 		<?php endif; ?>
 
+		<a href="/reparosemlagrima/recicla" title="Recicla" id="banner_recicla" target="_blank"></a>
 		<?php if ($this['widgets']->count('bottom-b')) : ?>
 		<!--<div id="tm-bottom-b" class="tm-block-bottom-b uk-block <?php echo $classes['block.bottom-b']; ?>" <?php echo $styles['block.bottom-b']; ?>>
 
@@ -303,7 +304,6 @@ include($this['path']->path('layouts:theme.config.php'));
 		<?php endif; ?>
 
 		<?php if ($this['widgets']->count('bottom-e')) : ?>
-		<a href="/reparosemlagrima/recicla" title="Recicla" id="banner_recicla" target="_blank"></a>
 		<div id="tm-bottom-e" class="rodape_mapasite uk-block <?php echo $classes['block.bottom-e']; ?>" <?php echo $styles['block.bottom-e']; ?>>
 
 			<div class="uk-container uk-container-center">
