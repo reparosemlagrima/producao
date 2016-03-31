@@ -99,55 +99,56 @@
 				</div>
 			</div>
 		</div>
-	</header>
-	<?php if ($categories) { ?>
-	<nav id="menu" class="navbar">
-		<!--<div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_category; ?></span>
-			<button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
-		</div>
-		<div class="container navbar-ex1-collapse menu_principal">-->
-		<ul class="menu_principal">
-			<!--
-			<?php foreach ($categories as $category) { ?>
-			<?php if ($category['children']) { ?>
-			<li class="dropdown"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?></a>
-				<div class="dropdown-menu">
-					<div class="dropdown-inner">
-						<?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
-						<ul class="list-unstyled">
-							<?php foreach ($children as $child) { ?>
-							<li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a></li>
+		<?php if ($categories) { ?>
+		<nav id="menu" class="navbar">
+			<!--<div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_category; ?></span>
+				<button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+			</div>
+			<div class="container navbar-ex1-collapse menu_principal">-->
+			<ul class="menu_principal">
+				<!--
+				<?php foreach ($categories as $category) { ?>
+				<?php if ($category['children']) { ?>
+				<li class="dropdown"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?></a>
+					<div class="dropdown-menu">
+						<div class="dropdown-inner">
+							<?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
+							<ul class="list-unstyled">
+								<?php foreach ($children as $child) { ?>
+								<li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a></li>
+								<?php } ?>
+							</ul>
 							<?php } ?>
-						</ul>
-						<?php } ?>
-					</div>
-					<a href="<?php echo $category['href']; ?>" class="see-all"><?php echo $text_all; ?> <?php echo $category['name']; ?></a> </div>
-			</li>
-			<?php } else { ?>
-			<li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-			<?php } ?>
-			<?php } ?>
-			-->
-			<li>
-				<a href="/reparosemlagrima" title="Home">
-					<em class="icon_menu icon_menuhome"></em> Home
-				</a>
-			</li>
-			<li>
-				<a href="/reparosemlagrima/tutorial-interno" title="Tutorial">
-					<em class="icon_menu icon_menututorial"></em> Tutorial
-				</a>
-			</li>
-			<li>
-				<a href="/reparosemlagrima/forum-reparo" title="Forum">
-					<em class="icon_menu icon_menuforum"></em> Forum
-				</a>
-			</li>
-			<li>
-				<a href="/reparosemlagrima/loja" title="Loja">
-					<em class="icon_menu icon_menuloja"></em> Loja
-				</a>
-			</li>
-		</ul>
-	</nav>
-	<?php } ?>
+						</div>
+						<a href="<?php echo $category['href']; ?>" class="see-all"><?php echo $text_all; ?> <?php echo $category['name']; ?></a> </div>
+				</li>
+				<?php } else { ?>
+				<li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+				<?php } ?>
+				<?php } ?>
+				-->
+				<li>
+					<a href="/reparosemlagrima" title="Home">
+						<em class="icon_menu icon_menuhome"></em> Home
+					</a>
+				</li>
+				<li>
+					<a href="/reparosemlagrima/tutorial-interno" title="Tutorial">
+						<em class="icon_menu icon_menututorial"></em> Tutorial
+					</a>
+				</li>
+				<li>
+					<a href="/reparosemlagrima/forum-reparo" title="Forum">
+						<em class="icon_menu icon_menuforum"></em> Forum
+					</a>
+				</li>
+				<li>
+					<a href="/reparosemlagrima/loja" title="Loja">
+						<em class="icon_menu icon_menuloja"></em> Loja
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<?php } ?>
+	</header>
+	

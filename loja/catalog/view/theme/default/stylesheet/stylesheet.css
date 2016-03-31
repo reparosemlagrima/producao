@@ -768,21 +768,33 @@ h2.price {
  *
  */
 
- header{
+header{
+	width: 100%;
+	height: 159px;
+	position: relative;
+	z-index: 999;
+}
+ 
+header div.container{
+	position: fixed;
+	top: 0;
+ 	background-color: #fff;
+	height: 99px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+ 
+header div.row{
 	position: relative;
 	height: 99px;
 	max-width: 1350px;
-	margin: 0 auto;
- }
- 
- header div.container, header div.row{
 	width: 100%;
-	height: 100%;
+	margin: 0 auto;
 	padding: 0;
-	margin: 0;
- }
+}
 
- #logo{
+#logo{
 	height: 48px;
 	width: 318px;
 	float: left;
@@ -823,6 +835,8 @@ h2.price {
 }
 
 #menu{
+	position: fixed;
+	top: 99px;
 	width: 100%;
 	height: 60px;
 	margin: 0;
