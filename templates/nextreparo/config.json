@@ -34,7 +34,7 @@
 			"panel": "uk-panel"
 		},
 		"bottom-e": {
-			"panel": "uk-panel uk-panel-header"
+			"panel": ""
 		},
 		"main-top": {
 			"panel": "uk-panel"
