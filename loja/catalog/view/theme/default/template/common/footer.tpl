@@ -1,3 +1,4 @@
+<a href="/reparosemlagrima/recicla" title="Recicla" id="banner_recicla" target="_blank"></a>
 <footer>
 	<div class="container">
 		<div>
