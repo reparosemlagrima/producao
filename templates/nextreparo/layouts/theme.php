@@ -261,17 +261,17 @@ include($this['path']->path('layouts:theme.config.php'));
 		<?php endif; ?>
 
 		<?php if ($this['widgets']->count('bottom-b')) : ?>
-		<div id="tm-bottom-b" class="tm-block-bottom-b uk-block <?php echo $classes['block.bottom-b']; ?>" <?php echo $styles['block.bottom-b']; ?>>
+		<!--<div id="tm-bottom-b" class="tm-block-bottom-b uk-block <?php echo $classes['block.bottom-b']; ?>" <?php echo $styles['block.bottom-b']; ?>>
 
 			<div class="uk-container uk-container-center">
 
-				<section class="<?php echo $classes['grid.bottom-b']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
-					<?php echo $this['widgets']->render('bottom-b', array('layout'=>$this['config']->get('grid.bottom-b.layout'))); ?>
+				<section class="<?php //echo $classes['grid.bottom-b']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+					<?php //echo $this['widgets']->render('bottom-b', array('layout'=>$this['config']->get('grid.bottom-b.layout'))); ?>
 				</section>
 
 			</div>
 
-		</div>
+		</div>-->
 		<?php endif; ?>
 
 		<?php if ($this['widgets']->count('bottom-c')) : ?>
@@ -303,6 +303,7 @@ include($this['path']->path('layouts:theme.config.php'));
 		<?php endif; ?>
 
 		<?php if ($this['widgets']->count('bottom-e')) : ?>
+		<a href="/reparosemlagrima/recicla" title="Recicla" id="banner_recicla" target="_blank"></a>
 		<div id="tm-bottom-e" class="rodape_mapasite uk-block <?php echo $classes['block.bottom-e']; ?>" <?php echo $styles['block.bottom-e']; ?>>
 
 			<div class="uk-container uk-container-center">
