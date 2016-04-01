@@ -226,3 +226,40 @@ div.container.shadow {
 		left: 90px;
 	}
 }
+
+@media screen and (max-width: 768px){
+	#cart{
+		margin: 0;
+	}
+
+	#search{
+		margin: 0;
+		position: absolute;
+		top: 45px !important;
+		right: -171px;
+		left: auto;
+	}
+}
+
+@media screen and (max-width: 600px){
+	header{
+		height: 185px;
+	}
+	
+	header div.container{
+		height: 125px;
+	}
+
+	#logo{
+		top: 5px;
+	}
+
+	#search{
+		top: 65px !important;
+		right: 125px;
+	}
+
+	#menu{
+		top: 0;
+	}
+}

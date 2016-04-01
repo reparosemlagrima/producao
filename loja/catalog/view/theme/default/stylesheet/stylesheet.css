@@ -1267,6 +1267,27 @@ footer .line_bottom {
 }
 
 @media screen and (max-width: 768px){
+	#logo {
+		top: 27px;
+		left: -5px;
+	}
+
+	.position-carrinho{
+		position: absolute;
+		width: 215px;
+		top: 4px;
+		right: 0;
+		height: 35px !important;
+	}
+
+	.position-carrinho .pull-left{
+		margin: 0;
+	}
+
+	.position-carrinho .pull-left > div{
+		margin: 0 0 0 44px;
+	}
+
 	#categorias_loja {
 		max-width: 925px;
 		width: 100%;
@@ -1304,6 +1325,18 @@ footer .line_bottom {
 }
 
 @media screen and (max-width: 600px){
+	.position-carrinho{
+		top: 15px;
+	}
+
+	#categorias_loja {
+		height: 315px;
+	}
+
+	#categorias_loja #banner_recicla {
+		margin-top: -15px;
+	}
+
 	footer .container .col-sm-3{
 		width: 50%;
 	}
@@ -1350,7 +1383,7 @@ footer .line_bottom {
 	}
 }
 
-@media screen and (max-height: 600px){
+@media screen and (max-width: 768px) and (max-height: 600px){
 	header div.container, #menu{
 		position: relative;
 	}
