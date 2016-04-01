@@ -913,12 +913,18 @@ small.similar-smallinfo .countnum{
 	color: #DBF7FF;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1200px){
 	.new-top-a {
 		background-size: initial;
 		background-position: top center;
 	}
 
+	.uk-box-search-home form .uk-field-search-home{
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 1024px){
 	.uk-box-search-home {
 		width: 90%;
 	}
