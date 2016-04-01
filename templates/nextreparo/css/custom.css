@@ -876,7 +876,6 @@ small.similar-smallinfo .countnum{
 	width: 100%;
 	height: 40px;
 	background-color: #18A0DC;
-	border-top: 1px solid #64C5F2;
 }
 
 #sub_menu_footer > nav{
@@ -894,8 +893,7 @@ small.similar-smallinfo .countnum{
 	letter-spacing: 0.4px;
 	padding: 0 15px;
 	margin: 4px 0;
-	color: #ADE5F7;
-	color: #64C5F2;
+	color: #fff;
 }
 
 #sub_menu_footer > nav > ul{
