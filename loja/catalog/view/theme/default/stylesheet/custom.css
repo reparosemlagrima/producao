@@ -56,7 +56,7 @@
 }
 
 #search > input{
-	width: 440px;
+	width: 100%;
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -212,3 +212,17 @@ div.container.shadow {
  }
 
  
+
+@media screen and (max-width: 1200px){
+	#search{
+		max-width: 373px;
+		left: 42px;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	#search{
+		max-width: 315px;
+		left: 90px;
+	}
+}
