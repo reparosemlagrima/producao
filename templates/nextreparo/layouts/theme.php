@@ -337,7 +337,6 @@ include($this['path']->path('layouts:theme.config.php'));
 
 		<section id="sub_menu_footer">
 			<nav>
-				<p>Reparo sem Lagrima © 2016</p>
 				<ul>
 					<li>Acesse:</li>
 					<li>|</li>
@@ -353,6 +352,8 @@ include($this['path']->path('layouts:theme.config.php'));
 						<a href="#" title="">Suporte</a>
 					</li>
 				</ul>
+				<br/>
+				<p>Reparo sem Lagrima © 2016</p>
 			</nav>
 		</section>
 
