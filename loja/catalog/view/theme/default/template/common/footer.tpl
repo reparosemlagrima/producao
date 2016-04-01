@@ -1,4 +1,22 @@
 <a href="/reparosemlagrima/recicla" title="Recicla" id="banner_recicla" target="_blank"></a>
+<section id="social_media">
+	<div>
+		<ul>
+			<li>
+				<a href="#" class="uk-icon-hover uk-icon-facebook uk-icon-small"></a>
+			</li>
+			<li>
+				<a href="#" class="uk-icon-hover uk-icon-twitter uk-icon-small"></a>
+			</li>
+			<li>
+				<a href="#" class="uk-icon-hover uk-icon-linkedin uk-icon-small"></a>
+			</li>
+			<li>
+				<a href="#" class="uk-icon-hover uk-icon-instagram uk-icon-small"></a>
+			</li>
+		</ul>
+	</div>
+</section>
 <footer>
 	<div class="container">
 		<div>

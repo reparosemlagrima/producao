@@ -262,7 +262,7 @@ include($this['path']->path('layouts:theme.config.php'));
 
 		<a href="/reparosemlagrima/recicla" title="Recicla" id="banner_recicla" target="_blank"></a>
 		<?php if ($this['widgets']->count('bottom-b')) : ?>
-		<!--<div id="tm-bottom-b" class="tm-block-bottom-b uk-block <?php echo $classes['block.bottom-b']; ?>" <?php echo $styles['block.bottom-b']; ?>>
+		<!--<div id="tm-bottom-b" class="tm-block-bottom-b uk-block <?php //echo $classes['block.bottom-b']; ?>" <?php //echo $styles['block.bottom-b']; ?>>
 
 			<div class="uk-container uk-container-center">
 
@@ -288,19 +288,37 @@ include($this['path']->path('layouts:theme.config.php'));
 
 		</div>
 		<?php endif; ?>
-
+		
+		<section id="social_media">
+			<div>
+				<ul>
+					<li>
+						<a href="#" class="uk-icon-hover uk-icon-facebook uk-icon-small"></a>
+					</li>
+					<li>
+						<a href="#" class="uk-icon-hover uk-icon-twitter uk-icon-small"></a>
+					</li>
+					<li>
+						<a href="#" class="uk-icon-hover uk-icon-linkedin uk-icon-small"></a>
+					</li>
+					<li>
+						<a href="#" class="uk-icon-hover uk-icon-instagram uk-icon-small"></a>
+					</li>
+				</ul>
+			</div>
+		</section>
 		<?php if ($this['widgets']->count('bottom-d')) : ?>
-		<div id="tm-bottom-d" class="tm-block-bottom-d uk-block <?php echo $classes['block.bottom-d']; ?>" <?php echo $styles['block.bottom-d']; ?>>
+		<!--<div id="tm-bottom-d" class="tm-block-bottom-d uk-block <?php //echo $classes['block.bottom-d']; ?>" <?php //echo $styles['block.bottom-d']; ?>>
 
 			<div class="uk-container uk-container-center">
 
-				<section class="<?php echo $classes['grid.bottom-d']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
-					<?php echo $this['widgets']->render('bottom-d', array('layout'=>$this['config']->get('grid.bottom-d.layout'))); ?>
+				<section class="<?php //echo $classes['grid.bottom-d']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+					<?php //echo $this['widgets']->render('bottom-d', array('layout'=>$this['config']->get('grid.bottom-d.layout'))); ?>
 				</section>
 
 			</div>
 
-		</div>
+		</div>-->
 		<?php endif; ?>
 
 		<?php if ($this['widgets']->count('bottom-e')) : ?>
