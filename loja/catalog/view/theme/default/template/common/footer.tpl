@@ -62,9 +62,26 @@
 	</div>
 	<span class="line_bottom"></span>
 </footer>
-<div class="container">
-<p><?php echo $powered; ?></p>
-</div>
+<section id="sub_menu_footer">
+	<nav>
+		<p>Reparo sem Lagrima © 2016</p>
+		<ul>
+			<li>Acesse:</li>
+			<li>|</li>
+			<li>
+				<a href="#" title="">Política de Privacidade</a>
+			</li>
+			<li>|</li>
+			<li>
+				<a href="#" title="">Como anunciar</a>
+			</li>
+			<li>|</li>
+			<li>
+				<a href="#" title="">Suporte</a>
+			</li>
+		</ul>
+	</nav>
+</section>
 
  <!--
  OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
