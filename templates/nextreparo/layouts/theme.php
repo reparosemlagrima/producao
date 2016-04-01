@@ -109,12 +109,12 @@ include($this['path']->path('layouts:theme.config.php'));
 				<?php endif; ?>
 					
 				<?php if ($this['widgets']->count('new-menu')) : ?>
-					<div class="new-menu" id="new-menu">
-						<div class="tm-toolbar uk-clearfix uk-hidden-small uk-hidden-medium">
-							<div class="uk-container uk-container-center">
-							 <?php echo $this['widgets']->render('new-menu'); ?> 
-							</div>
-						</div>
+					<div class="new-menu menu_home" id="new-menu">
+						<!--<div class="tm-toolbar uk-clearfix uk-hidden-small uk-hidden-medium">
+							<div class="uk-container uk-container-center">-->
+							<?php echo $this['widgets']->render('new-menu'); ?> 
+							<!--</div>
+						</div>-->
 					</div>
 				<?php endif; ?>
 
