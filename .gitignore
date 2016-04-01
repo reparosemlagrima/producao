@@ -1,5 +1,6 @@
 .idea/*
 .idea*
 loja/system/storage/cache/**/*
+loja/system/storage/logs/**/*
 media/widgetkit/**/*
 images/modelo.jpg
