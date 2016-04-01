@@ -971,6 +971,81 @@ header + div{
 	background-size: auto 220px;
 }
 
+#social_media{
+	width: 100%;
+	height: 45px;
+	background-color: #000;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+
+#social_media > div{
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 10px 15px;
+	text-align: center;
+}
+
+#social_media > div > ul{
+	display: inline-block;
+	list-style: none;
+	margin: 1px 0 0 0;
+	padding: 0;
+}
+
+#social_media > div > ul > li{
+	float: left;
+	flex: none;
+    padding-left: 15px;
+    position: relative;
+}
+
+.uk-icon-hover {
+    color: #a3a9b0;
+    -webkit-transition: color 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out;
+}
+
+.uk-icon-hover:hover {
+    color: #484848;
+}
+
+.uk-icon-small {
+    font-size: 23px;
+    vertical-align: -10%;
+}
+
+[class*='uk-icon-'], [class*='uk-icon-']:hover, [class*='uk-icon-']:focus {
+    text-decoration: none;
+}
+
+[class*='uk-icon-'] {
+    font-family: FontAwesome;
+    display: inline-block;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.uk-icon-facebook-f:before, .uk-icon-facebook:before {
+    content: "\f09a";
+}
+
+.uk-icon-twitter:before {
+    content: "\f099";
+}
+
+.uk-icon-linkedin:before {
+    content: "\f0e1";
+}
+
+.uk-icon-instagram:before {
+    content: "\f16d";
+}
+
 footer{
 	background-color: #00AEF3;
 	border-top: 3px solid #1C99DC;
