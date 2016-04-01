@@ -335,27 +335,48 @@ include($this['path']->path('layouts:theme.config.php'));
 		</div>
 		<?php endif; ?>
 
-		<div id="tm-footer" class="tm-block-footer">
+		<section id="sub_menu_footer">
+			<nav>
+				<p>Reparo sem Lagrima © 2016</p>
+				<ul>
+					<li>Acesse:</li>
+					<li>|</li>
+					<li>
+						<a href="#" title="">Política de Privacidade</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="#" title="">Como anunciar</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="#" title="">Suporte</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+
+		<!--<div id="tm-footer" class="tm-block-footer">
 			<div class="uk-container uk-container-center">
 
-			<?php if ($this['widgets']->count('footer + debug') || $this['config']->get('warp_branding', true) || $this['config']->get('totop_scroller', true)) : ?>
+			<?php //if ($this['widgets']->count('footer + debug') || $this['config']->get('warp_branding', true) || $this['config']->get('totop_scroller', true)) : ?>
 				<footer class="tm-footer tm-link-muted">
 
-					<?php if ($this['config']->get('totop_scroller', true)) : ?>
+					<?php //if ($this['config']->get('totop_scroller', true)) : ?>
 					<!-- <a id="tm-anchor-bottom" class="tm-totop-scroller" data-uk-smooth-scroll href="#"></a> -->
-					<?php endif; ?>
+					<!--<?php //endif; ?>
 
 					<?php
-						echo $this['widgets']->render('footer');
-						$this->output('warp_branding');
-						echo $this['widgets']->render('debug');
+						//echo $this['widgets']->render('footer');
+						//$this->output('warp_branding');
+						//echo $this['widgets']->render('debug');
 					?>
 
 				</footer>
-			<?php endif; ?>
+			<?php //endif; ?>
 
 			</div>
-		</div>
+		</div>-->
 
 		<?php if ($this['widgets']->count('search')) : ?>
 		<div class="tm-search uk-hidden-small">

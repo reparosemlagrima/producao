@@ -754,6 +754,7 @@ small.similar-smallinfo .countnum{
 	background: #00AEF3;
 }
 
+/* BANNER RECICLA BOTTOM */
 #banner_recicla{
 	display: block;
 	width: 100%;
@@ -869,4 +870,62 @@ small.similar-smallinfo .countnum{
 	height: 2px;
 	background: #64C5F2;
 	display: block;
+}
+
+#sub_menu_footer{
+	width: 100%;
+	height: 40px;
+	background-color: #18A0DC;
+	border-top: 1px solid #64C5F2;
+}
+
+#sub_menu_footer > nav{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1145px;
+	text-align: right;
+}
+
+#sub_menu_footer > nav p{
+	float: left;
+	font-weight: 300;
+	line-height: 33px;
+	font-size: 13px;
+	letter-spacing: 0.4px;
+	padding: 0 15px;
+	margin: 4px 0;
+	color: #ADE5F7;
+	color: #64C5F2;
+}
+
+#sub_menu_footer > nav > ul{
+	float: right;
+	list-style: none;
+	padding: 0;
+	margin: 8px 0 0 0;
+	height: 24px;
+}
+
+#sub_menu_footer > nav > ul > li{
+	float: left;
+	text-transform: uppercase;
+	padding: 0 7px;
+	line-height: 24px;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	color: #51B2DF;
+}
+
+#sub_menu_footer > nav > ul > li:first-of-type{
+	color: #fff;
+}
+
+#sub_menu_footer > nav > ul > li a{
+	color: #ADE9F9;
+}
+
+#sub_menu_footer > nav > ul > li a:hover{
+	text-decoration: none;
+	color: #DBF7FF;
 }
