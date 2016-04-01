@@ -630,10 +630,10 @@ small.similar-smallinfo .countnum{
 	position: absolute;
 	display: block;
 	content: '';
-	top: 56px;
+	top: 64px;
 	left: 0;
 	width: 100%;
-	background-image: linear-gradient(-90deg,rgba(0,113,206,0) 0,#9ee2fc 51%,rgba(0,113,206,0) 100%);
+	background-image: linear-gradient(-90deg,rgba(0,113,206,0) 0,#EEF4FD 51%,rgba(0,113,206,0) 100%);
 	opacity: 0;
 	height: 4px;
 	-webkit-transform: scaleX(0);
@@ -658,30 +658,8 @@ small.similar-smallinfo .countnum{
 	text-transform: uppercase;
 }
 
-#menu > .menu_principal li a::before{
-	position: absolute;
-	display: block;
-	content: '';
-	top: 39px;
-	left: 7px;
-	width: 100%;
-	background-color: rgba(255, 255, 255, 0.7);
-	opacity: 0;
-	height: 1px;
-	-webkit-transform: scaleX(0);
-	-ms-transform: scaleX(0);
-	transform: scaleX(0);
-	z-index: 0;
-	transition: all .2s;
-}
-
-#menu > .menu_principal li:hover a::before {
-	transform: scaleX(1);
-	opacity: 1;
-}
-
 #menu > .menu_principal li:hover a{
-	color: #9ee2fc;
+	color: #EEF4FD;
 }
 
 #menu > .menu_principal .icon_menu{
