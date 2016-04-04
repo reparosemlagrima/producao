@@ -70,33 +70,27 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-3">
-					<div id="logo">
-						<?php if ($logo) { ?>
-						<a href="/reparosemlagrima<?php // echo $home; ?>" title="Reparo Sem Lagrima">
-							<!--<img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" />-->
+				<div id="logo">
+					<?php if ($logo) { ?>
+					<a href="/reparosemlagrima<?php // echo $home; ?>" title="Reparo Sem Lagrima">
+						<!--<img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" />-->
+					</a>
+					<?php } else { ?>
+					<h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
+					<?php } ?>
+				</div>
+				<?php // echo $cart; ?>
+				<div class="pull-left position-carrinho">
+					<div id="cart">
+						<a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>">
+							<!--<i class="fa fa-shopping-cart"></i>-->
 						</a>
-						<?php } else { ?>
-						<h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
-						<?php } ?>
+					</div>
+					<div style="height: 100%; line-height: 3; display: inline-block;">
+						<a href="<?php echo $register; ?>"><?php echo $text_register; ?></a> | <a href="<?php echo $login; ?>"><?php echo $text_login; ?></a>
 					</div>
 				</div>
-				<div class="col-sm-6">
-					<?php echo $search; ?>
-				</div>
-				<div class="col-sm-3 position-carrinho">
-					<?php // echo $cart; ?>
-					<div class="pull-left">
-						<div id="cart">
-							<a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>">
-								<!--<i class="fa fa-shopping-cart"></i>-->
-							</a>
-						</div>
-						<div style="height: 100%; line-height: 3; display: inline-block;">
-							<a href="<?php echo $register; ?>"><?php echo $text_register; ?></a> | <a href="<?php echo $login; ?>"><?php echo $text_login; ?></a>
-						</div>
-					</div>
-				</div>
+				<?php echo $search; ?>
 			</div>
 		</div>
 		<?php if ($categories) { ?>
