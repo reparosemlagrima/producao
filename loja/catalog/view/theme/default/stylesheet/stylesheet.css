@@ -35,10 +35,12 @@ h6 {
 }
 a {
 	color: #0072CB;
+	color: #00AFF3;
 	font-weight: 400;
 }
 a:hover {
 	text-decoration: none;
+	color: #18A0DC;
 }
 legend {
 	font-size: 18px;
@@ -344,16 +346,23 @@ footer h5 {
 }
 /* breadcrumb */
 .breadcrumb {
+	position: relative;
 	margin: 0 0 20px 0;
-	padding: 8px 0;
+	padding: 0;
 	border: 1px solid #ddd;
+	min-height: 32px;
 }
 .breadcrumb i {
 	font-size: 15px;
 }
+.breadcrumb i.fa-home{
+	margin-top: 3px;
+}
 .breadcrumb > li {
+	float: left;
+	top: 4px;
 	text-shadow: 0 1px 0 #FFF;
-	padding: 0 20px;
+	padding: 0 15px;
 	position: relative;
 	white-space: nowrap;
 }
@@ -365,16 +374,19 @@ footer h5 {
 	content: '';
 	display: block;
 	position: absolute;
-	top: -3px;
+	top: 5px;
 	right: -5px;
-	width: 26px;
-	height: 26px;
+	width: 13px;
+	height: 13px;
 	border-right: 1px solid #DDD;
 	border-bottom: 1px solid #DDD;
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
+}
+.breadcrumb > li:last-of-type:after{
+	opacity: 0;
 }
 .pagination {
 	margin: 0;
@@ -803,6 +815,7 @@ header + div{
 	margin: 20px 0 30px;
 	width: 95% !important;
 	max-width: 960px;
+	border: 1px solid #DDDDDD;
 }
 
 #logo{
