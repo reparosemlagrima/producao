@@ -811,11 +811,12 @@ header div.row{
 	padding: 0;
 }
 
-header + div{
+body > header + div{
 	margin: 20px 0 30px;
 	width: 95% !important;
 	max-width: 960px;
 	border: 1px solid #DDDDDD;
+	padding-top: 15px;
 }
 
 #logo{
