@@ -5,6 +5,7 @@ body {
 	width: 100%;
 	line-height: 24px;
 	font-weight: 100;
+	min-width: 305px;
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #444;
@@ -810,7 +811,7 @@ header + div{
 	float: left;
 	position: relative;
 	top: 22px;
-	left: 20px;
+	left: 35px;
 	background-image: url('http://localhost/reparosemlagrima/images/logo/logo_interno.png');
 	background-position: -7px -1px;
 	background-size: 330px;
@@ -827,20 +828,22 @@ header + div{
 	margin-left: 4px;
 }
 
-.position-carrinho .pull-left{
+.position-carrinho.pull-left{
+	position: absolute;
+	top: 0;
+	right: 105px;
 	margin-top: 15px;
-	margin-left: 25px;
 }
 
-.position-carrinho .pull-left > div{
+.position-carrinho.pull-left > div{
 	margin: 10px 0 0 57px;
 }
 
-.position-carrinho .pull-left div:not(#cart) a{
+.position-carrinho.pull-left div:not(#cart) a{
 	color: #00AFF3;
 }
 
-.position-carrinho .pull-left div:not(#cart) a:hover{
+.position-carrinho.pull-left div:not(#cart) a:hover{
 	color: #0074C7;
 }
 
@@ -1183,7 +1186,6 @@ footer .line_bottom {
 #categorias_loja{
 	max-width: 925px;
 	width: 100%;
-	height: 505px;
 	position: relative;
 	left: 3px;
 	padding: 0;
@@ -1193,7 +1195,7 @@ footer .line_bottom {
 #categorias_loja > div{
 	width: 100% !important;
 	max-width: 100%;
-	height: 100%;
+	float: left;
 }
 
 #categorias_loja > div > a{
@@ -1201,34 +1203,43 @@ footer .line_bottom {
 	width: 49%;
 	max-width: 435px;
 	height: 100%;
-	max-height: 350px;
+	max-height: 346px;
 	position: relative;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	overflow: hidden;
 	transition: all .2s;
 	-webkit-transition: all .2s;
 	-moz-transition: all .2s;
 }
 
+#categorias_loja > div > a img{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
 #categorias_loja > div > a:nth-of-type(1){
 	float: left;
-	background-image: url('/reparosemlagrima/loja/image/catalog/ferramentas-1.jpg');
 }
 
 #categorias_loja > div > a:nth-of-type(2){
 	float: right;
-	background-image: url('/reparosemlagrima/loja/image/catalog/pecas-1.jpg');
 }
 
-#categorias_loja > div > a:hover:nth-of-type(1){
-	float: left;
-	background-image: url('/reparosemlagrima/loja/image/catalog/ferramentas-2.jpg');
+#categorias_loja > div > a:hover:nth-of-type(1) img:nth-of-type(1){
+	visibility: hidden;
 }
 
-#categorias_loja > div > a:hover:nth-of-type(2){
-	float: right;
-	background-image: url('/reparosemlagrima/loja/image/catalog/pecas-2.jpg');
+#categorias_loja > div > a:hover:nth-of-type(1) img:nth-of-type(2){
+	top: -346px;
+}
+
+#categorias_loja > div > a:hover:nth-of-type(2) img:nth-of-type(1){
+	visibility: hidden;
+}
+
+#categorias_loja > div > a:hover:nth-of-type(2) img:nth-of-type(2){
+	top: -346px;
 }
 
 #categorias_loja #banner_recicla{
@@ -1237,8 +1248,14 @@ footer .line_bottom {
 	width: 100%;
 	max-height: 100px;
 	margin-top: 47px;
-	background-image: url('/reparosemlagrima/loja/image/catalog/banner_reciclar.jpg');
+	background-image: url('');
 	background-size: 100%;
+}
+
+@media screen and (max-width: 1040px){
+	.position-carrinho.pull-left{
+		right: 30px;
+	}
 }
 
 @media screen and (max-width: 1024px){
@@ -1259,44 +1276,35 @@ footer .line_bottom {
 	}
 }
 
-@media screen and (max-width: 1024px){
-	#search {
-		max-width: 315px;
-		left: 90px;
+@media screen and (max-width: 995px){
+	#categorias_loja > div > a:not(#banner_recicla){
+		width: 100%;
+		float: none !important;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	#categorias_loja > div > a:not(#banner_recicla):nth-child(1){
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.position-carrinho.pull-left{
+		width: 215px;
+		margin-top: 7px;
+		right: -10px;
+		height: 35px;
+	}
+
+	.position-carrinho.pull-left > div{
+		margin: 0 0 0 44px;
 	}
 }
 
 @media screen and (max-width: 768px){
 	#logo {
-		top: 27px;
-		left: -5px;
-	}
-
-	.position-carrinho{
-		position: absolute;
-		width: 215px;
-		top: 4px;
-		right: 0;
-		height: 35px !important;
-	}
-
-	.position-carrinho .pull-left{
-		margin: 0;
-	}
-
-	.position-carrinho .pull-left > div{
-		margin: 0 0 0 44px;
-	}
-
-	#categorias_loja {
-		max-width: 925px;
-		width: 100%;
-		height: 410px;
-	}
-
-	#categorias_loja > div > a{
-	    background-size: 100%;
-	    max-height: 245px;
+		left: 11px;
 	}
 
 	.product-layout.col-md-3 {
@@ -1324,17 +1332,15 @@ footer .line_bottom {
 	}
 }
 
+@media screen and (max-width: 650px){
+	.position-carrinho.pull-left{
+		margin-top: 5px;
+	}
+}
+
 @media screen and (max-width: 600px){
-	.position-carrinho{
-		top: 15px;
-	}
-
-	#categorias_loja {
-		height: 315px;
-	}
-
 	#categorias_loja #banner_recicla {
-		margin-top: -15px;
+		margin-top: 25px;
 	}
 
 	footer .container .col-sm-3{
@@ -1343,6 +1349,21 @@ footer .line_bottom {
 
 	footer .container .col-sm-3:nth-child(2n+1){
 		clear: left;
+	}
+}
+
+@media screen and (max-width: 518px){
+	#categorias_loja > div > a{
+		max-width: 300px;
+		max-height: 239px;
+	}
+
+	#categorias_loja > div > a:hover:nth-of-type(1) img:nth-of-type(2){
+		top: -239px;
+	}
+
+	#categorias_loja > div > a:hover:nth-of-type(2) img:nth-of-type(2){
+		top: -239px;
 	}
 }
 
@@ -1373,6 +1394,21 @@ footer .line_bottom {
 
 	footer .container .col-sm-3{
 		width: 100%;
+	}
+}
+
+@media screen and (max-width:370px){
+	#categorias_loja > div > a{
+		max-width: 260px;
+		max-height: 207px;
+	}
+
+	#categorias_loja > div > a:hover:nth-of-type(1) img:nth-of-type(2){
+		top: -207px;
+	}
+
+	#categorias_loja > div > a:hover:nth-of-type(2) img:nth-of-type(2){
+		top: -207px;
 	}
 }
 
