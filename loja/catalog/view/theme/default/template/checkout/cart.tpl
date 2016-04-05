@@ -1,7 +1,7 @@
 <!--
 
 	REGRA BREADCRUMB TEMPORÁRIA - CORREÇÃO ERRO PLUGIN E CRIAÇÃO PARA PÁGINAS QUE NÃO TEM BREADCRUMB
-
+	CARRINHO DE PRODUTOS
 	By Mariana Lino
 -->
 <?php
@@ -9,11 +9,7 @@
 	$pieces = explode("/", $url);
 	$home = "/".$pieces[1];
 	$page = $home."/".$pieces[2];
-	$inter = $page."/".$pieces[3];
-	$inter2 = $inter."/".$pieces[4];
 	$page_var = $pieces[2];
-	$inter_var = $pieces[3];
-	$inter2_var = $pieces[4];
 
 	if(@$page_var != NULL):
 		switch ($page_var):
@@ -30,22 +26,10 @@
 				$url_page = "/reparosemlagrima/tutorial-interno";
 			break;
 		endswitch;
+	endif;
+
+	unset($breadcrumbs[0]);
 ?>
-<script type="text/javascript">
-	var title;
-	var myVar = setInterval(
-		function(){
-			title = document.title;
-			
-			if(title != ""){
-				clearInterval(myVar);
-			}
-			document.getElementById("bc_title").innerHTML = title;
-		},
-		1000
-	);
-</script>
-<?php endif; ?>
 
 <?php echo $header; ?>
 <div class="container">
@@ -58,15 +42,13 @@
 				<a href="<?php echo $page; ?>"><?php echo $name_page; ?></a>
 			</li>
 		<?php endif; ?>
-		<?php if(@$inter_var != NULL): ?>
+		<?php foreach ($breadcrumbs as $breadcrumb) { ?>
 			<li>
-				<a href="<?php echo $inter; ?>" id="bc_title"></a>
+				<a href="<?php echo $breadcrumb['href']; ?>">
+					<?php echo $breadcrumb['text']; ?>
+				</a>
 			</li>
-		<?php endif; ?>
-		
-		<!--<?php foreach ($breadcrumbs as $breadcrumb) { ?>
-		<li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-		<?php } ?>-->
+		<?php } ?>
 	</ul>
 	<?php if ($attention) { ?>
 	<div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $attention; ?>

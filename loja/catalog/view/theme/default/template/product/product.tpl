@@ -9,9 +9,7 @@
 	$pieces = explode("/", $url);
 	$home = "/".$pieces[1];
 	$page = $home."/".$pieces[2];
-	$inter = $page."/".$pieces[3];
 	$page_var = $pieces[2];
-	$inter_var = $pieces[3];
 
 	if(@$page_var != NULL):
 		switch ($page_var):
@@ -28,43 +26,33 @@
 				$url_page = "/reparosemlagrima/tutorial-interno";
 			break;
 		endswitch;
+	endif;
+
+	unset($breadcrumbs[0]);
 ?>
-<script type="text/javascript">
-	var title;
-	var myVar = setInterval(
-		function(){
-			title = document.title;
-			
-			if(title != ""){
-				clearInterval(myVar);
-			}
-			document.getElementById("bc_title").innerHTML = title;
-		},
-		1000
-	);
-</script>
-<?php endif; ?>
 
 <?php echo $header; ?>
 <div class="container shadow">
 	<ul class="breadcrumb">
 		<li>
-			<a href="<?php echo $home; ?>"><i class="fa fa-home"></i></a>
+			<a href="<?php echo $home; ?>">
+				<i class="fa fa-home"></i>
+			</a>
 		</li>
 		<?php if(@$page_var != NULL): ?>
 			<li>
-				<a href="<?php echo $page; ?>"><?php echo $name_page; ?></a>
+				<a href="<?php echo $page; ?>">
+					<?php echo $name_page; ?>
+				</a>
 			</li>
 		<?php endif; ?>
-		<?php if(@$inter_var != NULL): ?>
+		<?php foreach ($breadcrumbs as $breadcrumb) { ?>
 			<li>
-				<a href="<?php echo $inter; ?>" id="bc_title"></a>
+				<a href="<?php echo $breadcrumb['href']; ?>">
+					<?php echo $breadcrumb['text']; ?>
+				</a>
 			</li>
-		<?php endif; ?>
-
-		<!--<?php foreach ($breadcrumbs as $breadcrumb) { ?>
-		<li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-		<?php } ?>-->
+		<?php } ?>
 	</ul>
 	<div class="row"><?php echo $column_left; ?>
 		<?php if ($column_left && $column_right) { ?>
