@@ -7,15 +7,15 @@
 		<?php } ?>
 		<div class="main-category">
 			<a href="http://localhost/reparosemlagrima/loja/ferramentas" title="Ferramentas">
-				<img src="/reparosemlagrima/loja/image/catalog/ferramentas-1.jpg" alt="Ferramentas">
-				<img src="/reparosemlagrima/loja/image/catalog/ferramentas-2.jpg" alt="Ferramentas">
+				<img src="/reparosemlagrima/loja/image/catalog/ferramentas-1.jpg" alt="Ferramentas" />
+				<img src="/reparosemlagrima/loja/image/catalog/ferramentas-2.jpg" alt="Ferramentas" />
 			</a>
 			<a href="http://localhost/reparosemlagrima/loja/pecas" title="Peças">
-				<img src="/reparosemlagrima/loja/image/catalog/pecas-1.jpg" alt="Peças">
-				<img src="/reparosemlagrima/loja/image/catalog/pecas-2.jpg" alt="Peças">
+				<img src="/reparosemlagrima/loja/image/catalog/pecas-1.jpg" alt="Peças" />
+				<img src="/reparosemlagrima/loja/image/catalog/pecas-2.jpg" alt="Peças" />
 			</a>
 			<a href="/reparosemlagrima/recicla" title="Desperdício Zero - Reciclar" id="banner_recicla">
-				<img src="/reparosemlagrima/loja/image/catalog/banner_reciclar.jpg" alt="Desperdício Zero - Reciclar">
+				<img src="/reparosemlagrima/loja/image/catalog/banner_reciclar.jpg" alt="Desperdício Zero - Reciclar" />
 			</a>	
 			
 			<!--<?php $i = 1; ?>
