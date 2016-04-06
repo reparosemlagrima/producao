@@ -868,6 +868,10 @@ div#tm-main{
 	padding: 25px 0 0 0;
 }
 
+a:hover, .uk-link:hover{
+	color: #18A0DC;
+}
+
 body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2{
 	text-align: center;
 	color: #00AFF3;
@@ -997,6 +1001,7 @@ body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2 .icon_rsl, body.pa
 
 .rodape_mapasite .uk-subnav > * > a:hover{
 	color: #DBF7FF;
+	text-decoration: underline;
 }
 
 .rodape_mapasite > .line_bottom{
