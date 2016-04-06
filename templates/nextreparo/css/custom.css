@@ -1023,12 +1023,26 @@ small.similar-smallinfo .countnum{
 	#menu > .menu_principal {
 		padding: 0 10px;
 		height: auto;
+		max-width: 300px;
 	}
 
 	#menu > .menu_principal li{
 		float: none;
 		width: 100%;
-		margin-bottom: 12px;
+		margin-bottom: 5px;
+		text-align: left;
+		padding-left: 50px;
+		height: 40px;
+		line-height: 40px;
+	}
+
+	#menu > .menu_principal .icon_menu {
+	    top: 7px;
+		left: -31px;
+	}
+
+	#menu > .menu_principal li::before {
+		top: 44px;
 	}
 
 	#menu > .menu_principal li:last-of-type{
