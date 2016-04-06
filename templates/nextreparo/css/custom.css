@@ -732,6 +732,163 @@ small.similar-smallinfo .countnum{
 	background: #00AEF3;
 }
 
+.pag_tutoriais > section:first-of-type{
+	margin: 20px auto 30px;
+	padding: 15px;
+	width: 95% !important;
+	max-width: 960px;
+	border: 1px solid #DDDDDD;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.pag_tutoriais > section:first-of-type .breadcrumb{
+	position: relative;
+	margin: 0 0 20px 0;
+	padding: 0;
+	border: 1px solid #ddd;
+	min-height: 30px;
+	overflow: hidden;
+	list-style: none;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+}
+
+.pag_tutoriais > section:first-of-type .breadcrumb > li {
+	float: left;
+	display: inline-block;
+	top: 3px;
+	text-shadow: 0 1px 0 #FFF;
+	padding: 0 15px;
+	position: relative;
+	white-space: nowrap;
+}
+
+.pag_tutoriais > section:first-of-type .breadcrumb > li + li:before {
+    content: '';
+    padding: 0;
+}
+
+.pag_tutoriais > section:first-of-type .breadcrumb > li:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 6px;
+	right: -5px;
+	width: 13px;
+	height: 13px;
+	border-right: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.pag_tutoriais > section:first-of-type .breadcrumb > li:last-of-type:after {
+    opacity: 0;
+}
+
+.pag_tutoriais > section:first-of-type .breadcrumb > li a {
+    color: #00AFF3;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.pag_tutoriais > section:first-of-type .breadcrumb > li  i {
+    font-size: 15px;
+}
+
+.pag_tutoriais > section:first-of-type .breadcrumb > li  i.fa-home {
+    margin-top: 3px;
+}
+
+.fa {
+    font-size: 14px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-home:before {
+    content: "\f015";
+}
+
+.pag_tutoriais > section:first-of-type #tm-top-b{
+	padding: 26px 0;
+}
+
+.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .uk-width-1-1{
+	padding: 0;
+}
+
+.pag_tutoriais > section:first-of-type #tm-top-b > .uk-container{
+	padding: 0;
+}
+
+.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b{
+	margin: 0;
+}
+
+.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5{
+	width: 25%;
+	max-width: 216px;
+	margin: 0 6px;
+	padding: 0;
+}
+
+.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5:first-of-type{
+	margin-left: 12px;
+}
+
+.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5:last-of-type{
+	margin-right: 12px;
+}
+
+.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-grid-small{
+	margin-left: 0;
+}
+
+.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5 .uk-panel-box .uk-panel-teaser{
+	border-radius: 0;
+}
+
+.pag_tutoriais > section:first-of-type #tm-main{
+	border: none;
+}
+
+body.tm-isblog #tm-top-b, div#tm-main{
+	padding: 0 !important;
+}
+
+div#tm-main{
+	padding: 25px 0 0 0;
+}
+
+body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2{
+	text-align: center;
+	color: #00AFF3;
+	padding-bottom: 45px;
+	margin: 0;
+}
+
+body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2 .icon_rsl, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2 .icon_rsl{
+	width: 42px;
+	height: 42px;
+	background: url("/reparosemlagrima/images/icons/icons_menu2.png") no-repeat -133px 0px;
+	display: inline-block;
+	position: relative;
+	top: 9px;
+	margin-right: 18px;
+}
+
+.uk-pagination > .uk-active > span, .uk-pagination > li > a:active{
+	background: #00AFF3;
+}
+
 /* BANNER RECICLA BOTTOM */
 #banner_recicla{
 	display: block;
