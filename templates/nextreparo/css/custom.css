@@ -858,16 +858,35 @@ small.similar-smallinfo .countnum{
 .pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5{
 	width: 25%;
 	max-width: 216px;
-	margin: 0 6px;
+	margin: 6px;
 	padding: 0;
 }
 
-.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5:first-of-type{
-	margin-left: 12px;
+.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5.cellphone > div > a > p{
+	margin: 0;
 }
 
-.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5:last-of-type{
-	margin-right: 12px;
+.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5.cellphone{
+	padding: 0 25px;
+}
+
+.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5.cellphone > h3 a{
+	color: #C7C7C7;
+	font-size: 22px;
+	text-align: center;
+	display: block;
+	margin: 5px 0 6px;
+	padding: 0;
+	font-weight: 400;
+}
+
+.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5.cellphone:hover > h3 a{
+	color: #00AEF3;
+	text-decoration: none;
+}
+
+.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias{
+	padding: 0 6px;
 }
 
 .pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-grid-small{
