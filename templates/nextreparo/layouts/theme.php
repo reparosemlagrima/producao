@@ -31,6 +31,10 @@ include($this['path']->path('layouts:theme.config.php'));
 			jQuery("body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2").hide();
 			jQuery("body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2").prepend("<span class='icon_rsl'></span>");
 			jQuery("body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2").show();
+
+
+			jQuery(".breadcrumb .uk-breadcrumb li:first-of-type a").html("<i class='fa fa-home'></i>");
+
 		});
 		
 	</script>
@@ -171,34 +175,22 @@ include($this['path']->path('layouts:theme.config.php'));
 					</div>
 				<?php endif; ?>                   
 			</div>
-		<?php endif; ?>   
-
-		<?php if ($this['widgets']->count('top-a')) : ?>
-			<div id="tm-top-a" class="tm-block-top-a uk-block <?php echo $classes['block.top-a']; ?>" <?php echo $styles['block.top-a']; ?>>
-				<div class="uk-container uk-container-center">
-					<section class="<?php echo $classes['grid.top-a']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
-						<?php echo $this['widgets']->render('top-a', array('layout'=>$this['config']->get('grid.top-a.layout'))); ?>
-					</section>
-				</div>
-			</div>
-		<?php endif; ?>
+		<?php endif; ?>  
 
 		<section>
-			<ul class="breadcrumb">
-				<li>
-					<a href="/reparosemlagrima"><i class="fa fa-home"></i></a>
-				</li>
-				<li>
-					<a href="/reparosemlagrima/loja">Loja</a>
-				</li>
-				<!--
-				<li>
-					<a href="http://localhost/reparosemlagrima/loja/index.php?route=common/home">
-						Principal
-					</a>
-				</li>
-				-->
-			</ul>
+			<?php if ($this['widgets']->count('top-a')) : ?>
+				<div id="tm-top-a" class="tm-block-top-a uk-block <?php echo $classes['block.top-a']; ?>" <?php echo $styles['block.top-a']; ?>>
+					<!--
+					<div class="uk-container uk-container-center">
+						<section class="<?php //echo $classes['grid.top-a']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+					-->
+							<?php echo $this['widgets']->render('top-a', array('layout'=>$this['config']->get('grid.top-a.layout'))); ?>
+					<!--
+						</section>
+					</div>
+					-->
+				</div>
+			<?php endif; ?>
 
 			<?php if ($this['widgets']->count('top-b')) : ?>
 				<div id="tm-top-b" class="tm-block-top-b uk-block <?php echo $classes['block.top-b']; ?>" <?php echo $styles['block.top-b']; ?>>
