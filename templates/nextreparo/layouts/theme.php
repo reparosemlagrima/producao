@@ -13,6 +13,7 @@ include($this['path']->path('layouts:theme.config.php'));
 <html lang="<?php echo $this['config']->get('language'); ?>" dir="<?php echo $this['config']->get('direction'); ?>"  data-config='<?php echo $this['config']->get('body_config','{}'); ?>'>
 	<head>
 	<?php echo $this['template']->render('head'); ?>
+
 	<?php
 		$url = $_SERVER["REQUEST_URI"];
 		$pieces = explode("/", $url);
@@ -39,18 +40,26 @@ include($this['path']->path('layouts:theme.config.php'));
 
 			// Adiciona ícone home em breadcrumb
 			jQuery(".breadcrumb .uk-breadcrumb li:first-of-type a").html("<i class='fa fa-home'></i>");
-
 		});
-		
 	</script>
-	<?php endif; ?>
+	<?php
+		endif;
+
+		if(@$page_var2 != NULL && @$page_var2 == "tutorial-interno" && (@$pieces[3] != NULL && @$pieces[4] != NULL)):
+	?>
 	<script type="text/javascript">
 		var jQuery = jQuery.noConflict();
 		jQuery(window).load(function() {
-			// alert('Mensagem de tesete');
+			// Modifica elemento de lugar
+			jQuery("body.pag_tutoriais #tm-top-b").prependTo("body.pag_tutoriais #tm-main .blogpag_tutoriais #mais_acessadas");
+			// Exibe elemento
+			jQuery("body.pag_modelo #tm-top-b").show();
 
 		});
 	</script>
+	<?php
+		endif;
+	?>
 	</head>
 
 	<body class="<?php echo $this['config']->get('body_classes'); ?>">
