@@ -25,14 +25,19 @@ include($this['path']->path('layouts:theme.config.php'));
 	<script type="text/javascript">
 		var jQuery = jQuery.noConflict();
 		jQuery(window).load(function() {
+			// Limpa variável 'Confira alguns tutoriais mais visualizados'
 			var string = jQuery("body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2").text();
 			var new_string = jQuery.trim(string);
+			// Reescreve texto 'Confira alguns tutoriais mais visualizados'
 			jQuery("body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2").text(new_string);
+			// Esconde texto
 			jQuery("body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2").hide();
+			// Adiciona imagem ao lado do texto
 			jQuery("body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2").prepend("<span class='icon_rsl'></span>");
+			// Exibe texto
 			jQuery("body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2").show();
 
-
+			// Adiciona ícone home em breadcrumb
 			jQuery(".breadcrumb .uk-breadcrumb li:first-of-type a").html("<i class='fa fa-home'></i>");
 
 		});
@@ -223,41 +228,43 @@ include($this['path']->path('layouts:theme.config.php'));
 			<?php endif; ?>
 
 			<?php if ($this['widgets']->count('main-top + main-bottom + sidebar-a + sidebar-b') || $this['config']->get('system_output', true)) : ?>
-				<div id="tm-main" class="tm-block-main uk-block <?php echo $classes['block.main']; ?>" <?php echo $styles['block.main']; ?>>
-					<div class="uk-container uk-container-center">
-						<div class="tm-middle uk-grid" data-uk-grid-match data-uk-grid-margin>
-							<?php if ($this['widgets']->count('main-top + main-bottom') || $this['config']->get('system_output', true)) : ?>
-								<div class="<?php echo $classes['layout.main'] ?>">
-									<?php if ($this['widgets']->count('main-top')) : ?>
-										<section id="tm-main-top" class="tm-main-top <?php echo $classes['grid.main-top']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
-											<?php echo $this['widgets']->render('main-top', array('layout'=>$this['config']->get('grid.main-top.layout'))); ?>
-										</section>	
-									<?php endif; ?>
+				<?php if(@$page_var2 != NULL && @$page_var2 == "tutorial-interno" && ((@$pieces[3] == NULL && @$pieces[4] == NULL) || (@$pieces[3] != NULL && @$pieces[4] != NULL))): ?>
+					<div id="tm-main" class="tm-block-main uk-block <?php echo $classes['block.main']; ?>" <?php echo $styles['block.main']; ?>>
+						<div class="uk-container uk-container-center">
+							<div class="tm-middle uk-grid" data-uk-grid-match data-uk-grid-margin>
+								<?php if ($this['widgets']->count('main-top + main-bottom') || $this['config']->get('system_output', true)) : ?>
+									<div class="<?php echo $classes['layout.main'] ?>">
+										<?php if ($this['widgets']->count('main-top')) : ?>
+											<section id="tm-main-top" class="tm-main-top <?php echo $classes['grid.main-top']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+												<?php echo $this['widgets']->render('main-top', array('layout'=>$this['config']->get('grid.main-top.layout'))); ?>
+											</section>	
+										<?php endif; ?>
 
-									<?php if ($this['config']->get('system_output', true)) : ?>
-										<main id="tm-content" class="tm-content">
-											<?php if ($this['widgets']->count('breadcrumbs')) : ?>
-												<?php echo $this['widgets']->render('breadcrumbs'); ?>
-											<?php endif; ?>
-				
-											<?php echo $this['template']->render('content'); ?>
-										</main>
-									<?php endif; ?>
+										<?php if ($this['config']->get('system_output', true)) : ?>
+											<main id="tm-content" class="tm-content">
+												<?php if ($this['widgets']->count('breadcrumbs')) : ?>
+													<?php echo $this['widgets']->render('breadcrumbs'); ?>
+												<?php endif; ?>
+					
+												<?php echo $this['template']->render('content'); ?>
+											</main>
+										<?php endif; ?>
 
-									<?php if ($this['widgets']->count('main-bottom')) : ?>
-										<section id="tm-main-bottom" class="tm-main-bottom <?php echo $classes['grid.main-bottom']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
-											<?php echo $this['widgets']->render('main-bottom', array('layout'=>$this['config']->get('grid.main-bottom.layout'))); ?>
-										</section>
-									<?php endif; ?>
-								</div>
-							<?php endif; ?>
+										<?php if ($this['widgets']->count('main-bottom')) : ?>
+											<section id="tm-main-bottom" class="tm-main-bottom <?php echo $classes['grid.main-bottom']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+												<?php echo $this['widgets']->render('main-bottom', array('layout'=>$this['config']->get('grid.main-bottom.layout'))); ?>
+											</section>
+										<?php endif; ?>
+									</div>
+								<?php endif; ?>
 
-							<?php foreach($sidebars as $name => $sidebar) : ?>
-								<aside class="<?php echo $classes["layout.$name"] ?>"><?php echo $this['widgets']->render($name) ?></aside>
-							<?php endforeach ?>
+								<?php foreach($sidebars as $name => $sidebar) : ?>
+									<aside class="<?php echo $classes["layout.$name"] ?>"><?php echo $this['widgets']->render($name) ?></aside>
+								<?php endforeach ?>
+							</div>
 						</div>
 					</div>
-				</div>
+				<?php endif; ?>
 			<?php endif; ?>
 		</section>
 
