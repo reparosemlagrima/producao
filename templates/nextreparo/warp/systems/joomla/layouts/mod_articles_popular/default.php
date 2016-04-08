@@ -10,9 +10,24 @@
 defined('_JEXEC') or die;
 
 ?>
-
-<ul class="uk-list uk-list-line">
-<?php foreach ($list as $item) : ?>
-	<li><a href="<?php echo $item->link; ?>"><?php echo $item->title; ?></a></li>
-<?php endforeach; ?>
-</ul>
+	<p>Mais Acessados</p>
+	<ul class="uk-list uk-list-line lista_mais_acessados">
+<?php
+		foreach ($list as $item):
+			$itens = $item->images;
+			$pieces = explode(",",$itens);
+			$path = explode(":",$pieces[0]);
+			$image = str_replace("\\", "",substr($path[1],1,-1));
+?>
+			<li>
+				<a href="<?php echo $item->link; ?>">
+					<span>
+						<img src="<?php echo $image; ?>" alt="<?php echo $item->title; ?>" title="<?php echo $item->title; ?>" />
+					</span>
+					<?php echo $item->title; ?>
+				</a>
+			</li>
+<?php
+		endforeach;
+?>
+	</ul>
