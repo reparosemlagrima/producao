@@ -187,4 +187,12 @@ class JDatabaseFactory
 	{
 		self::$_instance = $instance;
 	}
+
+	function checkChildren($id)
+	{
+		$categories = JCategories::getInstance('Content');
+		$categoria = $categories->get($id);
+		$filhosdap = $categoria->getChildren();
+		return $filhosdap;
+	}
 }
