@@ -28,12 +28,12 @@
 							<div class="uk-panel uk-panel-box">
 								<div class="uk-panel-teaser">
 									<a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($cat->id)); ?>">
-										<?php echo $cat->description; ?>
+										<img src="<?php echo  $cat->getParams()->get('image'); ?>" alt="<?php echo $cat->getParams()->get('image_alt') ?>" title="<?php echo $cat->getParams()->get('image_alt') ?>" />
 									</a>
 								</div>
 								<h3>
 									<a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($cat->id)); ?>">
-									<?php echo $cat->title ?>
+										<?php echo $cat->title ?>
 									</a>
 								</h3>
 							</div>
@@ -44,12 +44,12 @@
 						<div class="uk-width-medium-1-5 cellphone">
 							<div>
 								<a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($cat->id)); ?>">
-									<?php echo $cat->description; ?>
+									<img src="<?php echo  $cat->getParams()->get('image'); ?>" alt="<?php echo $cat->getParams()->get('image_alt') ?>" title="<?php echo $cat->getParams()->get('image_alt') ?>" />
 								</a>
 							</div>
 							<h3>
 								<a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($cat->id)); ?>">
-								<?php echo $cat->title ?>
+									<?php echo $cat->title ?>
 								</a>
 							</h3>
 						</div>
