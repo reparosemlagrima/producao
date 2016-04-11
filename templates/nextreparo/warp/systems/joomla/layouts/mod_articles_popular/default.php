@@ -10,7 +10,7 @@
 defined('_JEXEC') or die;
 
 ?>
-	<p>Mais Acessados</p>
+	<p id="titulo_mais_acessadas">Mais Acessados</p>
 	<ul class="uk-list uk-list-line lista_mais_acessados">
 <?php
 		foreach ($list as $item):
@@ -24,7 +24,13 @@ defined('_JEXEC') or die;
 					<span>
 						<img src="<?php echo $image; ?>" alt="<?php echo $item->title; ?>" title="<?php echo $item->title; ?>" />
 					</span>
-					<?php echo $item->title; ?>
+					<div id="title_article">
+						<p>
+							<span>
+								<?php echo $item->title; ?>
+							</span>
+						</p>
+					</div>
 				</a>
 			</li>
 <?php
