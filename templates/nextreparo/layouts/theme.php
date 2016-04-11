@@ -55,6 +55,13 @@ include($this['path']->path('layouts:theme.config.php'));
 			// Exibe elemento
 			jQuery("body.pag_modelo #tm-top-b").show();
 
+			var content_maisacessadas = jQuery("body.pag_tutoriais #tm-main .blogpag_tutoriais #mais_acessadas").html();
+			if(content_maisacessadas == "&nbsp;"){
+				jQuery("#mais_acessadas").css("display", "none");
+				jQuery(".blogpag_tutoriais.pag_modelo .type").css({"margin":"0 auto", "float": "none"});
+			}
+
+			jQuery(".blogpag_tutoriais.pag_modelo .type").show();
 		});
 	</script>
 	<?php

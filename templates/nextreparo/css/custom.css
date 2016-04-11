@@ -1052,6 +1052,7 @@ body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2 .icon_rsl, body.pa
 }
 
 body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais .type{
+	display: none;
 	float: left;
 	max-width: 540px;
 	width: 60%;
