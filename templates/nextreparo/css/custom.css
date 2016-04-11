@@ -32,6 +32,9 @@ margin-left: 20px;
 		content: "\e002";
 }
 
+br.clear{
+	clear: both;
+}
 
 .tm-navbar-center [class*='tm-logo'] { transform: scale(1.2); }
 
@@ -843,6 +846,10 @@ body.pag_tutoriais > section:first-of-type #tm-top-b{
 	padding: 0;
 }
 
+body.pag_tutoriais.pag_modelo > section:first-of-type > #tm-top-b{
+	display: none !important;
+}
+
 body.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .uk-width-1-1{
 	padding: 0;
 }
@@ -905,6 +912,10 @@ body.pag_tutoriais > section:first-of-type .category-listpag_tutoriais .cat-chil
 body.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5.cellphone .description_type,
 body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais > h2{
 	display: none !important;
+}
+body.pag_tutoriais.pag_tutoriais_principal > section:first-of-type #tm-main .blogpag_tutoriais > h2{
+	display: block !important;
+	padding-top: 35px;
 }
 
 body.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5.cellphone > h3 a,
@@ -1023,32 +1034,91 @@ body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais .descript
 	width: 40%;
 }
 
+#mais_acessadas + p{
+	display: none;
+}
+
 body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais #mais_acessadas > #tm-top-b{
 	width: 100%;
 }
 
-.lista_mais_acessados{
+#titulo_mais_acessadas {
+	margin: 30px 0 17px;
+	font-weight: 500;
+	font-size: 25px;
+	color: #8c8c8c;
+}
 
+.lista_mais_acessados{
+	margin: 0;
 }
 
 .lista_mais_acessados li{
 	background-color: #F5F5F5;
+	width: 365px;
+	height: 121px;
+	margin-bottom: 11px;
+}
+
+.lista_mais_acessados li > a{
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	padding: 2px;
 }
 
-.lista_mais_acessados li span{
+.lista_mais_acessados li > a > span{
 	float: left;
-	max-width: 120px;
-	width: 30%;
+	height: 117px;
+	max-width: 117px;
+	width: 35%;
+	background-color: #fbfbf9;
 }
 
-.lista_mais_acessados li span img{
+.lista_mais_acessados li > a > span img{
 	width: 100%;
+	height: 100%;
 }
 
-.lista_mais_acessados li p{
-
+.lista_mais_acessados li > a #title_article{
+	width: 244px;
+	height: 117px;
+	padding: 0 15px;
+	text-align: center;
+	position: relative;
+	display:table;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
+
+.lista_mais_acessados li > a #title_article p{
+	*position: absolute;
+	top: 50%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.lista_mais_acessados li > a #title_article span{
+	display:block;
+	*position: relative;
+	top: -50%;
+	color: #8c8c8c;
+	font-weight: 500;
+    font-size: 17px;
+}
+
+.lista_mais_acessados li > a:hover{
+	background: #00aff3;
+	text-decoration: none;
+}
+
+.lista_mais_acessados li > a:hover #title_article span{
+	color: #fff;
+}
+
+
 
 /* BANNER RECICLA BOTTOM */
 #banner_recicla{
