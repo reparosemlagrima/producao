@@ -986,8 +986,8 @@ body.pag_tutoriais.pag_tutoriais_principal > section:first-of-type #tm-main .blo
 	padding-top: 35px;
 }
 
-body.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5.cellphone > h3 a,
-body.pag_tutoriais > section:first-of-type #tm-main .tm-main .category-listpag_tutoriais .uk-width-medium-1-5.cellphone > h3 a{
+body.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5.cellphone > h3,
+body.pag_tutoriais > section:first-of-type #tm-main .tm-main .category-listpag_tutoriais .uk-width-medium-1-5.cellphone > h3{
 	color: #C7C7C7;
 	font-size: 22px;
 	text-align: center;
@@ -997,14 +997,17 @@ body.pag_tutoriais > section:first-of-type #tm-main .tm-main .category-listpag_t
 	font-weight: 400;
 }
 
-body.pag_tutoriais > section:first-of-type #tm-main .tm-main .category-listpag_tutoriais .uk-width-medium-1-5.cellphone > h3 a{
+body.pag_tutoriais > section:first-of-type #tm-main .tm-main .category-listpag_tutoriais .uk-width-medium-1-5.cellphone > h3{
 	margin-bottom: 5px;
 }
 
-body.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5.cellphone:hover > h3 a,
-body.pag_tutoriais > section:first-of-type #tm-main .tm-main .category-listpag_tutoriais .uk-width-medium-1-5.cellphone:hover > h3 a{
-	color: #00AEF3;
+body.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5.cellphone:hover{
 	text-decoration: none;
+}
+
+body.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5.cellphone:hover > h3,
+body.pag_tutoriais > section:first-of-type #tm-main .tm-main .category-listpag_tutoriais .uk-width-medium-1-5.cellphone:hover > h3{
+	color: #00AEF3;
 }
 
 body.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5 .uk-panel-box .uk-panel-teaser{

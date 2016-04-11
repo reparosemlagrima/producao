@@ -39,18 +39,14 @@
 			<?php
 					else:
 			?>
-						<div class="uk-width-medium-1-5 cellphone">
-							<div>
-								<a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($cat->id)); ?>">
-									<img src="<?php echo  $cat->getParams()->get('image'); ?>" alt="<?php echo htmlspecialchars($cat->getParams()->get('image_alt')); ?>" title="<?php echo htmlspecialchars($cat->getParams()->get('image_alt')); ?>" />
-								</a>
-							</div>
+						<a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($cat->id)); ?>" class="uk-width-medium-1-5 cellphone">
+							<span>
+								<img src="<?php echo  $cat->getParams()->get('image'); ?>" alt="<?php echo htmlspecialchars($cat->getParams()->get('image_alt')); ?>" title="<?php echo htmlspecialchars($cat->getParams()->get('image_alt')); ?>" />
+							</span>
 							<h3>
-								<a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($cat->id)); ?>">
-									<?php echo $cat->title ?>
-								</a>
+								<?php echo $cat->title ?>
 							</h3>
-						</div>
+						</a>
 			<?php
 					endif;
 				endforeach;
