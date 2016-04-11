@@ -24,7 +24,7 @@
 
 					if($catget == 7):
 			?>
-						<div class="uk-width-medium-1-5">
+						<div class="uk-width-medium-1-5 modelos_brands">
 							<div class="uk-panel uk-panel-box">
 								<div class="uk-panel-teaser">
 									<a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($cat->id)); ?>">
