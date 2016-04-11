@@ -24,7 +24,7 @@ defined('_JEXEC') or die;
 					<span>
 						<img src="<?php echo $image; ?>" alt="<?php echo $item->title; ?>" title="<?php echo $item->title; ?>" />
 					</span>
-					<div id="title_article">
+					<div>
 						<p>
 							<span>
 								<?php echo $item->title; ?>
