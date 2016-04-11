@@ -1130,6 +1130,8 @@ body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais #mais_ace
 	width: 365px;
 	height: 121px;
 	margin-bottom: 11px;
+	margin-top: 0;
+	padding-top: 0;
 }
 
 body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais #mais_acessadas .lista_mais_acessados li > a{
