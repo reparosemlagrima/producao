@@ -24,20 +24,18 @@
 
 					if($catget == 7):
 			?>
-						<div class="uk-width-medium-1-5 modelos_brands">
-							<div class="uk-panel uk-panel-box">
-								<div class="uk-panel-teaser">
-									<a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($cat->id)); ?>">
-										<img src="<?php echo  $cat->getParams()->get('image'); ?>" alt="<?php echo htmlspecialchars($cat->getParams()->get('image_alt')); ?>" title="<?php echo htmlspecialchars($cat->getParams()->get('image_alt')); ?>" />
-									</a>
-								</div>
-								<h3>
-									<a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($cat->id)); ?>">
+						<a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($cat->id)); ?>" class="uk-width-medium-1-5 modelos_brands">
+							<span>
+								<img src="<?php echo  $cat->getParams()->get('image'); ?>" alt="<?php echo htmlspecialchars($cat->getParams()->get('image_alt')); ?>" title="<?php echo htmlspecialchars($cat->getParams()->get('image_alt')); ?>" />
+							</span>
+							<h3>
+								<p>
+									<span>
 										<?php echo $cat->title ?>
-									</a>
-								</h3>
-							</div>
-						</div>
+									</span>
+								</p>
+							</h3>
+						</a>
 			<?php
 					else:
 			?>
