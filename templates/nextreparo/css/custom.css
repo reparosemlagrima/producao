@@ -1192,7 +1192,113 @@ body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais #mais_ace
 	color: #fff;
 }
 
+/* OUTROS MAIS ACESSADOS */
 
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados{
+	display: none;
+}
+
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados #titulo_outros_maisacessados,
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutoriais_principal #outros_maisacessados #titulo_outros_maisacessados{
+	color: #5B656E;
+	font-weight: 500;
+	font-size: 32px;
+	margin-top: 16px;
+	text-decoration: underline;
+	letter-spacing: 0.6px;
+}
+
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados .lista_outros_maisacessados,
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutoriais_principal #outros_maisacessados .lista_outros_maisacessados{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados .lista_outros_maisacessados li,
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutoriais_principal #outros_maisacessados  .lista_outros_maisacessados li{
+	float: left;
+	background-color: #F5F5F5;
+	width: 302px;
+	height: 99px;
+	margin: 0 11px 11px 0;
+	padding-top: 0;
+}
+
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados .lista_outros_maisacessados li:nth-child(3n+0),
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutoriais_principal #outros_maisacessados  .lista_outros_maisacessados li:nth-child(3n+0){
+	margin-right: 0;
+}
+
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados .lista_outros_maisacessados li > a,
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutoriais_principal #outros_maisacessados .lista_outros_maisacessados li > a{
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 2px;
+}
+
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados .lista_outros_maisacessados li > a > span,
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutoriais_principal #outros_maisacessados .lista_outros_maisacessados li > a > span{
+	float: left;
+	height: 95px;
+	max-width: 95px;
+	width: 35%;
+	background-color: #fbfbf9;
+}
+
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados .lista_outros_maisacessados li > a > span img,
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutoriais_principal #outros_maisacessados .lista_outros_maisacessados li > a > span img{
+	width: 100%;
+	height: 100%;
+}
+
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados .lista_outros_maisacessados li > a > div,
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutoriais_principal #outros_maisacessados .lista_outros_maisacessados li > a > div{
+	width: 203px;
+	height: 95px;
+	padding: 0 15px;
+	text-align: center;
+	position: relative;
+	display:table;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados .lista_outros_maisacessados li > a > div p,
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutoriais_principal #outros_maisacessados .lista_outros_maisacessados li > a > div p{
+	*position: absolute;
+	top: 50%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados .lista_outros_maisacessados li > a > div span,
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutoriais_principal #outros_maisacessados .lista_outros_maisacessados li > a > div span{
+	display:block;
+	*position: relative;
+	top: -50%;
+	color: #8c8c8c;
+	font-weight: 500;
+    font-size: 17px;
+	line-height: 19px;
+}
+
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados .lista_outros_maisacessados li > a:hover,
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutoriais_principal #outros_maisacessados .lista_outros_maisacessados li > a:hover{
+	background: #00aff3;
+	text-decoration: none;
+}
+
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados .lista_outros_maisacessados li > a:hover > div span,
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutoriais_principal #outros_maisacessados .lista_outros_maisacessados li > a:hover > div span{
+	color: #fff;
+}
+
+/* FIM OUTROS MAIS ACESSADOS */
 
 /* BANNER RECICLA BOTTOM */
 #banner_recicla{

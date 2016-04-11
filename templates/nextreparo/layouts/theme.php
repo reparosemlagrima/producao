@@ -62,6 +62,7 @@ include($this['path']->path('layouts:theme.config.php'));
 			}
 
 			jQuery(".blogpag_tutoriais.pag_modelo .type").show();
+			jQuery(".blogpag_tutoriais.pag_modelo #outros_maisacessados").show();
 		});
 	</script>
 	<?php

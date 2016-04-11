@@ -105,27 +105,45 @@ JHtml::_('behavior.caption');
 		-->
 
 		<?php if (!empty($this->intro_items)) : ?>
-			<?php foreach ($this->intro_items as $key => &$item) : ?>
-				<?php $rowcount = ((int) $key % (int) $this->columns) + 1; ?>
-				<?php if ($rowcount == 1) : ?>
-					<?php $row = $counter / $this->columns; ?>
-					<div class="items-row cols-<?php echo (int) $this->columns; ?> <?php echo 'row-' . $row; ?> row-fluid clearfix">
-				<?php endif; ?>
-				<div class="span<?php echo round((12 / $this->columns)); ?> rk-margin-tutorial">
-			
-					<div class="item column-<?php echo $rowcount; ?><?php echo $item->state == 0 ? ' system-unpublished' : null; ?>" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-						<?php
-							$this->item = & $item;
-							echo $this->loadTemplate('newitem');
-						?>
-					</div>
-					<!-- end item -->
-					<?php $counter++; ?>
-				</div><!-- end span -->
-				<?php if (($rowcount == $this->columns) or ($counter == $introcount)) : ?>
-					</div><!-- end row -->
-				<?php endif; ?>
-			<?php endforeach; ?>
+			<?php if (count($this->intro_items) > 2) : ?>
+				<?php
+					unset($this->intro_items[0]);
+					unset($this->intro_items[1]);
+				?>
+				<div id="outros_maisacessados">
+					<h4 id="titulo_outros_maisacessados">Outros</h4>
+					<ul class="lista_outros_maisacessados">
+						<?php foreach ($this->intro_items as $key => $item) : ?>
+							<?php
+								$rowcount = ((int) $key % (int) $this->columns) + 1;
+								$itens = $item->images;
+								$pieces = explode(",",$itens);
+								$path = explode(":",$pieces[0]);
+								$image = str_replace("\\", "",substr($path[1],1,-1));
+
+								$categ_pieces = explode("/", $item->category_route);
+								unset($categ_pieces[0]);
+								$categoria = implode("/", $categ_pieces);
+								$link = "tutorial-interno/".$categoria."/".$item->id."-".$item->alias;
+							?>
+								<li>
+									<a href="<?php echo $link; ?>">
+										<span>
+											<img src="<?php echo $image; ?>" alt="<?php echo $item->title; ?>" title="<?php echo $item->title; ?>" />
+										</span>
+										<div>
+											<p>
+												<span>
+													<?php echo $item->title; ?>
+												</span>
+											</p>
+										</div>
+									</a>
+								</li>
+						<?php endforeach; ?>
+					</ul>
+				</div>
+			<?php endif; ?>
 		<?php endif; ?>
 
 		<!--
