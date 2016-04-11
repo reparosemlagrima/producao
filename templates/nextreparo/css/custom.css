@@ -989,10 +989,10 @@ body.pag_tutoriais.pag_tutoriais_principal > section:first-of-type #tm-main .blo
 body.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5.cellphone > h3,
 body.pag_tutoriais > section:first-of-type #tm-main .tm-main .category-listpag_tutoriais .uk-width-medium-1-5.cellphone > h3{
 	color: #C7C7C7;
-	font-size: 22px;
+	font-size: 20px;
 	text-align: center;
 	display: block;
-	margin: 5px 0 6px;
+	margin: 13px 0 6px;
 	padding: 0;
 	font-weight: 400;
 }
@@ -1033,7 +1033,7 @@ a:hover, .uk-link:hover{
 body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2{
 	text-align: center;
 	color: #00AFF3;
-	padding-bottom: 45px;
+	padding-bottom: 30px;
 	margin: 0;
 }
 
@@ -1198,14 +1198,17 @@ body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_model
 	display: none;
 }
 
-body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados #titulo_outros_maisacessados,
-body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutoriais_principal #outros_maisacessados #titulo_outros_maisacessados{
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados #titulo_outros_maisacessados{
 	color: #5B656E;
 	font-weight: 500;
 	font-size: 32px;
 	margin-top: 16px;
 	text-decoration: underline;
 	letter-spacing: 0.6px;
+}
+
+body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutoriais_principal #outros_maisacessados #titulo_outros_maisacessados{
+	display: none;
 }
 
 body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados .lista_outros_maisacessados,

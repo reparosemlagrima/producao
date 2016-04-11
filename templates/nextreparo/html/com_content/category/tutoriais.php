@@ -29,8 +29,6 @@ JHtml::_('behavior.caption');
 		<?php endif; ?>
 		-->
 
-		<!--
-		TÍTULO CATEGORIA
 		<?php if ($this->params->get('show_category_title', 1) or $this->params->get('page_subheading')) : ?>
 			<h2>
 				<?php echo $this->escape($this->params->get('page_subheading')); ?>
@@ -39,8 +37,7 @@ JHtml::_('behavior.caption');
 				<?php endif; ?>
 			</h2>
 		<?php endif; ?>
-		-->
-
+		
 		<!--
 		CATEGORIAS / TAGS
 		<?php if ($this->params->get('show_cat_tags', 1) && !empty($this->category->tags->itemTags)) : ?>
