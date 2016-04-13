@@ -22,6 +22,7 @@
 				foreach($filhosdaps as $k => $cat):
 					$subfilhos = checkChildren($cat->id);
 
+					// categoria base das marcas dos celulares
 					if($catget == 7):
 			?>
 						<a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($cat->id)); ?>" class="uk-width-medium-1-5 modelos_brands">
