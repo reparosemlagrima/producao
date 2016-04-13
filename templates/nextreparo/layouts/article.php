@@ -1,38 +1,71 @@
 <link rel="stylesheet" type="text/css" href="/reparosemlagrima/templates/nextreparo/js/bxslider/jquery.bxslider.css" />
 <script type="text/javascript" src="/reparosemlagrima/templates/nextreparo/js/bxslider/jquery.bxslider.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/reparosemlagrima/templates/nextreparo/js/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript" src="/reparosemlagrima/templates/nextreparo/js/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+
 <script type="text/javascript">
 	var jQuery = jQuery.noConflict();
 	jQuery(window).load(function() {
 
 		jQuery(".slider_tutorial").each(function(index){
-			var num = (index+1);
-			var nome = 'slider_tutorial_'+num;
-			var id = '#'+nome;
+			var num 	= (index+1);
+			var nome 	= 'slider_tutorial_'+num;
+			var id 		= '#'+nome;
 			jQuery(this).attr('id',nome);
 
 			jQuery(this).find('div.pager_imagens_tutorial > a').each(function(i){
 				jQuery(this).attr('data-slide-index',i);
 			});
 
+			jQuery(this).find('ul.bxslider_imagens_tutorial a').each(function(i){
+				jQuery(this).attr('data-fancybox-group','gallery');
+			});
+
 			jQuery(id+' .bxslider_imagens_tutorial').bxSlider({
-				pagerCustom: id+' .pager_imagens_tutorial',
+				pagerCustom : id+' .pager_imagens_tutorial',
 				infiniteLoop: false,
-				controls: false,
-				mode: 'vertical'
+				controls 	: false,
+				mode 		: 'vertical'
 			});
 			jQuery(id+' .pager_imagens_tutorial').bxSlider({
-				infiniteLoop: false,
+				infiniteLoop 	: false,
 				hideControlOnEnd: true,
-				pager: false,
-				minSlides: 4,
-				maxSlides: 4,
-				slideWidth: 110,
-				slideMargin: 4,
-				mode: 'vertical'
+				pager 			: false,
+				minSlides 		: 4,
+				maxSlides 		: 4,
+				slideWidth 		: 110,
+				slideMargin 	: 4,
+				mode 			: 'vertical'
 			});
 		});
 
-		
+		jQuery(".fancybox").fancybox({
+				wrapCSS		: 'fancybox-custom',
+				padding 	: 10,
+
+				closeClick 	: true,
+
+				minWidth	: 300,
+				maxWidth	: 1500,
+
+				openEffect  : 'elastic',
+				closeEffect	: 'elastic',
+
+				openSpeed	: 'fast',
+				closeSpeed	: 'fast',
+
+				helpers 	: {
+					title 	: {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(78, 78, 78, 0.9)'
+						}
+					}
+				}
+			});
 	});
 </script>
 
