@@ -41,31 +41,31 @@
 		});
 
 		jQuery(".fancybox").fancybox({
-				wrapCSS		: 'fancybox-custom',
-				padding 	: 10,
+			wrapCSS		: 'fancybox-custom',
+			padding 	: 10,
 
-				closeClick 	: true,
+			closeClick 	: true,
 
-				minWidth	: 300,
-				maxWidth	: 1500,
+			minWidth	: 300,
+			maxWidth	: 1500,
 
-				openEffect  : 'elastic',
-				closeEffect	: 'elastic',
+			openEffect  : 'elastic',
+			closeEffect	: 'elastic',
 
-				openSpeed	: 'fast',
-				closeSpeed	: 'fast',
+			openSpeed	: 'fast',
+			closeSpeed	: 'fast',
 
-				helpers 	: {
-					title 	: {
-						type : 'inside'
-					},
-					overlay : {
-						css : {
-							'background' : 'rgba(78, 78, 78, 0.9)'
-						}
+			helpers 	: {
+				title 	: {
+					type : 'inside'
+				},
+				overlay : {
+					css : {
+						'background' : 'rgba(78, 78, 78, 0.9)'
 					}
 				}
-			});
+			}
+		});
 	});
 </script>
 
