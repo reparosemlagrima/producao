@@ -1400,6 +1400,10 @@ body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutor
 	margin: 0 auto;
 }
 
+.fancybox-custom .fancybox-skin{
+	box-shadow: 0 0 50px #222;
+}
+
 /* FIM DO ARTIGO */
 
 /* BANNER RECICLA BOTTOM */
