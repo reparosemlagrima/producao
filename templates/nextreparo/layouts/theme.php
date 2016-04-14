@@ -40,7 +40,7 @@ include($this['path']->path('layouts:theme.config.php'));
 		});
 	</script>
 	<?php
-		elseif((@$page_var2 != NULL && @$page_var2 == "tutorial-interno") || @$page_var2 == "forum-reparo"):
+		elseif(@$page_var2 != NULL && @$page_var2 == ("tutorial-interno" || "forum-reparo" || "registra-usuario")):
 	?>
 	<script type="text/javascript">
 		var jQuery = jQuery.noConflict();
@@ -288,7 +288,7 @@ include($this['path']->path('layouts:theme.config.php'));
 							</div>
 						</div>
 					</div>
-				<?php elseif(@$page_var2 == "forum-reparo"): ?>
+				<?php elseif(@$page_var2 == ("forum-reparo" || "post-recentes")): ?>
 					<div id="tm-main" class="tm-block-main uk-block <?php echo $classes['block.main']; ?>" <?php echo $styles['block.main']; ?>>
 
 						<div class="uk-container uk-container-center">
