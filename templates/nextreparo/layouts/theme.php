@@ -37,7 +37,14 @@ include($this['path']->path('layouts:theme.config.php'));
 			jQuery("body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2").prepend("<span class='icon_rsl'></span>");
 			// Exibe texto
 			jQuery("body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2").show();
-
+		});
+	</script>
+	<?php
+		elseif((@$page_var2 != NULL && @$page_var2 == "tutorial-interno") || @$page_var2 == "forum-reparo"):
+	?>
+	<script type="text/javascript">
+		var jQuery = jQuery.noConflict();
+		jQuery(window).load(function() {
 			// Adiciona ícone home em breadcrumb
 			jQuery(".breadcrumb .uk-breadcrumb li:first-of-type a").html("<i class='fa fa-home'></i>");
 		});
