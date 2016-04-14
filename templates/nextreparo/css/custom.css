@@ -735,7 +735,8 @@ small.similar-smallinfo .countnum{
 	background: #00AEF3;
 }
 
-body.pag_tutoriais > section:first-of-type{
+body.pag_tutoriais > section:first-of-type,
+body.pag_forum > section:first-of-type{
 	margin: 20px auto 30px;
 	padding: 15px;
 	width: 95% !important;
@@ -746,13 +747,15 @@ body.pag_tutoriais > section:first-of-type{
 	box-sizing: border-box;
 }
 
-body.pag_tutoriais #tm-top-a{
+body.pag_tutoriais #tm-top-a,
+body.pag_forum #tm-top-a{
 	background-image: none !important;
 	background-color: transparent;
 	padding: 0;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb{
+body.pag_tutoriais > section:first-of-type .breadcrumb,
+body.pag_forum > section:first-of-type .breadcrumb{
 	position: relative;
 	margin: 0 0 20px 0;
 	padding: 0;
@@ -762,11 +765,13 @@ body.pag_tutoriais > section:first-of-type .breadcrumb{
 	border-radius: 4px;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb > h3, body.pag_tutoriais > section:first-of-type .breadcrumb > div > p{
+body.pag_tutoriais > section:first-of-type .breadcrumb > h3, body.pag_tutoriais > section:first-of-type .breadcrumb > div > p,
+body.pag_forum > section:first-of-type .breadcrumb > h3, body.pag_forum > section:first-of-type .breadcrumb > div > p{
 	display: none;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb{
+body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb,
+body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb{
 	overflow: hidden;
 	list-style: none;
 	margin: 0;
@@ -775,7 +780,8 @@ body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb{
 	letter-spacing: 0;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li {
+body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li,
+body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li{
 	float: left;
 	display: inline-block;
 	top: 4px;
@@ -788,14 +794,16 @@ body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li {
     font-size: 14px;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li + li:before {
+body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li + li:before,
+body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li + li:before{
     content: '';
     padding: 0;
     margin: 0;
     color: transparent;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li:after {
+body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li:after,
+body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li:after{
 	content: '';
 	display: block;
 	position: absolute;
@@ -811,21 +819,25 @@ body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li:after
 	transform: rotate(-45deg);
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li:last-of-type:after {
+body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li:last-of-type:after,
+body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li:last-of-type:after{
     opacity: 0;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li a {
+body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li a,
+body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li a{
     color: #00AFF3;
     font-weight: 400;
     font-size: 14px;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li  i {
+body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li i,
+body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li i{
     font-size: 15px;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li  i.fa-home {
+body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li  i.fa-home,
+body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li  i.fa-home{
     margin-top: 3px;
 }
 
