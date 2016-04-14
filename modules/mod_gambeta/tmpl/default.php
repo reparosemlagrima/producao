@@ -16,22 +16,25 @@ defined('_JEXEC') or die;
 	<div id="ktopmenu">
 		<div id="ktab">
 			<ul class="menu">
-				<?php foreach ($list as $i => &$item): ?>
-				<?php 
+				<?php
+					foreach ($list as $i => &$item):
 						$flink = $item->flink;
 						$flink = JFilterOutput::ampReplace(htmlspecialchars($flink));
 				?>
-					<li class="<?=(($item->id == $active_id) OR ($item->type == 'alias' AND $item->params->get('aliasoptions') == $active_id))?'active':'';?>">
-						<a href="<?=$flink;?>">
-							<span><?=$item->title;?></span>
-						</a>
-					</li>
-				<?php endforeach;?> 
-				
+						<li class="<?=(($item->id == $active_id) OR ($item->type == 'alias' AND $item->params->get('aliasoptions') == $active_id))?'active':'';?>">
+							<a href="<?=$flink;?>">
+								<span><?=$item->title;?></span>
+							</a>
+						</li>
+				<?php
+					endforeach;
+				?>
 			</ul>
 		</div>
-		</div>
-		<span class="ktoggler fltrt"><a class="ktoggler close" title="Collapse" rel="kprofilebox"></a></span>
+	</div>
+	<span class="ktoggler fltrt">
+		<a class="ktoggler close" title="Collapse" rel="kprofilebox"></a>
+	</span>
 </div>
 
 
