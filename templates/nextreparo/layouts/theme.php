@@ -40,7 +40,9 @@ include($this['path']->path('layouts:theme.config.php'));
 		});
 	</script>
 	<?php
-		elseif(@$page_var2 != NULL && @$page_var2 == ("tutorial-interno" || "forum-reparo" || "registra-usuario")):
+		endif;
+
+		if(@$page_var2 != NULL && @$page_var2 == ("tutorial-interno" || "forum-reparo" || "registra-usuario")):
 	?>
 	<script type="text/javascript">
 		var jQuery = jQuery.noConflict();
