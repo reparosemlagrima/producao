@@ -104,8 +104,10 @@ JHtml::_('behavior.caption');
 		<?php if (!empty($this->intro_items)) : ?>
 			<?php if (count($this->intro_items) > 2) : ?>
 				<?php
-					unset($this->intro_items[0]);
-					unset($this->intro_items[1]);
+					if(@$page_var2 != NULL && @$page_var2 == "tutorial-interno" && (@$pieces[3] != NULL && @$pieces[4] != NULL)):
+						unset($this->intro_items[0]);
+						unset($this->intro_items[1]);
+					endif;
 				?>
 				<div id="outros_maisacessados">
 					<h4 id="titulo_outros_maisacessados">Outros</h4>
