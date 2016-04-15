@@ -735,6 +735,19 @@ small.similar-smallinfo .countnum{
 	background: #00AEF3;
 }
 
+#text_page{
+	text-align: justify;
+}
+
+#text_page h2{
+	color: #00AFF3;
+	text-align: center;
+}
+
+#text_page p{
+	margin: 12px 0;
+}
+
 body.pag_tutoriais > section:first-of-type,
 body.pag_forum > section:first-of-type{
 	margin: 20px auto 30px;
