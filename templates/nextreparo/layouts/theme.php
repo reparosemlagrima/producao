@@ -426,11 +426,11 @@ include($this['path']->path('layouts:theme.config.php'));
 					<li>Acesse:</li>
 					<li>|</li>
 					<li>
-						<a href="#" title="">Política de Privacidade</a>
+						<a href="/reparosemlagrima/politica-de-privacidade" title="">Política de Privacidade</a>
 					</li>
 					<li>|</li>
 					<li>
-						<a href="#" title="">Como anunciar</a>
+						<a href="/reparosemlagrima/como-anunciar" title="">Como anunciar</a>
 					</li>
 					<li>|</li>
 					<li>
