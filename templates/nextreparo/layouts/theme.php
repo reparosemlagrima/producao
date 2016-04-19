@@ -14,6 +14,21 @@ include($this['path']->path('layouts:theme.config.php'));
 	<head>
 	<?php echo $this['template']->render('head'); ?>
 
+	<script type="text/javascript">
+		var jQuery = jQuery.noConflict();
+		jQuery(window).scroll(function() {
+			if ( jQuery(".pag_home").length ){
+				alert(jQuery("#sub_menu_footer").offset().top);
+				if (jQuery("#new-top-a").offset().top > 50) {
+					alert('cinquenta');
+					jQuery("#new-menu").addClass("top-nav-collapse");
+				} else {
+					jQuery("#new-menu").removeClass("top-nav-collapse");
+				}
+			}
+		});
+	</script>
+
 	<?php
 		$url = $_SERVER["REQUEST_URI"];
 		$pieces = explode("/", $url);
@@ -150,6 +165,18 @@ include($this['path']->path('layouts:theme.config.php'));
 			<div class="new-top-a" id="new-top-a">
 				<a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>                        
 				
+				<?php if ($this['widgets']->count('new-menu')) : ?>
+					<div class="new-menu menu_home" id="new-menu">
+						<div class="uk-container uk-container-center">
+							<h1 id="logo_topo_menu">
+								<a href="/reparosemlagrima">Reparo Sem Lagrima</a>
+							</h1>
+
+							<?php echo $this['widgets']->render('new-menu'); ?> 
+						</div>
+					</div>
+				<?php endif; ?>
+
 				<div class="newlogo-top-a">
 					<a href="<?php echo $this['config']->get('site_url'); ?>">
 						<?php echo strip_tags($this['widgets']->render('new-top-a'),'<img>'); ?>
@@ -162,19 +189,7 @@ include($this['path']->path('layouts:theme.config.php'));
 					</div>
 				<?php endif; ?>
 					
-				<?php if ($this['widgets']->count('new-menu')) : ?>
-					<div class="new-menu menu_home" id="new-menu">
-						<!--
-						<div class="tm-toolbar uk-clearfix uk-hidden-small uk-hidden-medium">
-							<div class="uk-container uk-container-center">
-						-->
-						<?php echo $this['widgets']->render('new-menu'); ?> 
-						<!--
-							</div>
-						</div>
-						-->
-					</div>
-				<?php endif; ?>
+				
 
 				<?php if ($this['widgets']->count('new-status')) : ?>
 					<div class="new-status" id="new-status">
