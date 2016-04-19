@@ -615,6 +615,8 @@ small.similar-smallinfo .countnum{
 
 #new-menu.menu_home{
 	position: fixed;
+	width: 100%;
+	z-index: 99;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
