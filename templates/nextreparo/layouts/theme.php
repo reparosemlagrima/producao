@@ -18,12 +18,12 @@ include($this['path']->path('layouts:theme.config.php'));
 		var jQuery = jQuery.noConflict();
 		jQuery(window).scroll(function() {
 			if ( jQuery(".pag_home").length ){
-				alert(jQuery("#sub_menu_footer").offset().top);
-				if (jQuery("#new-top-a").offset().top > 50) {
-					alert('cinquenta');
-					jQuery("#new-menu").addClass("top-nav-collapse");
+				console.log(jQuery("#new-menu").offset().top);
+				if (jQuery("#new-menu").offset().top > 300) {
+					console.log('cinquenta');
+					jQuery("#new-menu").addClass("menu_home-fixed");
 				} else {
-					jQuery("#new-menu").removeClass("top-nav-collapse");
+					jQuery("#new-menu").removeClass("menu_home-fixed");
 				}
 			}
 		});
