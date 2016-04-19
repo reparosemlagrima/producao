@@ -65,10 +65,11 @@ br.clear{
 .new-top-a{
 	position: relative;
 	min-height: 550px;
-	background-image: url("../../../images/banners/slide-show-home.jpg");
+	background-image: url("../../../images/banners/slide-show-home.png");
 	background-repeat: no-repeat;
-	background-size: contain;
-	background-origin:padding-box;
+	background-size: cover;
+	background-origin: padding-box;
+	background-position: center top;
 }
 .tm-block-top-d .tm-primary-title a {
 	color: #fff;
@@ -89,9 +90,6 @@ br.clear{
 }
 
 .new-status{ background-color: rgba(51, 51, 51, 0.72); padding: 25px 0; position: relative; bottom: 0}
-
-
-.new-menu{  background-color: rgba(17, 17, 17, 0.85);   margin-top:50px;  padding: 25px 0;  }
 	
 .new-menu a{ color: #fff; font-size: 14px; font-weight: 500; text-transform: uppercase;}
 .new-menu a i{ margin-right: 5px; font-size: 18px}
@@ -596,17 +594,52 @@ small.similar-smallinfo .countnum{
 
 /* MENU HOME */
 
+#logo_topo_menu{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 340px;
+	height: 40px;
+	background-image: url('../../../images/logo_topo_menu.png');
+	background-size: 340px;
+	background-repeat: no-repeat;
+}
+
+#logo_topo_menu a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-indent: -160px;
+}
+
 #new-menu.menu_home{
-	padding: 8px 0;
+	position: fixed;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 15px 0 15px;
+	background-color: rgba(0, 175, 243, 0.8);
+	-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+	transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+#new-menu.menu_home-fixed{
+	background-color: #00aff3;
+}
+
+#menu{
+	float: right;
+	padding: 9px 0 0;
 }
 
 #menu > .menu_principal{
 	list-style: none;
-	padding: 0 80px 0 135px;
-	margin: 0 auto;
-	height: 60px;
-	max-width: 1100px;
-	width: 100%;
+	padding: 0;
+	margin: 0;
+	height: 20px;
+	width: auto;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -622,10 +655,10 @@ small.similar-smallinfo .countnum{
 
 #menu > .menu_principal li{
 	float: left;
-	height: 60px;
-	line-height: 60px;
-	width: 33%;
-	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	text-align: right;
+	margin-left: 25px;
 	position: relative;
 }
 
@@ -633,12 +666,12 @@ small.similar-smallinfo .countnum{
 	position: absolute;
 	display: block;
 	content: '';
-	top: 64px;
-	left: 0;
-	width: 100%;
-	background-image: linear-gradient(-90deg,rgba(0,113,206,0) 0,#EEF4FD 51%,rgba(0,113,206,0) 100%);
+	top: 25px;
+	left: -20%;
+	width: 150%;
+	background-image: linear-gradient(-90deg,rgba(0,113,206,0) 0,rgba(238, 244, 253, 0.4) 30%,rgba(238, 244, 253, 0.8) 50%,rgba(0,113,206,0) 100%);
 	opacity: 0;
-	height: 4px;
+	height: 2px;
 	-webkit-transform: scaleX(0);
 	-ms-transform: scaleX(0);
 	transform: scaleX(0);
@@ -653,7 +686,7 @@ small.similar-smallinfo .countnum{
 
 #menu > .menu_principal li a{
 	font-weight: 300;
-	font-size: 17px;
+	font-size: 18px;
 	position: relative;
 	padding-left: 10px;
 	color: #fff;
@@ -666,11 +699,12 @@ small.similar-smallinfo .countnum{
 }
 
 #menu > .menu_principal .icon_menu{
+	display: none;
 	height: 24px;
 	width: 29px;
 	position: absolute;
-	top: 17px;
-	left: -25px;
+	top: -1px;
+	left: -23px;
 	background-repeat: no-repeat;
 	background-image: url("/reparosemlagrima/images/icons/icons_menu2.png");
 }
