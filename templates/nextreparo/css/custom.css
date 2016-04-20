@@ -1451,6 +1451,24 @@ body.pag_home > section:first-of-type .lista_tutoriais li > a:hover > div span{
 
 /* FIM OUTROS MAIS ACESSADOS */
 
+body.pag_home .tutoriais_home h3{
+	text-align: left;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 30px;
+}
+
+body.pag_home .leia_mais_home{
+	color: #8C8C8C;
+	float: right;
+	text-decoration: underline;
+}
+
+body.pag_home .leia_mais_home:hover{
+	color: #00aff3;
+}
+
 /* ARTIGO */
 
 .tm-article-content > p{
