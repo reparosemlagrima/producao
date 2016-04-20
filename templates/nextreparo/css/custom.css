@@ -62,19 +62,31 @@ br.clear{
 
 .link-read-more-forum a:hover{ background-color: #0072CB; text-decoration: none;}
 
-.new-top-a{
+.pag_home .new-top-a{
 	position: relative;
-	min-height: 550px;
+	min-height: 825px;
 	background-image: url("../../../images/banners/slide-show-home.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-origin: padding-box;
-	background-position: center top;
+	background-position: center -55px;
 }
 .tm-block-top-d .tm-primary-title a {
 	color: #fff;
 }
 .newlogo-top-a{ position: relative; margin: 0 auto}
+
+#logo_banner{
+	position: absolute;
+	top: 473px;
+	margin-left: -330px;
+	left: 50%;
+}
+
+#search_banner{
+	top: 570px;
+	position: relative;
+}
 
 .top-menu{  background-color: rgb(0, 175, 243);   margin-top:0px;  height: 60px;  }
 
@@ -616,15 +628,18 @@ small.similar-smallinfo .countnum{
 #new-menu.menu_home{
 	position: fixed;
 	width: 100%;
+	top: 0;
+	right: 0;
+    left: 0;
 	z-index: 99;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	padding: 15px 0 15px;
-	background-color: rgba(0, 175, 243, 0.8);
-	-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-	-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-	transition: background .5s ease-in-out,padding .5s ease-in-out;
+	background-color: rgba(0, 175, 243, 0.85);
+	-webkit-transition: background .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out;
+	transition: background .5s ease-in-out;
 }
 
 #new-menu.menu_home-fixed{
@@ -664,7 +679,21 @@ small.similar-smallinfo .countnum{
 	position: relative;
 }
 
-#menu > .menu_principal li::before{
+#menu > .menu_principal li.cadastre_se{
+	margin-left: 40px;
+}
+
+#menu > .menu_principal li:last-of-type{
+	margin-left: 0px;
+}
+
+#menu > .menu_principal li.no_link{
+	margin-left: 10px;
+	color: #fff;
+	font-size: 18px;
+}
+
+#menu > .menu_principal li:not(.no_link)::before{
 	position: absolute;
 	display: block;
 	content: '';
@@ -681,7 +710,7 @@ small.similar-smallinfo .countnum{
 	transition: all .2s;
 }
 
-#menu > .menu_principal li:hover::before {
+#menu > .menu_principal li:not(.no_link):hover::before {
 	transform: scaleX(1);
 	opacity: 1;
 }
@@ -730,6 +759,28 @@ small.similar-smallinfo .countnum{
 /* SEARCH HOME */
 .uk-box-search-home{
 	width: 63%;
+}
+
+.uk-field-search-home{
+	width: 568px;
+	font-size: 16px !important;
+	text-align: left;
+	padding: 10px !important;
+	line-height: 20px !important;
+	height: 20px !important;
+}
+
+.uk-button-home{
+	position: relative;
+	right:5px;
+	bottom: 6px;
+}
+	
+	/* Tablet and bigger */
+@media (min-width: 768px) {
+	.uk-box-search-home{ 
+		position: relative;
+	}
 }
 
 .uk-button{
