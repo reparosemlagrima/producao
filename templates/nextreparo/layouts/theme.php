@@ -19,7 +19,7 @@ include($this['path']->path('layouts:theme.config.php'));
 		jQuery(window).scroll(function() {
 			if ( jQuery(".pag_home").length ){
 				console.log(jQuery("#new-menu").offset().top);
-				if (jQuery("#new-menu").offset().top > 300) {
+				if (jQuery("#new-menu").offset().top > 750) {
 					console.log('cinquenta');
 					jQuery("#new-menu").addClass("menu_home-fixed");
 				} else {
@@ -178,13 +178,13 @@ include($this['path']->path('layouts:theme.config.php'));
 				<?php endif; ?>
 
 				<div class="newlogo-top-a">
-					<a href="<?php echo $this['config']->get('site_url'); ?>">
+					<a href="<?php echo $this['config']->get('site_url'); ?>" id="logo_banner">
 						<?php echo strip_tags($this['widgets']->render('new-top-a'),'<img>'); ?>
 					</a>    
 				</div>
 
 				<?php if ($this['widgets']->count('search-home')) : ?>
-					<div class="uk-container uk-container-center">
+					<div class="uk-container uk-container-center" id="search_banner">
 						<?php echo $this['widgets']->render('search-home'); ?>
 					</div>
 				<?php endif; ?>
@@ -221,7 +221,15 @@ include($this['path']->path('layouts:theme.config.php'));
 					</div>
 				<?php endif; ?>                   
 			</div>
-		<?php endif; ?>  
+		<?php endif; ?>
+
+		<?php if ($this['widgets']->count('new-top-b')) : ?>
+			<div class="new-top-b" id="new-top-b">
+				<div class="uk-container uk-container-center">
+					<?php echo $this['widgets']->render('new-top-b'); ?>
+				</div>
+			</div>
+		<?php endif; ?>
 
 		<section>
 			<?php if ($this['widgets']->count('top-a')) : ?>
