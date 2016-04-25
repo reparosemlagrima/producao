@@ -832,9 +832,37 @@ small.similar-smallinfo .countnum{
 }
 
 /* COR AREA PORCENTAGEM ATENDIMENTO */
-.uk-block-primary, svg.uk-circlechart circle{
-	background: #00AEF3;
-	fill: #00AEF3;
+
+.pag_home #top-h{
+	background-color: #f5f5f5;
+	padding: 30px 0;
+}
+
+.uk-circlechart{
+	max-width: 130px;
+	width: 100%;
+}
+
+.pag_home #top-h svg.uk-circlechart circle{
+	fill: #f5f5f5;
+}
+
+.pag_home #top-h svg.uk-circlechart path{
+	fill: #626262;
+}
+
+.pag_home #top-h svg.uk-circlechart text{
+	fill: #626262;
+	font-size: 35px;
+}
+
+.pag_home #top-h h3, .pag_home #top-h h3 a{
+	color: #626262 !important;
+	font-size: 18px;
+}
+
+.pag_home #top-h .uk-border-bottom:after {
+    display: none;
 }
 
 /* BOTÃO LINK FÓRUM */
@@ -1467,6 +1495,24 @@ body.pag_home .leia_mais_home{
 
 body.pag_home .leia_mais_home:hover{
 	color: #00aff3;
+}
+
+.pag_home #top-c-2{
+	background-color: #00aff3;
+}
+
+.pag_home #top-c-2 .banner_desperdicio_home{
+	padding: 45px 0;
+}
+
+.pag_home #top-c-2 .banner_desperdicio_home p{
+	padding: 0;
+	margin: 0;
+}
+
+.pag_home #top-c-2 .banner_desperdicio_home p img{
+	margin: 0 auto;
+	display: block;
 }
 
 /* ARTIGO */
