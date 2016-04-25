@@ -1456,9 +1456,11 @@ body.pag_home .top-f .ultimas-form-home h3{
 }
 
 body.pag_home .leia_mais_home{
-	color: #8C8C8C;
 	float: right;
+	color: #8C8C8C;
 	text-decoration: underline;
+	text-align: right;
+	margin-right: 20px;
 }
 
 body.pag_home .leia_mais_home:hover{
@@ -1471,7 +1473,7 @@ body.pag_home .leia_mais_home:hover{
 }
 
 .pag_home #top-c-2 .banner_desperdicio_home{
-	padding: 45px 0;
+	padding: 40px 0;
 }
 
 .pag_home #top-c-2 .banner_desperdicio_home p{
@@ -1528,10 +1530,13 @@ body.pag_home #top-f{
 	margin: 30px 0;
 	padding: 20px 0;
 	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
 }
 
 #new-status-f > div{
 	margin: 0;
+	opacity: 1 !important;
 }
 
 #new-status-f .uk-width-1-3{
@@ -1552,6 +1557,107 @@ body.pag_home #top-f{
 #new-status-f .uk-width-1-3 .box-status span{
 	font-size: 45px;
 	font-weight: 400;
+}
+
+.ultimas-form-home > div{
+	margin: 0;
+}
+
+#lista_forum{
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+
+#lista_forum .item_lista_forum{
+	overflow: hidden;
+	min-height: 50px;
+	padding: 10px 0 15px;
+	margin: 10px 0;
+	border-bottom: 1px solid #d6d6d6;
+}
+
+#lista_forum .item_lista_forum:first-of-type{
+	padding: 0;
+	min-height: 30px;
+}
+
+#lista_forum .item_lista_forum div{
+	float: right;
+	margin-right: 25px;
+}
+
+#lista_forum .item_lista_forum div:first-of-type{
+	float: left;
+}
+
+#lista_forum .item_lista_forum div:nth-child(2){
+	margin-right: 0px;
+}
+
+#lista_forum .item_lista_forum .titulo_categ_forum{
+	
+}
+
+#lista_forum .item_lista_forum .titulo_categ_forum span, #lista_forum .item_lista_forum .titulo_categ_forum span a{
+	color: #565758;
+}
+
+#lista_forum .item_lista_forum .qtd_posts_forum{
+	width: 55px;
+}
+
+#lista_forum .item_lista_forum .qtd_posts_forum span{
+	float: right;
+	display: block;
+	width: 43px;
+	height: 43px;
+	color: #5C5C5D;
+	background-image: url("/reparosemlagrima/images/icons/img_qtd_posts.png");
+	background-repeat: no-repeat;
+	line-height: 38px;
+	font-size: 23px;
+	text-indent: 13px;
+	font-weight: 500;
+}
+
+#lista_forum .item_lista_forum .qtd_posts_forum span.no_answer{
+	background-position: 0 -43px;
+}
+
+#lista_forum .item_lista_forum .qtd_posts_forum span.answer{
+	background-position: 0 0;
+}
+
+#lista_forum .item_lista_forum .foto_forum{
+	width: 50px;
+}
+
+#lista_forum .item_lista_forum .foto_forum a{
+	display: block;
+}
+
+#lista_forum .item_lista_forum .foto_forum img{
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+}
+
+#lista_forum .item_lista_forum .autor_tempo_forum{
+	width: 100px;
+}
+
+#lista_forum .item_lista_forum .autor_tempo_forum p:first-of-type{
+	font-size: 15px;
+}
+
+#lista_forum .item_lista_forum .autor_tempo_forum p:last-of-type{
+	font-size: 12px;
+	line-height: 14px;
+}
+
+#lista_forum .item_lista_forum p{
+	margin: 0;
 }
 
 /* ARTIGO */
