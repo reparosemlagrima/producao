@@ -24,6 +24,10 @@ include($this['path']->path('layouts:theme.config.php'));
 					jQuery("#new-menu").removeClass("menu_home-fixed");
 				}
 			}
+
+			jQuery("#new-status-f").hide();
+			jQuery("#new-status-f").appendTo(".ultimas-form-home h3");
+			jQuery("#new-status-f").show();
 		});
 	</script>
 
@@ -217,7 +221,7 @@ include($this['path']->path('layouts:theme.config.php'));
 							</div>
 						</div>
 					</div>
-				<?php endif; ?>                   
+				<?php endif; ?>
 			</div>
 		<?php endif; ?>
 
@@ -366,6 +370,23 @@ include($this['path']->path('layouts:theme.config.php'));
 
 					</div>
 				<?php endif; ?>
+			<?php endif; ?>
+
+			<?php if ($this['widgets']->count('top-f')) : ?>
+				<div id="top-f" class="top-f">
+					<div class="uk-container uk-container-center">
+						<?php if ($this['widgets']->count('new-status-f')) : ?>
+							<div class="new-status-f" id="new-status-f">
+								
+								<div data-uk-grid-margin="" class="uk-grid hgfh uk-grid-medium uk-grid-divider"  data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}">
+									<?php echo $this['widgets']->render('new-status-f',array('layout'=>$this['config']->get('grid.new-status.layout'))); ?>
+								</div>
+
+							</div>
+						<?php endif; ?>
+						<?php echo $this['widgets']->render('top-f'); ?>
+					</div>
+				</div>
 			<?php endif; ?>
 
 			<?php if ($this['widgets']->count('top-h')) : ?>
