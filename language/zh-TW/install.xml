@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.4" client="site" type="language" method="upgrade">
+<extension version="3.5" client="site" type="language" method="upgrade">
 	<name>中文(繁體．台灣)</name>
 	<tag>zh-TW</tag>
-	<version>3.4.4.1</version>
-	<creationDate>2015-10-12</creationDate>
+	<version>3.5.0.1</version>
+	<creationDate>2016-03-24</creationDate>
 	<author>Joomla! Taiwan User Community</author>
 	<authorEmail>eddy@joomla.com.tw</authorEmail>
 	<authorUrl>www.joomla.org.tw</authorUrl>
-	<copyright>Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<description>zh-TW site language</description>
+	<description>chinese traditional (zh-TW) site language</description>
 	<files>
 		<filename>zh-TW.com_ajax.ini</filename>
 		<filename>zh-TW.com_config.ini</filename>
