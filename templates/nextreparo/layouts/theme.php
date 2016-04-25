@@ -18,9 +18,7 @@ include($this['path']->path('layouts:theme.config.php'));
 		var jQuery = jQuery.noConflict();
 		jQuery(window).scroll(function() {
 			if ( jQuery(".pag_home").length ){
-				console.log(jQuery("#new-menu").offset().top);
 				if (jQuery("#new-menu").offset().top > 750) {
-					console.log('cinquenta');
 					jQuery("#new-menu").addClass("menu_home-fixed");
 				} else {
 					jQuery("#new-menu").removeClass("menu_home-fixed");
@@ -266,6 +264,14 @@ include($this['path']->path('layouts:theme.config.php'));
 				</div>
 			<?php endif; ?>
 
+			<?php if ($this['widgets']->count('top-c-2')) : ?>
+				<div class="top-c-2" id="top-c-2">
+					<div class="uk-container uk-container-center">
+						<?php echo $this['widgets']->render('top-c-2'); ?>
+					</div>
+				</div>
+			<?php endif; ?>
+
 			<?php if ($this['widgets']->count('top-d')) : ?>
 				<div id="tm-top-d" class="tm-block-top-d uk-block <?php echo $classes['block.top-d']; ?>" <?php echo $styles['block.top-d']; ?>>
 					<div class="uk-container uk-container-center">
@@ -360,6 +366,14 @@ include($this['path']->path('layouts:theme.config.php'));
 
 					</div>
 				<?php endif; ?>
+			<?php endif; ?>
+
+			<?php if ($this['widgets']->count('top-h')) : ?>
+				<div id="top-h" class="top-h">
+					<div class="uk-container uk-container-center">
+						<?php echo $this['widgets']->render('top-h'); ?>
+					</div>
+				</div>
 			<?php endif; ?>
 		</section>
 
