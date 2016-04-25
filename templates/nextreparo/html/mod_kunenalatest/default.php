@@ -15,14 +15,38 @@ defined ( '_JEXEC' ) or die ();
 		<?php if (empty ( $this->topics )) : ?>
 			<li class="klatest-item"><?php echo JText::_('MOD_KUNENALATEST_NO_MESSAGE') ?></li>
 		<?php else : ?>
-			<?php $this->displayRows (); ?>
+			<ul id="lista_forum">
+				<li class="item_lista_forum">
+					<div class="titulo_categ_forum">
+						<p>
+							Perguntas
+						</p>
+					</div>
+
+					<div class="autor_tempo_forum">
+						&nbsp;
+					</div>
+
+					<div class="foto_forum">
+						&nbsp;
+					</div>
+
+					<div class="qtd_posts_forum">
+						Respostas
+					</div>
+				</li>
+				<?php $this->displayRows (); ?>
+			</ul>
+			
+			<div style="display: block; width: 100%;">
+				<a href="/reparosemlagrima/forum-reparo" class="leia_mais_home">Leia mais</a>
+			</div>
 		<?php endif; ?>
 	</div>
 	<?php if ($this->topics && $this->params->get ( 'sh_morelink' )): ?>
-	<p class="klatest-more">
-	<?php echo JHtml::_('kunenaforum.link', $this->params->get ( 'moreuri' ), JText::_ ( 'MOD_KUNENALATEST_MORE_LINK' ) ); ?>
-
-	</p>
+		<p class="klatest-more">
+			<?php echo JHtml::_('kunenaforum.link', $this->params->get ( 'moreuri' ), JText::_ ( 'MOD_KUNENALATEST_MORE_LINK' ) ); ?>
+		</p>
 	<?php endif; ?>
 </div> 
 
