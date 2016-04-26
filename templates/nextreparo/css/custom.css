@@ -1668,6 +1668,40 @@ body.pag_home #top-f{
 	margin: 0;
 }
 
+/* FÓRUM - CATEGORIAS */
+body.pag_forum #Kunena #ktop #ktopmenu ul li.active a{
+	border-bottom-color: #00AFF3 !important;
+}
+
+body.pag_forum #Kunena #ktop #ktopmenu ul li.active {
+	border-color: #00AFF3;
+}
+
+body.pag_forum #Kunena #ktop #ktopmenu li.active a span {
+	color: #00AFF3;
+}
+
+body.pag_forum #Kunena table.kprofilebox .kbutton {
+	background: #00AFF3;
+	border-color: #18A0DC;
+}
+
+body.pag_forum #Kunena .kblock div.kheader h2, #Kunena .kblock div.kheader h3 {
+	border-bottom: 2px solid #00AFF3;
+}
+
+body.pag_forum .kheader h2{
+	color: #00AFF3;
+}
+
+body.pag_forum .uk-badge {
+	background: #00AFF3;
+}
+
+body.pag_forum .uk-progress-bar {
+	background: #00AFF3;
+}
+
 /* ARTIGO */
 
 .tm-article-content > p{
