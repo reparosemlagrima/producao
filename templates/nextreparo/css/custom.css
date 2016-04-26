@@ -1595,8 +1595,8 @@ body.pag_home #top-f{
 	margin-right: 0px;
 }
 
-#lista_forum .item_lista_forum .titulo_categ_forum{
-	
+#lista_forum .item_lista_forum .titulo_categ_forum p{
+	font-size: 19px;
 }
 
 #lista_forum .item_lista_forum .titulo_categ_forum span, #lista_forum .item_lista_forum .titulo_categ_forum span a{
