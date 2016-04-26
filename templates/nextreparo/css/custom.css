@@ -1430,6 +1430,12 @@ body.pag_home > section:first-of-type .lista_tutoriais li > a > div span{
 	line-height: 19px;
 }
 
+body.pag_home > section:first-of-type .lista_tutoriais li > a > div span big{
+	display: inline-block;
+	margin-bottom: 8px;
+	font-size: 22px;
+}
+
 body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados .lista_outros_maisacessados li > a:hover,
 body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_tutoriais_principal #outros_maisacessados .lista_outros_maisacessados li > a:hover,
 body.pag_home > section:first-of-type .lista_tutoriais li > a:hover{
