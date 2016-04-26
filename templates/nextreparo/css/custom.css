@@ -1482,12 +1482,13 @@ body.pag_home .leia_mais_home:hover{
 	padding: 40px 0;
 }
 
-.pag_home #top-banner-recicla .banner_desperdicio_home p{
+.pag_home #top-banner-recicla .banner_desperdicio_home a{
+	display: block;
 	padding: 0;
 	margin: 0;
 }
 
-.pag_home #top-banner-recicla .banner_desperdicio_home p img{
+.pag_home #top-banner-recicla .banner_desperdicio_home a img{
 	margin: 0 auto;
 	display: block;
 }
