@@ -268,10 +268,10 @@ include($this['path']->path('layouts:theme.config.php'));
 				</div>
 			<?php endif; ?>
 
-			<?php if ($this['widgets']->count('top-c-2')) : ?>
-				<div class="top-c-2" id="top-c-2">
+			<?php if ($this['widgets']->count('top-banner-recicla')) : ?>
+				<div class="top-banner-recicla" id="top-banner-recicla">
 					<div class="uk-container uk-container-center">
-						<?php echo $this['widgets']->render('top-c-2'); ?>
+						<?php echo $this['widgets']->render('top-banner-recicla'); ?>
 					</div>
 				</div>
 			<?php endif; ?>
