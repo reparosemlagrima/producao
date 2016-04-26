@@ -353,7 +353,7 @@ small.similar-smallinfo .countnum{
 
 #logo_site{
 	height: 48px;
-    width: 318px;
+	width: 318px;
 	float: left;
 	position: relative;
 	top: -5px;
@@ -410,7 +410,7 @@ small.similar-smallinfo .countnum{
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
 
 #search_topo .uk-box-search-top form .uk-field-search-top:focus{
@@ -648,7 +648,7 @@ small.similar-smallinfo .countnum{
 	width: 100%;
 	top: 0;
 	right: 0;
-    left: 0;
+	left: 0;
 	z-index: 99;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -817,8 +817,8 @@ small.similar-smallinfo .countnum{
 }
 
 .box-status p {
-    font-weight: 400;
-    letter-spacing: 0.7px;
+	font-weight: 400;
+	letter-spacing: 0.7px;
 }
 
 /* COR TEXTO */
@@ -903,17 +903,17 @@ body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li{
 	padding: 0 15px;
 	position: relative;
 	white-space: nowrap;
-    color: #00AFF3;
-    font-weight: 400;
-    font-size: 14px;
+	color: #00AFF3;
+	font-weight: 400;
+	font-size: 14px;
 }
 
 body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li + li:before,
 body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li + li:before{
-    content: '';
-    padding: 0;
-    margin: 0;
-    color: transparent;
+	content: '';
+	padding: 0;
+	margin: 0;
+	color: transparent;
 }
 
 body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li:after,
@@ -935,37 +935,37 @@ body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li:after{
 
 body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li:last-of-type:after,
 body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li:last-of-type:after{
-    opacity: 0;
+	opacity: 0;
 }
 
 body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li a,
 body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li a{
-    color: #00AFF3;
-    font-weight: 400;
-    font-size: 14px;
+	color: #00AFF3;
+	font-weight: 400;
+	font-size: 14px;
 }
 
 body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li i,
 body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li i{
-    font-size: 15px;
+	font-size: 15px;
 }
 
 body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li  i.fa-home,
 body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li  i.fa-home{
-    margin-top: 3px;
+	margin-top: 3px;
 }
 
 .fa {
-    font-size: 14px;
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	font-size: 14px;
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .fa-home:before {
-    content: "\f015";
+	content: "\f015";
 }
 
 body.pag_tutoriais > section:first-of-type #tm-top-b{
@@ -1070,7 +1070,7 @@ body.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tut
 	top: -50%;
 	color: #747474;
 	font-weight: 600;
-    font-size: 16px;
+	font-size: 16px;
 }
 
 body.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .bloco-padrao-tutorias .uk-width-medium-1-5.modelos_brands:hover{
@@ -1306,7 +1306,7 @@ body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais #mais_ace
 	top: -50%;
 	color: #8c8c8c;
 	font-weight: 500;
-    font-size: 17px;
+	font-size: 17px;
 }
 
 body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais #mais_acessadas .lista_mais_acessados li > a:hover{
@@ -1359,7 +1359,7 @@ body.pag_home > section:first-of-type .lista_tutoriais li{
 
 body.pag_home > section:first-of-type .lista_tutoriais li{
 	margin-right: 2%;
-    width: 32%;
+	width: 32%;
 }
 
 body.pag_tutoriais > section:first-of-type #tm-main .blogpag_tutoriais.pag_modelo #outros_maisacessados .lista_outros_maisacessados li:nth-child(3n+0),
@@ -1426,7 +1426,7 @@ body.pag_home > section:first-of-type .lista_tutoriais li > a > div span{
 	top: -50%;
 	color: #8c8c8c;
 	font-weight: 500;
-    font-size: 17px;
+	font-size: 17px;
 	line-height: 19px;
 }
 
@@ -1517,7 +1517,7 @@ body.pag_home .leia_mais_home:hover{
 }
 
 .pag_home #top-h .uk-border-bottom:after {
-    display: none;
+	display: none;
 }
 
 /* FÓRUM HOME */
@@ -1801,12 +1801,12 @@ body.pag_home #top-f{
 #social_media > div > ul > li{
 	float: left;
 	flex: none;
-    padding-left: 15px;
-    position: relative;
+	padding-left: 15px;
+	position: relative;
 }
 
 .uk-icon-small {
-    font-size: 23px;
+	font-size: 23px;
 }
 
 .rodape_mapasite{
@@ -1856,7 +1856,7 @@ body.pag_home #top-f{
 	font-size: 16px;
 	letter-spacing: -0.4px;
 	line-height: 19px;
-    margin: 9px 0 13px;
+	margin: 9px 0 13px;
 	font-weight: bold;
 	color: #fff;
 	text-transform: uppercase;
@@ -2070,7 +2070,7 @@ body.pag_home #top-f{
 	}
 
 	#menu > .menu_principal .icon_menu {
-	    top: 7px;
+		top: 7px;
 		left: -31px;
 	}
 
