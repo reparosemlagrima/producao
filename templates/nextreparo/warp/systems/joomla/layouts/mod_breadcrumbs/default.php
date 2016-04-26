@@ -37,7 +37,7 @@ defined('_JEXEC') or die;
 				$name = $list[$i]->name;
 			}
 			
-			if($list[$i]->link != "/reparosemlagrima/forum-reparo" && $list[$i]->link != "/reparosemlagrima/forum-reparo/forum-principal"){
+			//if($list[$i]->link != "/reparosemlagrima/forum-reparo" && $list[$i]->link != "/reparosemlagrima/forum-reparo/forum-principal"){
 				// mark-up last item as strong
 				if($i < $count-1)
 				{
@@ -55,9 +55,9 @@ defined('_JEXEC') or die;
 				{
 					echo '<li class="uk-active"><span>'.$name.'</span></li>';
 				}
-			}
+			//}
 
-			if($i == 0 && @$page_var2 == ("forum-reparo" || "post-recentes" || "meus-topicos" || "editar-perfil" || "editar-perfil")){
+			if($i == 0 && @$page_var2 == ("post-recentes" || "meus-topicos" || "editar-perfil" || "editar-perfil") && @$page_var2 != "forum-reparo"){
 				echo '<li><a href="/reparosemlagrima/forum-reparo">Fórum</a></li>';
 			}
 		}
