@@ -473,6 +473,39 @@ small.similar-smallinfo .countnum{
 	color: #0074C7;
 }
 
+/* OPÇÃO QUANDO USUÁRIO ESTIVER LOGADO NO SISTEMA */
+#menu_topo.loggedin #loja_menu_topo {
+	left: 78px;
+}
+
+#menu_topo.loggedin #profile_user{
+	display: block;
+}
+
+#menu_topo.loggedin #profile_user img.kavatar{
+	max-width: 35px;
+	max-height: 35px;
+	border-radius: 38px;
+	position: absolute;
+	top: -12px;
+	right: 115px;
+}
+
+#menu_topo.loggedin #profile_user p{
+	font-size: 14px;
+	position: absolute;
+	white-space: nowrap;
+	top: -31px;
+	right: 160px;
+}
+
+#menu_topo.loggedin .uk-navbar-nav{
+    position: relative;
+    right: 32px;
+}
+
+/* FIM - OPÇÃO QUANDO USUÁRIO ESTIVER LOGADO NO SISTEMA */
+
 #loja_menu_topo{
 	position: absolute;
 	height: 33px;
