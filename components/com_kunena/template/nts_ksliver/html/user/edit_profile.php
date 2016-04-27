@@ -73,6 +73,10 @@ JHtml::_('behavior.tooltip');
 				</span>
 			</td>
 		</tr>
+		<?php
+			unset($this->social[2], $this->social[5], $this->social[6], $this->social[7], $this->social[8], $this->social[9]);
+			unset($this->social[11], $this->social[12], $this->social[13], $this->social[14], $this->social[15]);
+		?>
 		<?php $i=1; foreach ($this->social as $social) : ?>
 		<tr class="krow<?php echo (++$i & 1)+1;?>">
 			<td class="kcol-first"><?php echo JText::_('COM_KUNENA_MYPROFILE_'.$social); ?></td>
