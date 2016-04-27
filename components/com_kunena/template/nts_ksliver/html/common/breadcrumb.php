@@ -19,7 +19,7 @@ if(empty($this->breadcrumbs_count))
 ?>
 
 <?php if ($item) : ?>
-<div class="kblock kpathway breadcrumbs-<?php echo $this->breadcrumbs_count; ?>">
+<div class="kblock kpathway breadcrumbs-<?php echo $this->breadcrumbs_count; ?>" style="display: none;">
 	<div class="kcontainer">
 		<div class="ksectionbody">
 			<div class = "kforum-pathway">
