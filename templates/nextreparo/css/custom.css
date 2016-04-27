@@ -473,22 +473,31 @@ small.similar-smallinfo .countnum{
 	color: #0074C7;
 }
 
-/* OPÇÃO QUANDO USUÁRIO ESTIVER LOGADO NO SISTEMA */
-#menu_topo.loggedin #loja_menu_topo {
-	left: 78px;
+#menu_topo #profile_user{
+	display: none;
 }
 
+/* OPÇÃO QUANDO USUÁRIO ESTIVER LOGADO NO SISTEMA */
 #menu_topo.loggedin #profile_user{
 	display: block;
 }
 
+#menu_topo.loggedin #loja_menu_topo {
+	left: 35px;
+}
+
+#menu_topo.loggedin .uk-navbar-nav{
+    position: relative;
+    right: 45px;
+}
+
 #menu_topo.loggedin #profile_user img.kavatar{
-	max-width: 35px;
-	max-height: 35px;
+	max-width: 35px !important;
+	max-height: 35px !important;
 	border-radius: 38px;
 	position: absolute;
 	top: -12px;
-	right: 115px;
+	right: 130px;
 }
 
 #menu_topo.loggedin #profile_user p{
@@ -496,12 +505,29 @@ small.similar-smallinfo .countnum{
 	position: absolute;
 	white-space: nowrap;
 	top: -31px;
-	right: 160px;
+	right: 175px;
 }
 
-#menu_topo.loggedin .uk-navbar-nav{
-    position: relative;
-    right: 32px;
+#menu_topo.loggedin #form_logout{
+	margin: 0;
+}
+
+#menu_topo.loggedin #form_logout input:last-of-type{
+	background: transparent;
+	border: none;
+	color: #00AFF3;
+	height: 13px;
+	line-height: 13px;
+	letter-spacing: 0;
+	text-transform: none;
+	padding: 0 5px 0 4px;
+	display: block;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	position: relative;
 }
 
 /* FIM - OPÇÃO QUANDO USUÁRIO ESTIVER LOGADO NO SISTEMA */
