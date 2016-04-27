@@ -16,6 +16,10 @@ include($this['path']->path('layouts:theme.config.php'));
 
 	<script type="text/javascript">
 		var jQuery = jQuery.noConflict();
+		jQuery(window).load(function() {
+			jQuery("#menu_topo").hide();
+		});
+
 		jQuery(window).scroll(function() {
 			if ( jQuery(".pag_home").length ){
 				if (jQuery("#new-menu").offset().top > 750) {
@@ -24,10 +28,36 @@ include($this['path']->path('layouts:theme.config.php'));
 					jQuery("#new-menu").removeClass("menu_home-fixed");
 				}
 			}
+		});
 
-			jQuery("#new-status-f").hide();
-			jQuery("#new-status-f").appendTo(".ultimas-form-home h3");
-			jQuery("#new-status-f").show();
+		jQuery(window).load(function() {
+			if(jQuery(".kprofilebox-left").length){
+				jQuery("#menu_topo").addClass("loggedin");
+				jQuery("#kprofilebox").hide();
+
+				var link_perfil = jQuery("#ktopmenu .menu").find("li").last().find("a").attr("href");
+				jQuery("#menu_topo").find(".uk-navbar-nav li").first().find("a").text("Perfil");
+				jQuery("#menu_topo").find(".uk-navbar-nav li").first().find("a").attr("href", link_perfil);
+
+
+				var form = jQuery("#kprofilebox .kprofilebox-welcome").find("li").last().find("form");
+				form.attr("id", "form_logout");
+				form.find("input").last().val("Sair");
+				jQuery("#menu_topo").find(".uk-navbar-nav li").last().html(form);
+
+			
+				jQuery("#kprofilebox .kprofilebox-left img.kavatar").prependTo("#profile_user");
+				var bemvindo = jQuery("#kprofilebox .kprofilebox-welcome").find("li").first().text();
+				jQuery("#profile_user p").html(bemvindo);
+			}
+
+			jQuery("#menu_topo").show();
+
+			if(jQuery("#new-status-f").length){
+				jQuery("#new-status-f").hide();
+				jQuery("#new-status-f").appendTo(".ultimas-form-home h3");
+				jQuery("#new-status-f").show();
+			}
 		});
 	</script>
 
@@ -129,6 +159,9 @@ include($this['path']->path('layouts:theme.config.php'));
 							<div class="tm-nav uk-hidden-small" id="menu_topo">
 								<div id="loja_menu_topo">
 									<a href="/reparosemlagrima/loja/index.php?route=checkout/cart" title="Loja"></a>
+								</div>
+								<div id="profile_user">
+									<p>&nbsp;</p>
 								</div>
 								<?php echo $this['widgets']->render('menu'); ?>
 							</div>
