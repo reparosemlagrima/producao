@@ -32,7 +32,19 @@ include($this['path']->path('layouts:theme.config.php'));
 
 		jQuery(window).load(function() {
 			jQuery("#kprofilebox.kcontainer").appendTo("#login_bg");
-			jQuery("<h2>Log In</h2><div class=\"k_guest\">Bem-Vindo, <b>Visitante</b></div>").prependTo("#login_bg > #kprofilebox.kcontainer .kbody");
+			jQuery("<a id=\"fechar_login\" title=\"Fechar Login\">X</a><h2>Log In</h2><div class=\"k_guest\">Bem-Vindo, <b>Visitante</b></div>").prependTo("#login_bg > #kprofilebox.kcontainer .kbody");
+
+			jQuery("#menu_topo .uk-navbar-nav li").last().find("a").click(function(e){
+				jQuery("#login_bg").fadeIn("slow");
+				e.preventDefault();
+			});
+
+			jQuery("#login_bg #fechar_login").click(function(e){
+				jQuery("#login_bg").fadeOut("slow");
+				e.preventDefault();
+			});
+
+
 
 			if(jQuery(".kprofilebox-left").length){
 				jQuery("#menu_topo").addClass("loggedin");
