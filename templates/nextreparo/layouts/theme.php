@@ -14,6 +14,14 @@ include($this['path']->path('layouts:theme.config.php'));
 	<head>
 	<?php echo $this['template']->render('head'); ?>
 
+	<?php
+		echo "<pre>";
+		$session_name_user = $_SESSION["__default"]["user"]->name;
+		var_dump($_SESSION["__default"]);
+		var_dump($_SESSION["__default"]["session.token"]);
+		echo "</pre>";
+	?>
+
 	<script type="text/javascript">
 		var jQuery = jQuery.noConflict();
 		jQuery(window).load(function() {
@@ -31,22 +39,6 @@ include($this['path']->path('layouts:theme.config.php'));
 		});
 
 		jQuery(window).load(function() {
-			jQuery("#kprofilebox.kcontainer").appendTo("#login_bg");
-			var topo_login = "<a id=\"fechar_login\" title=\"Fechar Login\">X</a><h2>Log In</h2><div class=\"k_guest\">Bem-Vindo, <b>Visitante</b></div>";
-			jQuery(topo_login).prependTo("#login_bg > #kprofilebox.kcontainer .kbody");
-
-			jQuery("#menu_topo .uk-navbar-nav li").last().find("a").click(function(e){
-				jQuery("#login_bg").fadeIn("slow");
-				e.preventDefault();
-			});
-
-			jQuery("#login_bg #fechar_login").click(function(e){
-				jQuery("#login_bg").fadeOut("slow");
-				e.preventDefault();
-			});
-
-
-
 			if(jQuery(".kprofilebox-left").length){
 				jQuery("#menu_topo").addClass("loggedin");
 				jQuery("#kprofilebox").hide();
@@ -68,6 +60,12 @@ include($this['path']->path('layouts:theme.config.php'));
 			}
 
 			jQuery("#menu_topo").show();
+
+			if(jQuery(".loginpag_forum").length){
+				var links = jQuery(".loginpag_forum").next();
+				console.log(links);
+				jQuery(links).appendTo(".loginpag_forum form");
+			}
 
 			if(jQuery("#new-status-f").length){
 				jQuery("#new-status-f").hide();
@@ -143,7 +141,6 @@ include($this['path']->path('layouts:theme.config.php'));
 	</head>
 
 	<body class="<?php echo $this['config']->get('body_classes'); ?>">
-		<div id="login_bg"></div>
 		<?php if ($this['widgets']->count('toolbar')) : ?>
 			<div class="tm-block-toolbar uk-hidden-small">
 				<div class="uk-container uk-container-center">
