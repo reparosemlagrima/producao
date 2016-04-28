@@ -1909,7 +1909,7 @@ body.pag_forum .uk-progress-bar {
 	-moz-border-radius: 1px;
 }
 
-#login_bg > #kprofilebox.kcontainer .kprofileboxcnt form .input > span input.inputbox.ks:-webkit-autofill 
+input:-webkit-autofill 
 {    
 	-webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset !important;
 	-webkit-text-fill-color: #000 !important;
