@@ -31,6 +31,9 @@ include($this['path']->path('layouts:theme.config.php'));
 		});
 
 		jQuery(window).load(function() {
+			jQuery("#kprofilebox.kcontainer").appendTo("#login_bg");
+			jQuery("<h2>Log In</h2><div class=\"k_guest\">Bem-Vindo, <b>Visitante</b></div>").prependTo("#login_bg > #kprofilebox.kcontainer .kbody");
+
 			if(jQuery(".kprofilebox-left").length){
 				jQuery("#menu_topo").addClass("loggedin");
 				jQuery("#kprofilebox").hide();
@@ -127,6 +130,7 @@ include($this['path']->path('layouts:theme.config.php'));
 	</head>
 
 	<body class="<?php echo $this['config']->get('body_classes'); ?>">
+		<div id="login_bg"></div>
 		<?php if ($this['widgets']->count('toolbar')) : ?>
 			<div class="tm-block-toolbar uk-hidden-small">
 				<div class="uk-container uk-container-center">
