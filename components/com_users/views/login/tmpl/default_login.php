@@ -36,6 +36,8 @@ JHtml::_('behavior.keepalive');
 	</div>
 	<?php endif; ?>
 
+	<h2>Log In</h2>
+
 	<form action="<?php echo JRoute::_('index.php?option=com_users&task=user.login'); ?>" method="post" class="form-validate form-horizontal well">
 
 		<fieldset>
