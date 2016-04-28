@@ -1761,6 +1761,190 @@ body.pag_forum .uk-progress-bar {
 	background: #00AFF3;
 }
 
+/* LATERAL PERFIM FÓRUM */
+#Kunena div#kprofile-stats{
+	font-size: 14px;
+}
+
+#Kunena div#kprofile-stats li:last-of-type strong{
+	display: block;
+}
+
+/* BOTÃO EDITAR PERFIL FÓRUM */
+#Kunena .kblock div.kheader h2 a, #Kunena .kblock div.kheader h2 span, #Kunena .kblock div.kheader h2 span.ktitle, #Kunena .kblock div.kheader h3 a, #Kunena .kblock div.kheader h3 span, #Kunena .kblock div.kheader h3 span.ktitle{
+	border: none;
+}
+
+#Kunena .kblock div.kheader h2 .kheadbtn.kright:hover, #Kunena .kblock div.kheader h2 .kheadbtn.kright:hover a{
+	background: #00AFF3;
+    color: #fff;
+}
+
+/* ABAS FÓRUM */
+#Kunena dl.tabs dt.open, #Kunena dl.tabs dt:hover{
+	color: #00AFF3;
+}
+
+#ktop .ktoggler{
+	display: none;
+}
+
+/* CAIXA DE LOGIN */
+#kprofilebox.kcontainer{
+	display: none !important;
+}
+
+#login_bg{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 9999;
+	transition: all 0.2s ease 0s;
+}
+
+#login_bg > #kprofilebox{
+	position: absolute;
+	display: block !important;
+	background: #00AFF3;
+	padding: 20px;
+	border: 3px solid rgba(0, 175, 243, 0.51);
+	border-radius: 22px;
+	-webkit-border-radius: 22px;
+	border-radius: 22px;
+	z-index: 99999;
+	max-width: 750px;
+	width: 90%;
+	left: 50%;
+	margin-left: -375px;
+	max-height: 476px;
+	min-height: 476px;
+	height: 90%;
+	top: 50%;
+	margin-top: -238px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+#login_bg > #kprofilebox.kcontainer .kbody h2{
+	color: #fff;
+	font-size: 45px;
+	font-weight: 500;
+	line-height: 45px;
+	text-align: center;
+}
+
+#login_bg > #kprofilebox.kcontainer .kbody .kprofilebox{
+	max-width: 300px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+#login_bg > #kprofilebox.kcontainer .kbody > .k_guest{
+	font-size: 22px;
+	line-height: 24px;
+	margin-bottom: 14px;
+	border-bottom: 3px solid #fff;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+#login_bg > #kprofilebox.kcontainer .kbody > .kprofilebox .k_guest{
+	display: none;
+}
+
+#login_bg > #kprofilebox.kcontainer .kprofileboxcnt form{
+	width: 100%;
+}
+
+#login_bg > #kprofilebox.kcontainer .kprofileboxcnt form .input{
+	width: 100%;
+}
+
+#login_bg > #kprofilebox.kcontainer .kprofileboxcnt form .input > span{
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 19px;
+	margin-bottom: 5px;
+}
+
+#login_bg > #kprofilebox.kcontainer .kprofileboxcnt form .input > span .inputbox.ks{
+	width: 100%;
+	margin-top: 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+}
+
+#login_bg > #kprofilebox.kcontainer .kprofileboxcnt form .input > span input.inputbox.ks:-webkit-autofill 
+{    
+	-webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset !important;
+	-webkit-text-fill-color: #000 !important;
+}
+
+#login_bg > #kprofilebox.kcontainer .kprofileboxcnt form .input > span:last-of-type{
+	font-size: 16px;
+}
+
+#login_bg > #kprofilebox.kcontainer .kprofileboxcnt form .input > span:last-of-type .kbutton{
+	display: block;
+	margin: 15px auto 10px;
+	border-radius: 2px;
+	border: none;
+	background: #fff;
+	padding: 10px 43px;
+	color: #00AFF3;
+	border: 1px solid transparent;
+}
+
+#login_bg > #kprofilebox.kcontainer .kprofileboxcnt form .input > span:last-of-type .kbutton:hover{
+	border-color: #0075A2;
+	color: #0075A2;
+}
+
+#login_bg > #kprofilebox.kcontainer .klink-block span{
+	display: block;
+	height: 25px;
+	text-align: center;
+}
+
+#login_bg > #kprofilebox.kcontainer .klink-block span a{
+	color: #fff !important;
+}
+
+#login_bg > #kprofilebox.kcontainer .kprofilebox-register{
+	display: none !important;
+}
+
+@media screen and (max-width: 1000px){
+	#kprofilebox{
+		left: 5%;
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-height: 600px){
+	#kprofilebox{
+		top: 5%;
+		margin-top: 0px;
+	}
+}
+
+
+
 /* ARTIGO */
 
 .tm-article-content > p{
