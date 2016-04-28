@@ -17,6 +17,8 @@ defined('_JEXEC') or die;
 		$page_var = $pieces[2];
 		$pieces2 = explode("?", $page_var);
 		$page_var2 = $pieces2[0];
+		@$pieces3 = explode("=", $pieces2[1]);
+		@$page_var3 = $pieces3[1];
 
 		if (!$params->get('showLast', 1))
 		{
@@ -53,7 +55,18 @@ defined('_JEXEC') or die;
 				}
 				else
 				{
-					echo '<li class="uk-active"><span>'.$name.'</span></li>';
+					if(@$page_var3 == "login"){
+						echo '<li class="uk-active"><span>Login</span></li>';
+					}
+					elseif(@$page_var3 == "reset"){
+						echo '<li class="uk-active"><span>Esqueceu sua senha?</span></li>';
+					}
+					elseif(@$page_var3 == "remind"){
+						echo '<li class="uk-active"><span>Esqueceu seu nome de usuário?</span></li>';
+					}
+					else{
+						echo '<li class="uk-active"><span>'.$name.'</span></li>';
+					}
 				}
 			//}
 
