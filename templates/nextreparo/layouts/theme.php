@@ -32,7 +32,8 @@ include($this['path']->path('layouts:theme.config.php'));
 
 		jQuery(window).load(function() {
 			jQuery("#kprofilebox.kcontainer").appendTo("#login_bg");
-			jQuery("<a id=\"fechar_login\" title=\"Fechar Login\">X</a><h2>Log In</h2><div class=\"k_guest\">Bem-Vindo, <b>Visitante</b></div>").prependTo("#login_bg > #kprofilebox.kcontainer .kbody");
+			var topo_login = "<a id=\"fechar_login\" title=\"Fechar Login\">X</a><h2>Log In</h2><div class=\"k_guest\">Bem-Vindo, <b>Visitante</b></div>";
+			jQuery(topo_login).prependTo("#login_bg > #kprofilebox.kcontainer .kbody");
 
 			jQuery("#menu_topo .uk-navbar-nav li").last().find("a").click(function(e){
 				jQuery("#login_bg").fadeIn("slow");
@@ -52,7 +53,7 @@ include($this['path']->path('layouts:theme.config.php'));
 
 				var link_perfil = jQuery("#ktopmenu .menu").find("li").last().find("a").attr("href");
 				jQuery("#menu_topo").find(".uk-navbar-nav li").first().find("a").text("Perfil");
-				jQuery("#menu_topo").find(".uk-navbar-nav li").first().find("a").attr("href", link_perfil);
+				jQuery("#menu_topo").find(".uk-navbar-nav li").first().find("a").attr("href", "/reparosemlagrima/editar-perfil");
 
 
 				var form = jQuery("#kprofilebox .kprofilebox-welcome").find("li").last().find("form");
