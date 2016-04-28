@@ -1969,7 +1969,150 @@ input:-webkit-autofill
 	}
 }
 
+/* PÁGINA DE LOGIN */
+#Kunena #ktop,
+#Kunena > div:nth-child(2){
+	display: none;
+}
 
+.loginpag_forum h2{
+	color: #5D5D5D;
+	font-size: 45px;
+	font-weight: 500;
+	line-height: 45px;
+	text-align: center;
+	margin: 0;
+	border-bottom: 3px solid #fff;
+	padding-bottom: 15px;
+}
+
+.loginpag_forum .well{
+	background: #00AFF3;
+	padding: 40px 20px !important;
+	border: 3px solid rgba(0, 175, 243, 0.51);
+	border-radius: 22px;
+	-webkit-border-radius: 22px;
+	border-radius: 22px;
+	max-width: 750px;
+	width: 90%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #fff;
+	margin: 0 auto;
+}
+
+.loginpag_forum .well fieldset{
+	max-width: 345px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+#login_bg > #kprofilebox.kcontainer .kbody > .k_guest{
+	font-size: 22px;
+	line-height: 24px;
+	margin-bottom: 14px;
+	border-bottom: 3px solid #fff;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+#login_bg > #kprofilebox.kcontainer .kprofileboxcnt form{
+	width: 100%;
+}
+
+#login_bg > #kprofilebox.kcontainer .kprofileboxcnt form .input{
+	width: 100%;
+}
+
+.loginpag_forum .well fieldset .control-group{
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 19px;
+	margin-bottom: 5px;
+}
+
+.loginpag_forum .well fieldset .control-group:nth-child(1) .control-label label,
+.loginpag_forum .well fieldset .control-group:nth-child(2) .control-label label{
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.loginpag_forum .well fieldset .control-group:nth-child(1) .control-label,
+.loginpag_forum .well fieldset .control-group:nth-child(2) .control-label{
+	width: 100%;
+	float: none;
+	text-align: center;
+}
+
+.loginpag_forum .well fieldset .control-group:nth-child(1) .controls,
+.loginpag_forum .well fieldset .control-group:nth-child(2) .controls,
+.loginpag_forum .well fieldset .control-group:nth-child(4) .controls{
+	width: 100%;
+	margin-bottom: 10px;
+	margin-left: 0;
+}
+
+.loginpag_forum .well fieldset .control-group:nth-child(3) .controls{
+	position: relative;
+	left: -65px;
+	top: 4px;
+}
+
+.loginpag_forum .well fieldset .control-group .controls .required{
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 37px;
+	line-height: 37px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+input:-webkit-autofill 
+{    
+	-webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset !important;
+	-webkit-text-fill-color: #000 !important;
+}
+
+.loginpag_forum .well fieldset .control-group:nth-child(4) .controls .btn{
+	display: block;
+	margin: 15px auto 10px;
+	border-radius: 2px;
+	border: none;
+	background: #fff;
+	height: 58px;
+	line-height: 58px;
+	width: 197px;
+	color: #00AFF3;
+	border: 1px solid transparent;
+}
+
+.loginpag_forum .well fieldset .control-group:nth-child(4) .controls .btn:hover{
+	border-color: #0075A2;
+	color: #0075A2;
+}
+
+body.pag_registra #tm-content div:nth-child(3){
+	display: none;
+}
+
+.loginpag_forum .well .nav li{
+	display: block;
+	height: 35px;
+	text-align: center;
+}
+
+.loginpag_forum .well .nav li a{
+	color: #fff !important;
+	border: none;
+	text-transform: none;
+	font-size: 16px;
+
+}
 
 /* ARTIGO */
 
