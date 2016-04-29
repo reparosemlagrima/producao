@@ -83,25 +83,26 @@ JHtml::_('behavior.keepalive');
 			<input type="hidden" name="return" value="<?php echo base64_encode($this->params->get('login_redirect_url', $this->form->getValue('return'))); ?>" />
 			<?php echo JHtml::_('form.token'); ?>
 		</fieldset>
+
+		<div>
+			<ul class="nav nav-tabs nav-stacked">
+				<li>
+					<a href="<?php echo JRoute::_('index.php?option=com_users&view=reset'); ?>">
+					<?php echo JText::_('COM_USERS_LOGIN_RESET'); ?></a>
+				</li>
+				<li>
+					<a href="<?php echo JRoute::_('index.php?option=com_users&view=remind'); ?>">
+					<?php echo JText::_('COM_USERS_LOGIN_REMIND'); ?></a>
+				</li>
+				<?php
+				$usersConfig = JComponentHelper::getParams('com_users');
+				if ($usersConfig->get('allowUserRegistration')) : ?>
+				<li>
+					<a href="<?php echo JRoute::_('index.php?option=com_users&view=registration'); ?>">
+						<?php echo JText::_('COM_USERS_LOGIN_REGISTER'); ?></a>
+				</li>
+				<?php endif; ?>
+			</ul>
+		</div>
 	</form>
-</div>
-<div>
-	<ul class="nav nav-tabs nav-stacked">
-		<li>
-			<a href="<?php echo JRoute::_('index.php?option=com_users&view=reset'); ?>">
-			<?php echo JText::_('COM_USERS_LOGIN_RESET'); ?></a>
-		</li>
-		<li>
-			<a href="<?php echo JRoute::_('index.php?option=com_users&view=remind'); ?>">
-			<?php echo JText::_('COM_USERS_LOGIN_REMIND'); ?></a>
-		</li>
-		<?php
-		$usersConfig = JComponentHelper::getParams('com_users');
-		if ($usersConfig->get('allowUserRegistration')) : ?>
-		<li>
-			<a href="<?php echo JRoute::_('index.php?option=com_users&view=registration'); ?>">
-				<?php echo JText::_('COM_USERS_LOGIN_REGISTER'); ?></a>
-		</li>
-		<?php endif; ?>
-	</ul>
 </div>
