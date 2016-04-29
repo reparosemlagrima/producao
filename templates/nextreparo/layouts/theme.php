@@ -15,19 +15,30 @@ include($this['path']->path('layouts:theme.config.php'));
 	<?php echo $this['template']->render('head'); ?>
 
 	<?php
-		echo "<pre>";
 		$session_name_user = $_SESSION["__default"]["user"]->name;
-		var_dump($_SESSION["__default"]);
-		var_dump($_SESSION["__default"]["session.token"]);
-		echo "</pre>";
+		//echo "<pre>";
+		//print_r($_SESSION["__default"]);
+		//echo "</pre>";
+	?>
+
+	<?php
+		if($session_name_user != NULL):
+	?>
+			<script type="text/javascript">
+				var jQuery = jQuery.noConflict();
+				jQuery(window).load(function() {
+					if(jQuery(".pag_home").length){
+						jQuery(".menu_principal .perfil_home").html('<a href="/reparosemlagrima/forum-reparo/user">Perfil</a>');
+						jQuery(".menu_principal .acessar_logout").html('<form action="<?php echo KunenaRoute::_('index.php?option=com_kunena') ?>" method="post" name="login" id="form_logout"><input type="hidden" name="view" value="user" /><input type="hidden" name="task" value="logout" /><input type="hidden" name="<?php echo JFactory::getSession()->getFormToken()?>" value="1" /><input type="submit" name="submit" class="kbutton" value="Sair" /></form>');	
+					}
+				});
+			</script>
+	<?php
+		endif;
 	?>
 
 	<script type="text/javascript">
 		var jQuery = jQuery.noConflict();
-		jQuery(window).load(function() {
-			jQuery("#menu_topo").hide();
-		});
-
 		jQuery(window).scroll(function() {
 			if ( jQuery(".pag_home").length ){
 				if (jQuery("#new-menu").offset().top > 750) {
@@ -39,34 +50,6 @@ include($this['path']->path('layouts:theme.config.php'));
 		});
 
 		jQuery(window).load(function() {
-			if(jQuery(".kprofilebox-left").length){
-				jQuery("#menu_topo").addClass("loggedin");
-				jQuery("#kprofilebox").hide();
-
-				var link_perfil = jQuery("#ktopmenu .menu").find("li").last().find("a").attr("href");
-				jQuery("#menu_topo").find(".uk-navbar-nav li").first().find("a").text("Perfil");
-				jQuery("#menu_topo").find(".uk-navbar-nav li").first().find("a").attr("href", "/reparosemlagrima/editar-perfil");
-
-
-				var form = jQuery("#kprofilebox .kprofilebox-welcome").find("li").last().find("form");
-				form.attr("id", "form_logout");
-				form.find("input").last().val("Sair");
-				jQuery("#menu_topo").find(".uk-navbar-nav li").last().html(form);
-
-			
-				jQuery("#kprofilebox .kprofilebox-left img.kavatar").prependTo("#profile_user");
-				var bemvindo = jQuery("#kprofilebox .kprofilebox-welcome").find("li").first().text();
-				jQuery("#profile_user p").html(bemvindo);
-			}
-
-			jQuery("#menu_topo").show();
-
-			if(jQuery(".loginpag_forum").length){
-				var links = jQuery(".loginpag_forum").next();
-				console.log(links);
-				jQuery(links).appendTo(".loginpag_forum form");
-			}
-
 			if(jQuery("#new-status-f").length){
 				jQuery("#new-status-f").hide();
 				jQuery("#new-status-f").appendTo(".ultimas-form-home h3");
@@ -170,14 +153,40 @@ include($this['path']->path('layouts:theme.config.php'));
 						<?php endif; ?>
 
 						<?php if ($this['widgets']->count('menu')) : ?>
-							<div class="tm-nav uk-hidden-small" id="menu_topo">
+							<?php $class_login = ($session_name_user == NULL) ? "" : "loggedin"; ?>
+							<div class="tm-nav uk-hidden-small <?php echo $class_login; ?>" id="menu_topo">
 								<div id="loja_menu_topo">
 									<a href="/reparosemlagrima/loja/index.php?route=checkout/cart" title="Loja"></a>
 								</div>
-								<div id="profile_user">
-									<p>&nbsp;</p>
-								</div>
+
+								<?php
+									if($session_name_user == NULL):
+								?>
 								<?php echo $this['widgets']->render('menu'); ?>
+								<?php
+									else:
+								?>
+									<div id="profile_user">
+										<p>
+											Bem-Vindo(a), <?php echo $session_name_user; ?>!
+										</p>
+									</div>
+									<ul class="uk-navbar-nav uk-hidden-small">
+										<li>
+											<a href="/reparosemlagrima/forum-reparo/user">Perfil</a>
+										</li>
+										<li>
+											<form action="<?php echo KunenaRoute::_('index.php?option=com_kunena') ?>" method="post" name="login" id="form_logout">
+												<input type="hidden" name="view" value="user" />
+												<input type="hidden" name="task" value="logout" />
+												<input type="hidden" name="<?php echo JFactory::getSession()->getFormToken()?>" value="1" />
+												<input type="submit" name="submit" class="kbutton" value="Sair" />
+											</form>
+										</li>
+									</ul>
+								<?php
+									endif;
+								?>
 							</div>
 						<?php endif; ?>
 
