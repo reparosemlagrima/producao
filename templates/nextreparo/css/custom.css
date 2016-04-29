@@ -504,8 +504,8 @@ small.similar-smallinfo .countnum{
 	font-size: 14px;
 	position: absolute;
 	white-space: nowrap;
-	top: -31px;
-	right: 175px;
+	top: -5px;
+	right: 130px;
 }
 
 #menu_topo.loggedin #form_logout{
@@ -802,6 +802,19 @@ small.similar-smallinfo .countnum{
 	color: #fff;
 	display: inline-block;
 	text-transform: uppercase;
+}
+
+#menu > .menu_principal li .kbutton{
+	margin-top: -3px;
+	font-weight: 300;
+	font-size: 18px;
+	position: relative;
+	padding-left: 10px;
+	color: #fff;
+	display: inline-block;
+	text-transform: uppercase;
+	border: none;
+	background-color: transparent;
 }
 
 #menu > .menu_principal li:hover a{
@@ -1778,6 +1791,10 @@ body.pag_forum .uk-progress-bar {
 #Kunena .kblock div.kheader h2 .kheadbtn.kright:hover, #Kunena .kblock div.kheader h2 .kheadbtn.kright:hover a{
 	background: #00AFF3;
     color: #fff;
+}
+
+#Kunena #kprofile .kprofile-rightcol2 div.kiconrow{
+	float: right;
 }
 
 /* ABAS FÓRUM */
