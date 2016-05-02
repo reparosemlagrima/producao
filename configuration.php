@@ -49,7 +49,6 @@ class JConfig {
 	public $offline_message = 'Este site está fora do ar para manutenção.<br />Tente novamente mais tarde.';
 	public $offset = 'UTC';
 	public $offset_user = 'UTC';
-	//public $password = 'Iql7s20~';
 	public $password = '';
 	public $robots = '';
 	public $secret = 'C8GlGtWRTYDHeBfyH1gzECc7stOPI1aG';
@@ -67,8 +66,7 @@ class JConfig {
 	public $smtpsecure = 'none';
 	public $smtpuser = 'messi@reparosemlagrima.com';
 	public $tmp_path = '/var/www/vhosts/rseml.com.br/httpdocs/reparosemlagrimas/tmp';
-	public $unicodeslugs = '0';
-	//public $user = 'usrrepsemlag';
+	public $unicodeslugs = '1';
 	public $user = 'root';
 	public $mailonline = '1';
 	public $memcached_persist = '1';
