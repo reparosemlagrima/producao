@@ -1806,6 +1806,58 @@ body.pag_forum .uk-progress-bar {
 	display: none;
 }
 
+#Kunena div:nth-child(3) > .uk-width-medium-7-10{
+	width: 100%;
+}
+
+#Kunena div:nth-child(3) > .uk-width-medium-7-10 .kheader h2,
+#Kunena div:nth-child(3) > .uk-width-medium-3-10,
+#Kunena div:nth-child(3) > .uk-width-medium-7-10 .kwhoisonline,
+#Kunena div:nth-child(3) > .uk-width-medium-7-10 .kfrontstats{
+	display: none;
+}
+
+#Kunena div:nth-child(3) > .uk-width-medium-7-10 .kcontainer .forum-info .kcol-kcattopics{
+
+}
+
+#Kunena div:nth-child(3) > .uk-width-medium-7-10 .kcontainer .forum-info .kcol-kcatreplies{
+	width: 43px;
+	height: 43px;
+	min-height: 43px;
+	color: #5C5C5D;
+	background-image: url("/reparosemlagrima/images/icons/img_qtd_posts.png");
+	background-repeat: no-repeat;
+	line-height: 38px;
+	font-size: 23px;
+	border: none;
+	box-shadow: none;
+	background-color: transparent;
+}
+
+#Kunena div:nth-child(3) > .uk-width-medium-7-10 .kcontainer .forum-info .kcol-kcatreplies .kcat-replies-number{
+	line-height: 38px;
+	font-size: 23px;
+	padding: 0;
+	text-indent: -5px;
+}
+
+#lista_forum .item_lista_forum .qtd_posts_forum span{
+	float: right;
+	display: block;
+	
+	text-indent: 13px;
+	font-weight: 500;
+}
+
+#lista_forum .item_lista_forum .qtd_posts_forum span.no_answer{
+	background-position: 0 -43px;
+}
+
+#lista_forum .item_lista_forum .qtd_posts_forum span.answer{
+	background-position: 0 0;
+}
+
 /* CAIXA DE LOGIN */
 #kprofilebox.kcontainer{
 	display: none !important;
