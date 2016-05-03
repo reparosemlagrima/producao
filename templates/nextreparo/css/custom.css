@@ -1802,27 +1802,87 @@ body.pag_forum .uk-progress-bar {
 	color: #00AFF3;
 }
 
-#ktop .ktoggler{
-	display: none;
+#ktop .ktoggler,
+.kheader .ktoggler{
+	display: none !important;
 }
 
-#Kunena div:nth-child(3) > .uk-width-medium-7-10{
+#Kunena div.uk-grid > .uk-width-medium-7-10{
 	width: 100%;
 }
 
-#Kunena div:nth-child(3) > .uk-width-medium-7-10 .kheader h2,
-#Kunena div:nth-child(3) > .uk-width-medium-3-10,
-#Kunena div:nth-child(3) > .uk-width-medium-7-10 .kwhoisonline,
-#Kunena div:nth-child(3) > .uk-width-medium-7-10 .kfrontstats{
-	display: none;
+#Kunena div.uk-grid > .uk-width-medium-3-10,
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kwhoisonline,
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kfrontstats,
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-first.kcol-category-icon,
+#Kunena > .kpbox{
+	display: none !important;
 }
 
-#Kunena div:nth-child(3) > .uk-width-medium-7-10 .kcontainer .forum-info .kcol-kcattopics{
-
+#Kunena div.uk-grid > .uk-width-medium-7-10 .klist-markallcatsread{
+	border: none;
 }
 
-#Kunena div:nth-child(3) > .uk-width-medium-7-10 .kcontainer .forum-info .kcol-kcatreplies{
-	width: 43px;
+#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody{
+	overflow: hidden;
+	background-color: #f5f5f5;
+	height: 35px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody .fltlft .titulo-cat{
+	color: #7D7D7D;
+	margin: 10px 17px;
+	padding: 0 !important;
+	line-height: 15px;
+	height: 15px;
+	min-height: 15px;
+	font-size: 16px;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody .fltrt #jumpto{
+	margin: 6px 10px 0;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody .fltrt #jumpto .kright select{
+	border: none;
+	padding: 0 5px;
+	height: 23px;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	color: #7D7D7D;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody .fltrt #jumpto .kright .kbutton.ks{
+	background-color: #fff;
+	border: none;
+	margin: 0 0 0 7px;
+	padding: 0 !important;
+	width: 45px;
+	height: 23px;
+	border-radius: 23px;
+	-webkit-border-radius: 23px;
+	-moz-border-radius: 23px;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody .fltrt #jumpto .kright .kbutton.ks:hover{
+	color: #00AFF3;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .forum-info{
+	bottom: initial;
+	left: initial;
+	top: 17px;
+	right: 20px;
+	width: 140px;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .forum-info .kcol-kcattopics,
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .forum-info .kcol-kcatreplies{
+	width: 60px;
 	height: 43px;
 	min-height: 43px;
 	color: #5C5C5D;
@@ -1835,27 +1895,113 @@ body.pag_forum .uk-progress-bar {
 	background-color: transparent;
 }
 
-#Kunena div:nth-child(3) > .uk-width-medium-7-10 .kcontainer .forum-info .kcol-kcatreplies .kcat-replies-number{
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .forum-info .kcol-kcattopics{
+	background-position: 8px -86px;
+	margin-right: 20px;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .forum-info .kcol-kcatreplies.no_answer{
+	background-position: 8px -43px;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .forum-info .kcol-kcatreplies.answer{
+	background-position: 8px 0;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .forum-info .kcol-kcatreplies .kcat-replies-number,
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .forum-info .kcol-kcattopics .kcat-topics-number{
 	line-height: 38px;
 	font-size: 23px;
 	padding: 0;
 	text-indent: -5px;
 }
 
-#lista_forum .item_lista_forum .qtd_posts_forum span{
-	float: right;
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .forum-info .kcol-kcattopics .kcat-topics,
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .forum-info .kcol-kcatreplies .kcat-replies{
 	display: block;
-	
-	text-indent: 13px;
+	white-space: nowrap;
+	height: 20px;
+	line-height: 20px;
+	padding: 4px 0 0;
+	width: 60px;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-kcatlastpost,
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-knoposts{
+	margin: 0;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kbody{
+	border-color: transparent;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kbody ul.kblocktable li.krow1{
+	background-color: transparent;
+}
+
+#Kunena .nts-kblock ul.kblocktable li:hover .kblock-inner:before{
+	background-color: transparent;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer ul.kblocktable li:last-child .kblock-inner{
+	border-bottom: 1px solid #ddd;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-kcattitle .kthead-title a{
+	color: #00AFF3;
 	font-weight: 500;
 }
 
-#lista_forum .item_lista_forum .qtd_posts_forum span.no_answer{
-	background-position: 0 -43px;
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer li:hover .kblock-inner .kcol-kcattitle .kthead-title a:hover{
+	text-decoration: underline;
 }
 
-#lista_forum .item_lista_forum .qtd_posts_forum span.answer{
-	background-position: 0 0;
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer li:hover .kblock-inner .kcol-kcattitle .kthead-title a{
+	color: #00AFF3;
+	text-decoration: none;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-kcatlastpost{
+	overflow: hidden;
+	border: none;
+	padding: 0;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-kcatlastpost .klatest-subject{
+	float: left;
+	line-height: 22px;
+	margin: 0;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-kcatlastpost .klatest-subject-by{
+	float: right;
+    width: 75px;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-kcatlastpost .klatest-subject-by a{
+	font-size: 16px;
+	border-right: none;
+	white-space: normal;
+	display: block;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-kcatlastpost .klatest-subject-by span.nowrap{
+	white-space: normal;
+	font-size: 11px;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-kcatlastpost .klatest-avatar{
+	float: right;
+	margin-right: 5px;
+	width: 45px;
+	height: 45px;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-kcatlastpost .klatest-avatar img{
+	max-width: 45px !important;
+	max-height: 45px !important;
+	width: 45px;
+	border-radius: 30px;
 }
 
 /* CAIXA DE LOGIN */
