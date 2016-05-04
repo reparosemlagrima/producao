@@ -64,7 +64,7 @@ foreach($this->sections as $section):
 													echo $this->getCategoryLink($category);
 
 													if ($category->getNewCount()) {
-														echo '<sup class="knewchar">(' . $category->getNewCount() . ' ' . JText::_('COM_KUNENA_A_GEN_NEWCHAR') . ")</sup>";
+														echo '<span class="knewchar">' . $category->getNewCount() . ' ' . JText::_('COM_KUNENA_A_GEN_NEWCHAR') . "</span>";
 													}
 													if ($category->locked) {
 														echo $this->getIcon ( 'kforumlocked', JText::_('COM_KUNENA_LOCKED_CATEGORY') );
