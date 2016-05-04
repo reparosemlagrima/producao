@@ -44,13 +44,15 @@ defined('_JEXEC') or die;
 				// mark-up last item as strong
 				if($i < $count-1)
 				{
-					if(!empty($list[$i]->link))
-					{
-						echo '<li><a href="'.$list[$i]->link.'">'.$name.'</a></li>';
-					}
-					else
-					{
-						echo '<li><span>'.$name.'</span></li>';
+					if($list[$i]->link != "/reparosemlagrima/forum-reparo/forum-reparo"){
+						if(!empty($list[$i]->link))
+						{
+							echo '<li><a href="'.$list[$i]->link.'">'.$name.'</a></li>';
+						}
+						else
+						{
+							echo '<li><span>'.$name.'</span></li>';
+						}
 					}
 				}
 				else
