@@ -109,8 +109,8 @@ $this->k=0;
 			<td class="kcol-mid">
 				<?php foreach ($this->topicIcons as $id=>$icon): ?>
 				<span class="kiconsel">
-				<input type="radio" name="topic_emoticon" value="<?php echo $icon->id ?>" <?php echo !empty($icon->checked) ? ' checked="checked" ':'' ?> />
-				<img src="<?php echo $this->ktemplate->getTopicIconIndexPath($icon->id, true);?>" alt="" border="0" />
+					<input type="radio" name="topic_emoticon" value="<?php echo $icon->id ?>" <?php echo !empty($icon->checked) ? ' checked="checked" ':'' ?> />
+					<img src="<?php echo $this->ktemplate->getTopicIconIndexPath($icon->id, true);?>" alt="<?php echo $icon->title ?>" title="<?php echo $icon->title ?>" border="0" />
 				</span>
 				<?php endforeach; ?>
 			</td>
@@ -118,8 +118,8 @@ $this->k=0;
 		<?php endif; ?>
 
 		<?php
-		// Show bbcode editor
-		$this->displayTemplateFile('topic', 'edit', 'editor');
+			// Show bbcode editor
+			$this->displayTemplateFile('topic', 'edit', 'editor');
 		?>
 
 		<?php if ($this->allowedExtensions) : ?>
