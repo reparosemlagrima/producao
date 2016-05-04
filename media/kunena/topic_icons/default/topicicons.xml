@@ -12,17 +12,17 @@
 	<description>Default topic icons for Kunena</description>
 
 	<icons type="user" width="48" height="48">
-		<icon id="0" name="default" published="1" b2="file" b3="file" fa="file" title="COM_KUNENA_ICON_DEFAULT" src="user/default.png" />
-		<icon id="1" name="exclamation" published="1" b2="notification-circle" b3="exclamation-sign" fa="exclamation-circle" title="COM_KUNENA_ICON_EXCLAMATION" src="user/exclamation.png" />
-		<icon id="2" name="question" published="1" b2="question-sign" b3="question-sign" fa="question-circle" title="COM_KUNENA_ICON_QUESTION" src="user/question.png" />
-		<icon id="3" name="idea" published="1" b2="lamp" b3="lamp" fa="lightbulb-o" title="COM_KUNENA_ICON_IDEA" src="user/idea.png" />
-		<icon id="4" name="love" published="1" b2="heart" b3="heart" fa="heart" title="COM_KUNENA_ICON_LOVE" src="user/love.png" />
+		<icon id="0" name="default" published="1" b2="file" b3="file" fa="file" title="Artigo" src="user/default.png" />
+		<icon id="1" name="exclamation" published="1" b2="notification-circle" b3="exclamation-sign" fa="exclamation-circle" title="Atenção" src="user/exclamation.png" />
+		<icon id="2" name="question" published="1" b2="question-sign" b3="question-sign" fa="question-circle" title="Pergunta" src="user/question.png" />
+		<icon id="3" name="idea" published="1" b2="lamp" b3="lamp" fa="lightbulb-o" title="Ideia" src="user/idea.png" />
+		<!-- <icon id="4" name="love" published="1" b2="heart" b3="heart" fa="heart" title="COM_KUNENA_ICON_LOVE" src="user/love.png" /-->
 		<!-- icon id="5" name="grin" published="1" title="COM_KUNENA_ICON_GRIN" src="user/grin.png" / -->
 		<!-- icon id="6" name="shock" published="1" title="COM_KUNENA_ICON_SHOCK" src="user/shock.png" / -->
 		<!-- icon id="7" name="smile" published="1" title="COM_KUNENA_ICON_SMILE" src="user/smile.png" / -->
-		<icon id="9" name="merged" published="1" b2="contract" b3="resize-small" fa="compress" title="COM_KUNENA_ICON_MERGED" src="user/merged.png" />
-		<icon id="10" name="cross" published="1" b2="remove" b3="remove" fa="times" title="COM_KUNENA_ICON_CROSS" src="user/cross.png" />
-		<icon id="8" name="solved" published="1" b2="ok" b3="ok" fa="checked" title="COM_KUNENA_ICON_SOLVED" src="user/solved.png" />
+		<!-- <icon id="9" name="merged" published="1" b2="contract" b3="resize-small" fa="compress" title="COM_KUNENA_ICON_MERGED" src="user/merged.png" /-->
+		<icon id="10" name="cross" published="1" b2="remove" b3="remove" fa="times" title="Removido" src="user/cross.png" />
+		<icon id="8" name="solved" published="1" b2="ok" b3="ok" fa="checked" title="Resolvido" src="user/solved.png" />
 	</icons>
 
 	<icons type="system" width="48" height="48">
