@@ -43,7 +43,7 @@ foreach($this->sections as $section):
 						$k = 0;
 
 						foreach($this->categories [$section->id] as $category){
-							if($this->formatLargeNumber ( $category->getTopics() ) != 0):
+							if($this->formatLargeNumber($category->getTopics()) != 0):
 				?>
 								<li class="k<?php echo $tabclass [$k ^= 1], isset ( $category->class_sfx ) ? ' k' . $this->escape($tabclass [$k]) . $this->escape($category->class_sfx) : '' ?>" id="kcat<?php echo intval($category->id) ?>">
 									<div class="kblock-inner <?php if (! empty ( $this->categories [$category->id] )) echo 'has-subcats' ?>">
