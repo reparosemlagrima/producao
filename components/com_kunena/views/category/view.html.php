@@ -442,7 +442,7 @@ class KunenaViewCategory extends KunenaView
 			case 'CATEGORY_NEW_COUNT':
 				$new = empty($matches[2]) ? $this->category->getNewCount() : KunenaForumCategoryHelper::get($matches[2])->getNewCount();
 
-				return $new ? '<sup class="knewchar">(' . $new . ' ' . JText::_('COM_KUNENA_A_GEN_NEWCHAR') . ")</sup>" : '';
+				return $new ? '<span class="knewchar">(' . $new . ' ' . JText::_('COM_KUNENA_A_GEN_NEWCHAR') . ")</span>" : '';
 			case 'DATE':
 				$date = new KunenaDate($matches[2]);
 
