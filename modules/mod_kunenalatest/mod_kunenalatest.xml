@@ -112,8 +112,8 @@
 					<option value="0">MOD_KUNENALATEST_PARAM_VALUE_TOPICICON</option>
 					<option value="2">MOD_KUNENALATEST_PARAM_VALUE_NO_AVATAR_NO_TOPICICONS</option>
 				</field>
-				<field name="avatarwidth" type="text" default="36px" description="MOD_KUNENALATEST_PARAM_AVATAR_WIDTH_DESC" label="MOD_KUNENALATEST_PARAM_AVATAR_WIDTH" />
-				<field name="avatarheight" type="text" default="36px" description="MOD_KUNENALATEST_PARAM_AVATAR_HEIGHT_DESC" label="MOD_KUNENALATEST_PARAM_AVATAR_HEIGHT" />
+				<field name="avatarwidth" type="text" default="50px" description="MOD_KUNENALATEST_PARAM_AVATAR_WIDTH_DESC" label="MOD_KUNENALATEST_PARAM_AVATAR_WIDTH" />
+				<field name="avatarheight" type="text" default="50px" description="MOD_KUNENALATEST_PARAM_AVATAR_HEIGHT_DESC" label="MOD_KUNENALATEST_PARAM_AVATAR_HEIGHT" />
 
 				<field name="sh_category" type="radio" default="1" description="MOD_KUNENALATEST_PARAM_SHOW_CATEGORY_DESC" label="MOD_KUNENALATEST_PARAM_SHOW_CATEGORY">
 					<option value="1">MOD_KUNENALATEST_PARAM_VALUE_SHOW</option>
