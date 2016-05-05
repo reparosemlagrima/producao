@@ -57,7 +57,28 @@ defined ( '_JEXEC' ) or die ();
 					<tr class="krow2"><td class="kcol-first"><?php echo JText::_('COM_KUNENA_VIEW_NO_TOPICS') ?></td></tr>
 
 					<?php else : ?>
-						<?php $this->displayRows (); ?>
+						<ul id="lista_forum">
+							<li class="item_lista_forum">
+								<div class="titulo_categ_forum">
+									<p>
+										Perguntas
+									</p>
+								</div>
+
+								<div class="autor_tempo_forum">
+									&nbsp;
+								</div>
+
+								<div class="foto_forum">
+									&nbsp;
+								</div>
+
+								<div class="qtd_posts_forum">
+									Respostas
+								</div>
+							</li>
+							<?php $this->displayRows (); ?>
+						</ul>
 
 					<?php  if ( !empty($this->topicActions) || !empty($this->embedded) ) : ?>
 					<!-- Bulk Actions -->
