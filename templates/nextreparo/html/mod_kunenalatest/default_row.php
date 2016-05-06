@@ -14,7 +14,7 @@ defined('_JEXEC') or die ();
 	<div class="titulo_categ_forum">
 		<p>
 			<?php
-				echo ModuleKunenaLatest::shortenLink($this->getTopicLink($this->topic, 'last', null, ModuleKunenaLatest::setSubjectTitle($this, $this->topic->last_post_message)), $this->params->get('titlelength'));
+				echo ModuleKunenaLatest::shortenLink($this->getTopicLink($this->topic, 'last', null, ModuleKunenaLatest::setSubjectTitle($this, $this->topic->last_post_message)), 62);
 			?>
 		</p>
 		<span>
