@@ -13,67 +13,78 @@ defined ( '_JEXEC' ) or die ();
 $template = KunenaTemplate::getInstance();
 ?>
 <div class="uk-grid">
-<div class="uk-width-medium-7-10">
-<?php 
-$this->displayAnnouncement ();
-?>
-<!-- Module position: kunena_announcement -->
-<?php $this->displayModulePosition ( 'kunena_announcement' ) ?>
-<div class="klist-markallcatsread kcontainer">
-	<div class="ksectionbody">
-		<div class="fltlft">
-			<h1 class="titulo-cat">Selecione uma Categoria</h1>
-		</div>
-		<!-- <div class="fltlft">
-			<div class="fltlft">
-			<?php if (!empty($this->markAllReadURL)) : ?>
-			<form action="<?php echo KunenaRoute::_('index.php?option=com_kunena') ?>" name="markAllForumsRead" method="post">
-				<input type="hidden" name="view" value="category" />
-				<input type="hidden" name="task" value="markread" />
-				<?php echo JHtml::_( 'form.token' ); ?>
+	<div class="uk-width-medium-7-10">
+		<?php 
+			$this->displayAnnouncement ();
+		?>
+		
+		<!-- Module position: kunena_announcement -->
+		<?php $this->displayModulePosition ( 'kunena_announcement' ) ?>
+		<div class="klist-markallcatsread kcontainer">
+			<div class="ksectionbody">
+				<div class="fltlft">
+					<h1 class="titulo-cat">Selecione uma Categoria</h1>
+				</div>
+				<!--
+				<div class="fltlft">
+					<div class="fltlft">
+						<?php if (!empty($this->markAllReadURL)) : ?>
+							<form action="<?php echo KunenaRoute::_('index.php?option=com_kunena') ?>" name="markAllForumsRead" method="post">
+								<input type="hidden" name="view" value="category" />
+								<input type="hidden" name="task" value="markread" />
+								<?php echo JHtml::_( 'form.token' ); ?>
 
-				<input type="submit" class="kbutton ks" value="<?php echo JText::_('COM_KUNENA_GEN_MARK_ALL_FORUMS_READ'); ?>" />
-			</form>
+								<input type="submit" class="kbutton ks" value="<?php echo JText::_('COM_KUNENA_GEN_MARK_ALL_FORUMS_READ'); ?>" />
+							</form>
+					</div>
+					<div class="kmessage-buttons-row">
+						<?php endif; ?>
+						<?php if (!empty($this->category_manage)) echo $this->category_manage; ?>
+					</div>
+				</div>
+				-->
+				<div class="fltrt">
+					<?php $this->displayForumjump(); ?>
+				</div>	
 			</div>
-			<div class="kmessage-buttons-row">
-			<?php endif; ?>
-			<?php if (!empty($this->category_manage)) echo $this->category_manage; ?>
-			</div>
-		</div> -->
-		<div class="fltrt">
-			<?php $this->displayForumjump(); ?>
 		</div>
+		<?php
+			if(count($this->categories)):
+				$this->displayTemplateFile('category', 'list', 'embed');
+			else:
+				$this->displayInfoMessage();
+			endif;
+			
+			$this->displayWhoIsOnline();
+			$this->displayStatistics();
+		?>
 	</div>
-</div>
 
-<?php
-if (count ( $this->categories )) {
-	$this->displayTemplateFile('category', 'list', 'embed');
-} else {
-	$this->displayInfoMessage ();
-}
-$this->displayWhoIsOnline();
-$this->displayStatistics();
-?>
-</div>
-<div class="uk-width-medium-3-10">
-	<div class="nts-kblock kblock kcategories-1 boxlateral">
-		<div class="kheader">
-			<h2><span>Tópicos</span> mais discutidos </h2>
-		</div>
+	<div class="uk-width-medium-3-10">
+		<div class="nts-kblock kblock kcategories-1 boxlateral">
+			<div class="kheader">
+				<h2><span>Tópicos</span> mais discutidos </h2>
+			</div>
 			<div class="box-iterno-listforum">
 				<ul class="uk-list listprogress">
-					<?php foreach ($this->top as $top) : ?>
-					<?php if($top[0]->title == 'Most Popular Topics'):?>
-						<?php foreach ($top as $id=>$item) : ?>
-								<li><span class="uk-badge uk-badge-notification"><?php echo $item->count ?></span> - <?php echo $item->link ?>
-									<div class="uk-progress">
-									    <div class="uk-progress-bar" style="width: <?php echo $item->percent ?>%;"><?php echo $item->percent ?>%</div>
-									</div>
-								</li>
-						<?php endforeach; ?>
-					<?php endif;?>
-					<?php endforeach; ?>
+					<?php
+						foreach($this->top as $top):
+							if($top[0]->title == 'Most Popular Topics'):
+								foreach($top as $id=>$item):
+					?>
+									<li>
+										<span class="uk-badge uk-badge-notification">
+											<?php echo $item->count ?>
+										</span> - <?php echo $item->link ?>
+										<div class="uk-progress">
+										    <div class="uk-progress-bar" style="width: <?php echo $item->percent ?>%;"><?php echo $item->percent ?>%</div>
+										</div>
+									</li>
+					<?php
+								endforeach;
+							endif;
+						endforeach;
+					?>
 				</ul>
 			</div>
 		</div>
