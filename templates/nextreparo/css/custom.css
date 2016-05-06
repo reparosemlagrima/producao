@@ -1651,7 +1651,7 @@ body.pag_home #top-f{
 
 #lista_forum .item_lista_forum{
 	overflow: hidden;
-	min-height: 50px;
+	min-height: 35px;
 	padding: 10px 0 15px;
 	margin: 10px 0;
 	border-bottom: 1px solid #d6d6d6;
@@ -1660,6 +1660,7 @@ body.pag_home #top-f{
 #lista_forum .item_lista_forum:first-of-type{
 	padding: 0;
 	min-height: 30px;
+	margin-top: 0;
 }
 
 #lista_forum .item_lista_forum div{
@@ -1669,13 +1670,21 @@ body.pag_home #top-f{
 
 #lista_forum .item_lista_forum div:first-of-type{
 	float: left;
+	width: 65%;
 }
 
 #lista_forum .item_lista_forum div:nth-child(2){
 	margin-right: 0px;
+	margin-top: -5px;
 }
 
-#lista_forum .item_lista_forum .titulo_categ_forum p{
+#lista_forum .item_lista_forum .titulo_categ_forum > a{
+	float: left;
+	margin: -2px 5px 0 0;
+}
+
+#lista_forum .item_lista_forum .titulo_categ_forum p,
+#lista_forum .item_lista_forum .titulo_categ_forum p a{
 	font-size: 19px;
 }
 
@@ -1685,20 +1694,23 @@ body.pag_home #top-f{
 
 #lista_forum .item_lista_forum .qtd_posts_forum{
 	width: 55px;
+	white-space: nowrap;
 }
 
 #lista_forum .item_lista_forum .qtd_posts_forum span{
 	float: right;
 	display: block;
-	width: 43px;
-	height: 43px;
+	width: 35px;
+	height: 35px;
 	color: #5C5C5D;
 	background-image: url("/reparosemlagrima/images/icons/img_qtd_posts.png");
 	background-repeat: no-repeat;
-	line-height: 38px;
-	font-size: 23px;
-	text-indent: 13px;
+	background-size: 35px;
+	line-height: 32px;
+	font-size: 17px;
+	text-indent: -4px;
 	font-weight: 500;
+	text-align: center;
 }
 
 #lista_forum .item_lista_forum .qtd_posts_forum span.no_answer{
@@ -1713,6 +1725,11 @@ body.pag_home #top-f{
 	width: 50px;
 }
 
+#lista_forum .item_lista_forum .foto_forum > .ktopic-latest-post-avatar{
+	margin: 0;
+	width: 50px;
+}
+
 #lista_forum .item_lista_forum .foto_forum a{
 	display: block;
 }
@@ -1723,16 +1740,27 @@ body.pag_home #top-f{
 	-moz-border-radius: 30px;
 }
 
+#lista_forum .item_lista_forum .foto_forum img.klist-avatar{
+	height: 35px;
+	width: 35px;
+	max-height: 35px !important;
+	max-width: 35px !important;
+}
+
 #lista_forum .item_lista_forum .autor_tempo_forum{
 	width: 100px;
 }
 
 #lista_forum .item_lista_forum .autor_tempo_forum p:first-of-type{
-	font-size: 15px;
+	font-size: 13px;
+}
+
+#lista_forum .item_lista_forum .autor_tempo_forum p:first-of-type a{
+	display: block;
 }
 
 #lista_forum .item_lista_forum .autor_tempo_forum p:last-of-type{
-	font-size: 12px;
+	font-size: 11px;
 	line-height: 14px;
 }
 
@@ -1807,6 +1835,7 @@ body.pag_forum .uk-progress-bar {
 	display: none !important;
 }
 
+/* FÓRUM - LISTA */
 #Kunena div.uk-grid > .uk-width-medium-7-10{
 	width: 100%;
 }
@@ -1819,11 +1848,19 @@ body.pag_forum .uk-progress-bar {
 	display: none !important;
 }
 
-#Kunena div.uk-grid > .uk-width-medium-7-10 .klist-markallcatsread{
+#Kunena div.uk-grid > .uk-width-medium-7-10 .klist-markallcatsread,
+#Kunena form div.kblock div.kcontainer.klist-markallcatsread{
 	border: none;
+	display: block;
+	clear: left;
 }
 
-#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody{
+#Kunena div.uk-grid > .uk-width-medium-7-10 .klist-markallcatsread{
+	display: none;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody,
+#Kunena form .kblock .klist-markallcatsread .ksectionbody{
 	overflow: hidden;
 	background-color: #f5f5f5;
 	height: 35px;
@@ -1832,7 +1869,8 @@ body.pag_forum .uk-progress-bar {
 	-moz-border-radius: 20px;
 }
 
-#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody .fltlft .titulo-cat{
+#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody .fltlft .titulo-cat,
+#Kunena form .kblock .klist-markallcatsread .ksectionbody .fltlft .titulo-cat{
 	color: #7D7D7D;
 	margin: 10px 17px;
 	padding: 0 !important;
@@ -1842,11 +1880,13 @@ body.pag_forum .uk-progress-bar {
 	font-size: 16px;
 }
 
-#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody .fltrt #jumpto{
+#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody .fltrt #jumpto,
+#Kunena form .kblock .klist-markallcatsread .ksectionbody .fltrt{
 	margin: 6px 10px 0;
 }
 
-#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody .fltrt #jumpto .kright select{
+#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody .fltrt #jumpto .kright select,
+#Kunena form .kblock .klist-markallcatsread .ksectionbody .fltrt .kright select{
 	border: none;
 	padding: 0 5px;
 	height: 23px;
@@ -1856,7 +1896,8 @@ body.pag_forum .uk-progress-bar {
 	color: #7D7D7D;
 }
 
-#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody .fltrt #jumpto .kright .kbutton.ks{
+#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody .fltrt #jumpto .kright .kbutton.ks,
+#Kunena form .kblock .klist-markallcatsread .ksectionbody .fltrt .kright .kbutton.ks{
 	background-color: #fff;
 	border: none;
 	margin: 0 0 0 7px;
@@ -1868,8 +1909,57 @@ body.pag_forum .uk-progress-bar {
 	-moz-border-radius: 23px;
 }
 
-#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody .fltrt #jumpto .kright .kbutton.ks:hover{
+#Kunena div.uk-grid > .uk-width-medium-7-10 .ksectionbody .fltrt #jumpto .kright .kbutton.ks:hover,
+#Kunena form .kblock .klist-markallcatsread .ksectionbody .fltrt .kright .kbutton.ks:hover{
 	color: #00AFF3;
+}
+
+#Kunena .klist-actions, #Kunena .klist-actions-bottom, #Kunena .kcontainer.klist-bottom{
+	display: none;
+}
+
+#Kunena > .uk-grid > .uk-width-medium-7-10 .kblock .kheader,
+#Kunena form > .kblock > .kheader{
+	margin-bottom: 0px;
+	background: none !important;
+}
+
+#Kunena > .uk-grid > .uk-width-medium-7-10 .kblock .kheader h2,
+#Kunena form > .kblock > .kheader h2{
+	font-weight: 400;
+	padding: 4px 10px 4px 0;
+	border-bottom: none !important;
+	margin-bottom: 10px;
+}
+
+#Kunena > .uk-grid > .uk-width-medium-7-10 .kblock .kheader h2 span a,
+#Kunena form > .kblock > .kheader h2 span{
+	font-weight: 400;
+	font-size: 30px;
+	color: #00AFF3;
+	letter-spacing: 0;
+}
+
+#Kunena form > .kblock > .kheader > a:first-of-type{
+	float: left;
+	clear: left;
+	border: 1px solid #00AFF3 !important;
+	background-color: transparent;
+	color: #00AFF3;
+	border-radius: 22px;
+	font-weight: 400;
+	padding: 2px 8px;
+	font-size: 15px;
+	margin: 0 0 20px 0;
+}
+
+#Kunena form > .kblock > .kheader > a:first-of-type:hover{
+	background-color: #00AFF3;
+	color: #fff;
+}
+
+#Kunena form > .kblock > .kheader > a:first-of-type > span{
+	padding: 6px 6px;
 }
 
 #Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .forum-info{
@@ -1935,6 +2025,10 @@ body.pag_forum .uk-progress-bar {
 	border-color: transparent;
 }
 
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kbody ul.kblocktable li:first-of-type > div.kblock-inner{
+	
+}
+
 #Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kbody ul.kblocktable li.krow1{
 	background-color: transparent;
 }
@@ -1945,6 +2039,19 @@ body.pag_forum .uk-progress-bar {
 
 #Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer ul.kblocktable li:last-child .kblock-inner{
 	border-bottom: 1px solid #ddd;
+}
+
+#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-kcattitle .kthead-title .knewchar,
+#Kunena .kblock .kcontainer .kcol-ktopictitle .ktopic-details .ktopic-title-cover .knewchar{
+	background: red;
+	color: #fff;
+	padding: 2px 5px;
+	margin-left: 6px;
+	font-size: 10px;
+	top: -3px;
+	position: relative;
+	border-radius: 3px;
+	vertical-align: initial;
 }
 
 #Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-kcattitle .kthead-title a{
@@ -1965,6 +2072,7 @@ body.pag_forum .uk-progress-bar {
 	overflow: hidden;
 	border: none;
 	padding: 0;
+	margin-top: -7px;
 }
 
 #Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-kcatlastpost .klatest-subject{
@@ -1976,6 +2084,7 @@ body.pag_forum .uk-progress-bar {
 #Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-kcatlastpost .klatest-subject-by{
 	float: right;
     width: 75px;
+    padding-top: 0;
 }
 
 #Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-kcatlastpost .klatest-subject-by a{
@@ -2002,6 +2111,18 @@ body.pag_forum .uk-progress-bar {
 	max-height: 45px !important;
 	width: 45px;
 	border-radius: 30px;
+}
+
+#Kunena .kcontainer .kblocktable td.kcol-ktopictitle .ktopic-details > a{
+	float: left;
+	margin-right: 7px;
+	margin-top: -2px;
+}
+
+/* PÁGINA POST */
+#Kunena div.kmsgsignature{
+	padding: 10px 15px 0;
+	margin-bottom: 5px;
 }
 
 /* CAIXA DE LOGIN */
@@ -2312,7 +2433,7 @@ input:-webkit-autofill
 }
 
 body.pag_registra #tm-content div:nth-child(3){
-	display: none;
+	//display: none;
 }
 
 .loginpag_forum .well .nav li{
