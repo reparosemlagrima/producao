@@ -10,7 +10,11 @@
  **/
 defined ( '_JEXEC' ) or die ();
 ?>
-
+<?php
+	if($_SERVER['REQUEST_URI'] == "/reparosemlagrima/forum-reparo/forum-reparo"):
+		header("location: /reparosemlagrima/forum-reparo");
+	endif;
+?>
 <?php $this->displayCategories () ?>
 <?php if ($this->category->headerdesc) : ?>
 <div class="kblock">
@@ -50,6 +54,18 @@ defined ( '_JEXEC' ) or die ();
 		?>
 		<h2><span>FÓRUM <?php echo $titulo; ?></span></h2>
 	</div>
+
+	<div class="klist-markallcatsread kcontainer">
+		<div class="ksectionbody">
+			<div class="fltlft">
+				<h1 class="titulo-cat">Selecione uma Categoria</h1>
+			</div>
+			<div class="fltrt">
+				<?php $this->displayForumjump(); ?>
+			</div>	
+		</div>
+	</div>
+
 	<div class="kcontainer">
 		<div class="kbody">
 				<table class="krowtable kblocktable<?php echo $this->escape($this->category->class_sfx); ?>" id="kflattable">
