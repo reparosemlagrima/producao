@@ -30,10 +30,6 @@ defined ( '_JEXEC' ) or die ();
 
 <?php if (!$this->category->isSection()) : ?>
 <div class="klist-actions">
-	<div class="klist-actions-goto">
-		<a id="forumtop"> </a>
-		<a class="kbuttongoto" href="#forumbottom" rel="nofollow"><?php echo $this->getIcon ( 'kforumbottom', JText::_('COM_KUNENA_GEN_GOTOBOTTOM') ) ?></a>
-	</div>
 	<?php $this->displayCategoryActions() ?>
 	<div class="klist-pages-all"><?php echo $this->getPagination (7); // odd number here (# - 2) ?></div>
 </div>
