@@ -55,6 +55,17 @@ include($this['path']->path('layouts:theme.config.php'));
 				jQuery("#new-status-f").appendTo(".ultimas-form-home h3");
 				jQuery("#new-status-f").show();
 			}
+
+			if(jQuery("#Kunena form > .kblock > .kheader").length){
+				var novo_topico = jQuery("#Kunena .klist-actions > div > a").first();
+				jQuery(novo_topico).appendTo("#Kunena form > .kblock > .kheader");
+			}
+
+			if(jQuery("#Kunena .uk-grid .uk-width-medium-7-10 > .kblock > .kheader").length){
+				var categ = jQuery("#Kunena .uk-grid .uk-width-medium-7-10 .klist-markallcatsread");
+				jQuery(categ).appendTo("#Kunena .uk-grid .uk-width-medium-7-10 > .kblock > .kheader");
+				jQuery('#Kunena div.uk-grid > .uk-width-medium-7-10 .klist-markallcatsread').css("display","block");
+			}
 		});
 	</script>
 
