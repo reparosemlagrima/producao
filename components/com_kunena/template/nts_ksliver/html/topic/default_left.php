@@ -11,18 +11,7 @@
 defined ( '_JEXEC' ) or die ();
 ?>
 <div class="kmsg-header kmsg-header-left">
-	<h2>
-		<span class="kmsgtitle<?php echo $this->escape($this->msgsuffix) ?> kmsg-title-left">
-			<?php echo $this->displayMessageField('subject') ?>
-		</span>
-		<span class="kmsgdate kmsgdate-left" title="<?php echo KunenaDate::getInstance($this->message->time)->toKunena('config_post_dateformat_hover') ?>">
-			<?php echo KunenaDate::getInstance($this->message->time)->toKunena('config_post_dateformat') ?>
-		</span>
-		<span class="kmsg-id-left">
-			<a id="<?php echo intval($this->message->id) ?>"></a>
-			<?php echo $this->numLink ?>
-		</span>
-	</h2>
+	
 </div>
 <table class="<?php echo $this->class ?>">
 	<tbody>
@@ -31,6 +20,12 @@ defined ( '_JEXEC' ) or die ();
 				<?php $this->displayMessageProfile('vertical') ?>
 			</td>
 			<td class="kmessage-left">
+				<h2>
+					<?php echo $this->displayMessageField('subject') ?>
+					<span class="kmsgdate" title="">
+						<?php echo substr(KunenaDate::getInstance($this->message->time)->toKunena('config_post_dateformat_hover'),0,-6); ?>
+					</span>
+				</h2>
 				<?php $this->displayMessageContents() ?>
 			</td>
 		</tr>
