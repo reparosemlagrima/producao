@@ -19,7 +19,7 @@ defined ( '_JEXEC' ) or die ();
 			<td class="kmessage-left">
 				<h2>
 					<?php echo $this->displayMessageField('subject') ?>
-					<span class="kmsgdate" title="">
+					<span class="kmsgdate">
 						<?php echo substr(KunenaDate::getInstance($this->message->time)->toKunena('config_post_dateformat_hover'),0,-6); ?>
 					</span>
 				</h2>
