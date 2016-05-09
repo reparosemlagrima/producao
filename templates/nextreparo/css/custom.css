@@ -1714,7 +1714,7 @@ body.pag_home #top-f{
 }
 
 #lista_forum .item_lista_forum .qtd_posts_forum span.no_answer{
-	background-position: 0 -43px;
+	background-position: 0 -35px;
 }
 
 #lista_forum .item_lista_forum .qtd_posts_forum span.answer{
@@ -1925,7 +1925,8 @@ body.pag_forum .uk-progress-bar {
 }
 
 #Kunena > .uk-grid > .uk-width-medium-7-10 .kblock .kheader h2,
-#Kunena form > .kblock > .kheader h2{
+#Kunena form > .kblock > .kheader h2,
+#Kunena > .kblock > div.kheader h2{
 	font-weight: 400;
 	padding: 4px 10px 4px 0;
 	border-bottom: none !important;
@@ -1933,7 +1934,8 @@ body.pag_forum .uk-progress-bar {
 }
 
 #Kunena > .uk-grid > .uk-width-medium-7-10 .kblock .kheader h2 span a,
-#Kunena form > .kblock > .kheader h2 span{
+#Kunena form > .kblock > .kheader h2 span,
+#Kunena > .kblock > div.kheader h2 span{
 	font-weight: 400;
 	font-size: 30px;
 	color: #00AFF3;
@@ -2123,6 +2125,23 @@ body.pag_forum .uk-progress-bar {
 #Kunena div.kmsgsignature{
 	padding: 10px 15px 0;
 	margin-bottom: 5px;
+}
+
+#Kunena .kprofile-left .kpost-profile .kpost-avatar span.kavatar a img.kavatar{
+	padding: 0;
+	border: none;
+	border-radius: 85px;
+	-webkit-border-radius: 85px;
+	-moz-border-radius: 85px;
+}
+
+#Kunena span.kmessage-informmarkup{
+	background: rgba(0, 175, 243, 0.15);
+}
+
+#Kunena > .kblock > .kcontainer > .kbody > table.kmsg .kpost-thankyou,
+#Kunena > .kblock > .kcontainer > .kbody > table.kmsg .kpost-unthankyou{
+	display: none;
 }
 
 /* CAIXA DE LOGIN */
