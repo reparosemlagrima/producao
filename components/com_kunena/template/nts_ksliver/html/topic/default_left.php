@@ -10,9 +10,6 @@
  **/
 defined ( '_JEXEC' ) or die ();
 ?>
-<div class="kmsg-header kmsg-header-left">
-	
-</div>
 <table class="<?php echo $this->class ?>">
 	<tbody>
 		<tr>
