@@ -66,6 +66,25 @@ include($this['path']->path('layouts:theme.config.php'));
 				jQuery(categ).appendTo("#Kunena .uk-grid .uk-width-medium-7-10 > .kblock > .kheader");
 				jQuery('#Kunena div.uk-grid > .uk-width-medium-7-10 .klist-markallcatsread').css("display","block");
 			}
+
+			if(jQuery("#Kunena .kmsg .kmessage-buttons-cover").length){
+				jQuery("#Kunena > .kblock > .kcontainer > .kbody > table.kmsg").each(function(i){
+					var same_problem = jQuery("#Kunena .klist-actions .klist-actions-forum").last().find("a.kicon-button.kbuttonuser");
+					jQuery(same_problem).appendTo(jQuery(this).find(".kmessage-buttons-cover"));
+
+					jQuery(this).find(".kbuttonbar-left > .kpost-thankyou a").appendTo(jQuery(this).find(".kmessage-buttons-cover"));
+					jQuery(this).find(".kbuttonbar-left > .kpost-unthankyou a").appendTo(jQuery(this).find(".kmessage-buttons-cover"));
+
+					var favorite = jQuery("#Kunena .klist-actions .klist-actions-forum").first().find("a.kicon-button.kbuttonuser:nth-child(3)");
+					jQuery(favorite).appendTo(jQuery(this).find(".kmessage-buttons-cover"));
+
+					var qtd_same_problem = jQuery("#Kunena .klist-actions .klist-actions-forum").last().find("small.similar-smallinfo");
+					jQuery(qtd_same_problem).appendTo(jQuery(this).find(".kmessage-left .kmsgdate"));
+
+					var answer = jQuery(this).first().find(".kmessage-buttons-cover .kmessage-buttons-row a.kicon-button.kbuttoncomm.kqreply");
+					jQuery(answer).appendTo(jQuery(this).find(".kmessage-buttons-cover .kmessage-buttons-row"));
+				});
+			}
 		});
 	</script>
 
