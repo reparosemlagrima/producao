@@ -227,6 +227,12 @@ class KunenaConfig extends JObject
 	public $allowfavorites = 1;
 
 	/**
+	 * @var    integer  Max model; input, number
+	 * @since  1.0.0
+	 */
+	public $maxmodel = 50;
+
+	/**
 	 * @var    integer  Max subject; input, number
 	 * @since  1.0.0
 	 */
