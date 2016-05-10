@@ -13,6 +13,12 @@ defined ( '_JEXEC' ) or die ();
 <table class="<?php echo $this->class ?>">
 	<tbody>
 		<tr>
+			<td colspan="2" class="data_post">
+				Postado: <span></span>
+				<hr/>
+			</td>	
+		</tr>
+		<tr>
 			<td rowspan="2" class="kprofile-left">
 				<?php $this->displayMessageProfile('vertical') ?>
 			</td>
