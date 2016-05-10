@@ -2203,6 +2203,9 @@ body.pag_forum .uk-progress-bar {
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kbuttonbar-left span.kmessage-informmarkup{
 	background: rgba(0, 175, 243, 0.15);
 	border: 1px solid #ddd !important;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
 }
 
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg:first-of-type td.data_post{
@@ -2275,6 +2278,31 @@ body.pag_forum .uk-progress-bar {
 	font-weight: 400;
 	line-height: 17px;
 	color: #6B6B6B;
+}
+
+#Kunena .kreply-form{
+	background-color: #FFFFFF;
+	border: 1px solid #00AFF3;
+}
+
+#Kunena .kreply-form .kbutton,
+#Kunena a.kicon-button,
+#Kunena .klist-actions .kicon-button,
+#Kunena .kmessage-buttons-cover .kicon-button,
+#Kunena .kicon-button span.layout-mesmoproblema{
+	border-radius: 22px;
+	-webkit-border-radius: 22px;
+	-moz-border-radius: 22px;
+}
+
+#Kunena .kbutton:hover,
+#Kunena .kbutton:focus,
+#Kunena .kbutton:active,
+#Kunena a.kicon-button:hover,
+#Kunena .klist-actions .kicon-button:hover,
+#Kunena .kmessage-buttons-cover .kicon-button:hover{
+	background: #00AFF3;
+	border-color: #18A0DC;
 }
 
 /* CAIXA DE LOGIN */
