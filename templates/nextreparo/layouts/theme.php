@@ -84,22 +84,10 @@ include($this['path']->path('layouts:theme.config.php'));
 					var answer = jQuery(this).first().find(".kmessage-buttons-cover .kmessage-buttons-row a.kicon-button.kbuttoncomm.kqreply");
 					jQuery(answer).appendTo(jQuery(this).find(".kmessage-buttons-cover .kmessage-buttons-row"));
 				});
-
-				var linha_data = jQuery('<div>',{
-					id : 'box',
-					css : {
-						width : 100,
-						height : 100,
-						background : '#000'
-					},
-					data : {
-						name : 'box'
-					}
-				});
 				
 				jQuery("#Kunena > .kblock > .kcontainer > .kbody > table.kmsg:not(:first)").each(function(i){
 					var data_post = jQuery(this).find("h2 span.kmsgdate").html();
-					jQuery("<tr><td>"+data_post+"</td></tr>").prependTo(jQuery(this).find("tbody"));
+					jQuery(jQuery(this).find("tbody .data_post span")).html(data_post);
 				});
 			}
 		});
