@@ -1924,6 +1924,10 @@ body.pag_forum .uk-progress-bar {
 	background: none !important;
 }
 
+#Kunena > .kblock div.kheader{
+	background: none !important;
+}
+
 #Kunena > .uk-grid > .uk-width-medium-7-10 .kblock .kheader h2,
 #Kunena form > .kblock > .kheader h2,
 #Kunena > .kblock > div.kheader h2{
@@ -2154,6 +2158,10 @@ body.pag_forum .uk-progress-bar {
 	max-height: 145px !important;
 }
 
+#Kunena ul.kpost-profile{
+	margin: 0;
+}
+
 #Kunena ul.kpost-profile li{
 	font-size: 14px;
 	line-height: 20px;
@@ -2177,6 +2185,10 @@ body.pag_forum .uk-progress-bar {
 	background-color: #f5f5f5;
 }
 
+#Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kmessage-left{
+	padding: 0px 15px 10px;
+}
+
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kbuttonbar-left div.kmessage-editmarkup-cover{
 	border: none;
 }
@@ -2193,20 +2205,42 @@ body.pag_forum .uk-progress-bar {
 	border: 1px solid #ddd !important;
 }
 
-#Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kprofile-left{
-	-webkit-border-top-left-radius: 10px;
-	-webkit-border-bottom-left-radius: 10px;
-	-moz-border-radius-topleft: 10px;
-	-moz-border-radius-bottomleft: 10px;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-	border: none;
+#Kunena > .kblock > .kcontainer > .kbody > table.kmsg:first-of-type td.data_post{
+	display: none;
 }
 
-#Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kmessage-left{
+#Kunena > .kblock > .kcontainer > .kbody > table.kmsg:not(:first-of-type) span.kmsgdate{
+	display: none;
+}
+
+#Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.data_post{
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	border-top-left-radius: 10px;
 	-webkit-border-top-right-radius: 10px;
 	-moz-border-radius-topright: 10px;
 	border-top-right-radius: 10px;
+	background-color: #f5f5f5;
+	height: 40px;
+	padding: 0 15px;
+	text-align: right;
+	font-size: 13px;
+}
+
+#Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.data_post span{
+	margin-right: 8px;
+}
+
+#Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.data_post hr{
+	margin: 5px 0 0px;
+	border-color: #d8d8d8;
+}
+
+#Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kprofile-left{
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-left-radius: 10px;
+	border: none;
 }
 
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kbuttonbar-left div.kmessage-buttons-cover{
