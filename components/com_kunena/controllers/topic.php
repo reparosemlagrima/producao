@@ -632,6 +632,7 @@ class KunenaControllerTopic extends KunenaController
 		$fields  = array(
 			'name'              => JRequest::getString('authorname', $message->name),
 			'email'             => JRequest::getString('email', $message->email),
+			'model'           	=> JRequest::getVar('model', $message->model, 'POST', 'string', JREQUEST_ALLOWRAW), // RAW input
 			'subject'           => JRequest::getVar('subject', $message->subject, 'POST', 'string', JREQUEST_ALLOWRAW), // RAW input
 			'message'           => JRequest::getVar('message', $message->message, 'POST', 'string', JREQUEST_ALLOWRAW), // RAW input
 			'modified_reason'   => JRequest::getString('modified_reason', $message->modified_reason),
