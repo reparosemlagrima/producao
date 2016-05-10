@@ -2191,6 +2191,7 @@ body.pag_forum .uk-progress-bar {
 
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kbuttonbar-left div.kmessage-editmarkup-cover{
 	border: none;
+	margin: 5px 0;
 }
 
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg:first-of-type td.kprofile-left,
@@ -2198,6 +2199,13 @@ body.pag_forum .uk-progress-bar {
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg:first-of-type td.kbuttonbar-left div.kmessage-buttons-cover,
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg:first-of-type td.kbuttonbar-left div.kmessage-editmarkup-cover{
 	background-color: #fff;
+}
+
+#Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kbuttonbar-left span.kmessage-editmarkup{
+	border: 1px solid #DDDDDD;
+	border-radius: 6px;
+	padding: 2px 7px;
+	background-color: rgba(0, 175, 243, 0.15);
 }
 
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kbuttonbar-left span.kmessage-informmarkup{
@@ -2256,6 +2264,13 @@ body.pag_forum .uk-progress-bar {
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg .kpost-unthankyou{
 	display: none;
 }
+
+#Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kbuttonbar-left div.kmessage-thankyou{
+	border-top: 1px solid #DDDDDD;
+	padding: 5px 8px 0;
+	font-size: 14px;
+}
+
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg h2{
 	color: #272727;
 	font-weight: 400;
@@ -2303,6 +2318,12 @@ body.pag_forum .uk-progress-bar {
 #Kunena .kmessage-buttons-cover .kicon-button:hover{
 	background: #00AFF3;
 	border-color: #18A0DC;
+}
+
+/* FORM DE PERSUNTA FÓRUM */
+#Kunena > form#postform div.kblock div.kbody,
+#Kunena > form#postform div.kblock div.kbody td{
+	border: none;
 }
 
 /* CAIXA DE LOGIN */
