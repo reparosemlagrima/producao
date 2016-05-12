@@ -47,15 +47,16 @@ $this->k=0;
 		<div class="kbody">
 			<table class="kblocktable<?php echo !empty($this->category->class_sfx) ? ' kblocktable'.$this->escape($this->category->class_sfx) : ''?>" id="kpostmessage">
 				<tbody id="kpost-message">
-					<?php if (isset($this->selectcatlist)): ?>
+					<?php if (!isset($this->selectcatlist)): ?>
 					<tr id="kpost-category" class="krow<?php echo 1 + $this->k^=1 ?>">
 						<td class="kcol-first"><strong><?php echo JText::_('COM_KUNENA_CATEGORY')?></strong></td>
+					</tr>
+					<tr id="kpost-category" class="krow<?php echo 1 + $this->k^=1 ?>">
 						<td class="kcol-mid"><?php echo $this->selectcatlist?></td>
 					</tr>
 					<?php endif; ?>
 
-					<!--
-					<?php if ($this->message->userid) : ?>
+					<?php if (!$this->message->userid) : ?>
 					<tr class="krow<?php echo 1 + $this->k^=1 ?>" id="kanynomous-check" <?php if (!$this->category->allow_anonymous): ?>style="display:none;"<?php endif; ?>>
 						<td class="kcol-first">
 							<strong><?php echo JText::_('COM_KUNENA_POST_AS_ANONYMOUS'); ?></strong>
@@ -66,7 +67,6 @@ $this->k=0;
 						</td>
 					</tr>
 					<?php endif; ?>
-					-->
 
 					<tr class="krow<?php echo 1 + $this->k^=1 ?>" id="kanynomous-check-name"
 					<?php if ( $this->me->userid && !$this->category->allow_anonymous ): ?>style="display:none;"<?php endif; ?>>
