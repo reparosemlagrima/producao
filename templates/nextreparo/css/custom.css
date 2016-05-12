@@ -2191,7 +2191,7 @@ body.pag_forum .uk-progress-bar {
 
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kbuttonbar-left div.kmessage-editmarkup-cover{
 	border: none;
-	margin: 5px 0;
+	padding: 5px 15px;
 }
 
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg:first-of-type td.kprofile-left,
