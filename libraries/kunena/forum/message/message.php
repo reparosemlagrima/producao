@@ -242,7 +242,6 @@ class KunenaForumMessage extends KunenaDatabaseObject
 		$message->catid = $topic->category_id;
 		$message->name = $user->getName('');
 		$message->userid = $user->userid;
-		$message->model = $this->model;
 		$message->subject = $this->subject;
 		$message->ip = $_SERVER ["REMOTE_ADDR"];
 
@@ -273,7 +272,7 @@ class KunenaForumMessage extends KunenaDatabaseObject
 
 			if (is_array($fields))
 			{
-				$message->bind($fields, array ('name', 'email', 'subject', 'model', 'message' ), true);
+				$message->bind($fields, array ('name', 'email', 'subject', 'message' ), true);
 			}
 		}
 

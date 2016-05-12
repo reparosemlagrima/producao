@@ -76,8 +76,8 @@ UPDATE #__kunena_user_categories AS c INNER JOIN #__kunena_sessions AS s ON c.us
 UPDATE #__kunena_messages SET hold=3 WHERE parent=0 AND hold=2;
 
 INSERT IGNORE INTO `#__kunena_topics`
-	(id, category_id, model, subject, icon_id, locked, hold, ordering, hits, poll_id, moved_id)
-	SELECT a.id, a.catid, a.model, a.subject, a.topic_emoticon, a.locked, a.hold, a.ordering, a.hits, p.id AS poll_id, 0 as moved_id
+	(id, category_id, subject, icon_id, locked, hold, ordering, hits, poll_id, moved_id)
+	SELECT a.id, a.catid, a.subject, a.topic_emoticon, a.locked, a.hold, a.ordering, a.hits, p.id AS poll_id, 0 as moved_id
 	FROM #__kunena_messages AS a
 	LEFT JOIN #__kunena_polls AS p ON p.threadid=a.id
 	WHERE a.parent = 0 AND a.moved = 0 AND a.id=a.thread

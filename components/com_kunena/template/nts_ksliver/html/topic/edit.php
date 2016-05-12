@@ -89,19 +89,6 @@ $this->k=0;
 					</tr>
 					<?php endif; ?>
 
-					<tr id="kpost-model" class="krow<?php echo 1 + $this->k^=1 ?>">
-						<td class="kcol-first">
-							<strong><?php echo JText::_('COM_KUNENA_GEN_MODEL'); ?></strong>
-						</td>
-
-						<td class="kcol-mid"><input type="text" class="kinputbox postinput required" name="model" id="model" size="35"
-							maxlength="<?php echo $this->escape($this->config->maxmodel); ?>" <?php if (!$this->config->allow_change_model && $this->message->parent): ?>disabled<?php endif; ?> value="<?php echo $this->escape($this->message->model); ?>" tabindex="1" />
-							<?php if (!$this->config->allow_change_model && $this->topic->exists()): ?>
-								 <input type="hidden" name="model" value="<?php echo $this->escape($this->message->model); ?>" />
-							<?php endif; ?>
-						</td>
-					</tr>
-
 					<tr id="kpost-subject" class="krow<?php echo 1 + $this->k^=1 ?>">
 						<td class="kcol-first">
 							<strong><?php echo JText::_('COM_KUNENA_GEN_SUBJECT'); ?></strong>
