@@ -763,6 +763,7 @@ class KunenaForumTopic extends KunenaDatabaseObject
 		$message->catid = $this->category_id;
 		$message->name = $user->getName('');
 		$message->userid = $user->userid;
+		$message->model = $this->model;
 		$message->subject = $this->subject;
 		$message->ip = !empty($_SERVER ["REMOTE_ADDR"]) ? $_SERVER ["REMOTE_ADDR"] : '';
 
@@ -790,7 +791,7 @@ class KunenaForumTopic extends KunenaDatabaseObject
 			}
 			if ($fields)
 			{
-				$message->bind($fields, array ('name', 'email', 'subject', 'message' ), true);
+				$message->bind($fields, array ('name', 'email', 'subject', 'model', 'message' ), true);
 			}
 		}
 
