@@ -362,8 +362,8 @@
 			</query>
 			<query>
 				INSERT IGNORE INTO `#__kunena_topics`
-				(id, category_id, subject, icon_id, locked, hold, ordering, hits, poll_id, moved_id)
-				SELECT a.id, a.catid, a.subject, a.topic_emoticon, a.locked, a.hold, a.ordering, a.hits, p.id AS
+				(id, category_id, model, subject, icon_id, locked, hold, ordering, hits, poll_id, moved_id)
+				SELECT a.id, a.catid, a.model, a.subject, a.topic_emoticon, a.locked, a.hold, a.ordering, a.hits, p.id AS
 				poll_id, 0 as moved_id
 				FROM #__kunena_messages AS a
 				LEFT JOIN #__kunena_polls AS p ON p.threadid=a.id
@@ -512,10 +512,10 @@
 		         versiondate="2012-06-17"
 		         versionname="Internal">
 			<query>REPLACE INTO #__kunena_topics
-				(id, category_id, subject, locked, hold, ordering, posts, hits, moved_id,
+				(id, category_id, model, subject, locked, hold, ordering, posts, hits, moved_id,
 				first_post_id, first_post_time, first_post_userid, first_post_message, first_post_guest_name,
 				last_post_id, last_post_time, last_post_userid, last_post_message, last_post_guest_name)
-				SELECT m.id, m.catid AS category_id, m.subject, m.locked, m.hold, m.ordering, 1 AS posts, m.hits,
+				SELECT m.id, m.catid AS category_id, m.model, m.subject, m.locked, m.hold, m.ordering, 1 AS posts, m.hits,
 				th.thread AS moved_id,
 				th.id AS first_post_id, th.time AS first_post_time, th.userid AS first_post_userid, tt.message AS
 				first_post_message, th.name AS first_post_guest_name,
