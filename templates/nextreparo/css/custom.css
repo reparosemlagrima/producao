@@ -2125,6 +2125,116 @@ body.pag_forum .uk-progress-bar {
 	margin-top: -2px;
 }
 
+/* BBCODE - FORMULÁRIO POST- TÓPICO */
+#Kunena #postform .line_form_topic #kbbcode-smilies-button,
+#Kunena #postform .line_form_topic #kbbcode-ebay-button,
+#Kunena #postform .line_form_topic #kbbcode-tweet-button{
+	display: none;
+}
+
+/* FORMULÁRIO POST - TÓPICO */
+.better_questions{
+	margin-top: 26px;
+}
+
+#postform .kcontainer{
+	max-width: 960px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.line_form_topic{
+	overflow: hidden;
+}
+
+#Kunena #postform .line_form_topic label{
+	margin-bottom: 7px;
+	margin-top: 8px;
+}
+
+#Kunena #postform .line_form_topic input[type=text],
+#Kunena #postform .line_form_topic textarea{
+	width: 100%;
+	box-sizing: border-box;
+	border-color: #00AFF3;
+	border-radius: 0;
+}
+
+#Kunena #postform .line_form_topic input[type=text]#helpbox{
+	border-color: rgba(216, 216, 216, 0.4);
+}
+
+#Kunena #postform #kpost-toolbar #big_small_textarea{
+	float: right;
+	margin-top: -23px;
+}
+
+#Kunena #postform .line_form_topic .kattachment{
+	height: 70px;
+}
+
+#Kunena #postform .line_form_topic .kattachment .kfile-input-textbox{
+	padding-right: 160px;
+	padding-left: 40px;
+}
+
+#Kunena #postform .line_form_topic .kattachment span{
+	position: absolute;
+	background: white;
+	z-index: 1;
+	height: 34px;
+	width: 25px;
+	line-height: 34px;
+	text-align: right;
+	border-right: 1px solid #00AFF3;
+	padding-right: 8px;
+}
+
+#Kunena #postform .line_form_topic .kattachment .kfile-hide input[type=button].kfile-input-button{
+	float: right;
+	margin-top: -35px;
+	z-index: 1;
+	position: relative;
+}
+
+#Kunena #postform .line_form_topic .kattachment .kfile-hide input[type=file]{
+	position: relative;
+	float: right;
+	width: 150px;
+	height: 38px;
+	margin-right: -155px;
+	margin-top: -35px;
+	top: 0;
+	z-index: 2;
+}
+
+#Kunena #postform .line_form_topic .kattachment .kattachment-remove,
+#Kunena #postform .line_form_topic .kattachment .kattachment-insert{
+	position: relative;
+	top: 12px;
+	left: 28px;
+}
+
+#Kunena #postform #kpost-subscribe input{
+	margin-right: 7px !important;
+	margin-top: 13px;
+}
+
+#Kunena #postform .line_form_topic table.kpostbuttonset{
+	border-color: #00AFF3;
+	border-bottom: none;
+}
+
+#Kunena #postform #kpost-buttons.line_form_topic{
+	text-align: right;
+}
+
+#Kunena #postform #kpost-buttons.line_form_topic input{
+	border-radius: 22px;
+	-webkit-border-radius: 22px;
+	-moz-border-radius: 22px;
+}
+
 /* PÁGINA POST - TÓPICO */
 #Kunena div.kmsgsignature{
 	padding: 10px 15px 0;
