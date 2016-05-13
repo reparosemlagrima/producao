@@ -174,6 +174,7 @@ defined ( '_JEXEC' ) or die ();
 						<div id="smilie">
 							<?php
 								$emoticons = KunenaHtmlParser::getEmoticons(0, 1);
+								unset($emoticons[':oops:']);
 								foreach($emoticons as $emo_code=>$emo_url):
 									echo '<img class="btnImage" src="' . $emo_url . '" border="0" alt="' . $emo_code . ' " title="' . $emo_code . ' " onclick="kbbcode.focus().insert(\' '. $emo_code .' \', \'after\', false);" style="cursor:pointer"/> ';
 								endforeach;
