@@ -42,6 +42,8 @@ $this->k=0;
 <div class="kblock">
 	<div class="kheader">
 		<h2><span><?php echo $this->escape($this->title)?></span></h2>
+		<br/>
+		<p class="better_questions">Seja específico e inclua o que você já tentou. <a href="" title="Melhores perguntas tem mais respostas">Melhores perguntas tem mais respostas</a>.</p>
 	</div>
 	<div class="kcontainer">
 		<div class="kbody">
@@ -139,9 +141,9 @@ $this->k=0;
 			
 			<?php if ($this->canSubscribe()) : ?>
 				<div id="kpost-subscribe" class="line_form_topic">
-					<strong><?php echo JText::_('COM_KUNENA_POST_SUBSCRIBE'); ?></strong>
+					<!--<strong><?php //echo JText::_('COM_KUNENA_POST_SUBSCRIBE'); ?></strong>-->
 					<input style="float: left; margin-right: 10px;" type="checkbox" name="subscribeMe" id="subscribeMe" value="1" <?php if ($this->subscriptionschecked == 1 && $this->me->canSubscribe != 0 || $this->subscriptionschecked == 0 && $this->me->canSubscribe == 1){ echo 'checked="checked"'; } ?> />
-						<label for="subscribeMe"><i><?php echo JText::_('COM_KUNENA_POST_NOTIFIED'); ?></i></label>
+						<label for="subscribeMe"><?php echo JText::_('COM_KUNENA_POST_NOTIFIED'); ?></label>
 					</td>
 				</div>
 			<?php endif; ?>
