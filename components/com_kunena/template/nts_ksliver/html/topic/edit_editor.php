@@ -16,9 +16,8 @@ defined ( '_JEXEC' ) or die ();
 	<label for="kbbcode-message"><strong><?php echo (JText::_('COM_KUNENA_MESSAGE')); ?></strong></label>
 	<?php // TODO: Replace Enlarge and Shrink with icons ?>
 	<div id="big_small_textarea">
-		<span class="ks" onclick="kGrowShrinkMessage(100);" style="cursor: pointer"><?php echo JText::_('COM_KUNENA_EDITOR_ENLARGE'); ?></span>
-		&nbsp;/&nbsp;
-		<span class="ks" onclick="kGrowShrinkMessage(-100);" style="cursor: pointer"><?php echo JText::_('COM_KUNENA_EDITOR_SHRINK'); ?></span>	
+		<span class="ks msg_expandir" onclick="kGrowShrinkMessage(100);" style="cursor: pointer"><?php echo JText::_('COM_KUNENA_EDITOR_ENLARGE'); ?></span>
+		<span class="ks msg_contrair" onclick="kGrowShrinkMessage(-100);" style="cursor: pointer"><?php echo JText::_('COM_KUNENA_EDITOR_SHRINK'); ?></span>	
 	</div>
 		
 	<table class="kpostbuttonset">
