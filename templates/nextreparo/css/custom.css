@@ -2154,10 +2154,11 @@ body.pag_forum .uk-progress-bar {
 
 #Kunena #postform .line_form_topic input[type=text],
 #Kunena #postform .line_form_topic textarea{
-	width: 100%;
+	width: 100% !important;
 	box-sizing: border-box;
 	border-color: #00AFF3;
 	border-radius: 0;
+	max-width: 898px;
 }
 
 #Kunena #postform .line_form_topic input[type=text]#helpbox{
