@@ -2275,13 +2275,21 @@ body.pag_forum .uk-progress-bar {
 	min-width: 130px;
 }
 
+#Kunena .kblock.khistory #khistory .kprofile-left{
+	border-right: none;
+	border-bottom: none;
+	width: 130px;
+	min-width: 130px;
+}
+
 #Kunena table.kmsg:first-of-type td.kprofile-left{
 	width: 170px;
 	min-width: 170px;
 }
 
 #Kunena .kprofile-left .kpost-profile .kpost-avatar span.kavatar a img.kavatar,
-#Kunena .kprofile-left .kpost-profile .kpost-avatar span.kavatar span img.kavatar{
+#Kunena .kprofile-left .kpost-profile .kpost-avatar span.kavatar span img.kavatar,
+#Kunena .kblock.khistory #khistory .kprofile-left a img{
 	padding: 0;
 	border: none;
 	border-radius: 85px;
@@ -2394,7 +2402,9 @@ body.pag_forum .uk-progress-bar {
 }
 
 #Kunena .kblock .kcontainer .kmsg .kmessage-left .kmsgbody div.kmsgtext .kspoiler .kspoiler-wrapper,
-#Kunena .kblock .kcontainer .kmsg .kmessage-left .kmsgbody div.kmsgtext .kmsgtext-quote{
+#Kunena .kblock .kcontainer .kmsg .kmessage-left .kmsgbody div.kmsgtext .kmsgtext-quote,
+#Kunena .kblock.khistory #khistory .khistorymsg .kspoiler .kspoiler-wrapper,
+#Kunena .kblock.khistory #khistory .khistorymsg .kmsgtext-quote{
 	box-sizing: border-box;
 	border: 1px solid #D9F3FE;
 	background-color: #ECF9FF;
