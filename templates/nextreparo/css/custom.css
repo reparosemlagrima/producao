@@ -2275,6 +2275,11 @@ body.pag_forum .uk-progress-bar {
 	min-width: 130px;
 }
 
+#Kunena .kblock.khistory{
+	border-top: 2px solid #00AFF3 !important;
+	padding-top: 20px;
+}
+
 #Kunena .kblock.khistory #khistory .kprofile-left{
 	border-right: none;
 	border-bottom: none;
