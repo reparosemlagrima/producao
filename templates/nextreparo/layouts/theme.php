@@ -80,9 +80,6 @@ include($this['path']->path('layouts:theme.config.php'));
 
 					var qtd_same_problem = jQuery("#Kunena .klist-actions .klist-actions-forum").last().find("small.similar-smallinfo");
 					jQuery(qtd_same_problem).appendTo(jQuery(this).find(".kmessage-left .kmsgdate"));
-
-					var answer = jQuery(this).first().find(".kmessage-buttons-cover .kmessage-buttons-row a.kicon-button.kbuttoncomm.kqreply");
-					jQuery(answer).appendTo(jQuery(this).find(".kmessage-buttons-cover .kmessage-buttons-row"));
 				});
 				
 				jQuery("#Kunena > .kblock > .kcontainer > .kbody > table.kmsg:not(:first)").each(function(i){
