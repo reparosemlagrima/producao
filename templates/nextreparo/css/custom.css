@@ -2162,11 +2162,31 @@ body.pag_forum .uk-progress-bar {
 
 #Kunena #postform .line_form_topic input[type=text]#helpbox{
 	border-color: rgba(216, 216, 216, 0.4);
+	margin-bottom: 0;
 }
 
 #Kunena #postform #kpost-toolbar #big_small_textarea{
 	float: right;
 	margin-top: -23px;
+}
+
+#Kunena #postform #kpost-toolbar #big_small_textarea .ks{
+	background-image: url('/reparosemlagrima/images/icons/icon-expand-contract.png');
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 15px;
+	float: left;
+	text-indent: 30px;
+	overflow: hidden;
+	margin-left: 5px;
+}
+
+#Kunena #postform #kpost-toolbar #big_small_textarea .msg_expandir{
+	background-position: 0px -15px;
+}
+
+#Kunena #postform #kpost-toolbar #big_small_textarea .msg_contrair{
+	background-position: 0px 0px;
 }
 
 #Kunena #postform .line_form_topic .kattachment{
@@ -2223,6 +2243,14 @@ body.pag_forum .uk-progress-bar {
 #Kunena #postform .line_form_topic table.kpostbuttonset{
 	border-color: #00AFF3;
 	border-bottom: none;
+}
+
+#Kunena #postform .line_form_topic table.kpostbuttonset tr:nth-child(1) td{
+	padding-top: 4px;
+}
+
+#Kunena #postform .line_form_topic table.kpostbuttonset tr:nth-child(3){
+	display: none;
 }
 
 #Kunena #postform #kpost-buttons.line_form_topic{
@@ -2364,10 +2392,25 @@ body.pag_forum .uk-progress-bar {
 	border: none;
 }
 
+#Kunena .kblock .kcontainer .kmsg .kmessage-left .kmsgbody div.kmsgtext .kspoiler .kspoiler-wrapper,
+#Kunena .kblock .kcontainer .kmsg .kmessage-left .kmsgbody div.kmsgtext .kmsgtext-quote{
+	box-sizing: border-box;
+	border: 1px solid #D9F3FE;
+	background-color: #ECF9FF;
+}
+
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kbuttonbar-left div.kmessage-buttons-cover{
 	-webkit-border-bottom-right-radius: 10px;
 	-moz-border-radius-bottomright: 10px;
 	border-bottom-right-radius: 10px;
+}
+
+#Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kbuttonbar-left div.kmessage-buttons-cover > div.kmessage-buttons-row{
+	text-align: right;
+}
+
+#Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kbuttonbar-left div.kmessage-buttons-cover > div.kmessage-buttons-row a{
+	margin-bottom: 10px;
 }
 
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg .kpost-thankyou,
