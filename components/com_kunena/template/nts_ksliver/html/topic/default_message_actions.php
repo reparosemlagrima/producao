@@ -40,12 +40,12 @@ if ($this->message->modified_time) {
 <div class="kmessage-buttons-cover">
 	<div class="kmessage-buttons-row">
 	<?php if (empty($this->message_closed)) : ?>
-		<?php echo $this->messageButtons->get('quickreply'); ?>
-		<?php echo $this->messageButtons->get('reply'); ?>
-		<?php echo $this->messageButtons->get('quote'); ?>
-		<?php echo $this->messageButtons->get('edit'); ?>
 		<?php echo $this->messageButtons->get('moderate'); ?>
 		<?php echo $this->messageButtons->get('delete'); ?>
+		<?php echo $this->messageButtons->get('edit'); ?>
+		<?php echo $this->messageButtons->get('quote'); ?>
+		<?php echo $this->messageButtons->get('quickreply'); ?>
+		<?php echo $this->messageButtons->get('reply'); ?>
 		<?php echo $this->messageButtons->get('permdelete'); ?>
 		<?php echo $this->messageButtons->get('undelete'); ?>
 		<?php echo $this->messageButtons->get('publish'); ?>
