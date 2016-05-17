@@ -72,7 +72,7 @@ defined('_JEXEC') or die;
 				}
 			//}
 
-			if($i == 0 && @$page_var2 == ("post-recentes" || "meus-topicos" || "editar-perfil") && @$page_var2 != "forum-reparo"){
+			if($i == 0 && @$page_var2 == ("post-recentes" || "meus-topicos" || "editar-perfil") && @$page_var2 != "forum-reparo" && @$page_var2 != "politica-de-privacidade"){
 				echo '<li><a href="/reparosemlagrima/forum-reparo">Fórum</a></li>';
 			}
 		}
