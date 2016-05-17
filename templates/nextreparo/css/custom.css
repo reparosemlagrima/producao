@@ -912,7 +912,7 @@ small.similar-smallinfo .countnum{
 	text-align: justify;
 }
 
-#text_page h2{
+#text_page h2, #text_page h3{
 	color: #00AFF3;
 	text-align: center;
 }
@@ -2278,6 +2278,16 @@ body.pag_forum .uk-progress-bar {
 #Kunena .kblock.khistory{
 	border-top: 2px solid #00AFF3 !important;
 	padding-top: 20px;
+	margin-bottom: 0;
+}
+
+#Kunena .kblock.khistory div.kheader .ktitle-desc{
+	padding: 10px 0 5px 5px;
+}
+
+#Kunena .kblock.khistory th{
+	background: rgba(0, 175, 243, 0.1);
+	border-bottom: 1px solid rgba(0, 175, 243, 0.2);
 }
 
 #Kunena .kblock.khistory #khistory .kprofile-left{
@@ -2292,9 +2302,19 @@ body.pag_forum .uk-progress-bar {
 	min-width: 170px;
 }
 
+#Kunena .kblock.khistory #khistory .kprofile-left p{
+	margin: 0;
+	padding: 4px 0;
+}
+
+#Kunena .kblock.khistory #khistory .kprofile-left p:first-of-type{
+	margin-top: 12px;
+}
+
 #Kunena .kprofile-left .kpost-profile .kpost-avatar span.kavatar a img.kavatar,
 #Kunena .kprofile-left .kpost-profile .kpost-avatar span.kavatar span img.kavatar,
-#Kunena .kblock.khistory #khistory .kprofile-left a img{
+#Kunena .kblock.khistory #khistory .kprofile-left a img,
+#Kunena .kblock.khistory #khistory .kprofile-left span img{
 	padding: 0;
 	border: none;
 	border-radius: 85px;
@@ -2406,6 +2426,10 @@ body.pag_forum .uk-progress-bar {
 	border: none;
 }
 
+#Kunena .kblock.khistory #khistory div.kmsgbody{
+	min-height: 125px;
+}
+
 #Kunena .kblock .kcontainer .kmsg .kmessage-left .kmsgbody div.kmsgtext .kspoiler .kspoiler-wrapper,
 #Kunena .kblock .kcontainer .kmsg .kmessage-left .kmsgbody div.kmsgtext .kmsgtext-quote,
 #Kunena .kblock.khistory #khistory .khistorymsg .kspoiler .kspoiler-wrapper,
@@ -2425,6 +2449,7 @@ body.pag_forum .uk-progress-bar {
 	text-align: right;
 }
 
+#Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kbuttonbar-left div.kmessage-buttons-cover > a,
 #Kunena > .kblock > .kcontainer > .kbody > table.kmsg td.kbuttonbar-left div.kmessage-buttons-cover > div.kmessage-buttons-row a{
 	margin-bottom: 10px;
 }
