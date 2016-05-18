@@ -152,14 +152,14 @@ defined ( '_JEXEC' ) or die ();
 
 							<?php echo JText::_('COM_KUNENA_EDITOR_VIDEO_ID'); ?>
 							<input id="kvideoid" name="videoid" type="text" size="11" maxlength="30" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_VIDEOID', true); ?>')" />
-							<br/>
+							
 							<input id="kbutton_addvideo1" type="button" name="Video" accesskey="p" onclick="kInsertVideo1()" value="<?php echo JText::_('COM_KUNENA_EDITOR_VIDEO_INSERT'); ?>" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_VIDEOAPPLY1', true); ?>')" /><br />
 							
 							OU
 							<br/><br/>
 							<?php echo JText::_('COM_KUNENA_EDITOR_VIDEO_URL'); ?>
 							<input id="kvideourl" name="videourl" type="text" size="30" maxlength="250" value="http://" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_VIDEOURL', true); ?>')" />
-							<br/>
+							
 							<input id="kbutton_addvideo2" type="button" name="Video" accesskey="p" onclick="kInsertVideo2()" value="<?php echo JText::_('COM_KUNENA_EDITOR_VIDEO_INSERT'); ?>" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_VIDEOAPPLY2', true); ?>')" />
 						</div>
 				<?php
