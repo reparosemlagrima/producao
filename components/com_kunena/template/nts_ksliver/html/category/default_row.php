@@ -98,7 +98,7 @@ $this->cache = false;
 				<div class="ktopic-title-cover">
 					<?php
 						if($this->topic->unread):
-							echo $this->getTopicLink($this->topic, 'unread', $this->topic->subject.'<sup dir="ltr" class="knewchar">('.$this->topic->unread.' '.JText::_('COM_KUNENA_A_GEN_NEWCHAR').')</sup>', null, 'ktopic-title km');
+							echo $this->getTopicLink($this->topic, 'unread', $this->topic->subject.'<span dir="ltr" class="knewchar">'.$this->topic->unread.' '.JText::_('COM_KUNENA_A_GEN_NEWCHAR').'</span>', null, 'ktopic-title km');
 						else:
 							echo $this->getTopicLink($this->topic, null, null, KunenaHtmlParser::stripBBCode($this->topic->first_post_message, 62), 'ktopic-title km');
 						endif;
