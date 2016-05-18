@@ -67,7 +67,7 @@ defined ( '_JEXEC' ) or die ();
 					<?php echo JText::_('COM_KUNENA_EDITOR_IMAGELINK_SIZE'); ?>&nbsp;
 					<input id="kbbcode-image_size" name="size" type="text" size="10" maxlength="10" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_IMAGELINKSIZE', true); ?>')" />
 					<?php echo JText::_('COM_KUNENA_EDITOR_IMAGELINK_URL'); ?>&nbsp;
-					<input name="url2" id="kbbcode-image_url" type="text" size="40" value="http://" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_IMAGELINKURL', true); ?>')" />&nbsp;
+					<input name="url2" id="kbbcode-image_url" type="text" size="40" value="http://" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_IMAGELINKURL', true); ?>')" />
 					<input type="button" name="Link" value="<?php echo JText::_('COM_KUNENA_EDITOR_INSERT'); ?>" onclick="kInsertImageLink()" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_IMAGELINKAPPLY', true); ?>')" />
 				</div>
 
@@ -128,14 +128,14 @@ defined ( '_JEXEC' ) or die ();
 					if($this->config->showvideotag):
 				?>
 						<div id="kbbcode-video-options" style="display: none;">
-							<?php echo JText::_('COM_KUNENA_EDITOR_VIDEO_SIZE'); ?>
+							<!--<?php echo JText::_('COM_KUNENA_EDITOR_VIDEO_SIZE'); ?>
 							<input id="kvideosize" name="videosize" type="text" size="5" maxlength="5" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_VIDEOSIZE', true); ?>')" />
 
 							<?php echo JText::_('COM_KUNENA_EDITOR_VIDEO_WIDTH'); ?>
 							<input id="kvideowidth" name="videowidth" type="text" size="5" maxlength="5" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_VIDEOWIDTH', true); ?>')" />
 						
 							<?php echo JText::_('COM_KUNENA_EDITOR_VIDEO_HEIGHT'); ?>
-							<input id="kvideoheight" name="videoheight" type="text" size="5" maxlength="5" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_VIDEOHEIGHT', true); ?>')" /> <br />
+							<input id="kvideoheight" name="videoheight" type="text" size="5" maxlength="5" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_VIDEOHEIGHT', true); ?>')" /> <br />-->
 							
 							<?php echo JText::_('COM_KUNENA_EDITOR_VIDEO_PROVIDER'); ?>
 							<select id="kvideoprovider" name="provider" class="kbutton" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_VIDEOPROVIDER', true); ?>')">
@@ -152,12 +152,14 @@ defined ( '_JEXEC' ) or die ();
 
 							<?php echo JText::_('COM_KUNENA_EDITOR_VIDEO_ID'); ?>
 							<input id="kvideoid" name="videoid" type="text" size="11" maxlength="30" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_VIDEOID', true); ?>')" />
-						
+							<br/>
 							<input id="kbutton_addvideo1" type="button" name="Video" accesskey="p" onclick="kInsertVideo1()" value="<?php echo JText::_('COM_KUNENA_EDITOR_VIDEO_INSERT'); ?>" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_VIDEOAPPLY1', true); ?>')" /><br />
 							
+							OU
+							<br/><br/>
 							<?php echo JText::_('COM_KUNENA_EDITOR_VIDEO_URL'); ?>
 							<input id="kvideourl" name="videourl" type="text" size="30" maxlength="250" value="http://" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_VIDEOURL', true); ?>')" />
-							
+							<br/>
 							<input id="kbutton_addvideo2" type="button" name="Video" accesskey="p" onclick="kInsertVideo2()" value="<?php echo JText::_('COM_KUNENA_EDITOR_VIDEO_INSERT'); ?>" onmouseover="document.id('helpbox').set('value', '<?php echo JText::_('COM_KUNENA_EDITOR_HELPLINE_VIDEOAPPLY2', true); ?>')" />
 						</div>
 				<?php
