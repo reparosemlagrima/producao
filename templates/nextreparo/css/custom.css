@@ -2161,6 +2161,62 @@ body.pag_forum .uk-progress-bar {
 	max-width: 898px;
 }
 
+#Kunena #postform .line_form_topic #kbbcode-video-options{
+	padding-top: 10px;
+}
+
+#Kunena #postform .line_form_topic #kvideoprovider{
+	border: 1px solid #00AFF3 !important;
+	padding-left: 8px !important;
+	width: 120px;
+}
+
+#Kunena #postform .line_form_topic #kvideoprovider:hover,
+#Kunena #postform .line_form_topic #kvideoprovider:focus{
+	background-color: #8CDBFA;
+	color: #fff;
+}
+
+#Kunena #postform .line_form_topic input[type=text]#kvideoid{
+	width: 50% !important;
+	margin: 0;
+}
+
+#Kunena #postform .line_form_topic input#kbutton_addvideo1{
+	margin: 10px 0 0;
+}
+
+#Kunena #postform .line_form_topic input[type=text]#kvideourl{
+	width: 70% !important;
+}
+
+#Kunena #postform .line_form_topic #kbbcode-video-options input#kbutton_addvideo1,
+#Kunena #postform .line_form_topic #kbbcode-video-options input#kbutton_addvideo2,
+#Kunena #postform .line_form_topic #kbbcode-image-options input[type=button],
+#Kunena #postform .line_form_topic #kbbcode-link-options input[type=button]{
+	background: #fcfcfc;
+	border: 1px solid #D9D9D9;
+	border-bottom-width: 2px;
+	border-radius: 22px;
+	-webkit-border-radius: 22px;
+	-moz-border-radius: 22px;
+	box-shadow: 0 1px 0 rgba(0,0,0,.05);
+	color: #666;
+	font-weight: 500;
+	padding: 3px 12px;
+	margin-bottom: 10px;
+	transition: all .5s;
+}
+
+#Kunena #postform .line_form_topic #kbbcode-video-options input#kbutton_addvideo1:hover,
+#Kunena #postform .line_form_topic #kbbcode-video-options input#kbutton_addvideo2:hover,
+#Kunena #postform .line_form_topic #kbbcode-image-options input[type=button]:hover,
+#Kunena #postform .line_form_topic #kbbcode-link-options input[type=button]:hover{
+	background: #00AFF3;
+	border-color: #18A0DC;
+	color: #fff;
+}
+
 #Kunena #postform .line_form_topic input[type=text]#helpbox{
 	border-color: rgba(216, 216, 216, 0.4);
 	margin-bottom: 0;
