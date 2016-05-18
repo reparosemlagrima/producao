@@ -2047,8 +2047,7 @@ body.pag_forum .uk-progress-bar {
 	border-bottom: 1px solid #ddd;
 }
 
-#Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .kcol-kcattitle .kthead-title .knewchar,
-#Kunena .kblock .kcontainer #lista_forum .item_lista_forum .titulo_categ_forum .knewchar{
+#Kunena span.knewchar{
 	background: red;
 	color: #fff;
 	padding: 2px 5px;
