@@ -2433,6 +2433,51 @@ body.pag_forum .uk-progress-bar {
 	max-height: 80px !important;
 }
 
+#Kunena #kprofile .kcol-first.kcol-left{
+	background: #F0F0F0;
+	border: 1px solid transparent;
+}
+
+#Kunena #kprofile .kcol-mid.kcol-right{
+	border-bottom: none;
+}
+
+#Kunena div.clrline{
+	border-color: #00AFF3;
+}
+
+#Kunena .kblock.k-profile #kprofile #kprofile-tabs .current .kheader h2,
+#Kunena .kblock.k-profile #kprofile #kprofile-tabs .current .kheader h2 span{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+#Kunena dl.tabs dt.open, #Kunena dl.tabs dt{
+	font-size: 14px;
+}
+
+#Kunena table td.kcol-mid.ktopicmoderation{
+	border-right: 1px solid #e3e3e3;
+}
+
+#Kunena #kprofile #kprofile-leftcol .kavatar-lg img{
+	padding: 0;
+	border: none;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	max-width: 170px !important;
+	max-height: 170px !important;
+	margin-top: 10px;
+}
+
+#Kunena #kprofile #kprofile-leftcol #kprofile-stats .kicon-button.kbuttononline-yes,
+#Kunena #kprofile #kprofile-leftcol #kprofile-stats .kicon-button.kbuttononline-no{
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+}
+
 #Kunena table.kmsg:first-of-type .kprofile-left .kpost-profile .kpost-avatar span.kavatar a img.kavatar,
 #Kunena table.kmsg:first-of-type .kprofile-left .kpost-profile .kpost-avatar span.kavatar span img.kavatar{
 	max-width: 145px !important;
