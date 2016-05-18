@@ -1807,10 +1807,6 @@ body.pag_forum .uk-progress-bar {
 	font-size: 14px;
 }
 
-#Kunena div#kprofile-stats li:last-of-type strong{
-	display: block;
-}
-
 /* BOTÃO EDITAR PERFIL FÓRUM */
 #Kunena .kblock div.kheader h2 a, #Kunena .kblock div.kheader h2 span, #Kunena .kblock div.kheader h2 span.ktitle, #Kunena .kblock div.kheader h3 a, #Kunena .kblock div.kheader h3 span, #Kunena .kblock div.kheader h3 span.ktitle{
 	border: none;
