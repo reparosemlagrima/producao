@@ -32,7 +32,7 @@ if ( $this->params->get ( 'sh_topiciconoravatar' ) == 1 ) : ?>
 	if ( $this->params->get ( 'sh_postcount' ) ) echo ' ('.$this->topic->getTotal().' '.JText::_('MOD_KUNENALATEST_MSG').')';
 
 	if ($this->topic->unread) {
-		echo ' <sup class="knewchar">(' . JText::_($this->params->get ( 'unreadindicator' )) . ')</sup>';
+		echo ' <span class="knewchar">' . JText::_($this->params->get ( 'unreadindicator' )) . '</span>';
 	}
 	if ($this->params->get ( 'sh_sticky' ) && $this->topic->ordering) {
 		echo $this->getIcon ( 'ktopicsticky', JText::_('MOD_KUNENALATEST_STICKY_TOPIC') );

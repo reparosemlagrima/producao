@@ -86,7 +86,7 @@ defined('_JEXEC') or die ();
 
 			if($this->topic->unread)
 			{
-				echo ' <sup class="knewchar">(' . JText::_($this->params->get('unreadindicator')) . ')</sup>';
+				echo ' <span class="knewchar">' . JText::_($this->params->get('unreadindicator')) . '</span>';
 			}
 
 			if($this->params->get('sh_sticky') && $this->topic->ordering)
