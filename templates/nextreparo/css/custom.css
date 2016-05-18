@@ -594,7 +594,7 @@ small.similar-smallinfo .countnum{
 	float: left;
 	height: 60px;
 	line-height: 60px;
-	width: 25%;
+	width: 20%;
 	position: relative;
 	text-align: center;
 }
@@ -679,6 +679,10 @@ small.similar-smallinfo .countnum{
 
 .tm-navbar > .menu_principal ul li .icon_menuloja{
 	background-position: -87px 0px;
+}
+
+.tm-navbar > .menu_principal ul li .icon_reciclar{
+	background-position: 0px -24px;
 }
 
 /* MENU HOME */
@@ -922,7 +926,8 @@ small.similar-smallinfo .countnum{
 }
 
 body.pag_tutoriais > section:first-of-type,
-body.pag_forum > section:first-of-type{
+body.pag_forum > section:first-of-type,
+body.pag_perfil_forum > section:first-of-type{
 	margin: 20px auto 30px;
 	padding: 15px;
 	width: 95% !important;
@@ -2448,7 +2453,8 @@ body.pag_forum .uk-progress-bar {
 }
 
 #Kunena dl.tabs dt.open, #Kunena dl.tabs dt{
-	font-size: 14px;
+	font-size: 11px;
+	padding: 5px 4px;
 }
 
 #Kunena table td.kcol-mid.ktopicmoderation{
