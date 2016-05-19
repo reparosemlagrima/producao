@@ -348,7 +348,6 @@ small.similar-smallinfo .countnum{
 	padding: 0;
 	position: relative;
 	height: 99px;
-	max-width: 1350px;
 }
 
 #logo_site{
@@ -357,7 +356,7 @@ small.similar-smallinfo .countnum{
 	float: left;
 	position: relative;
 	top: -5px;
-	left: 35px;
+	left: 5px;
 	background-image: url('http://localhost/reparosemlagrima/images/logo/logo_interno.png');
 	background-position: -7px -1px;
 	background-size: 330px;
@@ -376,10 +375,10 @@ small.similar-smallinfo .countnum{
 
 #search_topo{
 	float: left;
-	max-width: 440px;
+	max-width: 420px;
 	width: 100%;
 	height: 40px;
-	margin: -12px auto 0 135px;
+	margin: -6px auto 0 60px;
 	padding: 0;
 	position: relative;
 }
@@ -453,7 +452,7 @@ small.similar-smallinfo .countnum{
 	float: right;
 	position: relative;
 	top: -5px;
-	right: 99px;
+	right: 5px;
 }
 
 #menu_topo .uk-navbar-nav li:first-of-type{
