@@ -1815,6 +1815,12 @@ body.pag_forum .uk-progress-bar {
 	font-size: 14px;
 }
 
+#Kunena div#kprofile-stats li.kprofile-rank{
+	text-align: center;
+	margin-top: -5px;
+	padding: 0;
+}
+
 #Kunena div#kprofile-stats li.about_profile strong{
 	display: block;
 }

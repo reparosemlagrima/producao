@@ -41,18 +41,18 @@ defined ( '_JEXEC' ) or die ();
 			</li>
 		<?php endif; ?>
 		
+		<?php if(!empty($this->rank_image)): ?>
+			<li class="kprofile-rank">
+				<?php echo $this->rank_image; ?>
+			</li>
+		<?php endif; ?>
+		
 		<?php if(!empty($this->rank_title)): ?>
 			<li>
 				<strong>
 					<?php echo JText::_('COM_KUNENA_MYPROFILE_RANK'); ?>:
 				</strong>
 				<?php echo $this->escape($this->rank_title); ?>
-			</li>
-		<?php endif; ?>
-		
-		<?php if(!empty($this->rank_image)): ?>
-			<li class="kprofile-rank">
-				<?php echo $this->rank_image; ?>
 			</li>
 		<?php endif; ?>
 		
