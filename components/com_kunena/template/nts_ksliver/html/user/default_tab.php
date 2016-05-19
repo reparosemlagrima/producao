@@ -58,60 +58,78 @@ JHtml::_('behavior.tooltip');
 <div id="kprofile-tabs">
 	<dl class="tabs">
 		<?php if($this->showUserPosts) : ?>
-		<dt class="open" title="<?php echo JText::_('COM_KUNENA_USERPOSTS'); ?>"><?php echo JText::_('COM_KUNENA_USERPOSTS'); ?></dt>
-		<dd style="display: none;">
-			<?php $this->displayUserPosts(); ?>
-		</dd>
+			<dt class="open" title="<?php echo JText::_('COM_KUNENA_USERPOSTS'); ?>">
+				<?php echo JText::_('COM_KUNENA_USERPOSTS'); ?>
+			</dt>
+			<dd style="display: none;">
+				<?php $this->displayUserPosts(); ?>
+			</dd>
 		<?php endif; ?>
 		<?php if ($this->showSubscriptions) :?>
-		<dt class="closed" title="<?php echo JText::_('COM_KUNENA_SUBSCRIPTIONS'); ?>"><?php echo JText::_('COM_KUNENA_SUBSCRIPTIONS'); ?></dt>
-		<dd style="display: none;">
-			<?php $this->displayCategoriesSubscriptions(); ?>
-			<?php $this->displaySubscriptions(); ?>
-		</dd>
+			<dt class="closed" title="<?php echo JText::_('COM_KUNENA_SUBSCRIPTIONS'); ?>">
+				<?php echo JText::_('COM_KUNENA_SUBSCRIPTIONS'); ?>
+			</dt>
+			<dd style="display: none;">
+				<?php $this->displayCategoriesSubscriptions(); ?>
+				<?php $this->displaySubscriptions(); ?>
+			</dd>
 		<?php endif; ?>
 		<?php if ($this->showFavorites) : ?>
-		<dt class="closed" title="<?php echo JText::_('COM_KUNENA_FAVORITES'); ?>"><?php echo JText::_('COM_KUNENA_FAVORITES'); ?></dt>
-		<dd style="display: none;">
-			<?php $this->displayFavorites(); ?>
-		</dd>
+			<dt class="closed" title="<?php echo JText::_('COM_KUNENA_FAVORITES'); ?>">
+				<?php echo JText::_('COM_KUNENA_FAVORITES'); ?>
+			</dt>
+			<dd style="display: none;">
+				<?php $this->displayFavorites(); ?>
+			</dd>
 		<?php endif; ?>
 		<?php if($this->showThankyou) : ?>
-		<dt class="closed" title="<?php echo JText::_('COM_KUNENA_THANK_YOU'); ?>"><?php echo JText::_('COM_KUNENA_THANK_YOU'); ?></dt>
-		<dd style="display: none;">
-			<?php $this->displayGotThankyou(); ?>
-			<?php $this->displaySaidThankyou(); ?>
-		</dd>
+			<dt class="closed" title="<?php echo JText::_('COM_KUNENA_THANK_YOU'); ?>">
+				<?php echo JText::_('COM_KUNENA_THANK_YOU'); ?>
+			</dt>
+			<dd style="display: none;">
+				<?php $this->displayGotThankyou(); ?>
+				<?php $this->displaySaidThankyou(); ?>
+			</dd>
 		<?php endif; ?>
 		<?php if ($this->showUnapprovedPosts): ?>
-		<dt class="open" title="<?php echo JText::_('COM_KUNENA_MESSAGE_ADMINISTRATION'); ?>"><?php echo JText::_('COM_KUNENA_MESSAGE_ADMINISTRATION'); ?></dt>
-		<dd style="display: none;">
-			<?php $this->displayUnapprovedPosts(); ?>
-		</dd>
+			<dt class="open" title="<?php echo JText::_('COM_KUNENA_MESSAGE_ADMINISTRATION'); ?>">
+				<?php echo JText::_('COM_KUNENA_MESSAGE_ADMINISTRATION'); ?>
+			</dt>
+			<dd style="display: none;">
+				<?php $this->displayUnapprovedPosts(); ?>
+			</dd>
 		<?php endif; ?>
 		<?php if ($this->showAttachments): ?>
-		<dt class="closed" title="<?php echo JText::_('COM_KUNENA_MANAGE_ATTACHMENTS'); ?>"><?php echo JText::_('COM_KUNENA_MANAGE_ATTACHMENTS'); ?></dt>
-		<dd style="display: none;">
-			<?php $this->displayAttachments(); ?>
-		</dd>
+			<dt class="closed" title="<?php echo JText::_('COM_KUNENA_MANAGE_ATTACHMENTS'); ?>">
+				<?php echo JText::_('COM_KUNENA_MANAGE_ATTACHMENTS'); ?>
+			</dt>
+			<dd style="display: none;">
+				<?php $this->displayAttachments(); ?>
+			</dd>
 		<?php endif;?>
 		<?php if ($this->showBanManager): ?>
-		<dt class="closed" title="<?php echo JText::_('COM_KUNENA_BAN_BANMANAGER'); ?>"><?php echo JText::_('COM_KUNENA_BAN_BANMANAGER'); ?></dt>
-		<dd style="display: none;">
-			<?php $this->displayBanManager(); ?>
-		</dd>
+			<dt class="closed" title="<?php echo JText::_('COM_KUNENA_BAN_BANMANAGER'); ?>">
+				<?php echo JText::_('COM_KUNENA_BAN_BANMANAGER'); ?>
+			</dt>
+			<dd style="display: none;">
+				<?php $this->displayBanManager(); ?>
+			</dd>
 		<?php endif;?>
 		<?php if ($this->showBanHistory):?>
-		<dt class="closed" title="<?php echo JText::_('COM_KUNENA_BAN_BANHISTORY'); ?>"><?php echo JText::_('COM_KUNENA_BAN_BANHISTORY'); ?></dt>
-		<dd style="display: none;">
-			<?php $this->displayBanHistory(); ?>
-		</dd>
+			<dt class="closed" title="<?php echo JText::_('COM_KUNENA_BAN_BANHISTORY'); ?>">
+				<?php echo JText::_('COM_KUNENA_BAN_BANHISTORY'); ?>
+			</dt>
+			<dd style="display: none;">
+				<?php $this->displayBanHistory(); ?>
+			</dd>
 		<?php endif;?>
 		<?php if ($this->showBanUser) : ?>
-		<dt class="closed" title="<?php echo $this->banInfo->id ? JText::_('COM_KUNENA_BAN_EDIT') : JText::_('COM_KUNENA_BAN_NEW' ); ?>"><?php echo $this->banInfo->id ? JText::_('COM_KUNENA_BAN_EDIT') : JText::_('COM_KUNENA_BAN_NEW' ); ?></dt>
-		<dd style="display: none;">
-			<?php $this->displayBanUser(); ?>
-	</dd>
-	<?php endif; ?>
+			<dt class="closed" title="<?php echo $this->banInfo->id ? JText::_('COM_KUNENA_BAN_EDIT') : JText::_('COM_KUNENA_BAN_NEW' ); ?>">
+				<?php echo $this->banInfo->id ? JText::_('COM_KUNENA_BAN_EDIT') : JText::_('COM_KUNENA_BAN_NEW' ); ?>
+			</dt>
+			<dd style="display: none;">
+				<?php $this->displayBanUser(); ?>
+			</dd>
+		<?php endif; ?>
 	</dl>
 </div>
