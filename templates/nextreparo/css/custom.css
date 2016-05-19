@@ -938,6 +938,10 @@ body.pag_perfil_forum > section:first-of-type{
 	box-sizing: border-box;
 }
 
+body.pag_perfil_forum > section:first-of-type{
+	max-width: 1140px;
+}
+
 body.pag_tutoriais #tm-top-a,
 body.pag_forum #tm-top-a{
 	background-image: none !important;
@@ -1812,6 +1816,10 @@ body.pag_forum .uk-progress-bar {
 	font-size: 14px;
 }
 
+#Kunena div#kprofile-stats li.about_profile strong{
+	display: block;
+}
+
 /* BOTÃO EDITAR PERFIL FÓRUM */
 #Kunena .kblock div.kheader h2 a, #Kunena .kblock div.kheader h2 span, #Kunena .kblock div.kheader h2 span.ktitle, #Kunena .kblock div.kheader h3 a, #Kunena .kblock div.kheader h3 span, #Kunena .kblock div.kheader h3 span.ktitle{
 	border: none;
@@ -2452,9 +2460,10 @@ body.pag_forum .uk-progress-bar {
 	font-weight: 500;
 }
 
-#Kunena dl.tabs dt.open, #Kunena dl.tabs dt{
-	font-size: 11px;
-	padding: 5px 4px;
+body.pag_perfil_forum #Kunena dl.tabs dt.open, #Kunena dl.tabs dt{
+	font-size: 13px;
+	padding: 5px 7px;
+	margin-right: 7px;
 }
 
 #Kunena table td.kcol-mid.ktopicmoderation{
