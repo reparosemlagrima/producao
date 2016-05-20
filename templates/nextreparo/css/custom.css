@@ -1944,6 +1944,7 @@ body.pag_forum .uk-progress-bar {
 
 #Kunena > .uk-grid > .uk-width-medium-7-10 .kblock .kheader h2,
 #Kunena form > .kblock > .kheader h2,
+#Kunena dd > .kblock > .kheader h2,
 #Kunena > .kblock > div.kheader h2{
 	font-weight: 400;
 	padding: 4px 10px 4px 0;
@@ -1953,6 +1954,7 @@ body.pag_forum .uk-progress-bar {
 
 #Kunena > .uk-grid > .uk-width-medium-7-10 .kblock .kheader h2 span a,
 #Kunena form > .kblock > .kheader h2 span,
+#Kunena dd > .kblock > .kheader h2 span,
 #Kunena > .kblock > div.kheader h2 span{
 	font-weight: 400;
 	font-size: 30px;
