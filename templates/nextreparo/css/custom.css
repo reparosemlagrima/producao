@@ -50,6 +50,15 @@ br.clear{
 	margin-right: 5px;
 }
 
+.uk-form input[type=radio]:hover:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    margin: 3px auto 0;
+    border-radius: 50%;
+    background: #99DFFA;
+}
+
 .uk-form input[type=radio]:checked:before{
 	background: #00AFF3;
 }
