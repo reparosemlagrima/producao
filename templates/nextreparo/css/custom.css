@@ -1984,6 +1984,32 @@ body.pag_forum .uk-progress-bar {
 	padding: 6px 6px;
 }
 
+#Kunena div.kblock div.kheader h2 span.kheadbtn.kright{
+	background-image: none!important;
+	background-color: #fcfcfc;
+	border: 1px solid #D9D9D9!important;
+	border-bottom-width: 2px!important;
+	color: #666;
+	display: inline-block;
+	height: auto;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 0;
+	line-height: 1;
+	text-transform: none;
+	transition: all .5s;
+	border-radius: 22px;
+	-webkit-border-radius: 22px;
+	-moz-border-radius: 22px;
+}
+
+#Kunena div.kblock div.kheader h2 span.kheadbtn.kright > a{
+	background: 0 0!important;
+	margin: 0;
+	padding: 8px 10px 11px;
+	text-decoration: none!important;
+}
+
 #Kunena div.uk-grid > .uk-width-medium-7-10 .kcontainer .kblock-inner .forum-info{
 	bottom: initial;
 	left: initial;
