@@ -79,7 +79,7 @@ defined ( '_JEXEC' ) or die ();
 
 				<div class="kcontainer">
 					<div class="kbody">
-						<table class="krowtable kblocktable<?php echo $this->escape($this->category->class_sfx); ?>" id="kflattable">
+						<table class="krowtable kblocktable<?php echo $this->escape($this->category->class_sfx); ?>" id="kflattable" style="display: none;">
 							<?php if(empty($this->topics) && empty($this->subcategories)): ?>
 								<tr class="krow2"><td class="kcol-first"><?php echo JText::_('COM_KUNENA_VIEW_NO_TOPICS') ?></td></tr>
 							<?php else : ?>
