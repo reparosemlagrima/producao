@@ -973,26 +973,65 @@ body.pag_busca_tutorial #tm-content article p.tm-article-meta.uk-article-meta{
 }
 
 /* SEARCH HOME */
-.uk-box-search-home{
+body.pag_home .uk-box-search-home{
 	width: 63%;
+	height: 42px;
 }
 
-.uk-field-search-home{
-	width: 568px;
+body.pag_home .uk-box-search-home #search-230{
+	height: 42px;
+}
+
+body.pag_home .uk-field-search-home{
+	float: left;
+	width: 572px;
 	font-size: 16px !important;
 	text-align: left;
 	padding: 10px !important;
 	line-height: 20px !important;
 	height: 20px !important;
+	margin-bottom: 0;
 }
 
-.uk-button-home{
+body.pag_home .uk-field-search-home:focus{
+	border-color: transparent;
+}
+
+body.pag_home .uk-box-search-home .uk-button-home{
 	position: relative;
-	right:5px;
-	bottom: 6px;
+}
+
+body.pag_home .uk-box-search-home .uk-dropdown.uk-dropdown-flip.uk-dropdown-search{
+	padding-top: 0;
+	padding-bottom: 0;
+	border: 1px solid #EFEFEF;
+	overflow: hidden;
+}
+
+body.pag_home .uk-box-search-home .uk-dropdown.uk-dropdown-flip.uk-dropdown-search .uk-nav-search.uk-autocomplete-results li {
+    border-bottom: 1px solid #00AFF3;
+}
+
+body.pag_home .uk-box-search-home .uk-dropdown.uk-dropdown-flip.uk-dropdown-search .uk-nav-search.uk-autocomplete-results li.uk-active > a{
+	background-color: #00AFF3;
+}
+
+body.pag_home .uk-box-search-home .uk-dropdown.uk-dropdown-flip.uk-dropdown-search  .uk-nav-search.uk-autocomplete-results li.uk-nav-divider.uk-skip,
+body.pag_home .uk-box-search-home .uk-dropdown.uk-dropdown-flip.uk-dropdown-search  .uk-nav-search.uk-autocomplete-results li.uk-search-moreresults {
+    border: none;
+    margin: 0;
+}
+
+body.pag_home .uk-box-search-home .uk-dropdown.uk-dropdown-flip.uk-dropdown-search .uk-nav-search.uk-autocomplete-results li.uk-search-moreresults a{
+	background-color: #18A0DC;
+	color: #fff;
+}
+
+body.pag_home .uk-box-search-home .uk-dropdown.uk-dropdown-flip.uk-dropdown-search .uk-nav-search.uk-autocomplete-results li.uk-search-moreresults.uk-active a{
+	background-color: #06688E;
 }
 	
-	/* Tablet and bigger */
+/* Tablet and bigger */
 @media (min-width: 768px) {
 	.uk-box-search-home{ 
 		position: relative;
