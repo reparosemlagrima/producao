@@ -43,7 +43,7 @@ $this->k=0;
 	<div class="kheader">
 		<h2><span><?php echo $this->escape($this->title)?></span></h2>
 		<br/>
-		<p class="better_questions">Seja específico e inclua o que você já tentou. <a href="" title="Melhores perguntas tem mais respostas">Melhores perguntas tem mais respostas</a>.</p>
+		<p class="better_questions">Seja específico e inclua o que você já tentou. <a href="/reparosemlagrima/fazendo-otimas-perguntas" title="Melhores perguntas tem mais respostas" target="_blank">Melhores perguntas tem mais respostas</a>.</p>
 	</div>
 	<div class="kcontainer">
 		<div class="kbody">
