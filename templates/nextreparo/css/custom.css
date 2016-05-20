@@ -1082,6 +1082,7 @@ body.pag_home .uk-box-search-home .uk-dropdown.uk-dropdown-flip.uk-dropdown-sear
 
 #text_page p{
 	margin: 12px 0;
+	text-indent: 30px;
 }
 
 body.pag_tutoriais > section:first-of-type,
