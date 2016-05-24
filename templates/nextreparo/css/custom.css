@@ -3357,6 +3357,10 @@ body.pag_recicla .uk-container.uk-container-center .bfPageIntro{
 	display: none;
 }
 
+body.pag_recicla .uk-container.uk-container-center #text_page + p{
+	display: none;
+}
+
 body.pag_recicla .uk-container.uk-container-center #text_page h2{
 	color: #2ec06f;
 	margin: 35px 0;
@@ -3365,14 +3369,127 @@ body.pag_recicla .uk-container.uk-container-center #text_page h2{
 }
 
 body.pag_recicla .uk-container.uk-container-center #text_page ul{
-	margin-left: 20px;
-	font-size: 20px;
+	margin-left: 30px;
 	line-height: 23px;
+	padding-left: 0px;
+	list-style-position: inside;
 }
 
 body.pag_recicla .uk-container.uk-container-center #text_page .text_bold_blue{
 	font-weight: bold;
 	color: #00AFF3;
+	font-size: 22px;
+	line-height: 25px;
+	letter-spacing: 0.5px;
+}
+
+body.pag_recicla #text_page #regra_recicla_topo{
+	background-color: #caf7cf;
+	border: 1px solid #DDDDDD;
+	border-bottom: none;
+}
+
+body.pag_recicla #Reciclagem{
+	margin: 0;
+	border: 1px solid #DDDDDD;
+	border-top: none;
+	border-bottom: none;
+}
+
+body.pag_recicla #Reciclagem .bfQuickMode .bfLabelLeft label{
+	width: 125px;
+}
+
+body.pag_recicla #Reciclagem > .bfNoSection,
+body.pag_recicla #Reciclagem > .bfNoSection > .bfElemWrap{
+	margin: 0;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+
+body.pag_recicla #Reciclagem > .bfNoSection{
+	float: left;
+	height: 50px;
+}
+
+body.pag_recicla #Reciclagem > #NomeRecicla,
+body.pag_recicla #Reciclagem > #EmailRecicla,
+body.pag_recicla #Reciclagem > #EstadoRecicla,
+body.pag_recicla #Reciclagem > #CidadeRecicla,
+body.pag_recicla #Reciclagem > #ModeloCelularRecicla,
+body.pag_recicla #Reciclagem > #QuantidadeRecicla,
+body.pag_recicla #Reciclagem #recicla_img_screen_on,
+body.pag_recicla #Reciclagem #recicla_img_screen_off{
+	width: 50%;
+}
+
+body.pag_recicla #Reciclagem > #NomeRecicla,
+body.pag_recicla #Reciclagem > #EstadoRecicla,
+body.pag_recicla #Reciclagem > #ModeloCelularRecicla,
+body.pag_recicla #Reciclagem #recicla_img_screen_on{
+	clear: left;
+}
+
+body.pag_recicla #Reciclagem > #ImagensRecicla{
+	width: 100%;
+	height: auto;
+}
+
+body.pag_recicla #Reciclagem > .bfNoSection > .bfElemWrap,
+body.pag_recicla #Reciclagem #ImagensRecicla .bfNoSection > .bfElemWrap{
+	padding: 12px 10px !important;
+	border: none !important;
+}
+
+body.pag_recicla #Reciclagem > .bfNoSection:nth-child(1) > .bfElemWrap,
+body.pag_recicla #Reciclagem > .bfNoSection:nth-child(1) > .bfElemWrap:hover,
+body.pag_recicla #Reciclagem > .bfNoSection:nth-child(2) > .bfElemWrap,
+body.pag_recicla #Reciclagem > .bfNoSection:nth-child(2) > .bfElemWrap:hover,
+body.pag_recicla #Reciclagem > .bfNoSection:nth-child(5) > .bfElemWrap,
+body.pag_recicla #Reciclagem > .bfNoSection:nth-child(5) > .bfElemWrap:hover,
+body.pag_recicla #Reciclagem > .bfNoSection:nth-child(6) > .bfElemWrap,
+body.pag_recicla #Reciclagem > .bfNoSection:nth-child(6) > .bfElemWrap:hover,
+body.pag_recicla #Reciclagem #ImagensRecicla .bfNoSection > .bfElemWrap,
+body.pag_recicla #Reciclagem #ImagensRecicla .bfNoSection > .bfElemWrap:hover{
+	background-color: #fff !important;
+}
+
+body.pag_recicla #Reciclagem > .bfNoSection:nth-child(3) > .bfElemWrap,
+body.pag_recicla #Reciclagem > .bfNoSection:nth-child(3) > .bfElemWrap:hover,
+body.pag_recicla #Reciclagem > .bfNoSection:nth-child(4) > .bfElemWrap,
+body.pag_recicla #Reciclagem > .bfNoSection:nth-child(4) > .bfElemWrap:hover{
+	background-color: #caf7cf !important;
+}
+
+body.pag_recicla #Reciclagem > .bfNoSection > .bfElemWrap:hover,
+body.pag_recicla #Reciclagem #ImagensRecicla .bfNoSection > .bfElemWrap{
+	border: none !important;
+	background-image: none !important;
+}
+
+body.pag_recicla #Reciclagem > .bfNoSection > .bfElemWrap label{
+	width: 125px;
+}
+
+body.pag_recicla #Reciclagem #bfElemWrap55{
+
+}
+
+body.pag_recicla #Reciclagem #ImagensRecicla #recicla_img_screen_on p:nth-of-type(2),
+body.pag_recicla #Reciclagem #ImagensRecicla .bfSectionDescription,
+body.pag_recicla #Reciclagem #recicla_img_screen_on #Recicla_Imagem_Ilustrativa_1 .bfSectionDescription,
+body.pag_recicla #Reciclagem #ImagensRecicla #recicla_img_screen_off p:nth-of-type(2),
+body.pag_recicla #Reciclagem #recicla_img_screen_on #Recicla_Imagem_Ilustrativa_2 .bfSectionDescription{
+	display: none;
+}
+
+body.pag_recicla #Reciclagem #recicla_img_screen_on{
+	float: left;
+}
+
+body.pag_recicla #Reciclagem #recicla_img_screen_off{
+	float: right;
 }
 /* FIM PÁGINA RECICLA */
 
