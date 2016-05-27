@@ -3437,6 +3437,7 @@ body.pag_recicla #Reciclagem #recicla_img_screen_on{
 body.pag_recicla #Reciclagem > #ImagensRecicla{
 	width: 100%;
 	height: auto;
+	padding-bottom: 10px;
 }
 
 body.pag_recicla #Reciclagem > .bfNoSection > .bfElemWrap,
@@ -3445,6 +3446,9 @@ body.pag_recicla #Reciclagem + .bfElemWrap,
 body.pag_recicla .button_send_recicla{
 	padding: 12px 10px !important;
 	border: none !important;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
 }
 
 body.pag_recicla #Reciclagem > .bfNoSection:nth-child(1) > .bfElemWrap,
@@ -3454,9 +3458,7 @@ body.pag_recicla #Reciclagem > .bfNoSection:nth-child(2) > .bfElemWrap:hover,
 body.pag_recicla #Reciclagem > .bfNoSection:nth-child(5) > .bfElemWrap,
 body.pag_recicla #Reciclagem > .bfNoSection:nth-child(5) > .bfElemWrap:hover,
 body.pag_recicla #Reciclagem > .bfNoSection:nth-child(6) > .bfElemWrap,
-body.pag_recicla #Reciclagem > .bfNoSection:nth-child(6) > .bfElemWrap:hover,
-body.pag_recicla #Reciclagem #ImagensRecicla .bfNoSection > .bfElemWrap,
-body.pag_recicla #Reciclagem #ImagensRecicla .bfNoSection > .bfElemWrap:hover{
+body.pag_recicla #Reciclagem > .bfNoSection:nth-child(6) > .bfElemWrap:hover{
 	background-color: #fff !important;
 }
 
@@ -3464,6 +3466,8 @@ body.pag_recicla #Reciclagem > .bfNoSection:nth-child(3) > .bfElemWrap,
 body.pag_recicla #Reciclagem > .bfNoSection:nth-child(3) > .bfElemWrap:hover,
 body.pag_recicla #Reciclagem > .bfNoSection:nth-child(4) > .bfElemWrap,
 body.pag_recicla #Reciclagem > .bfNoSection:nth-child(4) > .bfElemWrap:hover,
+body.pag_recicla #Reciclagem #ImagensRecicla .bfNoSection > .bfElemWrap,
+body.pag_recicla #Reciclagem #ImagensRecicla .bfNoSection > .bfElemWrap:hover,
 body.pag_recicla #Reciclagem + .bfElemWrap,
 body.pag_recicla .button_send_recicla{
 	background-color: #caf7cf !important;
@@ -3524,26 +3528,60 @@ body.pag_recicla #Reciclagem + .bfElemWrap{
 }
 
 body.pag_recicla #Reciclagem + .bfElemWrap label{
-	width: 330px;
-	text-align: right;
-	font-weight: bold
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+body.pag_recicla #Reciclagem + .bfElemWrap .bfCaptcha{
+	width: 230px;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	float: none;
 }
 
 body.pag_recicla #bfCaptchaEntry{
 	width: 205px !important;
 }
 
-body.pag_recicla #Reciclagem + .bfElemWrap #ff_capimgValue{
-
+body.pag_recicla #Reciclagem .icon_upload_recicla{
+	background-color: #fff;
 }
 
-body.pag_recicla #Reciclagem .icon_upload_recicla > span{
+body.pag_recicla #Reciclagem .icon_upload_recicla > span.nome_arquivo_upload{
+	float: left;
+	width: 285px;
+	height: 33px;
+	line-height: 33px;
+	overflow: hidden;
+}
+
+body.pag_recicla #Reciclagem .icon_upload_recicla > span.icon_arquivo_upload{
 	position: relative;
 	background: url("/reparosemlagrima/images/icons/icon_upload.jpg") no-repeat transparent;
 	background-size: 14px 16px;
 	float: right;
 	top: 9px;
-	right: 11px;
+	right: 7px;
+}
+
+body.pag_recicla #ImagensRecicla .bfFileQueueItem{
+	position: relative;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    background-color: #FBFBFB;
+    padding: 10px;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body.pag_recicla #ImagensRecicla .bfFileQueueItem > img{
+	position: absolute;
+	top: 10px;
+	right: 0;
 }
 
 body.pag_recicla .button_send_recicla{
@@ -3567,7 +3605,7 @@ body.pag_recicla .button_send_recicla button{
 	display: block;
 	margin: 0 auto !important;
 	border: 2px solid #646464 !important;
-	width: 160px;
+	width: 230px;
 	overflow: hidden !important;
 }
 
@@ -3584,6 +3622,12 @@ body.pag_recicla .button_send_recicla button span{
 
 body.pag_recicla .button_send_recicla button:hover span{
 	color: #00AFF3 !important;
+}
+
+body.pag_recicla #bfFileQueue,
+body.pag_recicla #bfSubmitMessage{
+	width: 100%;
+	display: none;
 }
 /* FIM PÁGINA RECICLA */
 
