@@ -1636,8 +1636,8 @@ class BFQuickMode
 							
 							$bytes = (isset($mdata['flashUploaderBytes']) && is_numeric($mdata['flashUploaderBytes']) && $mdata['flashUploaderBytes'] > 0 ? "max_file_size : '" . intval($mdata['flashUploaderBytes']) ."'," : '');
 							$flashUploader = "
-								<span id=\"bfUploadContainer".$mdata['dbId']."\">
-									<img style=\"cursor: pointer;\" id=\"bfPickFiles".$mdata['dbId']."\" src=\"".$this->uploadImagePath."\" border=\"0\" width=\"".(isset($mdata['flashUploaderWidth']) && is_numeric($mdata['flashUploaderWidth']) && $mdata['flashUploaderWidth'] > 0 ? intval($mdata['flashUploaderWidth']) : '64')."\" height=\"".(isset($mdata['flashUploaderHeight']) && is_numeric($mdata['flashUploaderHeight']) && $mdata['flashUploaderHeight'] > 0 ? intval($mdata['flashUploaderHeight']) : '64')."\"/>
+								<span id=\"bfUploadContainer".$mdata['dbId']."\" class=\"icon_upload_recicla\">
+									<!--<img style=\"cursor: pointer;\" class=\"icon_upload_recicla\" id=\"bfPickFiles".$mdata['dbId']."\" src=\"".$this->uploadImagePath."\" border=\"0\" width=\"".(isset($mdata['flashUploaderWidth']) && is_numeric($mdata['flashUploaderWidth']) && $mdata['flashUploaderWidth'] > 0 ? intval($mdata['flashUploaderWidth']) : '64')."\" height=\"".(isset($mdata['flashUploaderHeight']) && is_numeric($mdata['flashUploaderHeight']) && $mdata['flashUploaderHeight'] > 0 ? intval($mdata['flashUploaderHeight']) : '64')."\"/>-->
 								</span>
 								
 								<span id=\"bfUploader".$mdata['bfName']."\"></span>
@@ -1647,350 +1647,453 @@ class BFQuickMode
 									<!--
 										bfFlashUploaders.push('ff_elem".$mdata['dbId']."');
 										var bfFlashFileQueue".$mdata['dbId']." = {};
-										function bfUploadImageThumb(file) {
+										function bfUploadImageThumb(file)
+										{
 											var img;
 											img = new o.Image;
-											img.onload = function() {
-												img.embed(JQuery('#' + file.id+'thumb').get(0), { 
-																				width: 100, 
-																				height: 60, 
-																				crop: true,
-																				swf_url: mOxie.resolveUrl('".$base."components/com_breezingforms/libraries/jquery/plupload/Moxie.swf')
-																		});
-																};
+											img.onload = function()
+											{
+												img.embed(JQuery('#' + file.id+'thumb').get(0),
+												{ 
+													width: 100,
+													height: 60,
+													crop: true,
+													swf_url: mOxie.resolveUrl('".$base."components/com_breezingforms/libraries/jquery/plupload/Moxie.swf')
+												});
+											};
 
-																img.onembedded = function() {
-																		img.destroy();
-																};
+											img.onembedded = function()
+											{
+												img.destroy();
+											};
 
-																img.onerror = function() {
-																		
-																};
+											img.onerror = function()
+											{
+
+											};
 																
-																img.load(file.getSource());
+											img.load(file.getSource());
 																
+										}
+										
+										JQuery(document).ready(function()
+										{
+											var iOS = (navigator.userAgent.match(/(iPad|iPhone|iPod)/i) ? true : false);
+											var uploader = new plupload.Uploader(
+											{
+												multi_selection: ".(isset($mdata['flashUploaderMulti']) && $mdata['flashUploaderMulti'] ? 'true' : 'false').",
+												unique_names: iOS,
+												chunk_size: '100kb',
+												runtimes : '".(isset($mdata['html5']) && $mdata['html5'] ? 'html5,' : '').(isset($mdata['flashUploader']) && $mdata['flashUploader'] ? 'flash,' : '')."html4',
+												browse_button : 'bfPickFiles".$mdata['dbId']."',
+												container: 'bfUploadContainer".$mdata['dbId']."',
+												file_data_name: 'Filedata',
+												multipart_params: {
+													form: ".$this->p->form.",
+													itemName : '".$mdata['bfName']."',
+													bfFlashUploadTicket: '".$this->flashUploadTicket."',
+													option: 'com_breezingforms',
+													format: 'html',
+													flashUpload: 'true',
+													Itemid: 0
+												},
+												".$bytes."
+												url : '".$base.(BFJoomlaConfig::get('config.sef') && !BFJoomlaConfig::get('config.sef_rewrite') ? 'index.php/' : '').(JRequest::getCmd('lang','') && BFJoomlaConfig::get('config.sef') ? JRequest::getCmd('lang','') . ( BFJoomlaConfig::get('config.sef_rewrite') ? 'index.php' : '' ) : 'index.php')."',
+												flash_swf_url : '".$base."components/com_breezingforms/libraries/jquery/plupload/Moxie.swf',
+												filters : [
+												{
+													title : '".addslashes(BFText::_('COM_BREEZINGFORMS_CHOOSE_FILE'))."',
+													extensions : '".$exts."'
+												}]
+											});
+											
+											uploader.bind('FilesAdded', function(up, files)
+											{
+												for(var i in files)
+												{
+													if(typeof files[i].id != 'undefined' && files[i].id != null)
+													{
+														var fsize = '';
+														if(typeof files[i].size != 'undefined')
+														{
+															fsize = '(' + plupload.formatSize(files[i].size) + ') ';
 														}
-														JQuery(document).ready(
-															function() {
-																var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/i) ? true : false );
-																var uploader = new plupload.Uploader({
-																		multi_selection: ".( isset($mdata['flashUploaderMulti']) && $mdata['flashUploaderMulti'] ? 'true' : 'false' ).",
-																		unique_names: iOS,
-																		chunk_size: '100kb',
-																		runtimes : '".( isset( $mdata['html5'] ) && $mdata['html5'] ? 'html5,' : '' ).( isset( $mdata['flashUploader'] ) && $mdata['flashUploader'] ? 'flash,' : '')."html4',
-																		browse_button : 'bfPickFiles".$mdata['dbId']."',
-																		container: 'bfUploadContainer".$mdata['dbId']."',
-																		file_data_name: 'Filedata',
-																		multipart_params: { form: ".$this->p->form.", itemName : '".$mdata['bfName']."', bfFlashUploadTicket: '".$this->flashUploadTicket."', option: 'com_breezingforms', format: 'html', flashUpload: 'true', Itemid: 0 },
-																		".$bytes."
-																		url : '".$base.(BFJoomlaConfig::get('config.sef') && !BFJoomlaConfig::get('config.sef_rewrite') ? 'index.php/' : '').(JRequest::getCmd('lang','') && BFJoomlaConfig::get('config.sef') ? JRequest::getCmd('lang','') . ( BFJoomlaConfig::get('config.sef_rewrite') ? 'index.php' : '' ) : 'index.php')."',
-																		flash_swf_url : '".$base."components/com_breezingforms/libraries/jquery/plupload/Moxie.swf',
-																		filters : [
-																				{title : '".addslashes(BFText::_('COM_BREEZINGFORMS_CHOOSE_FILE'))."', extensions : '".$exts."'}
-																		]
-																});
-																uploader.bind('FilesAdded', function(up, files) {
-																		for (var i in files) {
-																				if(typeof files[i].id != 'undefined' && files[i].id != null){
-																					var fsize = '';
-																					if(typeof files[i].size != 'undefined'){
-																						fsize = '(' + plupload.formatSize(files[i].size) + ') ';
-																					}
-																					JQuery('#bfFileQueue').append( '<div id=\"' + files[i].id + 'queue\">' + (iOS ? '' : files[i].name) + ' '+fsize+'<b></b></div>' );
-																				}
-																		}
-																		for (var i in files) {
-																			if(typeof files[i].id != 'undefined' && files[i].id != null){
-																				var error = false;
-																				var fsize = '';
-																				if(typeof files[i].size != 'undefined'){
-																					fsize = '(' + plupload.formatSize(files[i].size) + ') ';
-																				}
-																				JQuery('#bfFlashFileQueue".$mdata['dbId']."').append('<div class=\"bfFileQueueItem\" id=\"' + files[i].id + 'queueitem\"><div id=\"' + files[i].id + 'thumb\"></div><div id=\"' + files[i].id + '\"><img id=\"' + files[i].id + 'cancel\" src=\"".$this->cancelImagePath."\" style=\"cursor: pointer; padding-right: 10px;\" border=\"0\"/>' + (iOS ? '' : files[i].name) + ' ' + fsize + '<b id=\"' + files[i].id + 'msg\" style=\"color:red;\"></b></div></div>');
-																				var file_ = files[i];
-																				var uploader_ = uploader;
-																				var bfUploaders_ = bfUploaders;
-																				JQuery('#' + files[i].id + 'cancel').click( 
-																					function(){
-																						for( var i = 0; i < bfUploaders_.length; i++ ){
-																							bfUploaders_[i].stop();
-																						}
-																						var id_ = this.id.split('cancel');
-																						id_ = id_[0];
-																						uploader_.removeFileById(id_);
-																						JQuery('#'+id_+'queue').remove();
-																						JQuery('#'+id_+'queueitem').remove();
-																						bfFlashUploadersLength--;
-																						for( var i = 0; i < bfUploaders_.length; i++ ){
-																							bfUploaders_[i].start();
-																						}
-																					} 
-																				);
-																				var thebytes = ".(isset($mdata['flashUploaderBytes']) && is_numeric($mdata['flashUploaderBytes']) && $mdata['flashUploaderBytes'] > 0 ? intval($mdata['flashUploaderBytes']) : '0').";
-																				if(thebytes > 0 && typeof files[i].size != 'undefined' && files[i].size > thebytes){
-																					 alert(' ".addslashes(BFText::_('COM_BREEZINGFORMS_FLASH_UPLOADER_TOO_LARGE'))."');
-																					 error = true;
-																				}
-																				var ext = files[i].name.split('.').pop().toLowerCase();
-																				var exts = '".strtolower($exts)."'.split(',');
-																				var found = 0;
-																				for (var x in exts){
-																					if(exts[x] == ext){
-																						found++;
-																					}
-																				}
-																				if(found == 0){
-																					alert( ' ".addslashes(BFText::_('COM_BREEZINGFORMS_FILE_EXTENSION_NOT_ALLOWED'))."' );
-																					error = true;
-																				}
-																				if(error){
-																					JQuery('#'+files[i].id+'queue').remove();
-																					JQuery('#'+files[i].id+'queueitem').remove();
-																				}else{
-																					bfFlashUploadersLength++;
-																				}
-																				bfUploadImageThumb(files[i]);
-																			}
-																		}
-																});
-																uploader.bind('UploadProgress', function(up, file) {
-																	if(typeof JQuery('#'+file.id+'queue').get(0) != 'undefined'){
-																		JQuery('#'+file.id+'queue').get(0).getElementsByTagName('b')[0].innerHTML = file.percent + '% <div style=\"height: 5px;width: ' + (file.percent*1.5) + 'px;background-color: #9de24f;\"></div>';
-																	}
-																});
-																uploader.bind('FileUploaded', function(up, file, response) {
-																	if(response.response!=''){
-																		if(response.response !== null){
-																			alert(response.response);
-																		}
-																	}
-																	JQuery('#'+file.id+'queue').remove();
-																});
-																uploader.init();
-																bfUploaders.push(uploader);
-															});
-							//-->
-														</script>
+														JQuery('#bfFileQueue').append('<div id=\"' + files[i].id + 'queue\">' + (iOS ? '' : files[i].name) + ' '+fsize+'<b></b></div>');
+													}
+												}
+												
+												for(var i in files)
+												{
+													if(typeof files[i].id != 'undefined' && files[i].id != null)
+													{
+														var error = false;
+														var fsize = '';
+														if(typeof files[i].size != 'undefined')
+														{
+															fsize = '(' + plupload.formatSize(files[i].size) + ') ';
+														}
+														
+														JQuery('#bfFlashFileQueue".$mdata['dbId']."').append('<div class=\"bfFileQueueItem\" id=\"' + files[i].id + 'queueitem\"><div id=\"' + files[i].id + 'thumb\"></div><div id=\"' + files[i].id + '\"><img id=\"' + files[i].id + 'cancel\" src=\"".$this->cancelImagePath."\" style=\"cursor: pointer; padding-right: 10px;\" border=\"0\"/>' + (iOS ? '' : files[i].name) + ' ' + fsize + '<b id=\"' + files[i].id + 'msg\" style=\"color:red;\"></b></div></div>');
+														
+														var file_ = files[i];
+														var uploader_ = uploader;
+														var bfUploaders_ = bfUploaders;
+														
+														JQuery('#' + files[i].id + 'cancel').click(function()
+														{
+															for(var i = 0; i < bfUploaders_.length; i++)
+															{
+																bfUploaders_[i].stop();
+															}
+															
+															var id_ = this.id.split('cancel');
+															id_ = id_[0];
+															uploader_.removeFileById(id_);
+															
+															JQuery('#'+id_+'queue').remove();
+															JQuery('#'+id_+'queueitem').remove();
+															
+															bfFlashUploadersLength--;
+															for(var i = 0; i < bfUploaders_.length; i++)
+															{
+																bfUploaders_[i].start();
+															}
+														});
+														
+														var thebytes = ".(isset($mdata['flashUploaderBytes']) && is_numeric($mdata['flashUploaderBytes']) && $mdata['flashUploaderBytes'] > 0 ? intval($mdata['flashUploaderBytes']) : '0').";
+														
+														if(thebytes > 0 && typeof files[i].size != 'undefined' && files[i].size > thebytes)
+														{
+															alert(' ".addslashes(BFText::_('COM_BREEZINGFORMS_FLASH_UPLOADER_TOO_LARGE'))."');
+															error = true;
+														}
+														
+														var ext = files[i].name.split('.').pop().toLowerCase();
+														var exts = '".strtolower($exts)."'.split(',');
+														var found = 0;
+														
+														for(var x in exts)
+														{
+															if(exts[x] == ext)
+															{
+																found++;
+															}
+														}
+														
+														if(found == 0)
+														{
+															alert(' ".addslashes(BFText::_('COM_BREEZINGFORMS_FILE_EXTENSION_NOT_ALLOWED'))."');
+															error = true;
+														}
+														
+														if(error)
+														{
+															JQuery('#'+files[i].id+'queue').remove();
+															JQuery('#'+files[i].id+'queueitem').remove();
+														}
+														else
+														{
+															bfFlashUploadersLength++;
+														}
+														
+														bfUploadImageThumb(files[i]);
+													}
+												}
+											});
+											
+											uploader.bind('UploadProgress', function(up, file)
+											{
+												if(typeof JQuery('#'+file.id+'queue').get(0) != 'undefined')
+												{
+													JQuery('#'+file.id+'queue').get(0).getElementsByTagName('b')[0].innerHTML = file.percent + '% <div style=\"height: 5px;width: ' + (file.percent*1.5) + 'px;background-color: #9de24f;\"></div>';
+												}
+											});
+											
+											uploader.bind('FileUploaded', function(up, file, response)
+											{
+												if(response.response!='')
+												{
+													if(response.response !== null)
+													{
+														alert(response.response);
+													}
+												}
+											
+												JQuery('#'+file.id+'queue').remove();
+											});
+											
+											uploader.init();
+											bfUploaders.push(uploader);
+										});
+									//-->
+								</script>
 							";
-														echo '<input class="ff_elem" '.$tabIndex.$onclick.$onblur.$onchange.$onfocus.$onselect.$readonly.'type="hidden" name="ff_nm_'.$mdata['bfName'].'[]" id="ff_elem'.$mdata['dbId'].'"/>'."\n";
-						}else{
-													echo '<input class="ff_elem" '.$tabIndex.$onclick.$onblur.$onchange.$onfocus.$onselect.$readonly.'type="file" name="ff_nm_'.$mdata['bfName'].'[]" id="ff_elem'.$mdata['dbId'].'"/>'."\n";
+							
+							echo '<input class="ff_elem" '.$tabIndex.$onclick.$onblur.$onchange.$onfocus.$onselect.$readonly.'type="hidden" name="ff_nm_'.$mdata['bfName'].'[]" id="ff_elem'.$mdata['dbId'].'"/>'."\n";
 						}
-						if($mdata['attachToAdminMail']){
+						else
+						{
+							echo '<input class="ff_elem" '.$tabIndex.$onclick.$onblur.$onchange.$onfocus.$onselect.$readonly.'type="file" name="ff_nm_'.$mdata['bfName'].'[]" id="ff_elem'.$mdata['dbId'].'"/>'."\n";
+						}
+						
+						if($mdata['attachToAdminMail'])
+						{
 							echo '<input type="hidden" name="attachToAdminMail['.$mdata['bfName'].']" value="true"/>'."\n";
 						}
-						if($mdata['attachToUserMail']){
+						
+						if($mdata['attachToUserMail'])
+						{
 							echo '<input type="hidden" name="attachToUserMail['.$mdata['bfName'].']" value="true"/>'."\n";
 						}
-						break;
+					break;
 						
 					case 'bfSubmitButton':
-						
 						$value = '';
 						$type = 'submit';
 						$src = '';
 												
-						if($mdata['src'] != ''){
+						if($mdata['src'] != '')
+						{
 							$type = 'image';
 							$src = 'src="'.$mdata['src'].'" ';
 						}
-						if($mdata['value'] != ''){
+						
+						if($mdata['value'] != '')
+						{
 							$value = 'value="'.htmlentities(trim($mdata['value']), ENT_QUOTES, 'UTF-8').'" ';
 						}
-						if($mdata['actionClick'] == 1){
+						
+						if($mdata['actionClick'] == 1)
+						{
 							$onclick = 'onclick="if(typeof bf_htmltextareainit != \'undefined\'){ bf_htmltextareainit() }populateSummarizers();if(document.getElementById(\'bfPaymentMethod\')){document.getElementById(\'bfPaymentMethod\').value=\'\';};'.$mdata['actionFunctionName'] . '(this,\'click\');return false;" ';
-						} else {
+						}
+						else
+						{
 							$onclick = 'onclick="if(typeof bf_htmltextareainit != \'undefined\'){ bf_htmltextareainit() }populateSummarizers();if(document.getElementById(\'bfPaymentMethod\')){document.getElementById(\'bfPaymentMethod\').value=\'\';};return false;" ';
 						}
-												if($src == ''){
-													echo '<button class="ff_elem" '.$value.$src.$tabIndex.$onclick.$onblur.$onchange.$onfocus.$onselect.$readonly.'type="'.$type.'" name="ff_nm_'.$mdata['bfName'].'[]" id="ff_elem'.$mdata['dbId'].'"><span>'.$mdata['value'].'</span></button>'."\n";
-												}else{
-													echo '<input class="ff_elem" '.$value.$src.$tabIndex.$onclick.$onblur.$onchange.$onfocus.$onselect.$readonly.'type="'.$type.'" name="ff_nm_'.$mdata['bfName'].'[]" id="ff_elem'.$mdata['dbId'].'" value="'.$mdata['value'].'"/>'."\n";
-												}
-						break;
+						
+						if($src == '')
+						{
+							echo '<button class="ff_elem" '.$value.$src.$tabIndex.$onclick.$onblur.$onchange.$onfocus.$onselect.$readonly.'type="'.$type.'" name="ff_nm_'.$mdata['bfName'].'[]" id="ff_elem'.$mdata['dbId'].'"><span>'.$mdata['value'].'</span></button>'."\n";
+						}
+						else
+						{
+							echo '<input class="ff_elem" '.$value.$src.$tabIndex.$onclick.$onblur.$onchange.$onfocus.$onselect.$readonly.'type="'.$type.'" name="ff_nm_'.$mdata['bfName'].'[]" id="ff_elem'.$mdata['dbId'].'" value="'.$mdata['value'].'"/>'."\n";
+						}
+					break;
 						
 					case 'bfHidden':
-						
 						echo '<input class="ff_elem" type="hidden" name="ff_nm_'.$mdata['bfName'].'[]" value="'.htmlentities(trim($mdata['value']), ENT_QUOTES, 'UTF-8').'" id="ff_elem'.$mdata['dbId'].'"/>'."\n";
-						break;
+					break;
 						
 					case 'bfSummarize':
-						
 						echo '<span class="ff_elem bfSummarize" id="ff_elem'.$mdata['dbId'].'"></span>'."\n";
 						echo '<script type="text/javascript"><!--'."\n".'bfRegisterSummarize("ff_elem'.$mdata['dbId'].'", "'.$mdata['connectWith'].'", "'.$mdata['connectType'].'", "'.addslashes($mdata['emptyMessage']).'", '.($mdata['hideIfEmpty'] ? 'true' : 'false').')'."\n".'//--></script>';
-						if(trim($mdata['fieldCalc']) != ''){
-							echo '<script type="text/javascript">
-														<!--
-							function bfFieldCalcff_elem'.$mdata['dbId'].'(value){
-								if(!isNaN(value)){
-									value = Number(value);
-								}
-								'.$mdata['fieldCalc'].'
-								return value;
-							}
-														//-->
-							</script>';
-						}
-						break;
-
-										case 'bfReCaptcha':
-
-											if(isset($mdata['pubkey']) && $mdata['pubkey'] != ''){
-
-												$http = 'http';
-												if (isset($_SERVER['HTTPS']) && !empty($_SERVER['HTTPS']) && (strtolower($_SERVER['HTTPS']) != 'off')) {
-													$http .= 's';
-												}
-												$lang = JRequest::getVar('lang','');
-												if($lang != ''){
-													$lang = ',lang: "'.addslashes($lang).'"';
-												}
-												JFactory::getDocument()->addScript($http.'://www.google.com/recaptcha/api/js/recaptcha.js');
-												JFactory::getDocument()->addScriptDeclaration(
-												'   
-													JQuery(document).ready(
-														function() {
-															document.getElementById("bfReCaptchaWrap").style.display = "";
-															Recaptcha.create("'.$mdata['pubkey'].'",
-																"bfReCaptchaDiv", {
-																theme: "'.addslashes($mdata['theme']).'"
-																'.$lang.'
-																}
-															);
-															setTimeout("document.getElementById(\"bfReCaptchaSpan\").appendChild(document.getElementById(\"bfReCaptchaWrap\"))",100);
-														}
-													);
-												');
-
-												echo '<span id="bfReCaptchaSpan" class="bfCaptcha">'."\n";
-												echo '</span>'."\n";
-											}
-											else
+						if(trim($mdata['fieldCalc']) != '')
+						{
+							echo '
+								<script type="text/javascript">
+									<!--
+										function bfFieldCalcff_elem'.$mdata['dbId'].'(value)
+										{
+											if(!isNaN(value))
 											{
-												echo '<span class="bfCaptcha">'."\n";
-												echo 'WARNING: No public key given for ReCaptcha element!';
-												echo '</span>'."\n";
+												value = Number(value);
 											}
-											break;
+											'.$mdata['fieldCalc'].'
+											
+											return value;
+										}
+									//-->
+								</script>
+							';
+						}
+					break;
+
+					case 'bfReCaptcha':
+						if(isset($mdata['pubkey']) && $mdata['pubkey'] != '')
+						{
+							$http = 'http';
+							if(isset($_SERVER['HTTPS']) && !empty($_SERVER['HTTPS']) && (strtolower($_SERVER['HTTPS']) != 'off'))
+							{
+								$http .= 's';
+							}
+							
+							$lang = JRequest::getVar('lang','');
+							if($lang != '')
+							{
+								$lang = ',lang: "'.addslashes($lang).'"';
+							}
+							
+							JFactory::getDocument()->addScript($http.'://www.google.com/recaptcha/api/js/recaptcha.js');
+							JFactory::getDocument()->addScriptDeclaration('   
+								JQuery(document).ready(function()
+								{
+									document.getElementById("bfReCaptchaWrap").style.display = "";
+									
+									Recaptcha.create(
+										"'.$mdata['pubkey'].'",
+										"bfReCaptchaDiv", {
+											theme: "'.addslashes($mdata['theme']).'"
+											'.$lang.'
+										}
+									);
+									
+									setTimeout("document.getElementById(\"bfReCaptchaSpan\").appendChild(document.getElementById(\"bfReCaptchaWrap\"))",100);
+								});
+							');
+
+							echo '<span id="bfReCaptchaSpan" class="bfCaptcha">'."\n";
+							echo '</span>'."\n";
+						}
+						else
+						{
+							echo '<span class="bfCaptcha">'."\n";
+							echo 'WARNING: No public key given for ReCaptcha element!';
+							echo '</span>'."\n";
+						}
+					break;
 
 					case 'bfCaptcha':
-
-												if(JFactory::getApplication()->isSite())
-												 {
-													$captcha_url = JURI::root(true).'/components/com_breezingforms/images/captcha/securimage_show.php';
-												 }
-												 else
-												 {
-													$captcha_url = JURI::root(true).'/administrator/components/com_breezingforms/images/captcha/securimage_show.php';
-												 }
+						if(JFactory::getApplication()->isSite())
+						{
+							$captcha_url = JURI::root(true).'/components/com_breezingforms/images/captcha/securimage_show.php';
+						}
+						else
+						{
+							$captcha_url = JURI::root(true).'/administrator/components/com_breezingforms/images/captcha/securimage_show.php';
+						}
 											
 						echo '<span class="bfCaptcha">'."\n";
 												
-												echo '<img alt="" border="0" '.(isset($mdata['width']) && intval($mdata['width']) > 0 ? ' width="'.intval($mdata['width']).'"' : 'width="230"' ).' id="ff_capimgValue" class="ff_capimg" src="'.$captcha_url.'"/>'."\n";
-												
-												echo '<br/>';
+						echo '<img alt="" border="0" '.(isset($mdata['width']) && intval($mdata['width']) > 0 ? ' width="'.intval($mdata['width']).'"' : 'width="230"' ).' id="ff_capimgValue" class="ff_capimg" src="'.$captcha_url.'"/>'."\n";
+						echo '<br/>';
 						echo '<input '.(isset($mdata['width']) && intval($mdata['width']) > 0 && (intval($mdata['width'])-45 >= 230) ? ' style="width:'.(intval($mdata['width'])-45).'px;"' : '' ).' autocomplete="off" class="ff_elem" type="text" name="bfCaptchaEntry" id="bfCaptchaEntry" />'."\n";
 						echo '<a href="#" class="ff_elem" onclick="document.getElementById(\'bfCaptchaEntry\').value=\'\';document.getElementById(\'bfCaptchaEntry\').focus();document.getElementById(\'ff_capimgValue\').src = \''.$captcha_url.'?bfMathRandom=\' + Math.random(); return false"><img alt="captcha" src="'.JURI::root(true) . '/components/com_breezingforms/images/captcha/refresh-captcha.png" border="0"/></a>'."\n";
 						echo '</span>'."\n";
 						
-						break;
+					break;
 						
 					case 'bfCalendar':
-					
-												JHTML::_( 'behavior.calendar' ); 
+						JHTML::_( 'behavior.calendar' ); 
 											
 						$size = '';
-						if($mdata['size']!=''){
+						if($mdata['size']!='')
+						{
 							$size = 'style="width:'.htmlentities(strip_tags($mdata['size'])).'" ';
 						}
-												
-												$exploded = explode('::',trim($mdata['value']));
-												
-												$left = '';
-												$right = '';
-												if(count($exploded) == 2){
-													$left = trim($exploded[0]);
-													$right = trim($exploded[1]); 
-												}else{
-													$right = trim($exploded[0]);
-												}
+						
+						$exploded = explode('::',trim($mdata['value']));
+						$left = '';
+						$right = '';
+						if(count($exploded) == 2)
+						{
+							$left = trim($exploded[0]);
+							$right = trim($exploded[1]); 
+						}
+						else
+						{
+							$right = trim($exploded[0]);
+						}
 												
 						echo '<span class="bfElementGroupNoWrap" id="bfElementGroupNoWrap'.$mdata['dbId'].'">'."\n";
 						echo '<input autocomplete="off" class="ff_elem" '.$size.'type="text" name="ff_nm_'.$mdata['bfName'].'[]"  id="ff_elem'.$mdata['dbId'].'" value="'.htmlentities($left, ENT_QUOTES, 'UTF-8').'"/>'."\n";
 						echo '<button id="ff_elem'.$mdata['dbId'].'_calendarButton" type="submit" class="bfCalendar" value="'.htmlentities($right, ENT_QUOTES, 'UTF-8').'"><span>'.htmlentities($right, ENT_QUOTES, 'UTF-8').'</span></button>'."\n";
 						echo '</span>'."\n";
 						
-												echo '<script type="text/javascript">
-												<!--
-												Calendar.setup({
-														inputField     :    "ff_elem'.$mdata['dbId'].'",
-														ifFormat       :    "'.$mdata['format'].'",
-														button         :    "ff_elem'.$mdata['dbId'].'_calendarButton",
-														align          :    "Bl",
-														singleClick    :    true
-													});
-												//-->
-												</script>'."\n";
-												
-						break;	
+						echo '
+							<script type="text/javascript">
+								<!--
+									Calendar.setup({
+										inputField	: "ff_elem'.$mdata['dbId'].'",
+										ifFormat    : "'.$mdata['format'].'",
+										button      : "ff_elem'.$mdata['dbId'].'_calendarButton",
+										align       : "Bl",
+										singleClick : true
+									});
+								//-->
+							</script>
+						'."\n";
+					break;	
 						
 					case 'bfPayPal':
-						
 						$value = '';
 						$type = 'submit';
 						$src = '';
-						if($mdata['image'] != ''){
+						if($mdata['image'] != '')
+						{
 							$type = 'image';
 							$src = 'src="'.$mdata['image'].'" ';
-						}else{
+						}
+						else
+						{
 							$value = 'value="PayPal" ';
 						}
-						if($mdata['actionClick'] == 1){
+						
+						if($mdata['actionClick'] == 1)
+						{
 							$onclick = 'onclick="document.getElementById(\'bfPaymentMethod\').value=\'PayPal\';'.$mdata['actionFunctionName'] . '(this,\'click\');" ';	
-						} else {
+						}
+						else
+						{
 							$onclick = 'onclick="document.getElementById(\'bfPaymentMethod\').value=\'PayPal\';" ';
 						}
+						
 						echo '<input class="ff_elem" '.$value.$src.$tabIndex.$onclick.$onblur.$onchange.$onfocus.$onselect.$readonly.'type="'.$type.'" name="ff_nm_'.$mdata['bfName'].'[]" id="ff_elem'.$mdata['dbId'].'"/>'."\n";
-						break;
+					break;
 						
 					case 'bfSofortueberweisung':
-						
 						$value = '';
 						$type = 'submit';
 						$src = '';
-						if($mdata['image'] != ''){
+						if($mdata['image'] != '')
+						{
 							$type = 'image';
 							$src = 'src="'.$mdata['image'].'" ';
-						}else{
+						}
+						else
+						{
 							$value = 'value="Sofortueberweisung" ';
 						}
-						if($mdata['actionClick'] == 1){
+						
+						if($mdata['actionClick'] == 1)
+						{
 							$onclick = 'onclick="document.getElementById(\'bfPaymentMethod\').value=\'Sofortueberweisung\';'.$mdata['actionFunctionName'] . '(this,\'click\');" ';	
-						} else {
+						}
+						else
+						{
 							$onclick = 'onclick="document.getElementById(\'bfPaymentMethod\').value=\'Sofortueberweisung\';" ';
 						}
+						
 						echo '<input class="ff_elem" '.$value.$src.$tabIndex.$onclick.$onblur.$onchange.$onfocus.$onselect.$readonly.'type="'.$type.'" name="ff_nm_'.$mdata['bfName'].'[]" id="ff_elem'.$mdata['dbId'].'"/>'."\n";
-						break;
+					break;
 				}
 				
-				if(isset($mdata['bfName']) && isset($mdata['off']) && $mdata['off']){
+				if(isset($mdata['bfName']) && isset($mdata['off']) && $mdata['off'])
+				{
 					echo '<script type="text/javascript"><!--'."\n".'bfDeactivateField["ff_nm_'.$mdata['bfName'].'[]"]=true;'."\n".'//--></script>'."\n";
 				}
 				
-				if($mdata['required']){
+				if($mdata['required'])
+				{
 					echo '<span class="bfRequired">*</span>'."\n";
 				}
-								
-								if($mdata['bfType'] == 'bfFile'){
-									echo '<span id="ff_elem'.$mdata['dbId'].'_files"></span>';
-								}
+				
+				if($mdata['bfType'] == 'bfFile')
+				{
+					echo '<span id="ff_elem'.$mdata['dbId'].'_files"></span>';
+				}
 								
 				echo $flashUploader;
 				
-				if($mdata['bfType'] != 'bfHidden'){
-					if($options['displayType'] == 'breaks'){
+				if($mdata['bfType'] != 'bfHidden')
+				{
+					if($options['displayType'] == 'breaks')
+					{
 						echo '</p>'."\n";
-					} else {
+					}
+					else
+					{
 						echo '</span>'."\n";
 					}
 				}
@@ -2001,183 +2104,241 @@ class BFQuickMode
 		 * Paging and wrapping of inline element containers
 		 */
 		
-		if(isset($dataObject['properties']) && $dataObject['properties']['type'] == 'section' && $dataObject['properties']['displayType'] == 'inline'){
+		if(isset($dataObject['properties']) && $dataObject['properties']['type'] == 'section' && $dataObject['properties']['displayType'] == 'inline')
+		{
 			echo '<div class="bfClearfix">'."\n";
 		}
 		
-		if(isset($dataObject['children']) && count($dataObject['children']) != 0){
+		if(isset($dataObject['children']) && count($dataObject['children']) != 0)
+		{
 			$childrenAmount = count($dataObject['children']);
-			for($i = 0; $i < $childrenAmount; $i++){
+			for($i = 0; $i < $childrenAmount; $i++)
+			{
 				$this->process( $dataObject['children'][$i], $mdata, $parentPage, $i, $childrenAmount );
 			}
 		}	
 		
-		if(isset($dataObject['properties']) && $dataObject['properties']['type'] == 'section' && $dataObject['properties']['displayType'] == 'inline'){
+		if(isset($dataObject['properties']) && $dataObject['properties']['type'] == 'section' && $dataObject['properties']['displayType'] == 'inline')
+		{
 			echo '</div>'."\n";
 		}
 		
-		if(isset($dataObject['properties']) && $dataObject['properties']['type'] == 'section' && $dataObject['properties']['bfType'] == 'section'){
-			
+		if(isset($dataObject['properties']) && $dataObject['properties']['type'] == 'section' && $dataObject['properties']['bfType'] == 'section')
+		{
 			echo '</fieldset></div></div></div><div class="bfFieldset-bl"><div class="bfFieldset-br"><div class="bfFieldset-b"></div></div></div></div><!-- bfFieldset-wrapper end -->'."\n";
-			
-		} else if( isset($dataObject['properties']) && $dataObject['properties']['type'] == 'section' && $dataObject['properties']['bfType'] == 'normal' ) {
-			if(isset($dataObject['properties']['name']) && $dataObject['properties']['name'] != ''){
+		}
+		else if(isset($dataObject['properties']) && $dataObject['properties']['type'] == 'section' && $dataObject['properties']['bfType'] == 'normal')
+		{
+			if(isset($dataObject['properties']['name']) && $dataObject['properties']['name'] != '')
+			{
 				echo '</div>'."\n";
 			}
 		}
-		else if(isset($dataObject['properties']) && $dataObject['properties']['type'] == 'page'){
+		else if(isset($dataObject['properties']) && $dataObject['properties']['type'] == 'page')
+		{
 
 			$isLastPage = false;
-			if($this->rootMdata['lastPageThankYou'] && $dataObject['properties']['pageNumber'] == count($this->dataObject['children']) && count($this->dataObject['children']) > 1){
+			if($this->rootMdata['lastPageThankYou'] && $dataObject['properties']['pageNumber'] == count($this->dataObject['children']) && count($this->dataObject['children']) > 1)
+			{
 				$isLastPage = true;
 			}
 			
-			if(!$isLastPage){
-			
+			if(!$isLastPage)
+			{
 				$last = 0;
-				if($this->rootMdata['lastPageThankYou']){
+				if($this->rootMdata['lastPageThankYou'])
+				{
 					$last = 1;
 				}
 				
-				if($this->rootMdata['pagingInclude'] && $dataObject['properties']['pageNumber'] > 1){
+				if($this->rootMdata['pagingInclude'] && $dataObject['properties']['pageNumber'] > 1)
+				{
 					echo '<button class="bfPrevButton'.$this->fadingClass.'" type="submit" onclick="if(ff_currentpage > 1){ff_switchpage(ff_currentpage-1);self.scrollTo(0,0);}populateSummarizers();if(typeof bfRefreshAll != \'undefined\'){bfRefreshAll();}" value="'.htmlentities(trim($this->rootMdata['pagingPrevLabel']), ENT_QUOTES, 'UTF-8').'"><span>'.htmlentities(trim($this->rootMdata['pagingPrevLabel']), ENT_QUOTES, 'UTF-8').'</span></button>'."\n";
 				}
 	
-				if($this->rootMdata['pagingInclude'] && $dataObject['properties']['pageNumber'] < count($this->dataObject['children']) - $last){
+				if($this->rootMdata['pagingInclude'] && $dataObject['properties']['pageNumber'] < count($this->dataObject['children']) - $last)
+				{
 					echo '<button class="bfNextButton'.$this->fadingClass.'" type="submit" onclick="ff_validate_nextpage(this, \'click\');populateSummarizers();if(typeof bfRefreshAll != \'undefined\'){bfRefreshAll();}" value="'.htmlentities(trim($this->rootMdata['pagingNextLabel']), ENT_QUOTES, 'UTF-8').'"><span>'.htmlentities(trim($this->rootMdata['pagingNextLabel']), ENT_QUOTES, 'UTF-8').'</span></button>'."\n";
 				}
 	
-				if($this->rootMdata['cancelInclude'] && $dataObject['properties']['pageNumber'] + 1 > count($this->dataObject['children']) - $last){
+				if($this->rootMdata['cancelInclude'] && $dataObject['properties']['pageNumber'] + 1 > count($this->dataObject['children']) - $last)
+				{
 					echo '<button class="bfCancelButton'.$this->fadingClass.'" type="submit" onclick="ff_resetForm(this, \'click\');"  value="'.htmlentities(trim($this->rootMdata['cancelLabel']), ENT_QUOTES, 'UTF-8').'"><span>'.htmlentities(trim($this->rootMdata['cancelLabel']), ENT_QUOTES, 'UTF-8').'</span></button>'."\n";
 				}
 				
 				$callSubmit = 'ff_validate_submit(this, \'click\')';
-				if( $this->hasFlashUpload ){
+				if($this->hasFlashUpload)
+				{
 					$callSubmit = 'if(typeof bfAjaxObject101 == \'undefined\' && typeof bfReCaptchaLoaded == \'undefined\'){bfDoFlashUpload()}else{ff_validate_submit(this, \'click\')}';
 				}
-				if($this->rootMdata['submitInclude'] && $dataObject['properties']['pageNumber'] + 1 > count($this->dataObject['children']) - $last){
+
+				if($this->rootMdata['submitInclude'] && $dataObject['properties']['pageNumber'] + 1 > count($this->dataObject['children']) - $last)
+				{
 					echo '<button id="bfSubmitButton" class="bfSubmitButton'.$this->fadingClass.'" type="submit" onclick="if(typeof bf_htmltextareainit != \'undefined\'){ bf_htmltextareainit() }if(document.getElementById(\'bfPaymentMethod\')){document.getElementById(\'bfPaymentMethod\').value=\'\';};'.$callSubmit.';" value="'.htmlentities(trim($this->rootMdata['submitLabel']), ENT_QUOTES, 'UTF-8').'"><span>'.htmlentities(trim($this->rootMdata['submitLabel']), ENT_QUOTES, 'UTF-8').'</span></button>'."\n";
 				}
-			
 			}
 		}
 	}
 	
-	public function render(){
-
-				$this->process($this->dataObject);
+	public function render()
+	{
+		$this->process($this->dataObject);
 		echo '</div>'."\n"; // closing last page
-				
-				$this->headers();
-				
-				// we must make sure that everything mootools related is included after moxie and plupload
-				if(isset(JFactory::getDocument()->_scripts)){
-					foreach(JFactory::getDocument()->_scripts As $script_name => $script_value){
-						if(basename($script_name) != 'moxie.js' && basename($script_name) != 'plupload.js' 
-								&& basename($script_name) != 'calendar.js' && basename($script_name) != 'calendar-setup.js'){
-							unset(JFactory::getDocument()->_scripts[$script_name]);
-							JFactory::getDocument()->_scripts[$script_name] = $script_value;
-						}
-					}
+		
+		$this->headers();
+		
+		// we must make sure that everything mootools related is included after moxie and plupload
+		if(isset(JFactory::getDocument()->_scripts))
+		{
+			foreach(JFactory::getDocument()->_scripts As $script_name => $script_value)
+			{
+				if(basename($script_name) != 'moxie.js' && basename($script_name) != 'plupload.js' && basename($script_name) != 'calendar.js' && basename($script_name) != 'calendar-setup.js')
+				{
+					unset(JFactory::getDocument()->_scripts[$script_name]);
+					JFactory::getDocument()->_scripts[$script_name] = $script_value;
 				}
-				// we gonna add a blank to each textarea, since the value is transferred upon submit
-				// requires a different mandatory validation than ff_valuenotempty
-				if(count($this->htmltextareas)){
-					JImport( 'joomla.html.editor' );
-					$editor = JFactory::getEditor();
-					$htmltextarea_out = '';
-					foreach($this->htmltextareas As $htmltextarea){
-						$htmltextarea_out .= 'JQuery("[name=\"'.$htmltextarea.'\"]").val(JQuery.trim(JQuery("[name=\"'.$htmltextarea.'\"]").val())+" ");'."\n";
-						$htmltextarea_out .= 'bf_htmltextareas.push("'.rtrim(trim($editor->getContent($htmltextarea)),';').'")'."\n";
-						$htmltextarea_out .= 'bf_htmltextareanames.push("'.$htmltextarea.'")'."\n";
-					}
-					echo '<script type="text/javascript">
-						  <!--
-						  var bf_htmltextareas     = [];
-						  var bf_htmltextareanames = [];
-						  function bf_htmltextareainit(){
+			}
+		}
+		
+		// we gonna add a blank to each textarea, since the value is transferred upon submit
+		// requires a different mandatory validation than ff_valuenotempty
+		if(count($this->htmltextareas))
+		{
+			JImport( 'joomla.html.editor' );
+			$editor = JFactory::getEditor();
+			$htmltextarea_out = '';
+		
+			foreach($this->htmltextareas As $htmltextarea)
+			{
+				$htmltextarea_out .= 'JQuery("[name=\"'.$htmltextarea.'\"]").val(JQuery.trim(JQuery("[name=\"'.$htmltextarea.'\"]").val())+" ");'."\n";
+				$htmltextarea_out .= 'bf_htmltextareas.push("'.rtrim(trim($editor->getContent($htmltextarea)),';').'")'."\n";
+				$htmltextarea_out .= 'bf_htmltextareanames.push("'.$htmltextarea.'")'."\n";
+			}
+			
+			echo '
+				<script type="text/javascript">
+					<!--
+						var bf_htmltextareas     = [];
+						var bf_htmltextareanames = [];
+						function bf_htmltextareainit()
+						{
 							'.$htmltextarea_out.'
-						  }
-						  //-->
-						  </script>';
-				}
-				
-				if( $this->hasFlashUpload ){
+						}
+					//-->
+				</script>
+			';
+		}
+		
+		if($this->hasFlashUpload)
+		{
 			$tickets = JFactory::getSession()->get('bfFlashUploadTickets', array());
 			$tickets[$this->flashUploadTicket] = array(); // stores file info for later processing
 			JFactory::getSession()->set('bfFlashUploadTickets', $tickets);
 			echo '<input type="hidden" name="bfFlashUploadTicket" value="'.$this->flashUploadTicket.'"/>'."\n";
 			JFactory::getDocument()->addScript(JURI::root(true) . '/components/com_breezingforms/libraries/jquery/center.js');
 			JFactory::getDocument()->addScriptDeclaration('
-						var bfUploaders = [];
-						var bfUploaderErrorElements = [];
-			var bfFlashUploadInterval = null;
-			var bfFlashUploaders = new Array();
-						var bfFlashUploadersLength = 0;
-						function bfRefreshAll(){
-							for( var i = 0; i < bfUploaders.length; i++ ){
-								bfUploaders[i].refresh();
-							}
-						}
-						function bfInitAll(){
-							for( var i = 0; i < bfUploaders.length; i++ ){
-								bfUploaders[i].init();
-							}
-						}
-			function bfDoFlashUpload(){
-								JQuery("#bfSubmitMessage").css("visibility","hidden");
-				JQuery(".bfErrorMessage").html("");
-								JQuery(".bfErrorMessage").css("display","none");
-								for(var i = 0; i < bfUploaderErrorElements.length; i++){
-									JQuery("#"+bfUploaderErrorElements[i]).html("");
+				var bfUploaders = [];
+				var bfUploaderErrorElements = [];
+				var bfFlashUploadInterval = null;
+				var bfFlashUploaders = new Array();
+				var bfFlashUploadersLength = 0;
+				
+				function bfRefreshAll()
+				{
+					for(var i = 0; i < bfUploaders.length; i++)
+					{
+						bfUploaders[i].refresh();
+					}
+				}
+				
+				function bfInitAll()
+				{
+					for(var i = 0; i < bfUploaders.length; i++)
+					{
+						bfUploaders[i].init();
+					}
+				}
+				
+				function bfDoFlashUpload()
+				{
+					JQuery("#bfSubmitMessage").css("visibility","hidden");
+					JQuery(".bfErrorMessage").html("");
+					JQuery(".bfErrorMessage").css("display","none");
+					for(var i = 0; i < bfUploaderErrorElements.length; i++)
+					{
+						JQuery("#"+bfUploaderErrorElements[i]).html("");
+					}
+
+					bfUploaderErrorElements = [];
+					if(ff_validation(0) == "")
+					{
+						try
+						{
+							bfFlashUploadInterval = window.setInterval( bfCheckFlashUploadProgress, 1000 );
+							if(bfFlashUploadersLength > 0)
+							{
+								JQuery("#bfFileQueue").bfcenter(true);
+								JQuery("#bfFileQueue").css("visibility","visible");
+								for(var i = 0; i < bfUploaders.length; i++)
+								{
+									bfUploaders[i].start();
 								}
-								bfUploaderErrorElements = [];
-								if(ff_validation(0) == ""){
-					try{
-											bfFlashUploadInterval = window.setInterval( bfCheckFlashUploadProgress, 1000 );
-											if(bfFlashUploadersLength > 0){
-												JQuery("#bfFileQueue").bfcenter(true);
-												JQuery("#bfFileQueue").css("visibility","visible");
-												for( var i = 0; i < bfUploaders.length; i++ ){
-													bfUploaders[i].start();
-												}
-											}
-					} catch(e){alert(e)}
-				} else {
-					if(typeof bfUseErrorAlerts == "undefined"){
-											alert(error);
-										} else {
-											bfShowErrors(error);
-										}
-										ff_validationFocus("");
+							}
+						}
+						catch(e){
+							alert(e)
+						}
+					}
+					else
+					{
+						if(typeof bfUseErrorAlerts == "undefined")
+						{
+							alert(error);
+						}
+						else
+						{
+							bfShowErrors(error);
+						}
+						ff_validationFocus("");
+					}
 				}
-			}
-			function bfCheckFlashUploadProgress(){
-								if( JQuery("#bfFileQueue").html() == "" ){ // empty indicates that all queues are uploaded or in any way cancelled
-					JQuery("#bfFileQueue").css("visibility","hidden");
-					window.clearInterval( bfFlashUploadInterval );
-										if(typeof bfAjaxObject101 != \'undefined\' || typeof bfReCaptchaLoaded != \'undefined\'){
-											ff_submitForm2();
-										}else{
-											ff_validate_submit(document.getElementById("bfSubmitButton"), "click");
-										}
-					JQuery(".bfFlashFileQueueClass").html("");
-										if(bfFlashUploadersLength > 0){
-											JQuery("#bfSubmitMessage").bfcenter(true);
-											JQuery("#bfSubmitMessage").css("visibility","visible");
-										}
-										
+			
+				function bfCheckFlashUploadProgress()
+				{
+					if(JQuery("#bfFileQueue").html() == "")
+					{
+						// empty indicates that all queues are uploaded or in any way cancelled
+						JQuery("#bfFileQueue").css("visibility","hidden");
+						window.clearInterval( bfFlashUploadInterval );
+						if(typeof bfAjaxObject101 != \'undefined\' || typeof bfReCaptchaLoaded != \'undefined\')
+						{
+							ff_submitForm2();
+						}
+						else
+						{
+							ff_validate_submit(document.getElementById("bfSubmitButton"), "click");
+						}
+					
+						JQuery(".bfFlashFileQueueClass").html("");
+						if(bfFlashUploadersLength > 0)
+						{
+							JQuery("#bfSubmitMessage").bfcenter(true);
+							JQuery("#bfSubmitMessage").css("visibility","visible");
+						}
+					}
 				}
-			}
 			');
+
 			echo "<div style=\"visibility:hidden;\" id=\"bfFileQueue\"></div>";
 			echo "<div style=\"visibility:hidden;\" id=\"bfSubmitMessage\">".BFText::_('COM_BREEZINGFORMS_SUBMIT_MESSAGE')."</div>";
 		}
+		
 		echo '<noscript>Please turn on javascript to submit your data. Thank you!</noscript>'."\n";
-				JFactory::getDocument()->addScriptDeclaration('//-->');
+		JFactory::getDocument()->addScriptDeclaration('//-->');
 	}
 	
-	public function parseToggleFields( $code ){
+	public function parseToggleFields($code)
+	{
 		/*
 			example codes:
 
@@ -2186,7 +2347,7 @@ class BFQuickMode
 			turn on section bla if blub is off
 			turn off element bla if blub is off
 
-						if element opener is off set opener huhuu
+			if element opener is off set opener huhuu
 
 			syntax:
 			ACTION STATE TARGETCATEGORY TARGETNAME if SRCNAME is VALUE 
@@ -2197,19 +2358,39 @@ class BFQuickMode
 		$lines = explode( "\n", $code );
 		$linesCnt = count( $lines );
 		
-		for($i = 0; $i < $linesCnt;$i++){
+		for($i = 0; $i < $linesCnt;$i++)
+		{
 			$tokens = explode( ' ', trim($lines[$i]) );
 			$tokensCnt = count($tokens);
-			if($tokensCnt >= 8){
+
+			if($tokensCnt >= 8)
+			{
 				$state = '';
 				// rebuilding the state as it could be a value containing blanks
-				for($j = 7; $j < $tokensCnt; $j++){
+				for($j = 7; $j < $tokensCnt; $j++)
+				{
 					if($j+1 < $tokensCnt)
+					{
 						$state .= $tokens[$j] . ' ';
+					}
 					else
+					{
 						$state .= $tokens[$j];
+					}
 				}
-				$parsed .= '{ action: "'.$tokens[0].'", state: "'.$tokens[1].'", tCat: "'.$tokens[2].'", tName: "'.$tokens[3].'", statement: "'.$tokens[4].'", sName: "'.$tokens[5].'", condition: "'.$tokens[6].'", value: "'.addslashes($state).'" },';
+
+				$parsed .= '
+					{
+						action: "'.$tokens[0].'",
+						state: "'.$tokens[1].'",
+						tCat: "'.$tokens[2].'",
+						tName: "'.$tokens[3].'",
+						statement: "'.$tokens[4].'",
+						sName: "'.$tokens[5].'",
+						condition: "'.$tokens[6].'",
+						value: "'.addslashes($state).'"
+					},
+				';
 			}
 		}
 		
