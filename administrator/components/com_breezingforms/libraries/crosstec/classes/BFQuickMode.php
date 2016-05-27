@@ -1637,7 +1637,8 @@ class BFQuickMode
 							$bytes = (isset($mdata['flashUploaderBytes']) && is_numeric($mdata['flashUploaderBytes']) && $mdata['flashUploaderBytes'] > 0 ? "max_file_size : '" . intval($mdata['flashUploaderBytes']) ."'," : '');
 							$flashUploader = "
 								<span id=\"bfUploadContainer".$mdata['dbId']."\" class=\"icon_upload_recicla\">
-									<!--<img style=\"cursor: pointer;\" class=\"icon_upload_recicla\" id=\"bfPickFiles".$mdata['dbId']."\" src=\"".$this->uploadImagePath."\" border=\"0\" width=\"".(isset($mdata['flashUploaderWidth']) && is_numeric($mdata['flashUploaderWidth']) && $mdata['flashUploaderWidth'] > 0 ? intval($mdata['flashUploaderWidth']) : '64')."\" height=\"".(isset($mdata['flashUploaderHeight']) && is_numeric($mdata['flashUploaderHeight']) && $mdata['flashUploaderHeight'] > 0 ? intval($mdata['flashUploaderHeight']) : '64')."\"/>-->
+									<span class=\"nome_arquivo_upload\"></span>
+									<span style=\"cursor: pointer; width: 14px; height: 16px;\" class=\"icon_arquivo_upload\" id=\"bfPickFiles".$mdata['dbId']."\"></span>
 								</span>
 								
 								<span id=\"bfUploader".$mdata['bfName']."\"></span>
@@ -1655,8 +1656,8 @@ class BFQuickMode
 											{
 												img.embed(JQuery('#' + file.id+'thumb').get(0),
 												{ 
-													width: 100,
-													height: 60,
+													width: 95,
+													height: 190,
 													crop: true,
 													swf_url: mOxie.resolveUrl('".$base."components/com_breezingforms/libraries/jquery/plupload/Moxie.swf')
 												});
@@ -1698,17 +1699,18 @@ class BFQuickMode
 													Itemid: 0
 												},
 												".$bytes."
-												url : '".$base.(BFJoomlaConfig::get('config.sef') && !BFJoomlaConfig::get('config.sef_rewrite') ? 'index.php/' : '').(JRequest::getCmd('lang','') && BFJoomlaConfig::get('config.sef') ? JRequest::getCmd('lang','') . ( BFJoomlaConfig::get('config.sef_rewrite') ? 'index.php' : '' ) : 'index.php')."',
-												flash_swf_url : '".$base."components/com_breezingforms/libraries/jquery/plupload/Moxie.swf',
-												filters : [
+												url: '".$base.(BFJoomlaConfig::get('config.sef') && !BFJoomlaConfig::get('config.sef_rewrite') ? 'index.php/' : '').(JRequest::getCmd('lang','') && BFJoomlaConfig::get('config.sef') ? JRequest::getCmd('lang','') . ( BFJoomlaConfig::get('config.sef_rewrite') ? 'index.php' : '' ) : 'index.php')."',
+												flash_swf_url: '".$base."components/com_breezingforms/libraries/jquery/plupload/Moxie.swf',
+												filters: [
 												{
-													title : '".addslashes(BFText::_('COM_BREEZINGFORMS_CHOOSE_FILE'))."',
-													extensions : '".$exts."'
+													title: '".addslashes(BFText::_('COM_BREEZINGFORMS_CHOOSE_FILE'))."',
+													extensions: '".$exts."'
 												}]
 											});
 											
 											uploader.bind('FilesAdded', function(up, files)
 											{
+
 												for(var i in files)
 												{
 													if(typeof files[i].id != 'undefined' && files[i].id != null)
@@ -1735,6 +1737,8 @@ class BFQuickMode
 														
 														JQuery('#bfFlashFileQueue".$mdata['dbId']."').append('<div class=\"bfFileQueueItem\" id=\"' + files[i].id + 'queueitem\"><div id=\"' + files[i].id + 'thumb\"></div><div id=\"' + files[i].id + '\"><img id=\"' + files[i].id + 'cancel\" src=\"".$this->cancelImagePath."\" style=\"cursor: pointer; padding-right: 10px;\" border=\"0\"/>' + (iOS ? '' : files[i].name) + ' ' + fsize + '<b id=\"' + files[i].id + 'msg\" style=\"color:red;\"></b></div></div>');
 														
+														JQuery('#bfUploadContainer".$mdata['dbId']." > .nome_arquivo_upload').html(files[i].name);
+														
 														var file_ = files[i];
 														var uploader_ = uploader;
 														var bfUploaders_ = bfUploaders;
@@ -1752,7 +1756,8 @@ class BFQuickMode
 															
 															JQuery('#'+id_+'queue').remove();
 															JQuery('#'+id_+'queueitem').remove();
-															
+															JQuery('#bfUploadContainer".$mdata['dbId']." > .nome_arquivo_upload').html('');
+
 															bfFlashUploadersLength--;
 															for(var i = 0; i < bfUploaders_.length; i++)
 															{
@@ -2174,7 +2179,9 @@ class BFQuickMode
 
 				if($this->rootMdata['submitInclude'] && $dataObject['properties']['pageNumber'] + 1 > count($this->dataObject['children']) - $last)
 				{
+					echo '<p class="bfElemWrap button_send_recicla">';
 					echo '<button id="bfSubmitButton" class="bfSubmitButton'.$this->fadingClass.'" type="submit" onclick="if(typeof bf_htmltextareainit != \'undefined\'){ bf_htmltextareainit() }if(document.getElementById(\'bfPaymentMethod\')){document.getElementById(\'bfPaymentMethod\').value=\'\';};'.$callSubmit.';" value="'.htmlentities(trim($this->rootMdata['submitLabel']), ENT_QUOTES, 'UTF-8').'"><span>'.htmlentities(trim($this->rootMdata['submitLabel']), ENT_QUOTES, 'UTF-8').'</span></button>'."\n";
+					echo '</p>';
 				}
 			}
 		}
