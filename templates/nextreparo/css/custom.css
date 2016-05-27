@@ -3394,6 +3394,7 @@ body.pag_recicla #Reciclagem{
 	border: 1px solid #DDDDDD;
 	border-top: none;
 	border-bottom: none;
+	overflow: hidden;
 }
 
 body.pag_recicla #Reciclagem .bfQuickMode .bfLabelLeft label{
@@ -3401,7 +3402,9 @@ body.pag_recicla #Reciclagem .bfQuickMode .bfLabelLeft label{
 }
 
 body.pag_recicla #Reciclagem > .bfNoSection,
-body.pag_recicla #Reciclagem > .bfNoSection > .bfElemWrap{
+body.pag_recicla #Reciclagem > .bfNoSection > .bfElemWrap,
+body.pag_recicla #Reciclagem + .bfElemWrap,
+body.pag_recicla .button_send_recicla{
 	margin: 0;
 	border-radius: 0px;
 	-moz-border-radius: 0px;
@@ -3410,7 +3413,7 @@ body.pag_recicla #Reciclagem > .bfNoSection > .bfElemWrap{
 
 body.pag_recicla #Reciclagem > .bfNoSection{
 	float: left;
-	height: 50px;
+	height: 58px;
 }
 
 body.pag_recicla #Reciclagem > #NomeRecicla,
@@ -3437,7 +3440,9 @@ body.pag_recicla #Reciclagem > #ImagensRecicla{
 }
 
 body.pag_recicla #Reciclagem > .bfNoSection > .bfElemWrap,
-body.pag_recicla #Reciclagem #ImagensRecicla .bfNoSection > .bfElemWrap{
+body.pag_recicla #Reciclagem #ImagensRecicla .bfNoSection > .bfElemWrap,
+body.pag_recicla #Reciclagem + .bfElemWrap,
+body.pag_recicla .button_send_recicla{
 	padding: 12px 10px !important;
 	border: none !important;
 }
@@ -3458,22 +3463,26 @@ body.pag_recicla #Reciclagem #ImagensRecicla .bfNoSection > .bfElemWrap:hover{
 body.pag_recicla #Reciclagem > .bfNoSection:nth-child(3) > .bfElemWrap,
 body.pag_recicla #Reciclagem > .bfNoSection:nth-child(3) > .bfElemWrap:hover,
 body.pag_recicla #Reciclagem > .bfNoSection:nth-child(4) > .bfElemWrap,
-body.pag_recicla #Reciclagem > .bfNoSection:nth-child(4) > .bfElemWrap:hover{
+body.pag_recicla #Reciclagem > .bfNoSection:nth-child(4) > .bfElemWrap:hover,
+body.pag_recicla #Reciclagem + .bfElemWrap,
+body.pag_recicla .button_send_recicla{
 	background-color: #caf7cf !important;
 }
 
 body.pag_recicla #Reciclagem > .bfNoSection > .bfElemWrap:hover,
-body.pag_recicla #Reciclagem #ImagensRecicla .bfNoSection > .bfElemWrap{
+body.pag_recicla #Reciclagem #ImagensRecicla .bfNoSection > .bfElemWrap,
+body.pag_recicla #Reciclagem + .bfElemWrap,
+body.pag_recicla .button_send_recicla{
 	border: none !important;
 	background-image: none !important;
 }
 
-body.pag_recicla #Reciclagem > .bfNoSection > .bfElemWrap label{
-	width: 125px;
-}
-
-body.pag_recicla #Reciclagem #bfElemWrap55{
-
+body.pag_recicla #Reciclagem > .bfNoSection > .bfElemWrap label,
+body.pag_recicla #Reciclagem > .bfNoSection .bfElemWrap label{
+	width: 80px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
 }
 
 body.pag_recicla #Reciclagem #ImagensRecicla #recicla_img_screen_on p:nth-of-type(2),
@@ -3490,6 +3499,91 @@ body.pag_recicla #Reciclagem #recicla_img_screen_on{
 
 body.pag_recicla #Reciclagem #recicla_img_screen_off{
 	float: right;
+}
+
+body.pag_recicla #Reciclagem .icon_upload_recicla,
+body.pag_recicla #Reciclagem > .bfNoSection .bfElemWrap .ff_elem,
+body.pag_recicla #bfCaptchaEntry{
+	float: left;
+	border: 1px solid #646464;
+	width: 335px !important;
+	height: 35px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 0 7px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body.pag_recicla #Reciclagem + .bfElemWrap{
+	border: 1px solid #DDDDDD !important;
+	border-top: none !important;
+	border-bottom: none !important;
+}
+
+body.pag_recicla #Reciclagem + .bfElemWrap label{
+	width: 330px;
+	text-align: right;
+	font-weight: bold
+}
+
+body.pag_recicla #bfCaptchaEntry{
+	width: 205px !important;
+}
+
+body.pag_recicla #Reciclagem + .bfElemWrap #ff_capimgValue{
+
+}
+
+body.pag_recicla #Reciclagem .icon_upload_recicla > span{
+	position: relative;
+	background: url("/reparosemlagrima/images/icons/icon_upload.jpg") no-repeat transparent;
+	background-size: 14px 16px;
+	float: right;
+	top: 9px;
+	right: 11px;
+}
+
+body.pag_recicla .button_send_recicla{
+	border: 1px solid #DDDDDD !important;
+	border-top: none !important;
+}
+
+body.pag_recicla .button_send_recicla button,
+body.pag_recicla .button_send_recicla button span{
+	background-image: none !important;
+	background-color: #fff !important;
+	background-position: 0 0 !important;
+	padding: 0 !important;
+	float: none !important;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+body.pag_recicla .button_send_recicla button{
+	display: block;
+	margin: 0 auto !important;
+	border: 2px solid #646464 !important;
+	width: 160px;
+	overflow: hidden !important;
+}
+
+body.pag_recicla .button_send_recicla button:hover{
+	border-color: #00AFF3 !important;
+}
+
+body.pag_recicla .button_send_recicla button span{
+	font-size: 20px;
+	line-height: 30px;
+	top: 3px;
+	color: #646464 !important;
+}
+
+body.pag_recicla .button_send_recicla button:hover span{
+	color: #00AFF3 !important;
 }
 /* FIM PÁGINA RECICLA */
 
