@@ -3499,15 +3499,18 @@ body.pag_recicla #Reciclagem #recicla_img_screen_on #Recicla_Imagem_Ilustrativa_
 
 body.pag_recicla #Reciclagem #recicla_img_screen_on{
 	float: left;
+	position: relative;
 }
 
 body.pag_recicla #Reciclagem #recicla_img_screen_off{
 	float: right;
+	position: relative;
 }
 
 body.pag_recicla #Reciclagem .icon_upload_recicla,
 body.pag_recicla #Reciclagem > .bfNoSection .bfElemWrap .ff_elem,
-body.pag_recicla #bfCaptchaEntry{
+body.pag_recicla #bfCaptchaEntry,
+body.pag_recicla input[type="text"].ff_elem{
 	float: left;
 	border: 1px solid #646464;
 	width: 335px !important;
@@ -3583,6 +3586,83 @@ body.pag_recicla #ImagensRecicla .bfFileQueueItem > img{
 	top: 10px;
 	right: 0;
 }
+
+/* IMAGEM UPLOAD RECICLA */
+#ImagensRecicla .bfRequired{
+	display: none;
+}
+.div_file{
+	position: absolute;
+	float: right;
+	width: 363px;
+		top: 12px;
+	left: 100px;
+}
+.div_file > .container_bt_upload{
+	position: absolute;
+	top: 10px;
+	right: 43px;
+	width: 14px;
+	height: 16px;
+	cursor: pointer;
+}
+.div_file .container_bt_upload input[type="button"]{
+	position: relative;
+	background: url("/reparosemlagrima/images/icons/icon_upload.jpg") no-repeat transparent;
+	background-size: 14px 16px;
+	float: right;
+	top: 0;
+	right: 0;
+	width: 14px;
+	height: 16px;
+	border: none;
+}
+.div_file input[type="file"].ff_elem{
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 14px;
+	height: 16px;
+	z-index: 2;
+	cursor: pointer;
+}
+.div_file > .bfRequired{
+	display: inline-block !important;
+}
+.container_img_upload{
+	display: none;
+	position: relative;
+	border: 1px solid #DDDDDD;
+	border-radius: 3px;
+	background-color: #FBFBFB;
+	padding: 10px;
+	width: 315px;
+	margin: 20px auto;
+	text-align: center;
+}
+.container_img_upload > span.name_img_upload{
+	background: url("/reparosemlagrima/media/breezingforms/themes/cancel.png") no-repeat;
+	background-size: 16px 16px;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+.container_img_upload > .img_file{
+	max-height: 190px;
+}
+.container_img_upload > span.size_img_upload{
+	display: block;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+/* FIM - IMAGEM UPLOAD RECICLA */
 
 body.pag_recicla .button_send_recicla{
 	border: 1px solid #DDDDDD !important;
