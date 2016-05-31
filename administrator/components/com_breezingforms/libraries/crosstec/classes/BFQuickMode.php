@@ -462,8 +462,8 @@ class BFQuickMode
 											for(var j = 0; j < radioLength; j++)
 											{
 												JQuery("#" + JQuery("[name=\"ff_nm_"+toggleField.sName+"[]\"]").get(j).id ).unbind("click");
-										 		JQuery("#" + JQuery("[name=\"ff_nm_"+toggleField.sName+"[]\"]").get(j).id ).click(function()
-										 		{
+												JQuery("#" + JQuery("[name=\"ff_nm_"+toggleField.sName+"[]\"]").get(j).id ).click(function()
+												{
 													// NOT O(n^2) since its ony executed on click event!
 													for(var k = 0; k < thisToggleFieldsArray.length; k++)
 													{
@@ -1838,7 +1838,48 @@ class BFQuickMode
 						}
 						else
 						{
-							echo '<input class="ff_elem" '.$tabIndex.$onclick.$onblur.$onchange.$onfocus.$onselect.$readonly.'type="file" name="ff_nm_'.$mdata['bfName'].'[]" id="ff_elem'.$mdata['dbId'].'"/>'."\n";
+							echo '
+								<script>
+									JQuery(document).ready(function(){
+										JQuery(".div_file > .container_bt_upload > .ff_elem").change(function(event){
+											var nome_img = URL.createObjectURL(event.target.files[0]);
+										    JQuery(this).parent().parent().parent().find(".img_file").fadeIn("fast").attr(\'src\',nome_img);
+										    JQuery(this).parent().parent().parent().find(".container_img_upload").show();
+										});
+
+										JQuery(".container_img_upload > span").click(function(event){
+											var val = jQuery(this).attr("alt");
+											var ff_elem = "#ff_elem"+val;
+											var f_falso = "#f_falso"+val;
+											console.log(ff_elem);
+											console.log(f_falso);
+											JQuery(ff_elem).val("");
+											JQuery(f_falso).val("");
+											JQuery(this).parent().hide();
+										});
+									});
+
+									function put_size(t, tam){
+										var kb = Math.round(tam/1024)+"kb";
+										JQuery("#"+t).parent().parent().parent().find(".container_img_upload .size_img_upload").html("("+kb+")");
+									}
+								</script>
+							';
+							echo '
+								<div id="div-file_'.$mdata['bfName'].'" class="div_file">
+									<input class="ff_elem" type="text" id="f_falso'.$mdata['bfName'].'" value="" />
+					                <div class="container_bt_upload">
+					                	<input class="ff_elem" '.$tabIndex.$onclick.$onblur.$onchange.$onfocus.$onselect.$readonly.'type="file" name="ff_nm_'.$mdata['bfName'].'[]" id="ff_elem'.$mdata['dbId'].'" onchange="document.getElementById(\'f_falso'.$mdata['bfName'].'\').value = this.files[0].name; return put_size(this.id, this.files[0].size);">
+					                	<input type="button" value="" />
+					                </div>
+					                <span class="bfRequired">*</span>
+					            </div>
+					            <div class="container_img_upload">
+					            	<span class="name_img_upload" alt="'.$mdata['bfName'].'"></span>
+				                	<img class="img_file" src="" height="190" style="display:none;" />
+				                	<span class="size_img_upload"></span>
+				                </div>
+							';
 						}
 						
 						if($mdata['attachToAdminMail'])
