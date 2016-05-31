@@ -70,7 +70,7 @@ JHtml::_('behavior.tooltip');
 				<?php echo JText::_('COM_KUNENA_SUBSCRIPTIONS'); ?>
 			</dt>
 			<dd style="display: none;">
-				<?php $this->displayCategoriesSubscriptions(); ?>
+				<?php //$this->displayCategoriesSubscriptions(); ?>
 				<?php $this->displaySubscriptions(); ?>
 			</dd>
 		<?php endif; ?>
