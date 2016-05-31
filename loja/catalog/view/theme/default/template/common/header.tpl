@@ -141,6 +141,11 @@
 						<em class="icon_menu icon_menuloja"></em> Loja
 					</a>
 				</li>
+				<li>
+					<a href="/reparosemlagrima/recicla" title="Reciclar">
+						<em class="icon_menu icon_menureciclar"></em> Reciclar
+					</a>
+				</li>
 			</ul>
 		</nav>
 		<?php } ?>
