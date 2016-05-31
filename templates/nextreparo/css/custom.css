@@ -2043,6 +2043,10 @@ body.pag_forum .uk-progress-bar {
 	color: #00AFF3;
 }
 
+#kprofile-tabs .current .kblock .kcontainer table tr:nth-child(2).krow1{
+	border-top: 1px solid #E3E3E3;
+}
+
 #ktop .ktoggler,
 .kheader .ktoggler{
 	display: none !important;
