@@ -19,6 +19,9 @@ include($this['path']->path('layouts:theme.config.php'));
 		//echo "<pre>";
 		//print_r($_SESSION["__default"]);
 		//echo "</pre>";
+		if($_SERVER['REQUEST_URI'] == "/reparosemlagrima/registra-usuario/profile"){
+			header("Location: /reparosemlagrima/forum-reparo/perfil");
+		}
 	?>
 
 	<?php
