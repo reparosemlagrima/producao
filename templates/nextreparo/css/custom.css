@@ -562,12 +562,17 @@ body.pag_busca_tutorial #searchForm.uk-form .uk-margin-toppag_busca_tutorial #li
 }
 
 body.pag_busca_tutorial #tm-content article{
-	border-bottom: 1px solid #DDDDDD;
+	border: 1px solid #DDDDDD;
+	border-top: none;
 	padding: 20px 15px;
 }
 
 body.pag_busca_tutorial #tm-content article:first-of-type{
 	border-top: 1px solid #DDDDDD;
+}
+
+body.pag_busca_tutorial #tm-content .uk-article:nth-of-type(odd){
+	background-color: #e3f6fd;
 }
 
 body.pag_busca_tutorial #tm-content article h1.tm-article-title.uk-article-title{
