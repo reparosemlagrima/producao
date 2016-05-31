@@ -2047,6 +2047,10 @@ body.pag_forum .uk-progress-bar {
 	border-top: 1px solid #E3E3E3;
 }
 
+#kprofile-tabs .current .kblock .kcontainer table{
+	margin-bottom: 10px;
+}
+
 #ktop .ktoggler,
 .kheader .ktoggler{
 	display: none !important;
