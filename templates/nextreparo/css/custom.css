@@ -1093,6 +1093,7 @@ body.pag_home .uk-box-search-home .uk-dropdown.uk-dropdown-flip.uk-dropdown-sear
 #text_page h2, #text_page h3{
 	color: #00AFF3;
 	text-align: center;
+	margin-top: 30px;
 }
 
 #text_page p{
