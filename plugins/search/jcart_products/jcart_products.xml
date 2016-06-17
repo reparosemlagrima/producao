@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="search">
+	<name>jCart Search Plugin</name>
+	<creationDate>April 2011</creationDate>
+	<author>softPHP</author>
+	<authorEmail>support@soft-php.com</authorEmail>
+	<authorUrl>www.soft-php.com</authorUrl>
+	<copyright>Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.4.9.4</version>
+	<description>It gives facility to search jCart products with joomla search box</description>
+	<setting published="1"/>
+	<files>
+		<filename plugin="jcart_products">jcart_products.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params>
+		<param name="search_limit" type="text" size="5" default="50" label="Search Limit" description="Number of Search items to return"/>
+	</params>
+</extension>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>	
+	<params>				 
+		 	<param name="shopSeoKey" type="text" default="shop" label="COM_JCART_SEO_KEY_LABEL" description="COM_JCART_SEO_KEY_DESC"/>   
+			<param name="itemID" type="text" default="" label="COM_JCART_ITEMID_LABEL" description="COM_JCART_ITEMID_DESC"/>
+						
+			<param name="useJoomlaButton" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_USE_JOOMLA_BUTTON_LABEL" description="COM_JCART_USE_JOOMLA_BUTTON_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</param>
+			
+			<param name="dontShowHeaderjCart" type="list" default="0" label="COM_JCART_DONT_SHOW_HEADER_LABEL" description="COM_JCART_DONT_SHOW_HEADER_DESC">
+			   <option value="0">COM_JCART_DONT_SHOW_HEADER_ZERO</option>
+			   <option value="1">COM_JCART_DONT_SHOW_HEADER_ONE</option>
+			   <option value="2">COM_JCART_DONT_SHOW_HEADER_TWO</option>		   
+			</param>  
+			
+			<param name="dontShowFooterjCart" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_DONT_SHOW_FOOTER_LABEL" description="COM_JCART_DONT_SHOW_FOOTER_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</param>  
+			
+			<param name="dontShowMenusjCart" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_JCART_DONT_SHOW_MENUS_LABEL" description="COM_JCART_DONT_SHOW_MENUS_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</param>
+			
+			<param name="dontShowLogin" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_DONT_SHOW_ADMIN_LOGIN_LABEL" description="COM_JCART_DONT_SHOW_ADMIN_LOGIN_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</param>
+			
+			<param name="dontIncludejQueryLibrary" type="list" default="0" label="COM_JCART_DISABLE_JQUERY_JCART_LABEL" description="COM_JCART_DISABLE_JQUERY_JCART_DESC">
+			   <option value="0">COM_JCART_DISABLE_JQUERY_ZERO</option>
+			   <option value="1">COM_JCART_DISABLE_JQUERY_ONE</option>
+			   <option value="2">COM_JCART_DISABLE_JQUERY_TWO</option>
+			   <option value="3">COM_JCART_DISABLE_JQUERY_THREE</option>
+			</param>
+			
+			<param name="usejQueryDollarVariable" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_JCART_USE_JQUERY_VARIABLE_LABEL" description="COM_JCART_USE_JQUERY_VARIABLE_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</param>
+			
+			<param name="enableJoomlaModuleTitle" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_JCART_ENABLE_JOOMLA_MODULE_TITLE_LABEL" description="COM_JCART_ENABLE_JOOMLA_MODULE_TITLE_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</param>
+			
+			<param name="dontShowLeftRightColumn" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_JCART_DONTSHOW_LEFT_RIGHT_COLUMN_LABEL" description="COM_JCART_DONTSHOW_LEFT_RIGHT_COLUMN_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</param>
+			
+			<param name="mainHttpServer" type="text" default="" label="COM_JCART_MAIN_HTTP_SERVER_LABEL" description="COM_JCART_MAIN_HTTP_SERVER_DESC"/>
+			
+			<param name="redirectToMainHttpServer" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_REDIRECT_TO_MAIN_HTTP_LABEL" description="COM_JCART_REDIRECT_TO_MAIN_HTTP_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</param>
+			
+			<param name="changeLangToJoomlaDefault" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_JCART_CHANGE_LANG" description="COM_JCART_CHANGE_LANG_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</param> 
+			
+			<param name="useJoomlaDB" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_JCART_USE_JOOMLADB_LABEL" description="COM_JCART_USE_JOOMLADB_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</param> 
+			
+			<param name="dbuserName" type="text" default="" label="COM_JCART_FIELD_DATABASE_USERNAME_LABEL" description="COM_JCART_FIELD_DATABASE_USERNAME_DESC"/>   
+			<param name="dbuserPassword" type="text" default="" label="COM_JCART_FIELD_DATABASE_PASSWORD_LABEL" description="COM_JCART_FIELD_DATABASE_PASSWORD_DESC"/>   
+			<param name="dbuserHost" type="text" default="" label="COM_JCART_FIELD_DATABASE_HOST_LABEL" description="COM_JCART_FIELD_DATABASE_HOST_DESC"/>  				
+			<param name="dbName" type="text" default="" label="COM_JCART_FIELD_DATABASE_NAME_LABEL" description="COM_JCART_FIELD_DATABASE_NAME_DESC"/>  
+			<param name="dbuserPrefix" type="text" default="" label="COM_JCART_FIELD_DATABASE_PREFIX_LABEL" description="COM_JCART_FIELD_DATABASE_PREFIX_DESC"/>
+			
+			<param name="showLogoHeader" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_SHOW_LOGO_HEADER_LABEL" description="COM_JCART_SHOW_LOGO_HEADER_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</param>
+			
+			<param name="useOcTemplate" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_USE_OC_TEMPLATE_LABEL" description="COM_JCART_USE_OC_TEMPLATE_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</param>
+						
+			<param name="useCustomColor" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_USE_CUSTOM_COLOR_LABEL" description="COM_JCART_USE_CUSTOM_COLOR_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</param>
+						
+			<param name="defaultTxtColor" type="text" class="color" default="000000" label="COM_JCART_DEFAULT_TXTCOLOR_LABEL" description="COM_JCART_DEFAULT_TXTCOLOR_DESC"/>
+			<param name="defaultLinkColor" type="text" class="color" default="00A7E5" label="COM_JCART_DEFAULT_LINKCOLOR_LABEL" description="COM_JCART_DEFAULT_LINKCOLOR_DESC"/>
+			<param name="defaultButtonBoxColor" type="text" class="color" default="00A7E5" label="COM_JCART_DEFAULT_BUTTONBOX_COLOR_LABEL" description="COM_JCART_DEFAULT_BUTTONBOX_COLOR_DESC"/>
+			<param name="defaultButtonHoverColor" type="text" class="color" default="267799" label="COM_JCART_DEFAULT_BUTTON_HOVER_COLOR_LABEL" description="COM_JCART_DEFAULT_BUTTON_HOVER_COLOR_DESC"/>
+			<param name="defaultButtonTextColor" type="text" class="color" default="FFFFFF" label="COM_JCART_DEFAULT_BUTTON_TEXT_COLOR_LABEL" description="COM_JCART_DEFAULT_BUTTON_TEXT_COLOR_DESC"/>
+			<param name="useGradientColor" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_USE_GRADIENT_COLOR_LABEL" description="COM_JCART_USE_GRADIENT_COLOR_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</param>
+	</params>
+	<fields name="params">
+		<fieldset  name="Preferences" description="" label="COM_JCART_PREFERENCES" extension="com_jcart">
+			<field name="shopSeoKey" type="text" default="shop" label="COM_JCART_SEO_KEY_LABEL" description="COM_JCART_SEO_KEY_DESC"/>   
+			<field name="itemID" type="text" default="" label="COM_JCART_ITEMID_LABEL" description="COM_JCART_ITEMID_DESC"/>
+			
+			<field name="useJoomlaButton" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_USE_JOOMLA_BUTTON_LABEL" description="COM_JCART_USE_JOOMLA_BUTTON_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</field>
+			
+			<field name="dontShowHeaderjCart" type="list" default="0" label="COM_JCART_DONT_SHOW_HEADER_LABEL" description="COM_JCART_DONT_SHOW_HEADER_DESC">
+			   <option value="0">COM_JCART_DONT_SHOW_HEADER_ZERO</option>
+			   <option value="1">COM_JCART_DONT_SHOW_HEADER_ONE</option>
+			   <option value="2">COM_JCART_DONT_SHOW_HEADER_TWO</option>	   		   
+			</field>  
+
+			<field name="dontShowFooterjCart" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_DONT_SHOW_FOOTER_LABEL" description="COM_JCART_DONT_SHOW_FOOTER_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</field>  
+
+			<field name="dontShowMenusjCart" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_JCART_DONT_SHOW_MENUS_LABEL" description="COM_JCART_DONT_SHOW_MENUS_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</field>
+
+			<field name="dontShowLogin" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_DONT_SHOW_ADMIN_LOGIN_LABEL" description="COM_JCART_DONT_SHOW_ADMIN_LOGIN_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</field>
+
+			<field name="dontIncludejQueryLibrary" type="list" default="0" label="COM_JCART_DISABLE_JQUERY_JCART_LABEL" description="COM_JCART_DISABLE_JQUERY_JCART_DESC">
+			   <option value="0">COM_JCART_DISABLE_JQUERY_ZERO</option>
+			   <option value="1">COM_JCART_DISABLE_JQUERY_ONE</option>
+			   <option value="2">COM_JCART_DISABLE_JQUERY_TWO</option>
+			   <option value="3">COM_JCART_DISABLE_JQUERY_THREE</option>
+			</field>
+			
+			<field name="usejQueryDollarVariable" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_JCART_USE_JQUERY_VARIABLE_LABEL" description="COM_JCART_USE_JQUERY_VARIABLE_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</field>
+			
+			<field name="enableJoomlaModuleTitle" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_JCART_ENABLE_JOOMLA_MODULE_TITLE_LABEL" description="COM_JCART_ENABLE_JOOMLA_MODULE_TITLE_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</field>
+			
+			<field name="dontShowLeftRightColumn" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_JCART_DONTSHOW_LEFT_RIGHT_COLUMN_LABEL" description="COM_JCART_DONTSHOW_LEFT_RIGHT_COLUMN_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</field>
+			
+			<field name="mainHttpServer" type="text" default="" label="COM_JCART_MAIN_HTTP_SERVER_LABEL" description="COM_JCART_MAIN_HTTP_SERVER_DESC"/>
+			
+			<field name="redirectToMainHttpServer" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_REDIRECT_TO_MAIN_HTTP_LABEL" description="COM_JCART_REDIRECT_TO_MAIN_HTTP_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</field>			
+			
+			<field name="changeLangToJoomlaDefault" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_JCART_CHANGE_LANG" description="COM_JCART_CHANGE_LANG_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</field>
+			
+			<field name="useJoomlaDB" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_JCART_USE_JOOMLADB_LABEL" description="COM_JCART_USE_JOOMLADB_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</field>
+			
+			<field name="dbuserName" type="text" default="" label="COM_JCART_FIELD_DATABASE_USERNAME_LABEL" description="COM_JCART_FIELD_DATABASE_USERNAME_DESC"/>   
+			<field name="dbuserPassword" type="text" default="" label="COM_JCART_FIELD_DATABASE_PASSWORD_LABEL" description="COM_JCART_FIELD_DATABASE_PASSWORD_DESC"/>   
+			<field name="dbuserHost" type="text" default="" label="COM_JCART_FIELD_DATABASE_HOST_LABEL" description="COM_JCART_FIELD_DATABASE_HOST_DESC"/>   	
+			<field name="dbName" type="text" default="" label="COM_JCART_FIELD_DATABASE_NAME_LABEL" description="COM_JCART_FIELD_DATABASE_NAME_DESC"/>  
+			<field name="dbuserPrefix" type="text" default="" label="COM_JCART_FIELD_DATABASE_PREFIX_LABEL" description="COM_JCART_FIELD_DATABASE_PREFIX_DESC"/>
+			
+			<field name="showLogoHeader" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_SHOW_LOGO_HEADER_LABEL" description="COM_JCART_SHOW_LOGO_HEADER_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</field>
+			
+			<field name="useOcTemplate" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_USE_OC_TEMPLATE_LABEL" description="COM_JCART_USE_OC_TEMPLATE_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</field>
+			
+			<field name="useCustomColor" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_USE_CUSTOM_COLOR_LABEL" description="COM_JCART_USE_CUSTOM_COLOR_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</field>
+			
+			<field name="defaultTxtColor" type="text" class="color" default="000000" label="COM_JCART_DEFAULT_TXTCOLOR_LABEL" description="COM_JCART_DEFAULT_TXTCOLOR_DESC"/>
+			<field name="defaultLinkColor" type="text" class="color" default="00A7E5" label="COM_JCART_DEFAULT_LINKCOLOR_LABEL" description="COM_JCART_DEFAULT_LINKCOLOR_DESC"/>
+			<field name="defaultButtonBoxColor" type="text" class="color" default="00A7E5" label="COM_JCART_DEFAULT_BUTTONBOX_COLOR_LABEL" description="COM_JCART_DEFAULT_BUTTONBOX_COLOR_DESC"/>
+			<field name="defaultButtonHoverColor" type="text" class="color" default="267799" label="COM_JCART_DEFAULT_BUTTON_HOVER_COLOR_LABEL" description="COM_JCART_DEFAULT_BUTTON_HOVER_COLOR_DESC"/>
+			<field name="defaultButtonTextColor" type="text" class="color" default="FFFFFF" label="COM_JCART_DEFAULT_BUTTON_TEXT_COLOR_LABEL" description="COM_JCART_DEFAULT_BUTTON_TEXT_COLOR_DESC"/>
+			<field name="useGradientColor" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_JCART_USE_GRADIENT_COLOR_LABEL" description="COM_JCART_USE_GRADIENT_COLOR_DESC">
+			   <option value="1">Yes</option>
+			   <option value="0">No</option>		   
+			</field>
+		</fieldset>
+	</fields>
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL"	description="JCONFIG_PERMISSIONS_DESC">
+		<field	name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" class="inputbox" validate="rules" filter="rules" component="com_jcart" section="component"/>
+	</fieldset>	
+</config>

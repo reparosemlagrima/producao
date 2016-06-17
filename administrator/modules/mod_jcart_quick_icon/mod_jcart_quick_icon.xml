@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.0"
+	client="administrator" method="upgrade">
+	<name>jCart Quick Icons</name>
+	<author>softPHP</author>
+	<creationDate>Nov 2005</creationDate>
+	<copyright>Copyright (C) 2009 - 2012 softPHP. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@soft-php.com</authorEmail>
+	<authorUrl>www.soft-php.com</authorUrl>
+	<version>2.5.0</version>
+	<description>jCart Quick Icons</description>	
+	<files>
+		<filename module="mod_jcart_quick_icon">mod_jcart_quick_icon.php</filename>
+		<filename>index.html</filename>	
+		<folder>images</folder>
+	</files>
+	<languages>
+			<language tag="en-GB">en-GB.mod_jcart_quick_icon.ini</language>			
+	</languages>	
+</extension>

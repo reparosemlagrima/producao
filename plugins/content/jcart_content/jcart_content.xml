@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content">
+	<name>jCart Content Plugin</name>
+	<author>softPHP</author>
+	<creationDate>May 2012</creationDate>
+	<copyright>Copyright (C) 2009 - 2012 softPHP. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorUrl>www.soft-php.com</authorUrl>
+	<version>2.5.0</version>
+	<description>jCart content plugin</description>
+	<setting published="1"/>
+	<files>
+		<filename plugin="jcart_content">jcart_content.php</filename>
+		<filename>product.tpl</filename>
+		<filename>index.html</filename>
+	</files>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="showProductTitlePlugin" type="list" default="1" label="Show Product Title" description="Show Product Title">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="showProductDescriptionPlugin" type="list" default="1" label="Show Product Description" description="Show Product Description">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="showProductImagePlugin" type="list" default="1" label="Show Product Image" description="Show Product Image">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="imgHeightPlguin" type="text" default="150" label="Image Height" description="Image Height" />
+				<field name="imgWidthPlguin" type="text" default="150" label="Image Width" description="Image Width" />
+				<field name="showProductPricePlugin" type="list" default="1" label="Show Product Price" description="Show Product Price">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="showProductRatingPlugin" type="list" default="0" label="Show Product Rating" description="Show Product Rating">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="showAddtoCartButtonPlugin" type="list" default="1" label="Show AddToCart Button" description="Show AddToCart Button">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+		</fields>		
+	</config>	
+</extension>

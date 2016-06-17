@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JCART_CATEGORIES">
+		<message>COM_JCART_CATEGORIES</message>
+	</layout>
+	<state>
+		<name>COM_JCART_CATEGORY</name>
+		<description>COM_JCART_CATEGORY_DESC</description>
+		<params>
+			<param name="category_path" type="text" default="" label="COM_JCART_CATEGORY_PATH" description="COM_JCART_CATEGORY_PATH"/>				
+		</params>
+		<fields name="params">
+			<!-- Basic options. -->
+			<fieldset name="basic">	
+				<field name="category_path" type="text" default="" description="COM_JCART_CATEGORY_PATH" label="COM_JCART_CATEGORY_PATH"	/>
+			</fieldset>
+		</fields>			
+	</state>
+</metadata>

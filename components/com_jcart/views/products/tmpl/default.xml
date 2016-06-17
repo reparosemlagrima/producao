@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JCART_PRODUCTS">
+		<message>COM_JCART_PRODUCTS</message>
+	</layout>
+	<state>
+		<name>COM_JCART_PRODUCT</name>
+		<description>COM_JCART_PRODUCT_DESC</description>
+		<params>
+			<param name="product_id" type="text" default="" label="COM_JCART_PRODUCT_ID" description="COM_JCART_PRODUCT_ID"/>				
+		</params>
+		<fields name="params">
+			<!-- Basic options. -->
+			<fieldset name="basic">	
+				<field name="product_id" type="text" default="" description="COM_JCART_PRODUCT_ID" label="COM_JCART_PRODUCT_ID"	/>
+			</fieldset>
+		</fields>			
+	</state>
+</metadata>

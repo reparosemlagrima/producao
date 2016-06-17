@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.0" group="system" method="upgrade">
+	<name>jCart ColorPicker Plugin</name>
+	<author>softPHP</author>
+	<creationDate>May 2012</creationDate>
+	<copyright>Copyright (C) 2009 - 2012 softPHP. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorUrl>www.soft-php.com</authorUrl>
+	<version>2.5.0</version>
+	<description>jCart color Picker plugin</description>
+	<setting published="1"/>
+	<files>
+		<filename plugin="jcart_colorpicker">jcart_colorpicker.php</filename>
+		<filename>index.html</filename>
+		<folder>jscolor</folder>
+	</files>
+</extension>

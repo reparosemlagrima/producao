@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="authentication">
+	<name>jCart User Authentication</name>
+	<creationDate>April 2011</creationDate>
+	<author>softPHP</author>
+	<authorEmail>support@soft-php.com</authorEmail>
+	<copyright>Copyright (C) 2009 - 2012 softPHP. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorUrl>www.soft-php.com</authorUrl>
+	<version>2.5.0</version>
+	<description>jCart User Authentication</description>
+	<setting published="1"/>
+	<files>
+		<filename plugin="jcart_authentication">jcart_authentication.php</filename>
+		<filename>index.html</filename>
+	</files>	
+</extension>

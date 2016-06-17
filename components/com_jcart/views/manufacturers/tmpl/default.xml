@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JCART_MANUFACTURERS">
+		<message>COM_JCART_MANUFACTURERS</message>
+	</layout>
+	<state>
+		<name>COM_JCART_MANUFACTURER</name>
+		<description>COM_JCART_MANUFACTURER_DESC</description>
+		<params>
+			<param name="manufacturer_id" type="text" default="" label="COM_JCART_MANUFACTURER_ID" description="COM_JCART_MANUFACTURER_ID"/>				
+		</params>
+		<fields name="params">
+			<!-- Basic options. -->
+			<fieldset name="basic">	
+				<field name="manufacturer_id" type="text" default="" description="COM_JCART_MANUFACTURER_ID" label="COM_JCART_MANUFACTURER_ID"	/>
+			</fieldset>
+		</fields>			
+	</state>
+</metadata>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>jCart all in one module</name>
+	<author>softPHP</author>
+	<creationDate>July 2012</creationDate>
+	<authorEmail>support@soft-php.com</authorEmail>
+	<authorUrl>http://www.soft-php.com</authorUrl>
+	<copyright>Copyright (C) 2009 - 2014 softPHP. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>2.0.0</version>
+	<!--  The date for the actual version release -->
+	<releaseDate>2014-10-22</releaseDate>
+	<description>jCart All in one module-You can use jCart existing modules by selecting from the list</description>
+	<files>
+		<filename module="mod_jcart_allinonemodule">mod_jcart_allinonemodule.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="extension_id" type="list" default="new" label="Select Module" description="Select an module from the list.Make sure the module is enabled in jCart Modules Section.if you want to use a new extension of OpenCart which is not listed here,then use our mod_jcart_custom_module">
+					<option value="latest">Latest</option>
+					<option value="latest_multiple_columns">Latest(Multiple Columns)</option>
+					<option value="category">Categories</option>
+					<option value="shopping_cart">Shopping Cart</option>
+					<option value="cart">Ajax Shopping Cart</option>
+					<option value="special">Specials</option>
+					<option value="special_multiple_columns">Specials(Multiple Columns)</option>
+					<option value="bestseller">Best Sellers</option>
+					<option value="bestseller_multiple_columns">Best Sellers(Multiple Columns)</option>
+					<option value="account">My Account</option>
+					<option value="featured">Featured</option>
+					<option value="featured_multiple_columns">Featured(Multiple Columns)</option>
+					<option value="google_hangouts">Google Hangouts</option>
+					<option value="information">Information</option>
+					<option value="header">Header</option>
+					<option value="footer">Footer</option>
+					<option value="language">Language</option>
+					<option value="currency">Currency</option>
+					<option value="store">Store</option>
+					<option value="affiliate">Affiliate</option>
+					<option value="slideshow">Slide Show</option>
+					<option value="banner">Banner</option>
+					<option value="carousel">Carousel</option>
+					<option value="pp_login">Paypal Login</option>
+					<option value="filter">Filter</option>
+					<option value="search">Search</option>
+				</field>
+				<field name="use_jcart_stylesheet" type="list" default="1" label="Use jCart Stylesheet" description="Select whether to use jCart Stylesheet or not">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />				
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+					<option value="1">Use global</option>
+					<option value="0">No caching</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+			</fieldset>
+		</fields>
+	</config>	
+</extension>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>New Custom Module</name>
+	<author>softPHP</author>
+	<creationDate>October 2009</creationDate>
+	<authorEmail>support@soft-php.com</authorEmail>
+	<authorUrl>http://www.soft-php.com</authorUrl>
+	<copyright>Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.4.9.3</version>
+	<!--  The date for the actual version release -->
+	<releaseDate>2011-05-13</releaseDate>
+	<description>New Custom Module-You can use new extensions(modules) of jcart using this module by providing extension id(e.g. login etc.)</description>
+	<files>
+		<filename module="mod_jcart_custom_module">mod_jcart_custom_module.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+				<field name="extension_id" type="text" default="login" label="Extension ID" description="Provide Extension ID(e.g. login,account etc)"/>
+				<field name="use_jcart_stylesheet" type="list" default="1" label="Use jCart Stylesheet" description="Select whether to use jCart Stylesheet or not">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+					<option value="1">Use global</option>
+					<option value="0">No caching</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

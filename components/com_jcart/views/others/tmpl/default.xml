@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JCART_OTHERS">
+		<message>COM_JCART_OTHERS</message>
+	</layout>
+	<state>
+		<name>COM_JCART_OTHERS</name>
+		<description>COM_JCART_OTHERS_DESC</description>
+		<params>
+			<param name="route" type="text" default="" label="COM_JCART_ROUTE" description="COM_JCART_ROUTE_DESC"/>				
+		</params>
+		<fields name="params">
+			<!-- Basic options. -->
+			<fieldset name="basic">	
+				<field name="route" type="text" default="" description="COM_JCART_ROUTE_DESC" label="COM_JCART_ROUTE"	/>
+			</fieldset>
+		</fields>			
+	</state>
+</metadata>

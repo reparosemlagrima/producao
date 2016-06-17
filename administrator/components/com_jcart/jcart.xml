@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>jcart</name>
+	<author>softPHP</author>
+	<creationDate>October 2009</creationDate>
+	<authorEmail>support@soft-php.com</authorEmail>
+	<authorUrl>http://www.soft-php.com</authorUrl>
+	<copyright>Copyright (C) 2009 - 2016 softPHP. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>2.2.0.0</version>
+	<!--  The date for the actual version release -->
+	<releaseDate>2016-04-08</releaseDate>
+	
+	<description>
+		<![CDATA[<p>
+		<br />jCart is a Joomla  component for OpenCart 2.2.0.0
+		<br /><a href="index.php?option=com_jcart">jCart Admin Panel</a>(User:admin Password:admin)<br/>
+		<a target="_blank" href="../index.php?option=com_jcart">jCart Frontend</a>
+		</p>]]>
+	</description> 
+	
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<scriptfile>script.php</scriptfile>
+	<install> 
+		<!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">install.sql</file>
+		</sql>
+	</install>
+	<!-- Site Main File Copy Section-->
+	<files>
+		<filename>index.html</filename>
+		<filename>jcart.php</filename>
+		<!-- admin folder contents -->
+		<folder>admin</folder>		
+		<!-- others folder contents and files -->
+		<folder>catalog</folder>
+		<folder>views</folder>
+		<folder>image</folder>
+		<folder>system</folder>
+		<filename>config.php</filename>
+		<filename>index.php</filename>
+		<filename>index_mod.php</filename>
+		<filename>php.ini</filename>
+		<filename>router.php</filename>
+	</files>
+	
+	<administration>
+
+		<!-- Administration Menu Section -->
+		<menu img="components/com_jcart/images/jcart.png">jCart</menu>
+
+		<submenu>
+			<menu link="option=com_jcart&amp;route=common/dashboard" img="../components/com_jcart/admin/view/image/home.png"
+				alt="Dashboard">COM_JCART_DASHBOARD</menu>
+			<menu link="option=com_jcart&amp;route=catalog/category" img="../components/com_jcart/admin/view/image/category.png"
+				alt="Categories">COM_JCART_CATEGORIES</menu>	
+			<menu link="option=com_jcart&amp;route=catalog/product" img="../components/com_jcart/admin/view/image/product.png"
+				alt="Products">COM_JCART_PRODUCTS</menu>
+			<menu link="option=com_jcart&amp;route=extension/module" img="../components/com_jcart/admin/view/image/module.png"
+				alt="Modules">COM_JCART_MODULES</menu>
+			<menu link="option=com_jcart&amp;route=extension/shipping" img="../components/com_jcart/admin/view/image/shipping.png"
+				alt="Shipping">COM_JCART_SHIPPING</menu>
+			<menu link="option=com_jcart&amp;route=extension/payment" img="../components/com_jcart/admin/view/image/payment.png"
+				alt="Payments">COM_JCART_PAYMENTS</menu>
+			<menu link="option=com_jcart&amp;route=sale/order" img="../components/com_jcart/admin/view/image/order.png"
+				alt="Orders">COM_JCART_ORDERS</menu>
+			<menu link="option=com_jcart&amp;route=sale/customer" img="../components/com_jcart/admin/view/image/customer.png"
+				alt="Customers">COM_JCART_CUSTOMERS</menu>
+			<menu link="option=com_jcart&amp;route=setting/store" img="../components/com_jcart/admin/view/image/setting.png"
+				alt="Settings">COM_JCART_SETTINGS</menu>							
+		</submenu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /administration/ in the package -->
+		<files folder="administration">
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+			<filename>install.db.php</filename>
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<filename>admin.jcart.php</filename>		 	
+			<filename>jcart.php</filename>	
+			<filename>images/index.html</filename>	
+			<filename>images/jcart.png</filename>	
+			<filename>images/loading.gif</filename>
+			<!-- <folder>views</folder>	-->	
+		</files>		
+
+		<!-- Administration Main Media File Copy Section -->
+		<media folder="administration" destination="com_jcart/images">
+			<filename>images/jcart.png</filename>
+		</media>
+
+		<languages>
+			<language tag="en-GB">en-GB.com_jcart.ini</language>
+			<language tag="en-GB">en-GB.com_jcart.menu.ini</language>
+			<language tag="en-GB">en-GB.com_jcart.sys.ini</language>
+		</languages>
+	</administration>
+	
+</extension>
