@@ -97,6 +97,7 @@ include($this['path']->path('layouts:theme.config.php'));
 		$url = $_SERVER["REQUEST_URI"];
 		$pieces = explode("/", $url);
 		$page_var = $pieces[2];
+		@$sublink = $pieces[3];
 		$pieces2 = explode("?", $page_var);
 		$page_var2 = $pieces2[0];
 
@@ -119,6 +120,18 @@ include($this['path']->path('layouts:theme.config.php'));
 		var jQuery = jQuery.noConflict();
 		jQuery(window).load(function() {
 			jQuery(".uk-breadcrumb li:nth-child(2)").show();
+		});
+	</script>
+	<?php
+		endif;
+
+		if(@$page_var2 != NULL && @$page_var2 == "loja-home" && @$sublink == ""):
+	?>
+	<script type="text/javascript">
+		var jQuery = jQuery.noConflict();
+		jQuery(window).load(function() {
+			jQuery("body").addClass("loja_home");
+			jQuery("#tm-top-a").show();
 		});
 	</script>
 	<?php
