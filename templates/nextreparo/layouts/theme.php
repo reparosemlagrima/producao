@@ -190,6 +190,10 @@ include($this['path']->path('layouts:theme.config.php'));
 						<?php if ($this['widgets']->count('menu')) : ?>
 							<?php $class_login = ($session_name_user == NULL) ? "" : "loggedin"; ?>
 							<div class="tm-nav uk-hidden-small <?php echo $class_login; ?>" id="menu_topo">
+								<div id="wishlist_menu_topo">
+									<a href="/reparosemlagrima/loja-home/account/wishlist" id="wishlist-total" title="Lista de desejos"></a>
+								</div>
+
 								<div id="loja_menu_topo">
 									<a href="/reparosemlagrima/loja/index.php?route=checkout/cart" title="Loja"></a>
 								</div>
@@ -223,6 +227,10 @@ include($this['path']->path('layouts:theme.config.php'));
 									endif;
 								?>
 							</div>
+						<?php endif; ?>
+						
+						<?php if ($this['widgets']->count('cart-loja')) : ?>
+							<?php echo $this['widgets']->render('cart-loja'); ?>
 						<?php endif; ?>
 
 						<?php if ($this['widgets']->count('offcanvas')) : ?>
