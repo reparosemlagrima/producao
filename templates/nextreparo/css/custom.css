@@ -1109,7 +1109,8 @@ body.pag_home .uk-box-search-home .uk-dropdown.uk-dropdown-flip.uk-dropdown-sear
 body.pag_tutoriais > section:first-of-type,
 body.pag_forum > section:first-of-type,
 body.pag_perfil_forum > section:first-of-type,
-body.pag_busca_tutorial > section:first-of-type{
+body.pag_busca_tutorial > section:first-of-type,
+body.pag_loja > section:first-of-type{
 	margin: 20px auto 30px;
 	padding: 15px;
 	width: 95% !important;
@@ -1120,7 +1121,8 @@ body.pag_busca_tutorial > section:first-of-type{
 	box-sizing: border-box;
 }
 
-body.pag_perfil_forum > section:first-of-type{
+body.pag_perfil_forum > section:first-of-type,
+body.pag_loja > section:first-of-type{
 	max-width: 1140px;
 }
 
@@ -3253,6 +3255,96 @@ body.pag_registra #tm-content div:nth-child(3){
 	text-transform: none;
 	font-size: 16px;
 
+}
+
+/* LOJA */
+body.pag_loja > section:first-of-type #tm-main .uk-container{
+	padding: 0;
+}
+
+body.pag_loja > section:first-of-type #tm-main .uk-container .uk-grid{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+body.pag_loja > section:first-of-type #tm-main .uk-container .uk-grid .uk-width-medium-1-1{
+	padding-left: 0;
+}
+
+body.pag_loja #tm-main .tm-main #tm-content .row{
+	width: 100%;
+}
+
+body.pag_loja #tm-main .body-oc .header-oc,
+body.pag_loja #tm-main .body-oc #top-oc{
+	display: none;
+}
+
+nav.tm-navbar-container .cart_loja{
+	position: absolute;
+	right: 8px;
+	bottom: 12px;
+}
+
+nav.tm-navbar-container .cart_loja #cart > button{
+	height: 24px;
+	padding: 3px 16px;
+	background-color: #00AFF3;
+	background-image: -webkit-linear-gradient(#00AFF3, #00AFF3);
+	background-image: -o-linear-gradient(#00AFF3, #00AFF3);
+	background-image: linear-gradient(#00AFF3, #00AFF3);
+	border-color: #00AFF3;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgb(0, 175, 243);
+}
+
+nav.tm-navbar-container .cart_loja #cart > button:hover{
+	color: #fff;
+}
+
+nav.tm-navbar-container .cart_loja #cart > button .fa-shopping-cart{
+	height: 18px;
+	width: 17px;
+	background-image: url("/reparosemlagrima/images/icons/icons_menu2.png");
+	background-position: -116px -17px;
+}
+
+#wishlist_menu_topo{
+	position: absolute;
+	height: 33px;
+	width: 33px;
+	top: -13px;
+	left: -80px;
+	transition: border-color 0.2s ease 0s;
+	border: 1px solid transparent;
+	border-radius: 22px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#wishlist_menu_topo:hover{
+	border: 1px solid #00AFF3;
+}
+
+#menu_topo #wishlist-total{
+	display: block;
+	height: 18px;
+	width: 17px;
+	background-image: url("/reparosemlagrima/images/icons/icons_menu2.png");
+	background-position: -100px 26px;
+	top: 10px;
+	left: 9px;
+	position: relative;
+}
+
+body.pag_loja nav.tm-navbar-container .cart_loja #cart > ul{
+	top: 22px !important;
+	padding: 10px;
+	background-color: #fff;
+}
+
+#menu_topo .fa-heart{
+	color: #0271C0;
 }
 
 /* ARTIGO */
