@@ -3309,6 +3309,18 @@ nav.tm-navbar-container .cart_loja #cart > button .fa-shopping-cart{
 	background-position: -116px -17px;
 }
 
+body.pag_loja nav.tm-navbar-container .cart_loja #cart > ul table{
+	border: 1px solid #ddd;
+}
+
+body.pag_loja nav.tm-navbar-container .cart_loja #cart > ul div{
+	padding: 0;
+}
+
+body.pag_loja nav.tm-navbar-container .cart_loja #cart > ul div p{
+	margin: 0;
+}
+
 #wishlist_menu_topo{
 	position: absolute;
 	height: 33px;
