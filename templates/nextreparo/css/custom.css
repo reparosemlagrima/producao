@@ -1135,10 +1135,10 @@ body.pag_busca_tutorial #tm-top-a{
 	padding: 0;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb,
-body.pag_forum > section:first-of-type .breadcrumb,
-body.pag_perfil_forum > section:first-of-type .breadcrumb,
-body.pag_busca_tutorial > section:first-of-type .breadcrumb{
+body.pag_tutoriais > section:first-of-type .uk-breadcrumb,
+body.pag_forum > section:first-of-type .uk-breadcrumb,
+body.pag_perfil_forum > section:first-of-type .uk-breadcrumb,
+body.pag_busca_tutorial > section:first-of-type .uk-breadcrumb{
 	position: relative;
 	margin: 0 0 20px 0;
 	padding: 0;
@@ -1146,31 +1146,30 @@ body.pag_busca_tutorial > section:first-of-type .breadcrumb{
 	min-height: 30px;
 	background-color: #f5f5f5;
 	border-radius: 4px;
+	letter-spacing: 0;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb > h3, body.pag_tutoriais > section:first-of-type .breadcrumb > div > p,
-body.pag_forum > section:first-of-type .breadcrumb > h3, body.pag_forum > section:first-of-type .breadcrumb > div > p,
-body.pag_perfil_forum > section:first-of-type .breadcrumb > h3, body.pag_forum > section:first-of-type .breadcrumb > div > p,
-body.pag_busca_tutorial > section:first-of-type .breadcrumb > h3, body.pag_forum > section:first-of-type .breadcrumb > div > p{
+body.pag_tutoriais > section:first-of-type .uk-breadcrumb > h3, body.pag_tutoriais > section:first-of-type .uk-breadcrumb > div > p,
+body.pag_forum > section:first-of-type .uk-breadcrumb > h3, body.pag_forum > section:first-of-type .uk-breadcrumb > div > p,
+body.pag_perfil_forum > section:first-of-type .uk-breadcrumb > h3, body.pag_forum > section:first-of-type .uk-breadcrumb > div > p,
+body.pag_busca_tutorial > section:first-of-type .uk-breadcrumb > h3, body.pag_forum > section:first-of-type .uk-breadcrumb > div > p{
 	display: none;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb,
-body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb,
-body.pag_perfil_forum > section:first-of-type .breadcrumb .uk-breadcrumb,
-body.pag_busca_tutorial > section:first-of-type .breadcrumb .uk-breadcrumb{
+body.pag_tutoriais > section:first-of-type .uk-breadcrumb,
+body.pag_forum > section:first-of-type .uk-breadcrumb,
+body.pag_perfil_forum > section:first-of-type .uk-breadcrumb,
+body.pag_busca_tutorial > section:first-of-type .uk-breadcrumb{
 	overflow: hidden;
 	list-style: none;
-	margin: 0;
-	padding: 0;
 	text-transform: none;
 	letter-spacing: 0;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li,
-body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li,
-body.pag_perfil_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li,
-body.pag_busca_tutorial > section:first-of-type .breadcrumb .uk-breadcrumb > li{
+body.pag_tutoriais > section:first-of-type .uk-breadcrumb > li,
+body.pag_forum > section:first-of-type .uk-breadcrumb > li,
+body.pag_perfil_forum > section:first-of-type .uk-breadcrumb > li,
+body.pag_busca_tutorial > section:first-of-type .uk-breadcrumb > li{
 	float: left;
 	display: inline-block;
 	top: 4px;
@@ -1181,22 +1180,34 @@ body.pag_busca_tutorial > section:first-of-type .breadcrumb .uk-breadcrumb > li{
 	color: #00AFF3;
 	font-weight: 400;
 	font-size: 14px;
+	text-transform: capitalize;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li + li:before,
-body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li + li:before,
-body.pag_perfil_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li + li:before,
-body.pag_busca_tutorial > section:first-of-type .breadcrumb .uk-breadcrumb > li + li:before{
+body.pag_tutoriais > section:first-of-type .uk-breadcrumb > li:nth-child(1),
+body.pag_forum > section:first-of-type .uk-breadcrumb > li:nth-child(1),
+body.pag_perfil_forum > section:first-of-type .uk-breadcrumb > li:nth-child(1),
+body.pag_busca_tutorial > section:first-of-type .uk-breadcrumb > li:nth-child(1),
+body.pag_tutoriais > section:first-of-type .uk-breadcrumb > li:nth-child(2),
+body.pag_forum > section:first-of-type .uk-breadcrumb > li:nth-child(2),
+body.pag_perfil_forum > section:first-of-type .uk-breadcrumb > li:nth-child(2),
+body.pag_busca_tutorial > section:first-of-type .uk-breadcrumb > li:nth-child(2){
+	display: none;
+}
+
+body.pag_tutoriais > section:first-of-type .uk-breadcrumb > li + li:before,
+body.pag_forum > section:first-of-type .uk-breadcrumb > li + li:before,
+body.pag_perfil_forum > section:first-of-type .uk-breadcrumb > li + li:before,
+body.pag_busca_tutorial > section:first-of-type .uk-breadcrumb > li + li:before{
 	content: '';
 	padding: 0;
 	margin: 0;
 	color: transparent;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li:after,
-body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li:after,
-body.pag_perfil_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li:after,
-body.pag_busca_tutorial > section:first-of-type .breadcrumb .uk-breadcrumb > li:after{
+body.pag_tutoriais > section:first-of-type .uk-breadcrumb > li:after,
+body.pag_forum > section:first-of-type .uk-breadcrumb > li:after,
+body.pag_perfil_forum > section:first-of-type .uk-breadcrumb > li:after,
+body.pag_busca_tutorial > section:first-of-type .uk-breadcrumb > li:after{
 	content: '';
 	display: block;
 	position: absolute;
@@ -1212,33 +1223,33 @@ body.pag_busca_tutorial > section:first-of-type .breadcrumb .uk-breadcrumb > li:
 	transform: rotate(-45deg);
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li:last-of-type:after,
-body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li:last-of-type:after,
-body.pag_perfil_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li:last-of-type:after,
-body.pag_busca_tutorial > section:first-of-type .breadcrumb .uk-breadcrumb > li:last-of-type:after{
+body.pag_tutoriais > section:first-of-type .uk-breadcrumb > li:last-of-type:after,
+body.pag_forum > section:first-of-type .uk-breadcrumb > li:last-of-type:after,
+body.pag_perfil_forum > section:first-of-type .uk-breadcrumb > li:last-of-type:after,
+body.pag_busca_tutorial > section:first-of-type .uk-breadcrumb > li:last-of-type:after{
 	opacity: 0;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li a,
-body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li a,
-body.pag_perfil_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li a,
-body.pag_busca_tutorial > section:first-of-type .breadcrumb .uk-breadcrumb > li a{
+body.pag_tutoriais > section:first-of-type .uk-breadcrumb > li a,
+body.pag_forum > section:first-of-type .uk-breadcrumb > li a,
+body.pag_perfil_forum > section:first-of-type .uk-breadcrumb > li a,
+body.pag_busca_tutorial > section:first-of-type .uk-breadcrumb > li a{
 	color: #00AFF3;
 	font-weight: 400;
 	font-size: 14px;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li i,
-body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li i,
-body.pag_perfil_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li i,
-body.pag_busca_tutorial > section:first-of-type .breadcrumb .uk-breadcrumb > li i{
+body.pag_tutoriais > section:first-of-type .uk-breadcrumb > li i,
+body.pag_forum > section:first-of-type .uk-breadcrumb > li i,
+body.pag_perfil_forum > section:first-of-type .uk-breadcrumb > li i,
+body.pag_busca_tutorial > section:first-of-type .uk-breadcrumb > li i{
 	font-size: 15px;
 }
 
-body.pag_tutoriais > section:first-of-type .breadcrumb .uk-breadcrumb > li  i.fa-home,
-body.pag_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li  i.fa-home,
-body.pag_perfil_forum > section:first-of-type .breadcrumb .uk-breadcrumb > li  i.fa-home,
-body.pag_busca_tutorial > section:first-of-type .breadcrumb .uk-breadcrumb > li  i.fa-home{
+body.pag_tutoriais > section:first-of-type .uk-breadcrumb > li  i.fa-home,
+body.pag_forum > section:first-of-type .uk-breadcrumb > li  i.fa-home,
+body.pag_perfil_forum > section:first-of-type .uk-breadcrumb > li  i.fa-home,
+body.pag_busca_tutorial > section:first-of-type .uk-breadcrumb > li  i.fa-home{
 	margin-top: 3px;
 }
 
@@ -3357,6 +3368,66 @@ body.pag_loja nav.tm-navbar-container .cart_loja #cart > ul{
 
 #menu_topo .fa-heart{
 	color: #0271C0;
+}
+
+#tm-main .body-oc .container-oc .breadcrumb-oc{
+	overflow: hidden;
+	position: relative;
+	margin: 0 15px 20px 15px;
+	padding: 0;
+	min-height: 32px;
+	border: 1px solid #ddd;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+}
+
+#tm-main .body-oc .container-oc .breadcrumb-oc > li{
+	float: left;
+	display: inline-block;
+	top: 4px;
+	text-shadow: 0 1px 0 #FFF;
+	padding: 0 15px;
+	position: relative;
+	white-space: nowrap;
+	color: #00AFF3;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+#tm-main .body-oc .container-oc .breadcrumb-oc > li + li:before {
+    content: '';
+    padding: 0;
+    margin: 0;
+    color: transparent;
+}
+
+#tm-main .body-oc .container-oc .breadcrumb-oc > li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: -1px;
+    width: 13px;
+    height: 13px;
+    border-right: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#tm-main .body-oc .container-oc .breadcrumb-oc > li:last-of-type:after{
+	opacity: 0;
+}
+
+#tm-main .body-oc .container-oc .breadcrumb-oc li a{
+	position: relative;
+	color: #00AFF3;
+}
+
+#tm-main .body-oc .container-oc .breadcrumb-oc li a i{
+	font-size: 15px;
 }
 
 /* ARTIGO */
