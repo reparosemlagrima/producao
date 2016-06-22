@@ -3450,6 +3450,35 @@ body.pag_loja nav.tm-navbar-container .cart_loja #cart > ul{
 	font-size: 15px;
 }
 
+body.pag_loja #tm-main .body-oc a{
+	color: #00AFF3;
+}
+
+body.pag_loja #tm-main .body-oc a:hover{
+	color: #18A0DC;
+}
+
+body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .product-thumb .button-group{
+	border-top: 1px solid #DDDDDD;
+	background-color: #18A0DC;
+}
+
+body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .product-thumb .button-group button{
+	background-color: #00AFF3;
+	background-image: linear-gradient(to bottom, #00AFF3, #00AFF3);
+	color: #EFEFEF;
+}
+
+body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .product-thumb .button-group button:hover{
+	color: #00AFF3;
+	background-color: #EFEFEF;
+	background-image: linear-gradient(to bottom, #EFEFEF, #EFEFEF);
+}
+
+body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .product-thumb .button-group button + button {
+	border-left: 1px solid #18A0DC;
+}
+
 /* ARTIGO */
 
 .tm-article-content > p{
