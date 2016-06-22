@@ -3479,6 +3479,10 @@ body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .produ
 	border-left: 1px solid #18A0DC;
 }
 
+body.loja_home #carousel0{
+	display: none !important;
+}
+
 /* ARTIGO */
 
 .tm-article-content > p{
