@@ -125,13 +125,24 @@ include($this['path']->path('layouts:theme.config.php'));
 	<?php
 		endif;
 
-		if(@$page_var2 != NULL && @$page_var2 == "loja-home" && @$sublink == ""):
+		if(@$page_var2 != NULL && @$page_var2 == "loja-home" && (@$sublink == "" || @$sublink == "home")):
 	?>
 	<script type="text/javascript">
 		var jQuery = jQuery.noConflict();
 		jQuery(window).load(function() {
 			jQuery("body").addClass("loja_home");
 			jQuery("#tm-top-a").show();
+		});
+	</script>
+	<?php
+		endif;
+
+		if(@$page_var2 != NULL && @$page_var2 == "loja-home"):
+	?>
+	<script type="text/javascript">
+		var jQuery = jQuery.noConflict();
+		jQuery(window).load(function() {
+			jQuery("body.pag_loja").find(".list-group").prepend("<a style='font-size: 16px; line-height: 20px; padding-top: 9px; display: block; font-weight: bold; cursor: default;'>NAVEGAR CATEGORIAS</a>");
 		});
 	</script>
 	<?php
