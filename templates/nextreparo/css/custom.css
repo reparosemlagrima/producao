@@ -3463,6 +3463,12 @@ body.pag_loja #tm-main .body-oc a:hover{
 	color: #18A0DC;
 }
 
+body.pag_loja #tm-main .body-oc a.btn-danger,
+body.pag_loja #tm-main .body-oc a.btn-danger:hover,
+body.pag_loja #tm-main .body-oc a.btn-primary{
+	color: #fff;
+}
+
 body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .product-thumb .button-group{
 	border-top: 1px solid #DDDDDD;
 	background-color: #18A0DC;
@@ -3488,7 +3494,7 @@ body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .produ
     max-width: 1108px;
     width: 100%;
     position: relative;
-    left: 0px;
+    left: 5px;
     padding: 0;
     margin: 0;
 }
@@ -3559,8 +3565,44 @@ body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .produ
 	max-width: 100%;
 }
 
+body.pag_loja .body-oc .list-group{
+	background-color: #F5F5F5;
+	margin-left: -10px;
+}
+
+body.pag_loja .body-oc .list-group a{
+	color: #565758 !important;
+	border: none;
+}
+
+body.pag_loja .body-oc .list-group a:nth-child(1):hover{
+	color: #565758 !important;
+}
+
+body.pag_loja .body-oc .list-group a.active, .body-oc .list-group a.active:hover{
+	color: #00AFF3 !important;
+	background: #F5F5F5 !important;
+	border: none;
+}
+
+body.pag_loja  .body-oc .list-group a:hover {
+	color: #18A0DC !important;
+}
+
+body.pag_loja h1,
+body.pag_loja h2,
+body.pag_loja h3,
+body.pag_loja p{
+	margin-top: 0;
+	margin-left: 10px;
+}
+
 body.pag_loja #carousel0{
 	display: none !important;
+}
+
+body.pag_loja .table.table-bordered{
+
 }
 
 /* ARTIGO */
