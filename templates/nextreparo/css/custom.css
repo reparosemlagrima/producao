@@ -3652,6 +3652,37 @@ body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout.produc
 	border-right: 1px solid #18A0DC;
 }
 
+body.pag_loja #content-oc .img_product_thumb{
+	border: 1px solid #00AFF3;
+	margin-bottom: 25px;
+	-webkit-border-bottom-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+body.pag_loja #content-oc .img_product_thumb > img{
+	width: 100%;
+}
+
+body.pag_loja #content-oc .img_product_thumb a.thumbnail{
+	padding: 20px 0;
+}
+
+body.pag_loja #content-oc .image-additional a.thumbnail{
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+}
+
+body.pag_loja #content-oc .img_product_thumb a.thumbnail.active,
+body.pag_loja #content-oc .img_product_thumb a.thumbnail:focus,
+body.pag_loja #content-oc .img_product_thumb a.thumbnail:hover{
+	border-color: #00AFF3;
+}
+
 /* ARTIGO */
 
 .tm-article-content > p{
