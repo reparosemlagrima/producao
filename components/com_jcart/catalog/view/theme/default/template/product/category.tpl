@@ -124,7 +124,7 @@
 							<h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
 						</div>
 						<div class="product_price_button">
-							<div>
+							<div class="price_right">
 								<?php if ($product['price']) { ?>
 								<p class="price">
 									<?php
