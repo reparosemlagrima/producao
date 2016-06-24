@@ -3478,7 +3478,6 @@ body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .produ
 	background-color: #00AFF3;
 	background-image: linear-gradient(to bottom, #00AFF3, #00AFF3);
 	color: #EFEFEF;
-	width: 100%;
 }
 
 body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .product-thumb .button-group button:hover{
@@ -3489,15 +3488,6 @@ body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .produ
 
 body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .product-thumb .button-group button + button {
 	border-left: none;
-	width: 50%;
-}
-
-body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .product-thumb .button-group button:nth-child(1){
-	border-bottom: 1px solid #18A0DC;
-}
-
-body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .product-thumb .button-group button:nth-child(2){
-	border-right: 1px solid #18A0DC;
 }
 
 #categorias_loja {
@@ -3619,7 +3609,7 @@ body.pag_loja .product-layout.product-list .product_price_button{
 	padding-top: 15px;
 }
 
-body.pag_loja .product-layout.product-list .product_price_button > div.not(".caption"){
+body.pag_loja .product-layout.product-list .product_price_button > .price_right{
 	float: right;
 	width: 140px;
 	margin: 5px 20px 0 15px;
@@ -3639,6 +3629,27 @@ body.pag_loja .product-layout.product-grid .caption_grid{
 
 body.pag_loja .product-layout.product-grid .caption{
 	display: none;
+}
+
+body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout.product-list .product-thumb .button-group button{
+	width: 100%;
+}
+
+body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout.product-list .product-thumb .button-group button + button {
+	width: 50%;
+}
+
+body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout.product-list .product-thumb .button-group button:nth-child(1){
+	border-bottom: 1px solid #18A0DC;
+}
+
+body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout.product-list .product-thumb .button-group button:nth-child(2){
+	border-right: 1px solid #18A0DC;
+}
+
+body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout.product-grid .product-thumb .button-group button:nth-child(2){
+	border-left: 1px solid #18A0DC;
+	border-right: 1px solid #18A0DC;
 }
 
 /* ARTIGO */
