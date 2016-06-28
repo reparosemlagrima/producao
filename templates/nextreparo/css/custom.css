@@ -627,13 +627,9 @@ body.pag_busca_tutorial #tm-content article p.tm-article-meta.uk-article-meta{
 	display: block;
 }
 
-#menu_topo.loggedin #loja_menu_topo {
-	left: 35px;
-}
-
 #menu_topo.loggedin .uk-navbar-nav{
     position: relative;
-    right: 45px;
+    right: 6px;
 }
 
 #menu_topo.loggedin #profile_user img.kavatar{
@@ -650,7 +646,7 @@ body.pag_busca_tutorial #tm-content article p.tm-article-meta.uk-article-meta{
 	position: absolute;
 	white-space: nowrap;
 	top: -5px;
-	right: 130px;
+	right: 160px;
 }
 
 #menu_topo.loggedin #form_logout{
@@ -3681,6 +3677,71 @@ body.pag_loja #content-oc .img_product_thumb a.thumbnail.active,
 body.pag_loja #content-oc .img_product_thumb a.thumbnail:focus,
 body.pag_loja #content-oc .img_product_thumb a.thumbnail:hover{
 	border-color: #00AFF3;
+}
+
+body.pag_loja .body-oc #content-oc ul.thumbnails li.image-additional{
+	margin-bottom: 0;
+}
+
+body.pag_loja .container-oc #content-oc .nav.nav-oc.nav-tabs{
+	margin-bottom: 0;
+}
+
+body.pag_loja #tm-main .body-oc .container-oc #content-oc h1,
+body.pag_loja #tm-main .body-oc .container-oc #content-oc h2{
+	margin-left: 0;
+}
+
+body.pag_loja #tm-main .body-oc .container-oc #content-oc .btn-group{
+	float: right;
+}
+
+body.pag_loja .container-oc #content-oc .tab-content{
+	border: 1px solid #ddd;
+	border-top: none;
+	padding: 20px 15px 10px 10px;
+	-webkit-border-bottom-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+body.pag_loja .body-oc .btn-primary-oc {
+	background-color: #00AFF3;
+	background-image: linear-gradient(to bottom, #00AEF3, #18A0DC);
+	border-color: #1f90bb #1f90bb #18A0DC;
+}
+
+body.pag_loja .body-oc .btn-primary-oc:hover,
+body.pag_loja .body-oc .btn-primary-oc:active,
+body.pag_loja .body-oc .btn-primary-oc.active,
+body.pag_loja .body-oc .btn-primary-oc.disabled,
+body.pag_loja .body-oc .btn-primary-oc[disabled] {
+	background-color: #18A0DC;
+	background-image: linear-gradient(to bottom, #18A0DC, #18A0DC);
+}
+
+body.pag_loja .body-oc .alert-info {
+	background-color: #D9F3FE;
+}
+
+/* FRETE LOJA */
+#modal-shipping{
+	background: rgba(0, 0, 0, 0.4);
+}
+
+#modal-shipping .modal-dialog{
+	background: white;
+	width: 70%;
+	margin: 0 auto;
+	top: 179px;
+	position: relative;
+}
+
+#modal-shipping .modal-dialog div.radio{
+	margin-left: 10px;
 }
 
 /* ARTIGO */
