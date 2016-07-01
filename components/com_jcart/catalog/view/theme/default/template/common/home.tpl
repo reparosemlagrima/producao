@@ -18,11 +18,11 @@
 		<div id="content" class="<?php echo $class; ?>">
 			<div class="boss-category-image" id="categorias_loja">
 				<div class="main-category" style="width: 0px;">
-					<a href="/reparosemlagrima/loja-home/ferramentas" title="Ferramentas">
+					<a href="/reparosemlagrima/loja-reparo/ferramentas" title="Ferramentas">
 						<img src="/reparosemlagrima/loja/image/catalog/ferramentas-1.jpg" alt="Ferramentas">
 						<img src="/reparosemlagrima/loja/image/catalog/ferramentas-2.jpg" alt="Ferramentas">
 					</a>
-					<a href="/reparosemlagrima/loja-home/pecas" title="Peças">
+					<a href="/reparosemlagrima/loja-reparo/pecas" title="Peças">
 						<img src="/reparosemlagrima/loja/image/catalog/pecas-1.jpg" alt="Peças">
 						<img src="/reparosemlagrima/loja/image/catalog/pecas-2.jpg" alt="Peças">
 					</a>
