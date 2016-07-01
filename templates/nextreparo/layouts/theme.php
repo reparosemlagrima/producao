@@ -507,6 +507,16 @@ include($this['path']->path('layouts:theme.config.php'));
 				<?php endif; ?>
 			<?php endif; ?>
 
+			<?php if ($this['widgets']->count('top-e')) : ?>
+				<div id="top-e" class="top-e">
+					<div class="uk-container uk-container-center">
+						
+							
+						<?php echo $this['widgets']->render('top-e'); ?>
+					</div>
+				</div>
+			<?php endif; ?>
+
 			<?php if ($this['widgets']->count('top-f')) : ?>
 				<div id="top-f" class="top-f">
 					<div class="uk-container uk-container-center">
