@@ -2483,6 +2483,7 @@ body.pag_forum .uk-progress-bar {
 	border-color: #00AFF3;
 	border-radius: 0;
 	max-width: 898px;
+	height: 320px;
 }
 
 #Kunena #postform .line_form_topic #kbbcode-image-options {
@@ -3465,6 +3466,19 @@ body.pag_loja #tm-main .body-oc a.btn-primary{
 	color: #fff;
 }
 
+body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .product-thumb{
+	border-bottom: 1px solid #ddd;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+
+body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .product-thumb:last-of-type{
+	margin-bottom: 30px;
+}
+
 body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout .product-thumb .button-group{
 	border-top: 1px solid #DDDDDD;
 	background-color: #18A0DC;
@@ -3659,7 +3673,7 @@ body.pag_loja #content-oc .img_product_thumb{
 	border-bottom-left-radius: 4px;
 }
 
-body.pag_loja #content-oc .img_product_thumb > img{
+body.pag_loja #content-oc .img_product_thumb a.garantia > img{
 	width: 100%;
 }
 
