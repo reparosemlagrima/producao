@@ -1078,6 +1078,41 @@ body.pag_home .uk-box-search-home .uk-dropdown.uk-dropdown-flip.uk-dropdown-sear
 body.pag_home .uk-box-search-home .uk-dropdown.uk-dropdown-flip.uk-dropdown-search .uk-nav-search.uk-autocomplete-results li.uk-search-moreresults.uk-active a{
 	background-color: #06688E;
 }
+
+.loja_home{
+	margin-top: 30px;
+}
+
+.loja_home > h3{
+	text-align: left;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 30px;
+}
+
+.loja_home .body-oc .product-thumb{
+	border: none;
+}
+
+.loja_home .body-oc .product-thumb .caption{
+	min-height: 80px;
+}
+
+.loja_home .body-oc .product-thumb .caption .price{
+	text-align: center;
+}
+
+.loja_home .body-oc .product-thumb .caption h4{
+	background: #00AFF3;
+	text-align: center;
+	padding: 15px 0;
+	text-transform: uppercase;
+}
+
+.loja_home .body-oc .product-thumb .caption h4 a{
+	color: #fff;
+}
 	
 /* Tablet and bigger */
 @media (min-width: 768px) {
