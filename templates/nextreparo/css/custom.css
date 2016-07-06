@@ -38,6 +38,22 @@ br.clear{
 	clear: both;
 }
 
+legend{
+	color: #00AFF3;
+}
+.btn{
+	background-color: #00AFF3;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+}
+.uk-button-danger{
+	background-color: #EA6673 !important;
+}
+.uk-button-danger:hover, .uk-button-danger:focus {
+    background-color: #d53949 !important;
+}
+
 .controls > .radio:first-child,
 .controls > .checkbox:first-child,
 .controls > .radio, .controls > .checkbox{
@@ -1368,7 +1384,8 @@ body.pag_tutoriais > section:first-of-type #tm-top-b .tm-top-b .uk-width-1-1{
 }
 
 body.pag_tutoriais > section:first-of-type #tm-top-b > .uk-container,
-body.pag_tutoriais > section:first-of-type #tm-main > .uk-container{
+body.pag_tutoriais > section:first-of-type #tm-main > .uk-container,
+body.pag_forum > section:first-of-type #tm-main > .uk-container{
 	padding: 0;
 }
 
@@ -3355,7 +3372,7 @@ body.pag_registra #tm-content div:nth-child(3){
 	border: none;
 	text-transform: none;
 	font-size: 16px;
-
+	background-color: transparent;
 }
 
 /* LOJA */
