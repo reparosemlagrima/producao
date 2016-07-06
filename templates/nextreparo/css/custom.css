@@ -2842,9 +2842,10 @@ body.pag_perfil_forum #Kunena dl.tabs dt.open, #Kunena dl.tabs dt{
 	border-radius: 100px;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
-	max-width: 170px !important;
-	max-height: 170px !important;
+	max-width: 175px !important;
+	max-height: 175px !important;
 	margin-top: 10px;
+	border: 5px solid #fff;
 }
 
 #Kunena #kprofile #kprofile-leftcol #kprofile-stats .kicon-button.kbuttononline-yes,
