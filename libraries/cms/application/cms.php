@@ -868,14 +868,14 @@ class JApplicationCms extends JApplicationWeb
 			$results = $this->triggerEvent('onUserLogin', array((array) $response, $options));
 
 			//Opencart
-			require_once JPATH_REG . '/loja/system/library/db.php';
-			require_once JPATH_REG . '/loja/system/library/db/mysqli.php';
-			require_once JPATH_REG . '/loja/system/helper/general.php';
-			$db = new DB('mysqli', 'localhost', 'root', '', 'bd_loja_rslagrimas', 3306);
-			$user_id = $_SESSION['__default']['user']->id;
-			$query = $db->query("SELECT customer_id FROM `" . 'oc_' . "customer` WHERE user_id = " . $user_id);
-			$customer_id = $query->row['customer_id'];
-			setcookie('customer_id',$customer_id,null,'/reparosemlagrima/loja/',$_SERVER['HTTP_HOST']);
+			//require_once JPATH_REG . '/loja/system/library/db.php';
+			//require_once JPATH_REG . '/loja/system/library/db/mysqli.php';
+			//require_once JPATH_REG . '/loja/system/helper/general.php';
+			//$db = new DB('mysqli', 'localhost', 'root', '', 'bd_loja_rslagrimas', 3306);
+			//$user_id = $_SESSION['__default']['user']->id;
+			//$query = $db->query("SELECT customer_id FROM `" . 'oc_' . "customer` WHERE user_id = " . $user_id);
+			//$customer_id = $query->row['customer_id'];
+			//setcookie('customer_id',$customer_id,null,'/reparosemlagrima/loja/',$_SERVER['HTTP_HOST']);
 
 			/*
 			 * If any of the user plugins did not successfully complete the login routine
