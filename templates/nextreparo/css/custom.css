@@ -54,6 +54,43 @@ legend{
     background-color: #d53949 !important;
 }
 
+#Kunena .kicon-profile{
+	width: 20px;
+	height: 20px;
+}
+
+#Kunena .kicon-profile.kicon-profile-location{
+	background-image: url('/reparosemlagrima/images/icons/location.png');
+	background-position: 0 0;
+	background-size: 20px;
+	top: -1px;
+	position: relative;
+}
+
+#Kunena .kicon-profile.kicon-profile-gender-female{
+	background-image: url('/reparosemlagrima/images/icons/gender-2.png');
+	background-position: 0 0;
+	background-size: 20px;
+	top: -1px;
+	position: relative;
+}
+
+#Kunena .kicon-profile.kicon-profile-gender-male{
+	background-image: url('/reparosemlagrima/images/icons/gender.png');
+	background-position: 0 0;
+	background-size: 20px;
+	top: -1px;
+	position: relative;
+}
+
+#Kunena .kicon-profile.kicon-profile-birthdate{
+	background-image: url('/reparosemlagrima/images/icons/birthday.png');
+	background-position: 0 0;
+	background-size: 20px;
+	top: -1px;
+	position: relative;
+}
+
 .controls > .radio:first-child,
 .controls > .checkbox:first-child,
 .controls > .radio, .controls > .checkbox{
