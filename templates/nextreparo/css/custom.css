@@ -3429,6 +3429,10 @@ nav.tm-navbar-container .cart_loja #cart > button .fa-shopping-cart{
 	background-position: -116px -17px;
 }
 
+nav.tm-navbar-container .cart_loja #cart > button .fa-shopping-cart:before{
+	content:"";
+}
+
 body:not(.pag_loja) nav.tm-navbar-container .cart_loja #cart > button #cart-total{
 	font-size: 12px;
 	top: -5px;
