@@ -3476,6 +3476,11 @@ body:not(.pag_loja) nav.tm-navbar-container .cart_loja #cart > button #cart-tota
 	position: relative;
 }
 
+body.pag_loja nav.tm-navbar-container .cart_loja #cart > button #cart-total{
+	position: relative;
+	top: -5px;
+}
+
 body.pag_loja nav.tm-navbar-container .cart_loja #cart > ul table{
 	border: 1px solid #ddd;
 }
