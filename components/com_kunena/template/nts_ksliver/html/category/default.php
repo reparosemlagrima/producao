@@ -11,8 +11,8 @@
 defined ( '_JEXEC' ) or die ();
 ?>
 <?php
-	if($_SERVER['REQUEST_URI'] == "/reparosemlagrima/forum-reparo/forum-reparo"):
-		header("location: /reparosemlagrima/forum-reparo");
+	if($_SERVER['REQUEST_URI'] == "/forum-reparo/forum-reparo"):
+		header("location: /forum-reparo");
 	endif;
 
 	$this->displayCategories();
