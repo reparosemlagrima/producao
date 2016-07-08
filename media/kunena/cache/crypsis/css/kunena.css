@@ -738,7 +738,7 @@
   line-height: 18px;
 }
 #kunena.layout #kattachments a {
-  background: url("/reparosemlagrima/media/kunena/iconsets/editor/default/default.png") no-repeat -216px -18px;
+  background: url("/media/kunena/iconsets/editor/default/default.png") no-repeat -216px -18px;
   display: inline-block;
   height: 18px;
   width: 18px;
@@ -764,92 +764,92 @@
   min-height: 150px;
 }
 #kunena.layout .markItUp .boldbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/bold.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/bold.png);
 }
 #kunena.layout .markItUp .italicbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/italic.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/italic.png);
 }
 #kunena.layout .markItUp .underlinebutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/underline.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/underline.png);
 }
 #kunena.layout .markItUp .strokebutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/stroke.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/stroke.png);
 }
 #kunena.layout .markItUp .supscriptbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/supscript.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/supscript.png);
 }
 #kunena.layout .markItUp .subscriptbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/subscript.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/subscript.png);
 }
 #kunena.layout .markItUp .sizebutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/fonts.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/fonts.png);
 }
 #kunena.layout .markItUp .colors a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/colors.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/colors.png);
 }
 #kunena.layout .markItUp .bulletedlistbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/list-bullet.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/list-bullet.png);
 }
 #kunena.layout .markItUp .numericlistbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/list-numeric.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/list-numeric.png);
 }
 #kunena.layout .markItUp .listitembutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/list-item.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/list-item.png);
 }
 #kunena.layout .markItUp .alignleftbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/text_align_left.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/text_align_left.png);
 }
 #kunena.layout .markItUp .centerbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/text_align_center.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/text_align_center.png);
 }
 #kunena.layout .markItUp .alignrightbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/text_align_right.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/text_align_right.png);
 }
 #kunena.layout .markItUp .quotebutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/quotes.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/quotes.png);
 }
 #kunena.layout .markItUp .codemodalboxbutton a,
 #kunena.layout .markItUp .codesimplebutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/code.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/code.png);
 }
 #kunena.layout .markItUp .tablebutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/table.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/table.png);
 }
 #kunena.layout .markItUp .spoilerbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/spoiler.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/spoiler.png);
 }
 #kunena.layout .markItUp .hiddentextbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/hidden.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/hidden.png);
 }
 #kunena.layout .markItUp .picturebutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/picture.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/picture.png);
 }
 #kunena.layout .markItUp .linkbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/link.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/link.png);
 }
 #kunena.layout .markItUp .ebaybutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/ebay.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/ebay.png);
 }
 #kunena.layout .markItUp .videodropdownbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/film.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/film.png);
 }
 #kunena.layout .markItUp .mapbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/map.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/map.png);
 }
 #kunena.layout .markItUp .pollbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/poll.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/poll.png);
 }
 #kunena.layout .markItUp .tweetbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/tweet.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/tweet.png);
 }
 #kunena.layout .markItUp .hrbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/hr.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/hr.png);
 }
 #kunena.layout .markItUp .emoticonsbutton a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/emoticon.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/emoticon.png);
 }
 #kunena.layout .markItUp .clean a {
-  background-image: url(/reparosemlagrima/components/com_kunena/template/crypsis/media/images/clean.png);
+  background-image: url(/components/com_kunena/template/crypsis/media/images/clean.png);
 }
 #kunena.layout .markItUp .colors ul {
   width: auto;
@@ -1164,7 +1164,7 @@
   display: inline-block;
   vertical-align: text-top;
   margin-right: 3px;
-  background: url("/reparosemlagrima/components/com_kunena/template/crypsis/media/../media/iconsets/profile/default/default.png") no-repeat;
+  background: url("/components/com_kunena/template/crypsis/media/../media/iconsets/profile/default/default.png") no-repeat;
 }
 #kunena.layout .kicon-profile-skype-off {
   background-position: 0 -920px;
@@ -1717,7 +1717,7 @@
 #kunena.layout .ic-play {
   display: inline-block;
   vertical-align: middle;
-  background: transparent url(/reparosemlagrima/components/com_kunena/template/crypsis/media/../media/images/sprite.png) no-repeat 0 0;
+  background: transparent url(/components/com_kunena/template/crypsis/media/../media/images/sprite.png) no-repeat 0 0;
   background-size: 177px 241px;
 }
 #kunena.layout .verified {
