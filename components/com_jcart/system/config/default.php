@@ -18,9 +18,9 @@ $_['language_autoload']    = array('en-gb');
 $_['db_autostart']         = false;
 $_['db_type']              = 'mysqli'; // mpdo, mssql, mysql, mysqli or postgre
 $_['db_hostname']          = 'localhost';
-$_['db_username']          = 'root';
-$_['db_password']          = '';
-$_['db_database']          = '';
+$_['db_username']          = 'reparo';
+$_['db_password']          = 'reparo20160210';
+$_['db_database']          = 'bd_repsemlagrimas';
 $_['db_port']              = 3306;
 
 // Mail
