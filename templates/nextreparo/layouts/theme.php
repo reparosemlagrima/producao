@@ -19,8 +19,8 @@ include($this['path']->path('layouts:theme.config.php'));
 		//echo "<pre>";
 		//print_r($_SESSION["__default"]);
 		//echo "</pre>";
-		if($_SERVER['REQUEST_URI'] == "/reparosemlagrima/registra-usuario/profile"){
-			header("Location: /reparosemlagrima/forum-reparo/perfil");
+		if($_SERVER['REQUEST_URI'] == "/registra-usuario/profile"){
+			header("Location: /forum-reparo/perfil");
 		}
 	?>
 
@@ -31,7 +31,7 @@ include($this['path']->path('layouts:theme.config.php'));
 				var jQuery = jQuery.noConflict();
 				jQuery(window).load(function() {
 					if(jQuery(".pag_home").length){
-						jQuery(".menu_principal .perfil_home").html('<a href="/reparosemlagrima/forum-reparo/user">Perfil</a>');
+						jQuery(".menu_principal .perfil_home").html('<a href="/forum-reparo/user">Perfil</a>');
 						jQuery(".menu_principal .acessar_logout").html('<form action="<?php echo KunenaRoute::_('index.php?option=com_kunena') ?>" method="post" name="login" id="form_logout"><input type="hidden" name="view" value="user" /><input type="hidden" name="task" value="logout" /><input type="hidden" name="<?php echo JFactory::getSession()->getFormToken()?>" value="1" /><input type="submit" name="submit" class="kbutton" value="Sair" /></form>');	
 					}
 				});
@@ -227,11 +227,11 @@ include($this['path']->path('layouts:theme.config.php'));
 							<?php $class_login = ($session_name_user == NULL) ? "" : "loggedin"; ?>
 							<div class="tm-nav uk-hidden-small <?php echo $class_login; ?>" id="menu_topo">
 								<div id="wishlist_menu_topo">
-									<a href="/reparosemlagrima/loja-home/account/wishlist" id="wishlist-total" title="Lista de desejos"></a>
+									<a href="/loja-home/account/wishlist" id="wishlist-total" title="Lista de desejos"></a>
 								</div>
 
 								<div id="loja_menu_topo">
-									<a href="/reparosemlagrima/loja/index.php?route=checkout/cart" title="Loja"></a>
+									<a href="/loja-home/index.php?route=checkout/cart" title="Loja"></a>
 								</div>
 
 								<?php
@@ -248,7 +248,7 @@ include($this['path']->path('layouts:theme.config.php'));
 									</div>
 									<ul class="uk-navbar-nav uk-hidden-small">
 										<li>
-											<a href="/reparosemlagrima/forum-reparo/user">Perfil</a>
+											<a href="/forum-reparo/user">Perfil</a>
 										</li>
 										<li>
 											<form action="<?php echo KunenaRoute::_('index.php?option=com_kunena') ?>" method="post" name="login" id="form_logout">
@@ -553,7 +553,7 @@ include($this['path']->path('layouts:theme.config.php'));
 			</div>
 		<?php endif; ?>
 
-		<a href="/reparosemlagrima/recicla" title="Recicla" id="banner_recicla" target="_blank"></a>
+		<a href="/recicla" title="Recicla" id="banner_recicla" target="_blank"></a>
 		
 		<?php if ($this['widgets']->count('bottom-b')) : ?>
 			<!--
@@ -629,11 +629,11 @@ include($this['path']->path('layouts:theme.config.php'));
 					<li>Acesse:</li>
 					<li>|</li>
 					<li>
-						<a href="/reparosemlagrima/politica-de-privacidade" title="">Política de Privacidade</a>
+						<a href="/politica-de-privacidade" title="">Política de Privacidade</a>
 					</li>
 					<li>|</li>
 					<li>
-						<a href="/reparosemlagrima/como-anunciar" title="">Como anunciar</a>
+						<a href="/como-anunciar" title="">Como anunciar</a>
 					</li>
 					<li>|</li>
 					<li>
