@@ -15,15 +15,15 @@
 		switch ($page_var):
 			case "loja":
 				$name_page = "Loja";
-				$url_page = "/reparosemlagrima/loja/";
+				$url_page = "/loja-home/";
 			break;
 			case "forum-reparo":
 				$name_page = "Fórum";
-				$url_page = "/reparosemlagrima/forum-reparo";
+				$url_page = "/forum-reparo";
 			break;
 			case "tutorial-interno":
 				$name_page = "Tutorial";
-				$url_page = "/reparosemlagrima/tutorial-interno";
+				$url_page = "/tutorial-interno";
 			break;
 		endswitch;
 	endif;
