@@ -39,7 +39,7 @@ defined ( '_JEXEC' ) or die ();
 			</ul>
 			
 			<div style="display: block; width: 100%;">
-				<a href="/reparosemlagrima/forum-reparo" class="leia_mais_home">Leia mais</a>
+				<a href="/forum-reparo" class="leia_mais_home">Leia mais</a>
 			</div>
 		<?php endif; ?>
 	</div>
