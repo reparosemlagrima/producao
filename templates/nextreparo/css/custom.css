@@ -60,7 +60,7 @@ legend{
 }
 
 #Kunena .kicon-profile.kicon-profile-location{
-	background-image: url('/reparosemlagrima/images/icons/location.png');
+	background-image: url('/images/icons/location.png');
 	background-position: 0 0;
 	background-size: 20px;
 	top: -1px;
@@ -68,7 +68,7 @@ legend{
 }
 
 #Kunena .kicon-profile.kicon-profile-gender-female{
-	background-image: url('/reparosemlagrima/images/icons/gender-2.png');
+	background-image: url('/images/icons/gender-2.png');
 	background-position: 0 0;
 	background-size: 20px;
 	top: -1px;
@@ -76,7 +76,7 @@ legend{
 }
 
 #Kunena .kicon-profile.kicon-profile-gender-male{
-	background-image: url('/reparosemlagrima/images/icons/gender.png');
+	background-image: url('/images/icons/gender.png');
 	background-position: 0 0;
 	background-size: 20px;
 	top: -1px;
@@ -84,7 +84,7 @@ legend{
 }
 
 #Kunena .kicon-profile.kicon-profile-birthdate{
-	background-image: url('/reparosemlagrima/images/icons/birthday.png');
+	background-image: url('/images/icons/birthday.png');
 	background-position: 0 0;
 	background-size: 20px;
 	top: -1px;
@@ -481,7 +481,7 @@ small.similar-smallinfo .countnum{
 	position: relative;
 	top: -5px;
 	left: 5px;
-	background-image: url('http://localhost/reparosemlagrima/images/logo/logo_interno.png');
+	background-image: url('/images/logo/logo_interno.png');
 	background-position: -7px -1px;
 	background-size: 330px;
 	background-repeat: no-repeat;
@@ -784,7 +784,7 @@ body.pag_busca_tutorial #tm-content article p.tm-article-meta.uk-article-meta{
 	margin-left: 8px;
 	height: 18px;
 	width: 17px;
-	background-image: url("/reparosemlagrima/images/icons/icons_menu2.png");
+	background-image: url("/images/icons/icons_menu2.png");
 	background-position: -116px 0;
 }
 
@@ -889,7 +889,7 @@ body.pag_busca_tutorial #tm-content article p.tm-article-meta.uk-article-meta{
 	top: 17px;
 	left: -25px;
 	background-repeat: no-repeat;
-	background-image: url("/reparosemlagrima/images/icons/icons_menu2.png");
+	background-image: url("/images/icons/icons_menu2.png");
 }
 
 .tm-navbar > .menu_principal ul li .icon_menuhome{
@@ -1060,7 +1060,7 @@ body.pag_busca_tutorial #tm-content article p.tm-article-meta.uk-article-meta{
 	top: -1px;
 	left: -23px;
 	background-repeat: no-repeat;
-	background-image: url("/reparosemlagrima/images/icons/icons_menu2.png");
+	background-image: url("/images/icons/icons_menu2.png");
 }
 
 #menu > .menu_principal .icon_menuhome{
@@ -1607,7 +1607,7 @@ body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2, body.pag_tutoriai
 body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2 .icon_rsl, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2 .icon_rsl{
 	width: 42px;
 	height: 42px;
-	background: url("/reparosemlagrima/images/icons/icons_menu2.png") no-repeat -133px 0px;
+	background: url("/images/icons/icons_menu2.png") no-repeat -133px 0px;
 	display: inline-block;
 	position: relative;
 	top: 9px;
@@ -2072,7 +2072,7 @@ body.pag_home #top-f{
 	width: 35px;
 	height: 35px;
 	color: #5C5C5D;
-	background-image: url("/reparosemlagrima/images/icons/img_qtd_posts.png");
+	background-image: url("/images/icons/img_qtd_posts.png");
 	background-repeat: no-repeat;
 	background-size: 35px;
 	line-height: 32px;
@@ -2393,7 +2393,7 @@ body.pag_forum .uk-progress-bar {
 	height: 43px;
 	min-height: 43px;
 	color: #5C5C5D;
-	background-image: url("/reparosemlagrima/images/icons/img_qtd_posts.png");
+	background-image: url("/images/icons/img_qtd_posts.png");
 	background-repeat: no-repeat;
 	line-height: 38px;
 	font-size: 23px;
@@ -2692,7 +2692,7 @@ body.pag_forum .uk-progress-bar {
 }
 
 #Kunena #postform #kpost-toolbar #big_small_textarea .ks{
-	background-image: url('/reparosemlagrima/images/icons/icon-expand-contract.png');
+	background-image: url('/images/icons/icon-expand-contract.png');
 	background-repeat: no-repeat;
 	width: 20px;
 	height: 15px;
@@ -3462,7 +3462,7 @@ nav.tm-navbar-container .cart_loja #cart > button:hover{
 nav.tm-navbar-container .cart_loja #cart > button .fa-shopping-cart{
 	height: 18px;
 	width: 17px;
-	background-image: url("/reparosemlagrima/images/icons/icons_menu2.png");
+	background-image: url("/images/icons/icons_menu2.png");
 	background-position: -116px -17px;
 }
 
@@ -3548,7 +3548,7 @@ body.pag_loja .search_loja #search-oc .input-group-btn > button > i{
 	display: block;
 	height: 18px;
 	width: 17px;
-	background-image: url("/reparosemlagrima/images/icons/icons_menu2.png");
+	background-image: url("/images/icons/icons_menu2.png");
 	background-position: -100px 26px;
 	top: 10px;
 	left: 9px;
@@ -4253,7 +4253,7 @@ body.pag_recicla #Reciclagem .icon_upload_recicla > span.nome_arquivo_upload{
 
 body.pag_recicla #Reciclagem .icon_upload_recicla > span.icon_arquivo_upload{
 	position: relative;
-	background: url("/reparosemlagrima/images/icons/icon_upload.jpg") no-repeat transparent;
+	background: url("/images/icons/icon_upload.jpg") no-repeat transparent;
 	background-size: 14px 16px;
 	float: right;
 	top: 9px;
@@ -4298,7 +4298,7 @@ body.pag_recicla #ImagensRecicla .bfFileQueueItem > img{
 }
 .div_file .container_bt_upload input[type="button"]{
 	position: relative;
-	background: url("/reparosemlagrima/images/icons/icon_upload.jpg") no-repeat transparent;
+	background: url("/images/icons/icon_upload.jpg") no-repeat transparent;
 	background-size: 14px 16px;
 	float: right;
 	top: 0;
@@ -4334,7 +4334,7 @@ body.pag_recicla #ImagensRecicla .bfFileQueueItem > img{
 	text-align: center;
 }
 .container_img_upload > span.name_img_upload{
-	background: url("/reparosemlagrima/media/breezingforms/themes/cancel.png") no-repeat;
+	background: url("/media/breezingforms/themes/cancel.png") no-repeat;
 	background-size: 16px 16px;
 	width: 16px;
 	height: 16px;
@@ -4407,7 +4407,7 @@ body.pag_recicla #bfSubmitMessage{
 	width: 100%;
 	height: 200px;
 	background-repeat: no-repeat;
-	background-image: url("/reparosemlagrima/images/banners/banner-inferior/banner-footer.jpg");
+	background-image: url("/images/banners/banner-inferior/banner-footer.jpg");
 	background-position: top center;
 	background-size: auto 220px;
 }
