@@ -14,12 +14,12 @@ defined('_JEXEC') or die;
 	<?php
 		$url = $_SERVER["REQUEST_URI"];
 		$pieces = explode("/", $url);
-		$page_var = $pieces[2]; // Ex: 'forum-reparo' em 'http://localhost/reparosemlagrima/forum-reparo/user'
-		@$page_var1 = $pieces[3]; // Ex: 'user' em 'http://localhost/reparosemlagrima/forum-reparo/user'
+		$page_var = $pieces[2]; // Ex: 'forum-reparo' em 'http://localhost/forum-reparo/user'
+		@$page_var1 = $pieces[3]; // Ex: 'user' em 'http://localhost/forum-reparo/user'
 		$pieces2 = explode("?", $page_var);
-		$page_var2 = $pieces2[0]; // Ex: 'user' em 'http://localhost/reparosemlagrima/forum-reparo/user'
+		$page_var2 = $pieces2[0]; // Ex: 'user' em 'http://localhost/forum-reparo/user'
 		@$pieces3 = explode("=", $pieces2[1]);
-		@$page_var3 = $pieces3[1]; // Ex: 'user' em 'http://localhost/reparosemlagrima/forum-reparo/user'
+		@$page_var3 = $pieces3[1]; // Ex: 'user' em 'http://localhost/forum-reparo/user'
 
 		if (!$params->get('showLast', 1))
 		{
@@ -40,11 +40,11 @@ defined('_JEXEC') or die;
 				$name = $list[$i]->name;
 			}
 			
-			//if($list[$i]->link != "/reparosemlagrima/forum-reparo" && $list[$i]->link != "/reparosemlagrima/forum-reparo/forum-principal"){
+			//if($list[$i]->link != "/forum-reparo" && $list[$i]->link != "/forum-reparo/forum-principal"){
 				// mark-up last item as strong
 				if($i < $count-1)
 				{
-					if($list[$i]->link != "/reparosemlagrima/forum-reparo/forum-reparo"){
+					if($list[$i]->link != "/forum-reparo/forum-reparo"){
 						if(!empty($list[$i]->link))
 						{
 							echo '<li><a href="'.$list[$i]->link.'">'.$name.'</a></li>';
@@ -73,7 +73,7 @@ defined('_JEXEC') or die;
 			//}
 
 			if($i == 0 && @$page_var2 == ("post-recentes" || "meus-topicos" || "editar-perfil") && @$page_var2 != "forum-reparo" && @$page_var2 != "politica-de-privacidade"){
-				echo '<li><a href="/reparosemlagrima/forum-reparo">Fórum</a></li>';
+				echo '<li><a href="/forum-reparo">Fórum</a></li>';
 			}
 		}
 	?>
