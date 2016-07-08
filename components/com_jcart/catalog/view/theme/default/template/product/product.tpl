@@ -120,8 +120,8 @@
 							if($thumb){
 					?>
 							<div class="img_product_thumb">
-								<a class="garantia" href="/reparosemlagrima/garantia" title="Garantia Reparo Sem Lágrima - Tempo de Vida Garantia" target="_blank">
-									<img src="/reparosemlagrima/images/loja/garantia_pic_store.jpg" alt="Garantia Reparo Sem Lágrima - Tempo de Vida Garantia" title="Garantia Reparo Sem Lágrima - Tempo de Vida Garantia" />
+								<a class="garantia" href="/garantia" title="Garantia Reparo Sem Lágrima - Tempo de Vida Garantia" target="_blank">
+									<img src="/images/loja/garantia_pic_store.jpg" alt="Garantia Reparo Sem Lágrima - Tempo de Vida Garantia" title="Garantia Reparo Sem Lágrima - Tempo de Vida Garantia" />
 								</a>
 								<a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>">
 									<img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" />
