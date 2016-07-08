@@ -1,13 +1,13 @@
-<link rel="stylesheet" type="text/css" href="/reparosemlagrima/templates/nextreparo/js/bxslider/jquery.bxslider.css" />
-<script type="text/javascript" src="/reparosemlagrima/templates/nextreparo/js/bxslider/jquery.bxslider.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/templates/nextreparo/js/bxslider/jquery.bxslider.css" />
+<script type="text/javascript" src="/templates/nextreparo/js/bxslider/jquery.bxslider.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="/reparosemlagrima/templates/nextreparo/js/fancybox/jquery.fancybox.css?v=2.1.5" />
-<script type="text/javascript" src="/reparosemlagrima/templates/nextreparo/js/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="/templates/nextreparo/js/fancybox/jquery.fancybox.css?v=2.1.5" />
+<script type="text/javascript" src="/templates/nextreparo/js/fancybox/jquery.fancybox.js?v=2.1.5"></script>
 
-<link rel="stylesheet" type="text/css" href="/reparosemlagrima/templates/nextreparo/js/jquery-ui/jquery-ui.min.css" />
-<link rel="stylesheet" type="text/css" href="/reparosemlagrima/templates/nextreparo/js/jquery-ui/jquery-ui.structure.min.css" />
-<link rel="stylesheet" type="text/css" href="/reparosemlagrima/templates/nextreparo/js/jquery-ui/jquery-ui.theme.min.css" />
-<script type="text/javascript" src="/reparosemlagrima/templates/nextreparo/js/jquery-ui/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/templates/nextreparo/js/jquery-ui/jquery-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/templates/nextreparo/js/jquery-ui/jquery-ui.structure.min.css" />
+<link rel="stylesheet" type="text/css" href="/templates/nextreparo/js/jquery-ui/jquery-ui.theme.min.css" />
+<script type="text/javascript" src="/templates/nextreparo/js/jquery-ui/jquery-ui.min.js"></script>
 
 <script type="text/javascript">
 	var jQuery = jQuery.noConflict();
