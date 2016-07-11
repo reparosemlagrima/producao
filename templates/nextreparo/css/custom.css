@@ -1322,11 +1322,11 @@ body.pag_forum > section:first-of-type .uk-breadcrumb > li:nth-child(1),
 body.pag_perfil_forum > section:first-of-type .uk-breadcrumb > li:nth-child(1),
 body.pag_busca_tutorial > section:first-of-type .uk-breadcrumb > li:nth-child(1),
 body.pag_loja > section:first-of-type .uk-breadcrumb > li:nth-child(1),
-body.pag_tutoriais > section:first-of-type .uk-breadcrumb > li:nth-child(2),
-body.pag_forum > section:first-of-type .uk-breadcrumb > li:nth-child(2),
-body.pag_perfil_forum > section:first-of-type .uk-breadcrumb > li:nth-child(2),
-body.pag_busca_tutorial > section:first-of-type .uk-breadcrumb > li:nth-child(2),
-body.pag_loja > section:first-of-type .uk-breadcrumb > li:nth-child(2){
+body.pag_tutoriais > section:first-of-type .uk-breadcrumb > li:nth-child(2):not(.uk-active),
+body.pag_forum > section:first-of-type .uk-breadcrumb > li:nth-child(2):not(.uk-active),
+body.pag_perfil_forum > section:first-of-type .uk-breadcrumb > li:nth-child(2):not(.uk-active),
+body.pag_busca_tutorial > section:first-of-type .uk-breadcrumb > li:nth-child(2):not(.uk-active),
+body.pag_loja > section:first-of-type .uk-breadcrumb > li:nth-child(2):not(.uk-active){
 	display: none;
 }
 
