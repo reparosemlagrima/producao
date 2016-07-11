@@ -96,15 +96,17 @@ include($this['path']->path('layouts:theme.config.php'));
 	<?php
 		$url = $_SERVER["REQUEST_URI"];
 		$pieces = explode("/", $url);
-		$page_var = $pieces[2];
-		@$sublink = $pieces[3];
+		//echo "<pre>";
+		//var_dump($pieces);
+		//echo "</pre>";
+		$page_var = $pieces[1];
+		@$sublink = $pieces[2];
 		$pieces2 = explode("?", $page_var);
-		$page_var2 = $pieces2[0];
+		echo $page_var2 = $pieces2[0];
 
 		if(@$page_var2 != NULL && @$page_var2 == ("tutorial-interno" || "forum-reparo" || "registra-usuario")):
 	?>
 	<script type="text/javascript">
-		var jQuery = jQuery.noConflict();
 		jQuery(window).load(function() {
 			// Adiciona ícone home em breadcrumb
 			jQuery(".uk-breadcrumb li:first-of-type a").html("<i class='fa fa-home'></i>");
@@ -117,7 +119,6 @@ include($this['path']->path('layouts:theme.config.php'));
 		if(@$page_var2 != NULL && @$page_var2 == "forum-reparo"):
 	?>
 	<script type="text/javascript">
-		var jQuery = jQuery.noConflict();
 		jQuery(window).load(function() {
 			jQuery(".uk-breadcrumb li:nth-child(2)").show();
 		});
@@ -128,7 +129,6 @@ include($this['path']->path('layouts:theme.config.php'));
 		if(@$page_var2 != NULL && @$page_var2 == "loja-home" && (@$sublink == "" || @$sublink == "home")):
 	?>
 	<script type="text/javascript">
-		var jQuery = jQuery.noConflict();
 		jQuery(window).load(function() {
 			jQuery("body").addClass("loja_home");
 			jQuery("#tm-top-a").show();
@@ -140,7 +140,6 @@ include($this['path']->path('layouts:theme.config.php'));
 		if(@$page_var2 != NULL && @$page_var2 == "loja-home"):
 	?>
 	<script type="text/javascript">
-		var jQuery = jQuery.noConflict();
 		jQuery(window).load(function() {
 			jQuery("body.pag_loja").find(".list-group").prepend("<a style='font-size: 16px; line-height: 20px; padding-top: 9px; display: block; font-weight: bold; cursor: default;'>NAVEGAR CATEGORIAS</a>");
 		});
@@ -151,7 +150,6 @@ include($this['path']->path('layouts:theme.config.php'));
 		if(@$page_var2 != NULL && @$page_var2 == "tutorial-interno"):
 	?>
 	<script type="text/javascript">
-		var jQuery = jQuery.noConflict();
 		jQuery(window).load(function() {
 			// Limpa variável 'Confira alguns tutoriais mais visualizados'
 			var string = jQuery("body.pag_tutoriais div#tm-main main#tm-content .uk-panel > h2, body.pag_tutoriais div#tm-main main#tm-content .blogpag_tutoriais > h2").text();
@@ -172,7 +170,6 @@ include($this['path']->path('layouts:theme.config.php'));
 		if(@$page_var2 != NULL && @$page_var2 == "tutorial-interno" && (@$pieces[3] != NULL && @$pieces[4] != NULL)):
 	?>
 	<script type="text/javascript">
-		var jQuery = jQuery.noConflict();
 		jQuery(window).load(function() {
 			// Modifica elemento de lugar
 			jQuery("body.pag_tutoriais #tm-top-b").prependTo("body.pag_tutoriais #tm-main .blogpag_tutoriais #mais_acessadas");
