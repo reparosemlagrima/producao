@@ -126,7 +126,7 @@ include($this['path']->path('layouts:theme.config.php'));
 	<?php
 		endif;
 
-		if(@$page_var2 != NULL && @$page_var2 == "loja-home" && (@$sublink == "" || @$sublink == "home")):
+		if(@$page_var2 != NULL && @$page_var2 == "loja-reparo" && (@$sublink == "" || @$sublink == "home")):
 	?>
 	<script type="text/javascript">
 		jQuery(window).load(function() {
@@ -137,7 +137,7 @@ include($this['path']->path('layouts:theme.config.php'));
 	<?php
 		endif;
 
-		if(@$page_var2 != NULL && @$page_var2 == "loja-home"):
+		if(@$page_var2 != NULL && @$page_var2 == "loja-reparo"):
 	?>
 	<script type="text/javascript">
 		jQuery(window).load(function() {
@@ -224,11 +224,11 @@ include($this['path']->path('layouts:theme.config.php'));
 							<?php $class_login = ($session_name_user == NULL) ? "" : "loggedin"; ?>
 							<div class="tm-nav uk-hidden-small <?php echo $class_login; ?>" id="menu_topo">
 								<div id="wishlist_menu_topo">
-									<a href="/loja-home/account/wishlist" id="wishlist-total" title="Lista de desejos"></a>
+									<a href="/loja-reparo/account/wishlist" id="wishlist-total" title="Lista de desejos"></a>
 								</div>
 
 								<div id="loja_menu_topo">
-									<a href="/loja-home/index.php?route=checkout/cart" title="Loja"></a>
+									<a href="/loja-reparo/index.php?route=checkout/cart" title="Loja"></a>
 								</div>
 
 								<?php
