@@ -381,9 +381,6 @@ class KunenaControllerUser extends KunenaController
 		$login = KunenaLogin::getInstance();
 		$error = $login->loginUser($username, $password, $remember, $secretkey);
 
-		//Opencart
-
-
 		// Get the return url from the request and validate that it is internal.
 		$return = base64_decode(JRequest::getVar('return', '', 'method', 'base64')); // Internal URI
 

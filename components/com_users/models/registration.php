@@ -392,28 +392,28 @@ class UsersModelRegistration extends JModelForm
 		$GLOBALS['user_id']=$user->id;
 
 		//Opencart Attempt to save customer
-		require_once JPATH_BASE . '/loja/system/library/db.php';
-		require_once JPATH_BASE . '/loja/system/library/db/mysqli.php';
-		require_once JPATH_BASE . '/loja/system/helper/general.php';
-		$db = new DB('mysqli', 'localhost', 'root', '', 'bd_loja_rslagrimas', 3306);
-		$customer_group_id=1;
-		$store_id=0;
-		$firstname= $db->escape($data['name']);
-		$lastname = $db->escape($data['name']);
-		$email=$db->escape($data['email1']);
-		$telephone=$db->escape($data['telephone']);
-		$fax=$db->escape($data['fax']);
-		$customer_field=  '';
-		$salt=$db->escape($salt = token(9));
-		$password=$db->escape(sha1($salt . sha1($salt . sha1($data['password1']))));
-		$newsletter=0;
-		$ip=$_SERVER["REMOTE_ADDR"];
-		$approved=1;
-		$user_id=$GLOBALS['user_id'];
+		//require_once JPATH_BASE . '/loja/system/library/db.php';
+		//require_once JPATH_BASE . '/loja/system/library/db/mysqli.php';
+		//require_once JPATH_BASE . '/loja/system/helper/general.php';
+		//$db = new DB('mysqli', 'localhost', 'root', '', 'bd_loja_rslagrimas', 3306);
+		//$customer_group_id=1;
+		//$store_id=0;
+		//$firstname= $db->escape($data['name']);
+		//$lastname = $db->escape($data['name']);
+		//$email=$db->escape($data['email1']);
+		//$telephone=$db->escape($data['telephone']);
+		//$fax=$db->escape($data['fax']);
+		//$customer_field=  '';
+		//$salt=$db->escape($salt = token(9));
+		//$password=$db->escape(sha1($salt . sha1($salt . sha1($data['password1']))));
+		//$newsletter=0;
+		//$ip=$_SERVER["REMOTE_ADDR"];
+		//$approved=1;
+		//$user_id=$GLOBALS['user_id'];
 		//$usu = $_SESSION['__default']['user'];
 		//$useid= $_SESSION[_default];
 
-		$db->query("INSERT INTO " . 'oc_' . "customer SET customer_group_id = '" . $customer_group_id . "', store_id = '" . $store_id . "', firstname = '" . $firstname . "', lastname = '" . $lastname . "', email = '" . $email . "', telephone = '" . $telephone . "', fax = '" . $fax . "', custom_field = '" . $customer_field . "', salt = '" . $salt . "', password = '" . $password . "', newsletter = '" . $newsletter . "', ip = '" . $ip . "', status = '1', approved = '" . $approved . "', date_added = NOW(), user_id = " . $user_id);
+		//$db->query("INSERT INTO " . 'oc_' . "customer SET customer_group_id = '" . $customer_group_id . "', store_id = '" . $store_id . "', firstname = '" . $firstname . "', lastname = '" . $lastname . "', email = '" . $email . "', telephone = '" . $telephone . "', fax = '" . $fax . "', custom_field = '" . $customer_field . "', salt = '" . $salt . "', password = '" . $password . "', newsletter = '" . $newsletter . "', ip = '" . $ip . "', status = '1', approved = '" . $approved . "', date_added = NOW(), user_id = " . $user_id);
 		//$customer_id = $db->getLastId();
 
 		//$db->query("INSERT INTO " . 'oc_' . "customer SET customer_group_id = '" . 1 . "', store_id = '" . 0 . "', firstname = '" . 'zhangfei' . "', lastname = '" . 'yi' . "', email = '" . '29746304@qq.com' . "', telephone = '" . '123344' . "', fax = '" . '1234322' . "', custom_field = '" . 'fsdfjkafhajfa' . "', salt = '" . 'dfsdgsgd' . "', password = '" . '123456' . "', newsletter = '" . 0 . "', ip = '" . '192.168.1.1' . "', status = '1', approved = '" . 1 . "', date_added = NOW()");
