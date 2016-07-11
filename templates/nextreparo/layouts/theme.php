@@ -102,7 +102,7 @@ include($this['path']->path('layouts:theme.config.php'));
 		$page_var = $pieces[1];
 		@$sublink = $pieces[2];
 		$pieces2 = explode("?", $page_var);
-		echo $page_var2 = $pieces2[0];
+		$page_var2 = $pieces2[0];
 
 		if(@$page_var2 != NULL && @$page_var2 == ("tutorial-interno" || "forum-reparo" || "registra-usuario")):
 	?>
@@ -167,7 +167,7 @@ include($this['path']->path('layouts:theme.config.php'));
 	<?php
 		endif;
 
-		if(@$page_var2 != NULL && @$page_var2 == "tutorial-interno" && (@$pieces[3] != NULL && @$pieces[4] != NULL)):
+		if(@$page_var2 != NULL && @$page_var2 == "tutorial-interno" && (@$pieces[2] != NULL && @$pieces[3] != NULL)):
 	?>
 	<script type="text/javascript">
 		jQuery(window).load(function() {
