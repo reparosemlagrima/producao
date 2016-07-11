@@ -230,7 +230,7 @@ $link_target = ($settings['link_target']) ? ' target="_blank"' : '';
 <?php endif; ?>
 
 <?php
-	if($REQUEST_URI == "/reparosemlagrima/"){
+	if($REQUEST_URI == "/"){
 ?>
 	<ul class="lista_tutoriais">
 <?php
@@ -386,7 +386,7 @@ $link_target = ($settings['link_target']) ? ' target="_blank"' : '';
 		if ($item['categories']) {
 			$categories = array();
 			foreach ($item['categories'] as $category => $url) {
-				if($REQUEST_URI == "/reparosemlagrima/"){
+				if($REQUEST_URI == "/"){
 					$categories[] = $category;
 				}
 				else{
@@ -396,7 +396,7 @@ $link_target = ($settings['link_target']) ? ' target="_blank"' : '';
 			$categories = implode(', ', array_filter($categories));
 
 			$meta .= ($meta) ? '. ' : '';
-			if($REQUEST_URI == "/reparosemlagrima/"){
+			if($REQUEST_URI == "/"){
 				$meta .= $app['translator']->trans('%categories%',  array('%categories%' => $categories));
 			}
 			else{
@@ -414,10 +414,10 @@ $link_target = ($settings['link_target']) ? ' target="_blank"' : '';
 				$title_size .= ' uk-margin-bottom-remove';
 		}
 
-		if($REQUEST_URI == "/reparosemlagrima/"){
+		if($REQUEST_URI == "/"){
 	?>
 		<li>
-			<a href="/reparosemlagrima/tutorial-interno/iphone/iphone-4/99-iphone-4-novidades">
+			<a href="/tutorial-interno/iphone/iphone-4/99-iphone-4-novidades">
 				<span>
 					<?php echo $media; ?>
 				</span>
@@ -511,7 +511,7 @@ $link_target = ($settings['link_target']) ? ' target="_blank"' : '';
 	endforeach;
 ?>
 <?php
-	if($REQUEST_URI == "/reparosemlagrima/"){
+	if($REQUEST_URI == "/"){
 ?>
 	</ul>
 <?php
