@@ -960,7 +960,7 @@ class JApplicationCms extends JApplicationWeb
 		$results = $this->triggerEvent('onUserLogout', array($parameters, $options));
 
 		//Opencart
-		setcookie('customer_id','',time()-3600,'/reparosemlagrima/loja/',$_SERVER['HTTP_HOST']);
+		//setcookie('customer_id','',time()-3600,'/reparosemlagrima/loja/',$_SERVER['HTTP_HOST']);
 
 		// Check if any of the plugins failed. If none did, success.
 		if (!in_array(false, $results, true))
