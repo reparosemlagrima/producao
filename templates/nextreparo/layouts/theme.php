@@ -306,7 +306,7 @@ include($this['path']->path('layouts:theme.config.php'));
 					<div class="new-menu menu_home" id="new-menu">
 						<div class="uk-container uk-container-center">
 							<h1 id="logo_topo_menu">
-								<a href="/reparosemlagrima">Reparo Sem Lagrima</a>
+								<a href="/">Reparo Sem Lagrima</a>
 							</h1>
 
 							<?php echo $this['widgets']->render('new-menu'); ?> 
