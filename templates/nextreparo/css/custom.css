@@ -1914,6 +1914,71 @@ body.pag_home .leia_mais_home:hover{
 	color: #00aff3;
 }
 
+/* COMENTÁRIOS TUTORIAL */
+#jc #comments .rbox{
+	border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-right: 20px;
+}
+
+#comments .toolbar{
+	display: none;
+}
+
+#jc #comments .comment-box .comment-anchor, #jc #comments .comment-box .author-homepage{
+	font-size: 15px;
+}
+
+#jc #comments .comment-box .author-homepage{
+	color: #00AFF3;
+}
+
+#jc #comments .comment-box .comment-date{
+	font-size: 12px;
+}
+
+#jc #comments .comment-box .comment-body{
+	margin-top: 8px;
+}
+
+#jc #comments-form .bbcode, #jc #comments-form .grippie, #jc #comments-footer{
+	display: none !important;
+}
+
+#jc #comments-form #comments-form-comment{
+	max-width: 100% !important;
+	width: 98%;
+	box-sizing: border-box;
+	height: 120px;
+	border-color: #00AFF3;
+}
+
+#jc #comments-form #comments-form-buttons{
+	float: right;
+	margin-top: -33px;
+	margin-right: 20px;
+}
+
+#jc #comments-form #comments-form-buttons #comments-form-send,
+#jc #comments-form #comments-form-buttons #comments-form-send div{
+	background-image: none;
+	background-color: #00AFF3;
+	border-radius: 40px;
+	padding: 5px 25px;
+    margin: 0;
+}
+
+#jc #comments-form #comments-form-buttons #comments-form-send div a{
+	font-size: 15px;
+	font-weight: normal;
+	color: #fff;
+}
+
 /* BANNER DESPERDÍCIO HOME */
 .pag_home #top-banner-recicla{
 	background-color: #00aff3;
