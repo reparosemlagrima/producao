@@ -20,38 +20,41 @@ class jtt_tpl_list extends JoomlaTuneTemplate
 	{
 		$comments = $this->getVar('comments-items');
 
-		if (isset($comments)) {
+		if (isset($comments))
+		{
 			// display full comments list with navigation and other stuff
 			$this->getHeader();
 
-			if ($this->getVar('comments-nav-top') == 1) {
+			if ($this->getVar('comments-nav-top') == 1)
+			{
 ?>
-<div id="nav-top"><?php echo $this->getNavigation(); ?></div>
+				<div id="nav-top"><?php echo $this->getNavigation(); ?></div>
 <?php
 			}
 ?>
-<div id="comments-list" class="comments-list">
+			<div id="comments-list" class="comments-list">
 <?php
-			$i = 0;
+				$i = 0;
 			
-			foreach($comments as $id => $comment) {
+				foreach($comments as $id => $comment) {
 ?>
-	<div class="<?php echo ($i%2 ? 'odd' : 'even'); ?>" id="comment-item-<?php echo $id; ?>"><?php echo $comment; ?></div>
+					<div class="<?php echo ($i%2 ? 'odd' : 'even'); ?>" id="comment-item-<?php echo $id; ?>"><?php echo $comment; ?></div>
 <?php
-				$i++;
-			}
+					$i++;
+				}
 ?>
-</div>
+			</div>
 <?php
 			if ($this->getVar('comments-nav-bottom') == 1) {
 ?>
-<div id="nav-bottom"><?php echo $this->getNavigation(); ?></div>
+				<div id="nav-bottom"><?php echo $this->getNavigation(); ?></div>
 <?php
 			}
 ?>
-<div id="comments-list-footer"><?php echo $this->getFooter();?></div>
+			<div id="comments-list-footer"><?php echo $this->getFooter();?></div>
 <?php
-		} else {
+			}
+			else {
 			// display single comment item (works when new comment is added)
 
 			$comment = $this->getVar('comment-item');
@@ -61,11 +64,11 @@ class jtt_tpl_list extends JoomlaTuneTemplate
 				$id = $this->getVar('comment-id');
 
 ?>
-	<div class="<?php echo ($i%2 ? 'odd' : 'even'); ?>" id="comment-item-<?php echo $id; ?>"><?php echo $comment; ?></div>
+				<div class="<?php echo ($i%2 ? 'odd' : 'even'); ?>" id="comment-item-<?php echo $id; ?>"><?php echo $comment; ?></div>
 <?php
 			} else {
 ?>
-<div id="comments-list" class="comments-list"></div>
+				<div id="comments-list" class="comments-list"></div>
 <?php
 			}
 		}
@@ -85,7 +88,7 @@ class jtt_tpl_list extends JoomlaTuneTemplate
 		$btnRefresh = '';
 		
 		if ($this->getVar('comments-refresh', 1) == 1) {
-			$btnRefresh = '<a class="refresh" href="#" title="'.JText::_('BUTTON_REFRESH').'" onclick="jcomments.showPage('.$object_id.',\''. $object_group . '\',0);return false;">&nbsp;</a>';
+			//$btnRefresh = '<a class="refresh" href="#" title="'.JText::_('BUTTON_REFRESH').'" onclick="jcomments.showPage('.$object_id.',\''. $object_group . '\',0);return false;">&nbsp;</a>';
 		}
 
 		if ($this->getVar('comments-rss') == 1) {
@@ -114,7 +117,7 @@ class jtt_tpl_list extends JoomlaTuneTemplate
 		$lines = array();
 
 		if ($this->getVar('comments-refresh', 1) == 1) {
-			$lines[] = '<a class="refresh" href="#" title="'.JText::_('BUTTON_REFRESH').'" onclick="jcomments.showPage('.$object_id.',\''. $object_group . '\',0);return false;">'.JText::_('BUTTON_REFRESH').'</a>';
+			//$lines[] = '<a class="refresh" href="#" title="'.JText::_('BUTTON_REFRESH').'" onclick="jcomments.showPage('.$object_id.',\''. $object_group . '\',0);return false;">'.JText::_('BUTTON_REFRESH').'</a>';
 		}
 
 		if ($this->getVar('comments-rss', 1) == 1) {
@@ -130,7 +133,7 @@ class jtt_tpl_list extends JoomlaTuneTemplate
 			$text = $isSubscribed ? JText::_('BUTTON_UNSUBSCRIBE') : JText::_('BUTTON_SUBSCRIBE');
 			$func = $isSubscribed ? 'unsubscribe' : 'subscribe';
 
-			$lines[] = '<a id="comments-subscription" class="subscribe" href="#" title="' . $text . '" onclick="jcomments.' . $func . '('.$object_id.',\''. $object_group . '\');return false;">'. $text .'</a>';
+			//$lines[] = '<a id="comments-subscription" class="subscribe" href="#" title="' . $text . '" onclick="jcomments.' . $func . '('.$object_id.',\''. $object_group . '\');return false;">'. $text .'</a>';
 		}
 
 		if (count($lines)) {
