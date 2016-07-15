@@ -826,28 +826,6 @@ body.pag_busca_tutorial #tm-content article p.tm-article-meta.uk-article-meta{
 	text-align: center;
 }
 
-.tm-navbar > .menu_principal ul li::before{
-	position: absolute;
-	display: block;
-	content: '';
-	top: 56px;
-	left: 0;
-	width: 100%;
-	background-image: linear-gradient(-90deg,rgba(0,113,206,0) 0,#9ee2fc 51%,rgba(0,113,206,0) 100%);
-	opacity: 0;
-	height: 4px;
-	-webkit-transform: scaleX(0);
-	-ms-transform: scaleX(0);
-	transform: scaleX(0);
-	z-index: 0;
-	transition: all .2s;
-}
-
-.tm-navbar > .menu_principal ul li:hover::before {
-	transform: scaleX(1);
-	opacity: 1;
-}
-
 .tm-navbar > .menu_principal ul li a{
 	font-weight: 300;
 	font-size: 17px;
