@@ -4019,7 +4019,7 @@ body.pag_loja .body-oc .alert-info {
 
 .texto_passo_tutorial{
 	float: left;
-	width: 345px;
+	width: 335px;
 }
 
 .texto_passo_tutorial p{
@@ -4045,52 +4045,80 @@ body.pag_loja .body-oc .alert-info {
 
 .slider_tutorial{
 	float: right;
-	width: 580px;
+	width: 592px;
 }
 
 .slider_tutorial .bx-wrapper:first-of-type{
-	width: 110px;
-	float: left;
-	height: 311px;
-}
-
-.slider_tutorial .bx-wrapper:first-of-type .bx-viewport{
-	height: 100% !important;
+	width: 592px;
+	height: 395px;
+	float: right;
+	overflow: hidden;
 }
 
 .slider_tutorial .bx-wrapper:last-of-type{
-	width: 465px;
-	float: right;
+	width: 592px;
+	max-width: 592px !important;
+	float: left;
+	height: 75px;
+	margin-top: 10px !important;
+}
+
+.slider_tutorial .bx-wrapper:last-of-type .bx-viewport{
+	height: 100% !important;
 }
 
 .pager_imagens_tutorial{
 	float: left;
-	width: 110px;
-	height: 311px;
+	height: 75px;
 }
 
 .pager_imagens_tutorial a{
-	width: 110px;
+	float: left !important;
+	width: 120px !important;
 	height: 75px;
 	display: block;
-	margin-bottom: 4px;
+}
+
+.pager_imagens_tutorial a:last-of-type{
+	width: 110px !important;
 }
 
 .pager_imagens_tutorial img{
 	border: 1px solid #DDDDDD;
 }
 
+.slider_tutorial .bx-wrapper:last-of-type .bx-controls.bx-has-controls-direction{
+	top: 21px;
+	width: 592px;
+	height: 32px;
+}
+
+.slider_tutorial .bx-wrapper:last-of-type .bx-controls-direction a{
+	position: absolute;
+	background-color: transparent;
+	left: -30px;
+}
+
+.slider_tutorial .bx-wrapper:last-of-type .bx-controls-direction a.bx-prev{
+	top: -18px;
+}
+
+.slider_tutorial .bx-wrapper:last-of-type .bx-controls-direction a.bx-next{
+	top: 18px;
+	background-position: -32px 0px;
+}
+
 .bxslider_imagens_tutorial{
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	float: right;
-	height: 311px;
+	height: 395px;
+	overflow: hidden;
 }
 
 .bxslider_imagens_tutorial img{
-	width: 465px;
-	height: 311px;
+	width: 592px;
+	height: 395px;
 	border: 1px solid #DDDDDD;
 }
 
