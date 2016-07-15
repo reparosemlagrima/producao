@@ -27,21 +27,21 @@
 				jQuery(this).attr('data-fancybox-group','gallery');
 			});
 
-			jQuery(id+' .bxslider_imagens_tutorial').bxSlider({
+			var slider = jQuery(id+' .bxslider_imagens_tutorial').bxSlider({
 				pagerCustom : id+' .pager_imagens_tutorial',
 				infiniteLoop: false,
 				controls 	: false,
-				mode 		: 'vertical'
+				mode 		: 'horizontal'
 			});
 			jQuery(id+' .pager_imagens_tutorial').bxSlider({
 				infiniteLoop 	: false,
 				hideControlOnEnd: true,
 				pager 			: false,
-				minSlides 		: 4,
-				maxSlides 		: 4,
+				minSlides 		: 5,
+				maxSlides 		: 5,
 				slideWidth 		: 110,
-				slideMargin 	: 4,
-				mode 			: 'vertical'
+				slideMargin 	: 0,
+				mode 		: 'horizontal'
 			});
 		});
 
