@@ -37,7 +37,7 @@ class JConfig {
 	public $lifetime = '1500';
 	public $list_limit = '20';
 	public $live_site = '';
-	public $log_path = '/var/www/vhosts/rseml.com.br/httpdocs/reparosemlagrimas/log';
+	public $log_path = '/var/www/vhosts/reparosemlagrima.com.br/httpdocs/logs';
 	public $mailer = 'smtp';
 	public $mailfrom = 'messi@reparosemlagrima.com';
 	public $memcache_compress = '0';
@@ -65,7 +65,7 @@ class JConfig {
 	public $smtpport = '587';
 	public $smtpsecure = 'none';
 	public $smtpuser = 'messi@reparosemlagrima.com';
-	public $tmp_path = '/var/www/vhosts/rseml.com.br/httpdocs/reparosemlagrimas/tmp';
+	public $tmp_path = '/var/www/vhosts/reparosemlagrima.com.br/httpdocs/tmp';
 	public $unicodeslugs = '1';
 	public $user = 'reparo';
 	public $mailonline = '1';
