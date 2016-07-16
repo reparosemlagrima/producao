@@ -31,8 +31,9 @@
 				pagerCustom : id+' .pager_imagens_tutorial',
 				infiniteLoop: false,
 				controls 	: false,
-				mode 		: 'horizontal'
+				mode 		: 'fade'
 			});
+
 			jQuery(id+' .pager_imagens_tutorial').bxSlider({
 				infiniteLoop 	: false,
 				hideControlOnEnd: true,
@@ -42,6 +43,15 @@
 				slideWidth 		: 110,
 				slideMargin 	: 0,
 				mode 		: 'horizontal'
+			});
+
+			jQuery(this).find('div.pager_imagens_tutorial > a').each(function(){
+				jQuery(this).hover(function(){
+					var newSlideNo = jQuery(this).attr('data-slide-index');
+					if(newSlideNo != slider.getCurrentSlide()){
+						slider.goToSlide(newSlideNo);
+					}
+				});
 			});
 		});
 
