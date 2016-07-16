@@ -1928,11 +1928,26 @@ body.pag_home .leia_mais_home:hover{
 	display: none !important;
 }
 
+#jc #comments-form #comments-form-email, #jc #comments-form #comments-form-name, #jc #comments-form #comments-form-captcha{
+	border-color: #00AFF3;
+	padding: 2px 10px !important;
+}
+
+#jc #comments-form #comments-form-email, #jc #comments-form #comments-form-name{
+	width: 30%;
+}
+
 #jc #comments-form #comments-form-comment{
 	max-width: 100% !important;
 	width: 98%;
 	box-sizing: border-box;
 	height: 120px;
+	border-color: #00AFF3;
+	padding: 5px 10px !important;
+}
+
+#jc #comments-form img.captcha{
+	border-radius: 3px;
 	border-color: #00AFF3;
 }
 
