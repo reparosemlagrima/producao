@@ -102,15 +102,15 @@ JHtml::_('behavior.caption');
 		-->
 
 		<?php if (!empty($this->intro_items)) : ?>
-			<?php if (count($this->intro_items) > 2) : ?>
+			<?php //if (count($this->intro_items) > 2) : ?>
 				<?php
-					if(@$page_var2 != NULL && @$page_var2 == "tutorial-interno" && (@$pieces[3] != NULL && @$pieces[4] != NULL)):
-						unset($this->intro_items[0]);
-						unset($this->intro_items[1]);
-					endif;
+					//if(@$page_var2 != NULL && @$page_var2 == "tutorial-interno" && (@$pieces[3] != NULL && @$pieces[4] != NULL)):
+						//unset($this->intro_items[0]);
+						//unset($this->intro_items[1]);
+					//endif;
 				?>
 				<div id="outros_maisacessados">
-					<h4 id="titulo_outros_maisacessados">Outros</h4>
+					<h4 id="titulo_outros_maisacessados">Todos</h4>
 					<ul class="lista_outros_maisacessados">
 						<?php foreach ($this->intro_items as $key => $item) : ?>
 							<?php
@@ -142,7 +142,7 @@ JHtml::_('behavior.caption');
 						<?php endforeach; ?>
 					</ul>
 				</div>
-			<?php endif; ?>
+			<?php //endif; ?>
 		<?php endif; ?>
 
 		<!--
