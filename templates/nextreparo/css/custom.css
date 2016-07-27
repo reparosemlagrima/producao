@@ -1116,11 +1116,11 @@ body.pag_home .uk-box-search-home .uk-dropdown.uk-dropdown-flip.uk-dropdown-sear
 	background-color: #06688E;
 }
 
-.loja_home{
+body.pag_home .loja_home{
 	margin-top: 30px;
 }
 
-.loja_home > h3{
+body.pag_home .loja_home > h3{
 	text-align: left;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -1128,26 +1128,32 @@ body.pag_home .uk-box-search-home .uk-dropdown.uk-dropdown-flip.uk-dropdown-sear
 	font-size: 30px;
 }
 
-.loja_home .body-oc .product-thumb{
+body.pag_home .loja_home .body-oc .product-thumb{
 	border: none;
 }
 
-.loja_home .body-oc .product-thumb .caption{
+body.pag_home .loja_home .body-oc .product-thumb .caption{
 	min-height: 80px;
 }
 
-.loja_home .body-oc .product-thumb .caption .price{
+body.pag_home .loja_home .body-oc .product-thumb .caption .price{
 	text-align: center;
 }
 
-.loja_home .body-oc .product-thumb .caption h4{
+body.pag_home .loja_home .body-oc .product-thumb .caption h4{
 	background: #00AFF3;
 	text-align: center;
-	padding: 15px 0;
+	padding: 9px 15px;
 	text-transform: uppercase;
+    box-sizing: border-box;
+    height: 82px;
 }
 
-.loja_home .body-oc .product-thumb .caption h4 a{
+.body-oc .product-thumb h4{
+	min-height: 65px;
+}
+
+body.pag_home .loja_home .body-oc .product-thumb .caption h4 a{
 	color: #fff;
 }
 	
