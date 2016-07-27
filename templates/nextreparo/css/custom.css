@@ -1145,8 +1145,10 @@ body.pag_home .loja_home .body-oc .product-thumb .caption h4{
 	text-align: center;
 	padding: 9px 15px;
 	text-transform: uppercase;
-    box-sizing: border-box;
-    height: 82px;
+	box-sizing: border-box;
+	height: 82px;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .body-oc .product-thumb h4{
