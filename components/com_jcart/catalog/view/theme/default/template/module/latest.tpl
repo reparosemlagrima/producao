@@ -3,7 +3,7 @@
 	<?php foreach ($products as $product) { ?>
 	<div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
 		<div class="product-thumb transition">
-			<?php $name_img = substr($product['thumb'],0,-5)."228x228.jpg"; ?>
+			<?php $name_img = substr($product['thumb'],0,-6).".jpg"; ?>
 			<div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $name_img; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
 			<div class="caption">
 				<?php if ($product['price']) { ?>
