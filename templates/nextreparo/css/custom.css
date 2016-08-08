@@ -1155,6 +1155,11 @@ body.pag_home .loja_home .body-oc .product-thumb .caption h4{
 	min-height: 65px;
 }
 
+.body-oc .product-list .product-thumb h4{
+	padding-right: 165px;
+	padding-top: 35px;
+}
+
 body.pag_home .loja_home .body-oc .product-thumb .caption h4 a{
 	color: #fff;
 }
@@ -3908,8 +3913,19 @@ body.pag_loja .product-layout.product-grid .caption_grid{
 	padding: 0 20px;
 }
 
-body.pag_loja .product-layout.product-grid .caption{
+body.pag_loja .product-layout .caption{
+	min-height: 10px;
+}
+
+body.pag_loja .product-layout .caption p{
 	display: none;
+}
+
+body.pag_loja .product-layout.product-list .product-thumb .button-group{
+	position: absolute;
+	top: 35px;
+	right: 11px;
+	width: 156px;
 }
 
 body.pag_loja #tm-main .body-oc .container-oc #content-oc .product-layout.product-list .product-thumb .button-group button{
