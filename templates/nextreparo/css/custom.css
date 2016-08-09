@@ -3923,7 +3923,8 @@ body.pag_loja .product-layout .caption p{
 
 body.pag_loja .product-layout.product-list .product-thumb .button-group{
 	position: absolute;
-	top: 35px;
+	top: 35px
+	;
 	right: 11px;
 	width: 156px;
 }
